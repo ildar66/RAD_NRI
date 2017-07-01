@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PROJECTDIVCOLUMNS" name="PROJECTDIVCOLUMNS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIVCOLID" name="DIVCOLID" allowNull="true" constraints="SQLConstraint_1211544523657 SQLConstraint_1211544523658">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523657" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROJECTTYPE" name="PROJECTTYPE" allowNull="true" constraints="SQLConstraint_1211544523659">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523658" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIVISION" name="DIVISION" allowNull="true" constraints="SQLConstraint_1211544523660">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523659" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COLNAME" name="COLNAME" allowNull="true" constraints="SQLConstraint_1211544523661">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523657" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AFTERCOL" name="AFTERCOL" allowNull="true" constraints="SQLConstraint_1211544523662">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523660" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523657" name="PK_PROJECTDIVCOLUM" type="UNIQUE" members="DIVCOLID"/>
+  <constraints xmi:id="SQLConstraint_1211544523658" name="SYS_C004647" type="CHECK" body="&quot;DIVCOLID&quot; IS NOT NULL" members="DIVCOLID"/>
+  <constraints xmi:id="SQLConstraint_1211544523659" name="SYS_C004648" type="CHECK" body="&quot;PROJECTTYPE&quot; IS NOT NULL" members="PROJECTTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523660" name="SYS_C004649" type="CHECK" body="&quot;DIVISION&quot; IS NOT NULL" members="DIVISION"/>
+  <constraints xmi:id="SQLConstraint_1211544523661" name="SYS_C004650" type="CHECK" body="&quot;COLNAME&quot; IS NOT NULL" members="COLNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544523662" name="SYS_C004651" type="CHECK" body="&quot;AFTERCOL&quot; IS NOT NULL" members="AFTERCOL"/>
+</RDBSchema:RDBTable>

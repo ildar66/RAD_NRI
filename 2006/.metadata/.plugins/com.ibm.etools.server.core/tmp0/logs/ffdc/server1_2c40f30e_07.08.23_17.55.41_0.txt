@@ -1,0 +1,35 @@
+------Start of DE processing------ = [07.08.23 17:55:41:904 MSD] , key = java.lang.ClassNotFoundException com.ibm.ws.webcontainer.webapp.WebApp.getErrorPageDispatcher 1385
+Exception = java.lang.ClassNotFoundException
+Source = com.ibm.ws.webcontainer.webapp.WebApp.getErrorPageDispatcher
+probeid = 1385
+Stack Dump = java.lang.ClassNotFoundException: com.nri.exception.NoSuchDivisionException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java(Compiled Code))
+	at com.ibm.ws.bootstrap.ExtClassLoader.findClass(ExtClassLoader.java(Compiled Code))
+	at java.lang.ClassLoader.loadClass(ClassLoader.java(Compiled Code))
+	at java.lang.ClassLoader.loadClass(ClassLoader.java(Compiled Code))
+	at java.lang.Class.forName1(Native Method)
+	at java.lang.Class.forName(Class.java(Compiled Code))
+	at com.ibm.ws.webcontainer.webapp.WebApp.getErrorPageDispatcher(WebApp.java:1535)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleError(WebApp.java:1000)
+	at com.ibm.ws.webcontainer.webapp.WebApp.sendError(WebApp.java:897)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:185)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java(Compiled Code))
+
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.webapp.WebApp
+com.ibm.ws.webcontainer.webapp.WebApp@3521f32f
+
+Exception = java.lang.ClassNotFoundException
+Source = com.ibm.ws.webcontainer.webapp.WebApp.getErrorPageDispatcher
+probeid = 1385
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.webapp.WebApp
+com.ibm.ws.webcontainer.webapp.WebApp@3521f32f
+

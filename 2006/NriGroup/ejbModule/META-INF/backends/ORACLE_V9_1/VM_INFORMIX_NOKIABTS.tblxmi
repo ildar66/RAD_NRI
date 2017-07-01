@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="NOKIABTS" name="NOKIABTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATALOADID" name="DATALOADID" allowNull="true" constraints="SQLConstraint_1211544522326 SQLConstraint_1211544522327">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522326" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECT_ID" name="OBJECT_ID" allowNull="true" constraints="SQLConstraint_1211544522326 SQLConstraint_1211544522328">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522327" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BCF_ID" name="BCF_ID" allowNull="true" constraints="SQLConstraint_1211544522329">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522328" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LAC" name="LAC" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522329" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CELLID" name="CELLID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522330" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522326" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ADDRESS" name="ADDRESS" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522327" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NCC" name="NCC" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522331" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BCC" name="BCC" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522332" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="GSMID" name="GSMID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522333" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544522326" name="PK_NOKIABTS" type="UNIQUE" members="DATALOADID OBJECT_ID"/>
+  <constraints xmi:id="SQLConstraint_1211544522327" name="SYS_C005206" type="CHECK" body="&quot;DATALOADID&quot; IS NOT NULL" members="DATALOADID"/>
+  <constraints xmi:id="SQLConstraint_1211544522328" name="SYS_C005207" type="CHECK" body="&quot;OBJECT_ID&quot; IS NOT NULL" members="OBJECT_ID"/>
+  <constraints xmi:id="SQLConstraint_1211544522329" name="SYS_C005208" type="CHECK" body="&quot;BCF_ID&quot; IS NOT NULL" members="BCF_ID"/>
+</RDBSchema:RDBTable>

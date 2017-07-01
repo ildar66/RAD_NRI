@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DPBSMODELSBYFILIAL" name="DPBSMODELSBYFILIAL">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGIONID" name="REGIONID" allowNull="true" constraints="SQLConstraint_1211544520293 SQLConstraint_1211544520294">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520293" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAND" name="BAND" allowNull="true" constraints="SQLConstraint_1211544520293 SQLConstraint_1211544520295">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520294" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544520296">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520295" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGNAME" name="REGNAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520293" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUPREGID" name="SUPREGID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520296" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520293" name="PK_DPBSMODELSBYFIL" type="UNIQUE" members="REGIONID BAND"/>
+  <constraints xmi:id="SQLConstraint_1211544520294" name="SYS_C003590" type="CHECK" body="&quot;REGIONID&quot; IS NOT NULL" members="REGIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544520295" name="SYS_C003591" type="CHECK" body="&quot;BAND&quot; IS NOT NULL" members="BAND"/>
+  <constraints xmi:id="SQLConstraint_1211544520296" name="SYS_C003592" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+</RDBSchema:RDBTable>

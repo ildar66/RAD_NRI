@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<multisite-config>
+    <project-data name="SecurityApp">
+        <data>
+            <item name="SecurityApp" stamp="4887"/>
+        </data>
+    </project-data>
+    <project-data name="OrganizerApp">
+        <data>
+            <item name="OrganizerApp" stamp="9108"/>
+        </data>
+    </project-data>
+</multisite-config>

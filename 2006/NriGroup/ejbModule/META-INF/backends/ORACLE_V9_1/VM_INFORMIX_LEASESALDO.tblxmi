@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASESALDO" name="LEASESALDO">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASECONTRACT" name="LEASECONTRACT" allowNull="true" constraints="SQLConstraint_1211544521645 SQLConstraint_1211544521646">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521645" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SALDATE" name="SALDATE" allowNull="true" constraints="SQLConstraint_1211544521645 SQLConstraint_1211544521647">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521645" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544521645 SQLConstraint_1211544521648">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521646" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAINCURRENCY" name="MAINCURRENCY" allowNull="true" constraints="SQLConstraint_1211544521649">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521647" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ADDITIONALCURRENCY" name="ADDITIONALCURRENCY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521648" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACT" name="ACT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521649" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAINSUM" name="MAINSUM" allowNull="true" constraints="SQLConstraint_1211544521650">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521650" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ADDITIONALSUM" name="ADDITIONALSUM" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521651" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAINNDSSUM" name="MAINNDSSUM" allowNull="true" constraints="SQLConstraint_1211544521651">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521652" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ADDITIONALNDSSUM" name="ADDITIONALNDSSUM" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521653" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISTEMP" name="ISTEMP" allowNull="true" constraints="SQLConstraint_1211544521652 SQLConstraint_1211544521653">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521645" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SALDOBYHAND" name="SALDOBYHAND" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521654 SQLConstraint_1211544521655">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521646" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NOTES" name="NOTES" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521647" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MSUMCALC" name="MSUMCALC" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521654" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MNDSCALC" name="MNDSCALC" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521655" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ASUMCALC" name="ASUMCALC" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521656" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ANDSCALC" name="ANDSCALC" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521657" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OPERATOR_" name="OPERATOR_" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521658" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAINACTNDSSUM" name="MAINACTNDSSUM" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521659" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MACTNDSSUM" name="MACTNDSSUM" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521660" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ADDITIONALACTNDSSUM" name="ADDITIONALACTNDSSUM" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521661" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AACTNDSSUM" name="AACTNDSSUM" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521662" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ARATENDS" name="ARATENDS" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521663" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521645" name="PK_LEASESALDO" type="UNIQUE" members="LEASECONTRACT SALDATE RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544521652" name="CKC_ISTEMP_LSLD" type="CHECK" body="istemp IN ('Y' ,'N' )" members="ISTEMP"/>
+  <constraints xmi:id="SQLConstraint_1211544521654" name="CKC_SALDOBYH_LEASE" type="CHECK" body="saldobyhand IN ('Y' ,'N' )" members="SALDOBYHAND"/>
+  <constraints xmi:id="SQLConstraint_1211544521646" name="SYS_C004322" type="CHECK" body="&quot;LEASECONTRACT&quot; IS NOT NULL" members="LEASECONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521647" name="SYS_C004323" type="CHECK" body="&quot;SALDATE&quot; IS NOT NULL" members="SALDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521648" name="SYS_C004324" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544521649" name="SYS_C004325" type="CHECK" body="&quot;MAINCURRENCY&quot; IS NOT NULL" members="MAINCURRENCY"/>
+  <constraints xmi:id="SQLConstraint_1211544521650" name="SYS_C004326" type="CHECK" body="&quot;MAINSUM&quot; IS NOT NULL" members="MAINSUM"/>
+  <constraints xmi:id="SQLConstraint_1211544521651" name="SYS_C004327" type="CHECK" body="&quot;MAINNDSSUM&quot; IS NOT NULL" members="MAINNDSSUM"/>
+  <constraints xmi:id="SQLConstraint_1211544521653" name="SYS_C004328" type="CHECK" body="&quot;ISTEMP&quot; IS NOT NULL" members="ISTEMP"/>
+  <constraints xmi:id="SQLConstraint_1211544521655" name="SYS_C004329" type="CHECK" body="&quot;SALDOBYHAND&quot; IS NOT NULL" members="SALDOBYHAND"/>
+</RDBSchema:RDBTable>

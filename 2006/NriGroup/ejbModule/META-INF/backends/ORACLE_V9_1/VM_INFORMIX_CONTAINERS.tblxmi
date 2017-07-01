@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CONTAINERS" name="CONTAINERS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTAINER" name="CONTAINER" allowNull="true" constraints="SQLConstraint_1211544520043 SQLConstraint_1211544520044">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520043" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STORAGEPLACE" name="STORAGEPLACE" allowNull="true" constraints="SQLConstraint_1211544520045">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520044" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544520046">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520045" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTYEAR" name="CONTYEAR" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520053" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTWIDTH" name="CONTWIDTH" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520054" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTHEIGHT" name="CONTHEIGHT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520055" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTLENGTH" name="CONTLENGTH" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520056" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520043" name="PK_CONTAINERS" type="UNIQUE" members="CONTAINER"/>
+  <constraints xmi:id="SQLConstraint_1211544520044" name="SYS_C004508" type="CHECK" body="&quot;CONTAINER&quot; IS NOT NULL" members="CONTAINER"/>
+  <constraints xmi:id="SQLConstraint_1211544520045" name="SYS_C004509" type="CHECK" body="&quot;STORAGEPLACE&quot; IS NOT NULL" members="STORAGEPLACE"/>
+  <constraints xmi:id="SQLConstraint_1211544520046" name="SYS_C004510" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+</RDBSchema:RDBTable>

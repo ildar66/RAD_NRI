@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="APARTMENTS" name="APARTMENTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="APARTMENTID" name="APARTMENTID" allowNull="true" constraints="SQLConstraint_1211544518911 SQLConstraint_1211544518912">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518911" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="APARTNAME" name="APARTNAME" allowNull="true" constraints="SQLConstraint_1211544518913">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518911" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POSITION" name="POSITION" allowNull="true" constraints="SQLConstraint_1211544518914">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518912" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544518911" name="PK_APARTMENTS" type="UNIQUE" members="APARTMENTID"/>
+  <constraints xmi:id="SQLConstraint_1211544518912" name="SYS_C005954" type="CHECK" body="&quot;APARTMENTID&quot; IS NOT NULL" members="APARTMENTID"/>
+  <constraints xmi:id="SQLConstraint_1211544518913" name="SYS_C005955" type="CHECK" body="&quot;APARTNAME&quot; IS NOT NULL" members="APARTNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544518914" name="SYS_C005956" type="CHECK" body="&quot;POSITION&quot; IS NOT NULL" members="POSITION"/>
+</RDBSchema:RDBTable>

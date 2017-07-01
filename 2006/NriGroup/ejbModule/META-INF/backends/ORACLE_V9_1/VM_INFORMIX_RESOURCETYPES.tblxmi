@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RESOURCETYPES" name="RESOURCETYPES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCETYPE" name="RESOURCETYPE" allowNull="true" constraints="SQLConstraint_1211544524128 SQLConstraint_1211544524129">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524128" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544524130">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524128" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524128" name="PK_RESOURCETYPES" type="UNIQUE" members="RESOURCETYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544524129" name="SYS_C004133" type="CHECK" body="&quot;RESOURCETYPE&quot; IS NOT NULL" members="RESOURCETYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544524130" name="SYS_C004134" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+</RDBSchema:RDBTable>

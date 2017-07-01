@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DPDEVPLANS" name="DPDEVPLANS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DEVPLAN" name="DEVPLAN" allowNull="true" constraints="SQLConstraint_1211544520313 SQLConstraint_1211544520314">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520313" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="YEAR_" name="YEAR_" allowNull="true" constraints="SQLConstraint_1211544520315">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520314" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGIONID" name="REGIONID" allowNull="true" constraints="SQLConstraint_1211544520316">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520315" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PLANTYPE" name="PLANTYPE" allowNull="true" constraints="SQLConstraint_1211544520317 SQLConstraint_1211544520318">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520316" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STATE" name="STATE" allowNull="true" defaultValue="1" constraints="SQLConstraint_1211544520319 SQLConstraint_1211544520320">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520317" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROCESSID" name="PROCESSID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520318" precision="19" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PERMISSIONOBJECTID" name="PERMISSIONOBJECTID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520319" precision="19" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMMENTOBJECTID" name="COMMENTOBJECTID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520320" precision="19" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTIVESTATE" name="ACTIVESTATE" allowNull="true" defaultValue="1" constraints="SQLConstraint_1211544520321 SQLConstraint_1211544520322">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520321" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VERSION" name="VERSION" allowNull="true" defaultValue="1">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520322" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMMENT_" name="COMMENT_" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520313" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PREVIOUSDEVPLAN" name="PREVIOUSDEVPLAN" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520323" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CREATED" name="CREATED" allowNull="true" constraints="SQLConstraint_1211544520323">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520313" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CREATEDBY" name="CREATEDBY" allowNull="true" constraints="SQLConstraint_1211544520324">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520324" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MODIFIED" name="MODIFIED" allowNull="true" constraints="SQLConstraint_1211544520325">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520314" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MODIFIEDBY" name="MODIFIEDBY" allowNull="true" constraints="SQLConstraint_1211544520326">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520325" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PLANVERSIONSETID" name="PLANVERSIONSETID" allowNull="true" constraints="SQLConstraint_1211544520327">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520326" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CORRECTCAUSE" name="CORRECTCAUSE" allowNull="true" constraints="SQLConstraint_1211544520328">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520327" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520313" name="PK_DPDEVPLANS" type="UNIQUE" members="DEVPLAN"/>
+  <constraints xmi:id="SQLConstraint_1211544520317" name="CKC_PLANTYPE_DPDEV" type="CHECK" body="plantype IN (1 ,2 ,3 )" members="PLANTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544520319" name="CKC_STATE_DPDEV" type="CHECK" body="state IN (1 ,2 ,3 ,4 ,5 ,6 )" members="STATE"/>
+  <constraints xmi:id="SQLConstraint_1211544520321" name="CKC_ACTIVEST_DPDEV" type="CHECK" body="activestate IN (1 ,2 )" members="ACTIVESTATE"/>
+  <constraints xmi:id="SQLConstraint_1211544520328" name="CKC_PLAN_CORRECT_CAUSE" type="CHECK" body="correctcause IN (1 ,2 ,3 )" members="CORRECTCAUSE"/>
+  <constraints xmi:id="SQLConstraint_1211544520314" name="SYS_C003334" type="CHECK" body="&quot;DEVPLAN&quot; IS NOT NULL" members="DEVPLAN"/>
+  <constraints xmi:id="SQLConstraint_1211544520315" name="SYS_C003335" type="CHECK" body="&quot;YEAR_&quot; IS NOT NULL" members="YEAR_"/>
+  <constraints xmi:id="SQLConstraint_1211544520316" name="SYS_C003336" type="CHECK" body="&quot;REGIONID&quot; IS NOT NULL" members="REGIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544520318" name="SYS_C003337" type="CHECK" body="&quot;PLANTYPE&quot; IS NOT NULL" members="PLANTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544520320" name="SYS_C003338" type="CHECK" body="&quot;STATE&quot; IS NOT NULL" members="STATE"/>
+  <constraints xmi:id="SQLConstraint_1211544520322" name="SYS_C003339" type="CHECK" body="&quot;ACTIVESTATE&quot; IS NOT NULL" members="ACTIVESTATE"/>
+  <constraints xmi:id="SQLConstraint_1211544520323" name="SYS_C003340" type="CHECK" body="&quot;CREATED&quot; IS NOT NULL" members="CREATED"/>
+  <constraints xmi:id="SQLConstraint_1211544520324" name="SYS_C003341" type="CHECK" body="&quot;CREATEDBY&quot; IS NOT NULL" members="CREATEDBY"/>
+  <constraints xmi:id="SQLConstraint_1211544520325" name="SYS_C003342" type="CHECK" body="&quot;MODIFIED&quot; IS NOT NULL" members="MODIFIED"/>
+  <constraints xmi:id="SQLConstraint_1211544520326" name="SYS_C003343" type="CHECK" body="&quot;MODIFIEDBY&quot; IS NOT NULL" members="MODIFIEDBY"/>
+  <constraints xmi:id="SQLConstraint_1211544520327" name="SYS_C003344" type="CHECK" body="&quot;PLANVERSIONSETID&quot; IS NOT NULL" members="PLANVERSIONSETID"/>
+</RDBSchema:RDBTable>

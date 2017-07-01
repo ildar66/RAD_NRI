@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CONFAFS2CONFRULES" name="CONFAFS2CONFRULES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDDEP" name="IDDEP" allowNull="true" constraints="SQLConstraint_1211544519942 SQLConstraint_1211544519943">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519942" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SCHEMEID" name="SCHEMEID" allowNull="true" constraints="SQLConstraint_1211544519944">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519943" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RULEID" name="RULEID" allowNull="true" constraints="SQLConstraint_1211544519945">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519944" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519942" name="PK_CONFAFS2CONFRUL" type="UNIQUE" members="IDDEP"/>
+  <constraints xmi:id="SQLConstraint_1211544519943" name="SYS_C003422" type="CHECK" body="&quot;IDDEP&quot; IS NOT NULL" members="IDDEP"/>
+  <constraints xmi:id="SQLConstraint_1211544519944" name="SYS_C003423" type="CHECK" body="&quot;SCHEMEID&quot; IS NOT NULL" members="SCHEMEID"/>
+  <constraints xmi:id="SQLConstraint_1211544519945" name="SYS_C003424" type="CHECK" body="&quot;RULEID&quot; IS NOT NULL" members="RULEID"/>
+</RDBSchema:RDBTable>

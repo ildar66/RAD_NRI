@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PROJECTACTIONTYPES" name="PROJECTACTIONTYPES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROJECTACTIONTYPE" name="PROJECTACTIONTYPE" allowNull="true" constraints="SQLConstraint_1211544523657 SQLConstraint_1211544523658">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523657" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIVISION" name="DIVISION" allowNull="true" constraints="SQLConstraint_1211544523659">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523658" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544523660">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523657" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESULT" name="RESULT" allowNull="true" constraints="SQLConstraint_1211544523661">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523658" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EQUIPTYPE" name="EQUIPTYPE" allowNull="true" defaultValue="'0'" constraints="SQLConstraint_1211544523662 SQLConstraint_1211544523663">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523659" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPERESPONSIBILITY" name="TYPERESPONSIBILITY" allowNull="true" constraints="SQLConstraint_1211544523664">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523659" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523657" name="PK_PROJECTACTIONTY" type="UNIQUE" members="PROJECTACTIONTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523662" name="CKC_EQUIPTYP_PROJE" type="CHECK" body="equiptype IN ('0' ,'1' ,'2' ,'3' ,'4' )" members="EQUIPTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523658" name="SYS_C004010" type="CHECK" body="&quot;PROJECTACTIONTYPE&quot; IS NOT NULL" members="PROJECTACTIONTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523659" name="SYS_C004011" type="CHECK" body="&quot;DIVISION&quot; IS NOT NULL" members="DIVISION"/>
+  <constraints xmi:id="SQLConstraint_1211544523660" name="SYS_C004012" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+  <constraints xmi:id="SQLConstraint_1211544523661" name="SYS_C004013" type="CHECK" body="&quot;RESULT&quot; IS NOT NULL" members="RESULT"/>
+  <constraints xmi:id="SQLConstraint_1211544523663" name="SYS_C004014" type="CHECK" body="&quot;EQUIPTYPE&quot; IS NOT NULL" members="EQUIPTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523664" name="SYS_C004015" type="CHECK" body="&quot;TYPERESPONSIBILITY&quot; IS NOT NULL" members="TYPERESPONSIBILITY"/>
+</RDBSchema:RDBTable>

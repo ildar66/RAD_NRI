@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RRL_HOPS2" name="RRL_HOPS2">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HOPSID" name="HOPSID" allowNull="true" constraints="SQLConstraint_1211544524218 SQLConstraint_1211544524219">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524218" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AZIMUTH" name="AZIMUTH" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524218" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPE_HW" name="TYPE_HW" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524218" characterSet="800" length="48">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIAM_A" name="DIAM_A" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524219" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HEIGHT_A" name="HEIGHT_A" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524220" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQUENCY_A1" name="FREQUENCY_A1" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524221" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQUENCY_A2" name="FREQUENCY_A2" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524222" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POWER_A" name="POWER_A" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524223" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SIGNAL_CALC_A" name="SIGNAL_CALC_A" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524224" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SIGNAL_REAL_A" name="SIGNAL_REAL_A" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524225" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CABLE_RRL_A" name="CABLE_RRL_A" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524226" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CABLE_POWER_A" name="CABLE_POWER_A" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524227" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CABLE_2MB_A" name="CABLE_2MB_A" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524228" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMMENT_A" name="COMMENT_A" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524219" characterSet="800" length="256">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACCUMID_A" name="ACCUMID_A" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524219" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIAM_B" name="DIAM_B" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524229" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HEIGHT_B" name="HEIGHT_B" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524230" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQUENCY_B1" name="FREQUENCY_B1" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524231" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQUENCY_B2" name="FREQUENCY_B2" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524232" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POWER_B" name="POWER_B" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524233" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SIGNAL_CALC_B" name="SIGNAL_CALC_B" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524234" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SIGNAL_REAL_B" name="SIGNAL_REAL_B" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524235" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CABLE_RRL_B" name="CABLE_RRL_B" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524236" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CABLE_POWER_B" name="CABLE_POWER_B" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524237" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CABLE_2MBR_B" name="CABLE_2MBR_B" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524238" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMMENT_B" name="COMMENT_B" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524220" characterSet="800" length="256">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACCUMID_B" name="ACCUMID_B" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524220" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILE_SHORTNUMBER" name="FILE_SHORTNUMBER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524221" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILE_NUMBER" name="FILE_NUMBER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524222" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NUMBER_IN_FILE" name="NUMBER_IN_FILE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524223" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQUENCY_A_DOC" name="FREQUENCY_A_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524239" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQUENCY_B_DOC" name="FREQUENCY_B_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524240" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIAM_A_DOC" name="DIAM_A_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524241" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HEIGHT_A_DOC" name="HEIGHT_A_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524242" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIAM_B_DOC" name="DIAM_B_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524243" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HEIGHT_B_DOC" name="HEIGHT_B_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524244" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_DOC" name="RESOURCE_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524224" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POWER_DOC" name="POWER_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524245" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPEED_DOC" name="SPEED_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524221" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AZIMUTHAB_DOC" name="AZIMUTHAB_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524246" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AZIMUTHBA_DOC" name="AZIMUTHBA_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524247" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMMENT_DOC" name="COMMENT_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524222" characterSet="800" length="2000">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIAM2_A" name="DIAM2_A" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524248" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIAM2_B" name="DIAM2_B" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524249" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CAPACITY" name="CAPACITY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524225" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SFONUMBER" name="SFONUMBER" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524223" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ANTPLACEA" name="ANTPLACEA" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524226" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ANTPLACEB" name="ANTPLACEB" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524227" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SOURCE_DOC" name="SOURCE_DOC" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524224" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQUENCY_INT" name="FREQUENCY_INT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524228" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="GAIN_FACTOR" name="GAIN_FACTOR" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544524250" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SYGN_LEVEL_FACTA" name="SYGN_LEVEL_FACTA" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524229" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SYGN_LEVEL_FACTB" name="SYGN_LEVEL_FACTB" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524230" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTIVE_PARAM" name="ACTIVE_PARAM" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524231" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HEIGHT2_A" name="HEIGHT2_A" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524232" precision="8" scale="4">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HEIGHT2_B" name="HEIGHT2_B" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524233" precision="8" scale="4">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524218" name="PK_RRL_HOPS2" type="UNIQUE" members="HOPSID"/>
+  <constraints xmi:id="SQLConstraint_1211544524219" name="SYS_C005109" type="CHECK" body="&quot;HOPSID&quot; IS NOT NULL" members="HOPSID"/>
+</RDBSchema:RDBTable>

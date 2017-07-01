@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="FILIALTYPE" name="FILIALTYPE">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILIALTYPE_1" name="FILIALTYPE" allowNull="true" constraints="SQLConstraint_1211544520734 SQLConstraint_1211544520735">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520734" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544520736">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520734" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520734" name="PK_FILIALTYPE" type="UNIQUE" members="FILIALTYPE_1"/>
+  <constraints xmi:id="SQLConstraint_1211544520735" name="SYS_C003618" type="CHECK" body="&quot;FILIALTYPE&quot; IS NOT NULL" members="FILIALTYPE_1"/>
+  <constraints xmi:id="SQLConstraint_1211544520736" name="SYS_C003619" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="NFS_QUERY" name="NFS_QUERY">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDQUERY" name="IDQUERY" allowNull="true" constraints="SQLConstraint_1211544522195 SQLConstraint_1211544522196">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522195" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REQSTATE" name="REQSTATE" allowNull="true" constraints="SQLConstraint_1211544522197 SQLConstraint_1211544522198">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522195" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POSTTIME" name="POSTTIME" allowNull="true" constraints="SQLConstraint_1211544522199">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544522195" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STARTTIME" name="STARTTIME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544522196" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FINISHTIME" name="FINISHTIME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544522197" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REQTYPE" name="REQTYPE" allowNull="true" constraints="SQLConstraint_1211544522205">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522205" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SELSTARTDATE" name="SELSTARTDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544522205" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SELENDDATE" name="SELENDDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544522206" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544522195" name="PK_NFS_QUERY" type="UNIQUE" members="IDQUERY"/>
+  <constraints xmi:id="SQLConstraint_1211544522197" name="CKC_REQSTATE_NFS_Q" type="CHECK" body="reqstate IN ('Y' ,'E' ,'P' ,'O' ,'R' )" members="REQSTATE"/>
+  <constraints xmi:id="SQLConstraint_1211544522196" name="SYS_C004832" type="CHECK" body="&quot;IDQUERY&quot; IS NOT NULL" members="IDQUERY"/>
+  <constraints xmi:id="SQLConstraint_1211544522198" name="SYS_C004833" type="CHECK" body="&quot;REQSTATE&quot; IS NOT NULL" members="REQSTATE"/>
+  <constraints xmi:id="SQLConstraint_1211544522199" name="SYS_C004834" type="CHECK" body="&quot;POSTTIME&quot; IS NOT NULL" members="POSTTIME"/>
+  <constraints xmi:id="SQLConstraint_1211544522205" name="SYS_C004835" type="CHECK" body="&quot;REQTYPE&quot; IS NOT NULL" members="REQTYPE"/>
+</RDBSchema:RDBTable>

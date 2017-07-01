@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_POLPLATLINK" name="PIE_POLPLATLINK">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDACCOUNTNRI" name="IDACCOUNTNRI" allowNull="true" constraints="SQLConstraint_1211544523517 SQLConstraint_1211544523518">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523517" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDDOGOVORNRI" name="IDDOGOVORNRI" allowNull="true" constraints="SQLConstraint_1211544523517 SQLConstraint_1211544523519">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523518" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER" allowNull="true" constraints="SQLConstraint_1211544523517 SQLConstraint_1211544523520">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523519" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDPOLPLATPLATINUM" name="IDPOLPLATPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523521">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523517" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523517" name="PK_PIE_POLPLATLINK" type="UNIQUE" members="IDACCOUNTNRI IDDOGOVORNRI OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523518" name="SYS_C004076" type="CHECK" body="&quot;IDACCOUNTNRI&quot; IS NOT NULL" members="IDACCOUNTNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523519" name="SYS_C004077" type="CHECK" body="&quot;IDDOGOVORNRI&quot; IS NOT NULL" members="IDDOGOVORNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523520" name="SYS_C004078" type="CHECK" body="&quot;OWNER&quot; IS NOT NULL" members="OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523521" name="SYS_C004079" type="CHECK" body="&quot;IDPOLPLATPLATINUM&quot; IS NOT NULL" members="IDPOLPLATPLATINUM"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ETAP2HOPS" name="ETAP2HOPS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SITEDOC" name="SITEDOC" allowNull="true" constraints="SQLConstraint_1211544520703 SQLConstraint_1211544520704">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520703" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HOPSID" name="HOPSID" allowNull="true" constraints="SQLConstraint_1211544520703 SQLConstraint_1211544520705">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520704" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQPERMID" name="FREQPERMID" allowNull="true" constraints="SQLConstraint_1211544520706">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520705" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520703" name="PK_ETAP2HOPS" type="UNIQUE" members="SITEDOC HOPSID"/>
+  <constraints xmi:id="SQLConstraint_1211544520704" name="SYS_C004729" type="CHECK" body="&quot;SITEDOC&quot; IS NOT NULL" members="SITEDOC"/>
+  <constraints xmi:id="SQLConstraint_1211544520705" name="SYS_C004730" type="CHECK" body="&quot;HOPSID&quot; IS NOT NULL" members="HOPSID"/>
+  <constraints xmi:id="SQLConstraint_1211544520706" name="SYS_C004731" type="CHECK" body="&quot;FREQPERMID&quot; IS NOT NULL" members="FREQPERMID"/>
+</RDBSchema:RDBTable>

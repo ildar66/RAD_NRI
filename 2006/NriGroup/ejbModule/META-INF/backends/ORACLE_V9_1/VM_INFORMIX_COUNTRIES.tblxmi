@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="COUNTRIES" name="COUNTRIES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COUNTRY" name="COUNTRY" allowNull="true" constraints="SQLConstraint_1211544520093 SQLConstraint_1211544520094">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520093" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544520095">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520093" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CCODE" name="CCODE" allowNull="true" constraints="SQLConstraint_1211544520096">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520094" precision="2" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CMNEMONIC" name="CMNEMONIC" allowNull="true" defaultValue="'RU'" constraints="SQLConstraint_1211544520097">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520094" characterSet="800" length="8">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TELECOMCODE" name="TELECOMCODE" allowNull="true" constraints="SQLConstraint_1211544520098">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520095" precision="3" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520093" name="PK_COUNTRIES" type="UNIQUE" members="COUNTRY"/>
+  <constraints xmi:id="SQLConstraint_1211544520094" name="SYS_C006014" type="CHECK" body="&quot;COUNTRY&quot; IS NOT NULL" members="COUNTRY"/>
+  <constraints xmi:id="SQLConstraint_1211544520095" name="SYS_C006015" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+  <constraints xmi:id="SQLConstraint_1211544520096" name="SYS_C006016" type="CHECK" body="&quot;CCODE&quot; IS NOT NULL" members="CCODE"/>
+  <constraints xmi:id="SQLConstraint_1211544520097" name="SYS_C006017" type="CHECK" body="&quot;CMNEMONIC&quot; IS NOT NULL" members="CMNEMONIC"/>
+  <constraints xmi:id="SQLConstraint_1211544520098" name="SYS_C006018" type="CHECK" body="&quot;TELECOMCODE&quot; IS NOT NULL" members="TELECOMCODE"/>
+</RDBSchema:RDBTable>

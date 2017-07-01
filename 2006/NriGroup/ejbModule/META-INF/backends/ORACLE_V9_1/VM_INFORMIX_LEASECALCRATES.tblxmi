@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASECALCRATES" name="LEASECALCRATES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEDOCPOSITION" name="LEASEDOCPOSITION" allowNull="true" constraints="SQLConstraint_1211544521434 SQLConstraint_1211544521444">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521444" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CURRENCY" name="CURRENCY" allowNull="true" constraints="SQLConstraint_1211544521434 SQLConstraint_1211544521445">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521445" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RATE" name="RATE" allowNull="true" constraints="SQLConstraint_1211544521446">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521446" precision="15" scale="4">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BYHAND" name="BYHAND" allowNull="true" constraints="SQLConstraint_1211544521447 SQLConstraint_1211544521448">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521444" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACT" name="ACT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521447" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SOURCE" name="SOURCE" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544521449 SQLConstraint_1211544521450">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521448" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RATEOLD" name="RATEOLD" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521449" precision="15" scale="4">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SOURCEOLD" name="SOURCEOLD" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521450" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521434" name="PK_LEASECALCRATES" type="UNIQUE" members="LEASEDOCPOSITION CURRENCY"/>
+  <constraints xmi:id="SQLConstraint_1211544521447" name="CKC_BYHND_LESR" type="CHECK" body="byhand IN ('Y' ,'N' )" members="BYHAND"/>
+  <constraints xmi:id="SQLConstraint_1211544521449" name="CKC_SOURCE_LEASE" type="CHECK" body="source IN (0 ,1 ,2 ,3 )" members="SOURCE"/>
+  <constraints xmi:id="SQLConstraint_1211544521444" name="SYS_C004230" type="CHECK" body="&quot;LEASEDOCPOSITION&quot; IS NOT NULL" members="LEASEDOCPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544521445" name="SYS_C004231" type="CHECK" body="&quot;CURRENCY&quot; IS NOT NULL" members="CURRENCY"/>
+  <constraints xmi:id="SQLConstraint_1211544521446" name="SYS_C004232" type="CHECK" body="&quot;RATE&quot; IS NOT NULL" members="RATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521448" name="SYS_C004233" type="CHECK" body="&quot;BYHAND&quot; IS NOT NULL" members="BYHAND"/>
+  <constraints xmi:id="SQLConstraint_1211544521450" name="SYS_C004234" type="CHECK" body="&quot;SOURCE&quot; IS NOT NULL" members="SOURCE"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server>
+   <publishable memento="config" parents="">
+      <resource localPath=".repository" localTimestamp="1333"/>
+      <resource localPath="cells" localTimestamp="1334"/>
+      <resource localPath="cells/localhost" localTimestamp="1336"/>
+      <resource localPath="cells/localhost/applications" localTimestamp="1338"/>
+      <resource localPath="cells/localhost/applications/IBMUTC.ear" localTimestamp="1349"/>
+      <resource
+         localPath="cells/localhost/applications/IBMUTC.ear/deployments" localTimestamp="1351"/>
+      <resource
+         localPath="cells/localhost/applications/IBMUTC.ear/deployments/IBMUTC" localTimestamp="1358"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear" localTimestamp="71741"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments" localTimestamp="71742"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole" localTimestamp="71748"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/META-INF" localTimestamp="71750"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/adminconsole.war" localTimestamp="71751"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/adminconsole.war/WEB-INF" localTimestamp="71764"/>
+      <resource localPath="cells/localhost/applications/nri.ear" localTimestamp="59341"/>
+      <resource
+         localPath="cells/localhost/applications/nri.ear/deployments" localTimestamp="59342"/>
+      <resource
+         localPath="cells/localhost/applications/nri.ear/deployments/nri" localTimestamp="59348"/>
+      <resource localPath="cells/localhost/nodes" localTimestamp="1343"/>
+      <resource localPath="cells/localhost/nodes/localhost" localTimestamp="1350"/>
+      <resource localPath="cells/localhost/nodes/localhost/servers" localTimestamp="1356"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1" localTimestamp="1359"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/adminconsole.war/WEB-INF/ibm-web-bnd.xmi" localTimestamp="71765"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/adminconsole.war/WEB-INF/ibm-web-ext.xmi" localTimestamp="71766"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/adminconsole.war/WEB-INF/web.xml" localTimestamp="71767"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/deployment.xml" localTimestamp="71752"/>
+      <resource localPath=".repository/metadata.xml" localTimestamp="1335"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/META-INF/application.xml" localTimestamp="71760"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/META-INF/ibm-application-bnd.xmi" localTimestamp="71761"/>
+      <resource
+         localPath="cells/localhost/applications/nri.ear/deployments/nri/deployment.xml" localTimestamp="71753"/>
+      <resource localPath="cells/localhost/cell.xml" localTimestamp="71732"/>
+      <resource localPath="cells/localhost/multibroker.xml" localTimestamp="71733"/>
+      <resource localPath="cells/localhost/namestore.xml" localTimestamp="71734"/>
+      <resource localPath="cells/localhost/naming-authz.xml" localTimestamp="71735"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/META-INF/ibm-application-ext.xmi" localTimestamp="71762"/>
+      <resource
+         localPath="cells/localhost/applications/adminconsole.ear/deployments/adminconsole/META-INF/was.policy" localTimestamp="71763"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/namestore.xml" localTimestamp="71743"/>
+      <resource localPath="cells/localhost/nodes/localhost/node.xml" localTimestamp="71744"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/resources.xml" localTimestamp="71745"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/serverindex.xml" localTimestamp="71746"/>
+      <resource localPath="cells/localhost/admin-authz.xml" localTimestamp="71731"/>
+      <resource
+         localPath="cells/localhost/applications/IBMUTC.ear/deployments/IBMUTC/deployment.xml" localTimestamp="71749"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/namestore-cell.xml" localTimestamp="71754"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/namestore-node.xml" localTimestamp="71755"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/resources.xml" localTimestamp="71756"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/server.xml" localTimestamp="71757"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/variables.xml" localTimestamp="71758"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/servers/server1/ws-security.xml" localTimestamp="71759"/>
+      <resource
+         localPath="cells/localhost/nodes/localhost/variables.xml" localTimestamp="71747"/>
+      <resource localPath="cells/localhost/pmirm.xml" localTimestamp="71736"/>
+      <resource localPath="cells/localhost/resources.xml" localTimestamp="71737"/>
+      <resource localPath="cells/localhost/security.xml" localTimestamp="71738"/>
+      <resource localPath="cells/localhost/variables.xml" localTimestamp="71739"/>
+      <resource localPath="cells/localhost/virtualhosts.xml" localTimestamp="71740"/>
+   </publishable>
+</server>

@@ -1,0 +1,252 @@
+<session>
+   <date>
+      Wed May 21 12:23:08 MSD 2008
+   </date>
+   <entry>
+      <date>
+         Wed May 21 12:23:08 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.common.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Common Core plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 12:23:08 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.common.ui
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Common UI plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 12:23:08 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.presentation
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Presentation plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 12:23:08 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.umlvisualizer
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational UML Visualizer plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 12:23:08 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.bml.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational BML Core plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 12:23:08 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.uml.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational UML Core plug-in starting up...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 13:33:58 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.common.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            Activating provider 'com.rational.xtools.presentation.providers.PresentationPropertiesProvider'...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 16:31:40 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.umlvisualizer
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational UML Visualizer plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 16:31:40 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.presentation
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Presentation plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 16:31:40 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.uml.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational UML Core plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 16:31:40 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.common.ui
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Common UI plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 16:31:40 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.bml.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational BML Core plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+   <entry>
+      <date>
+         Wed May 21 16:31:40 MSD 2008
+      </date>
+      <status>
+         <plugin>
+            com.rational.xtools.common.core
+         </plugin>
+         <severity>
+            1
+         </severity>
+         <code>
+            0
+         </code>
+         <message>
+            IBM Rational Common Core plug-in shutting down...
+         </message>
+      </status>
+   </entry>
+</session>

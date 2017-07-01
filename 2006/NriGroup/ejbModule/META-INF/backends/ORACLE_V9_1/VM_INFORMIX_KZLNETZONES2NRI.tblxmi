@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="KZLNETZONES2NRI" name="KZLNETZONES2NRI">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="KZLREGIONID" name="KZLREGIONID" allowNull="true" constraints="SQLConstraint_1211544521344 SQLConstraint_1211544521345">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521344" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NETZONE" name="NETZONE" allowNull="true" constraints="SQLConstraint_1211544521346">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521345" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521344" name="PK_KZLNETZONES2NRI" type="UNIQUE" members="KZLREGIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544521345" name="SYS_C005023" type="CHECK" body="&quot;KZLREGIONID&quot; IS NOT NULL" members="KZLREGIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544521346" name="SYS_C005024" type="CHECK" body="&quot;NETZONE&quot; IS NOT NULL" members="NETZONE"/>
+</RDBSchema:RDBTable>

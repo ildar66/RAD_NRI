@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DPSPECWORKS" name="DPSPECWORKS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECWORKID" name="SPECWORKID" allowNull="true" constraints="SQLConstraint_1211544520413 SQLConstraint_1211544520414">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520413" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDBS" name="IDBS" allowNull="true" constraints="SQLConstraint_1211544520415">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520414" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECHEADERID" name="SPECHEADERID" allowNull="true" constraints="SQLConstraint_1211544520416">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520415" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTCODE" name="OBJECTCODE" allowNull="true" constraints="SQLConstraint_1211544520417">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520413" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTNAME" name="OBJECTNAME" allowNull="true" constraints="SQLConstraint_1211544520418">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520414" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NFSFILIAL" name="NFSFILIAL" allowNull="true" constraints="SQLConstraint_1211544520419">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520415" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STARTBUILDDATE" name="STARTBUILDDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520413" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTTYPE" name="OBJECTTYPE" allowNull="true" constraints="SQLConstraint_1211544520420">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520416" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESERV" name="RESERV" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520417" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520413" name="PK_DPSPECWORKS" type="UNIQUE" members="SPECWORKID"/>
+  <constraints xmi:id="SQLConstraint_1211544520414" name="SYS_C003728" type="CHECK" body="&quot;SPECWORKID&quot; IS NOT NULL" members="SPECWORKID"/>
+  <constraints xmi:id="SQLConstraint_1211544520415" name="SYS_C003729" type="CHECK" body="&quot;IDBS&quot; IS NOT NULL" members="IDBS"/>
+  <constraints xmi:id="SQLConstraint_1211544520416" name="SYS_C003730" type="CHECK" body="&quot;SPECHEADERID&quot; IS NOT NULL" members="SPECHEADERID"/>
+  <constraints xmi:id="SQLConstraint_1211544520417" name="SYS_C003731" type="CHECK" body="&quot;OBJECTCODE&quot; IS NOT NULL" members="OBJECTCODE"/>
+  <constraints xmi:id="SQLConstraint_1211544520418" name="SYS_C003732" type="CHECK" body="&quot;OBJECTNAME&quot; IS NOT NULL" members="OBJECTNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544520419" name="SYS_C003733" type="CHECK" body="&quot;NFSFILIAL&quot; IS NOT NULL" members="NFSFILIAL"/>
+  <constraints xmi:id="SQLConstraint_1211544520420" name="SYS_C003734" type="CHECK" body="&quot;OBJECTTYPE&quot; IS NOT NULL" members="OBJECTTYPE"/>
+</RDBSchema:RDBTable>

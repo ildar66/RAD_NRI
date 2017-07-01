@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="OFFICEMEMOTARGETS" name="OFFICEMEMOTARGETS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDTARGET" name="IDTARGET" allowNull="true" constraints="SQLConstraint_1211544522356 SQLConstraint_1211544522357">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522356" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544522358">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522356" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544522356" name="PK_OFFICEMEMOTARGE" type="UNIQUE" members="IDTARGET"/>
+  <constraints xmi:id="SQLConstraint_1211544522357" name="SYS_C004773" type="CHECK" body="&quot;IDTARGET&quot; IS NOT NULL" members="IDTARGET"/>
+  <constraints xmi:id="SQLConstraint_1211544522358" name="SYS_C004774" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+</RDBSchema:RDBTable>

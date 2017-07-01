@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="cidnes_d2p" name="cidnes_d2p" primaryKey="pk_cidnes_d2p">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="dlistid" name="dlistid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1185277710948">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="peopleid" name="peopleid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1185277710949">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_cidnes_d2p" name="pk_cidnes_d2p" members="dlistid peopleid" constraint="SQLConstraint_1185277710948"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_fk_people_688255" name="fk_fk_people_688255" members="peopleid" onDelete="CASCADE" constraint="SQLConstraint_1185277710949">
+    <target href="META-INF/backends/INFORMIX_V92_1/july_informix_people.tblxmi#pk_people"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1185277710948" name="pk_cidnes_d2p" type="PRIMARYKEY" primaryKey="pk_cidnes_d2p"/>
+  <constraints xmi:id="SQLConstraint_1185277710949" name="fk_fk_people_688255" type="FOREIGNKEY" referenceByKey="fk_fk_people_688255"/>
+</RDBSchema:RDBTable>

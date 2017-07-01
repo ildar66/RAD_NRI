@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="msusers" name="msusers" primaryKey="pk_msusers">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="msucode" name="msucode">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1186066253583">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="msuser" name="msuser">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1186066253583" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="mspassword" name="mspassword" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1186066253584" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_msusers" name="pk_msusers" members="msucode" constraint="SQLConstraint_1186066253583">
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_operators.tblxmi#fk_ref_215342_2153"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1186066253583" name="pk_msusers" type="PRIMARYKEY" primaryKey="pk_msusers"/>
+</RDBSchema:RDBTable>

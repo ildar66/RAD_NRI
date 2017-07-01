@@ -1,0 +1,693 @@
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.694 ----->----- Server Core plugin startup ----->-----
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.694 com.ibm.etools.server.core - 5.1.1
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.704 ->- Loading .factories extension point ->-
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server category: com.ibm.etools.websphere.category.v51
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server category: com.ibm.etools.tomcat.category.v32
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server category: com.ibm.etools.tomcat.category.v40
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server category: com.ibm.etools.tomcat.category.v41
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server category: com.ibm.etools.websphere.category.v5
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server category: com.ibm.etools.websphere.category.v4
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.tcpip.monitor.server
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.tcpip.monitor.configuration
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.publishing.server.factory.WebServerConfigurationFactory
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.publishing.server.factory.WebServerInstanceFactory
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.publishing.server.factory.StaticWebServerConfigurationFactory
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.publishing.server.factory.StaticWebServerInstanceFactory
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.websphere.v51.configuration.base
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.websphere.v51.server.remote.base
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.websphere.v51.server.base
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.serverattach.instance.express
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.serverattach.configuration.express
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.serverattach.instance.express51
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.serverattach.configuration.express51
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.websphere.v51.configuration.express
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.websphere.v51.server.remote.express
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.serverattach.instance.v5
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.serverattach.configuration.v5
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.serverattach.instance.v51
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.serverattach.configuration.v51
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.serverattach.instance.v4
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.serverattach.configuration.v4
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.etools.websphere.category.v51
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.websphere.v5.configuration.base
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.714   Loaded server resource factory: com.ibm.websphere.v5.server.remote.base
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.category.v32
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.category.v40
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.category.v41
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.server.unittest.32
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.server.local.32
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.serverConfiguration.32
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.server.unittest.40
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.server.local.40
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.serverConfiguration.40
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.server.unittest.41
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.server.local.41
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.tomcat.serverConfiguration.41
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.websphere.v51.server.express
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.websphere.v5.configuration.express
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.websphere.v5.server.remote.express
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.serverattach.instance.generic
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.serverattach.configuration.generic
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.websphere.category.v5
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.websphere.category.v4
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.websphere.tools.v4.internal.factory.WASConfigurationFactory
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724   Loaded server resource factory: com.ibm.etools.websphere.tools.v4.internal.factory.WASRemoteServerFactory
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.724 -<- Done loading .factories extension point -<-
+com.ibm.etools.server.ui   CONFIG  27/05/08 10:37.23.734 ----->----- Server UI plugin startup ----->-----
+com.ibm.etools.server.ui   CONFIG  27/05/08 10:37.23.734 com.ibm.etools.server.ui - 5.1.1
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.744 ->- Loading .startup extension point ->-
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.764   Loaded startup: com.ibm.etools.pd.server.util.startup
+com.ibm.etools.server.util CONFIG  27/05/08 10:37.23.774 ----->----- Server Util plugin startup ----->-----
+com.ibm.etools.server.util CONFIG  27/05/08 10:37.23.774 com.ibm.etools.server.util - 5.1.1
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.774   Loaded startup: com.ibm.etools.server.util.startup
+com.ibm.etools.server.core CONFIG  27/05/08 10:37.23.774 -<- Done loading .startup extension point -<-
+com.ibm.etools.server.core FINER   27/05/08 10:37.23.774 Loading existing servers and server configurations
+com.ibm.etools.server.core FINER   27/05/08 10:37.23.774 Server project: P/Servers
+com.ibm.etools.server.core FINER   27/05/08 10:37.23.774 Initial server resource load for Servers
+com.ibm.etools.server.java FINER   27/05/08 10:37.24.415 ----->----- Java Server plugin startup ----->-----
+com.ibm.etools.server.java CONFIG  27/05/08 10:37.24.415 com.ibm.etools.server.java - 5.1.1
+com.ibm.etools.server.core CONFIG  27/05/08 10:39.12.570 ->- Loading .deployableObjectAdapters extension point ->-
+com.ibm.etools.server.core CONFIG  27/05/08 10:39.12.570   Loaded deployableObjectAdapter: com.ibm.etools.server.j2ee.ear1
+com.ibm.etools.server.core CONFIG  27/05/08 10:39.12.570   Loaded deployableObjectAdapter: com.ibm.etools.server.j2ee.ear2
+com.ibm.etools.server.core CONFIG  27/05/08 10:39.12.570   Loaded deployableObjectAdapter: com.ibm.etools.server.j2ee.ear3
+com.ibm.etools.server.core CONFIG  27/05/08 10:39.12.570   Loaded deployableObjectAdapter: com.ibm.etools.server.j2ee.ejb
+com.ibm.etools.server.core CONFIG  27/05/08 10:39.12.570   Loaded deployableObjectAdapter: com.ibm.etools.server.j2ee.ejb2
+com.ibm.etools.server.core CONFIG  27/05/08 10:39.12.570   Loaded deployableObjectAdapter: com.ibm.etools.server.j2ee.ejb3
+com.ibm.etools.server.core CONFIG  27/05/08 10:39.12.570   Loaded deployableObjectAdapter: com.ibm.etools.server.j2ee.ejb4
+com.ibm.etools.server.core CONFIG  27/05/08 10:39.12.570   Loaded deployableObjectAdapter: com.ibm.etools.server.j2ee.webresource
+com.ibm.etools.server.core CONFIG  27/05/08 10:39.12.570 -<- Done loading .deployableObjectAdapters extension point -<-
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194 ->- Loading .deployableFactories extension point ->-
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.server.j2ee.appclient
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.server.j2ee.appclient13
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.server.j2ee.connector13
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.server.j2ee.ear12
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.server.j2ee.ear13
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.server.j2ee.ejb11
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.server.j2ee.ejb20
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.server.core.missingDeployableFactory
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.webtools.server
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.webtools.server.static
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194   Loaded deployableFactories: com.ibm.etools.server.looseArchive
+com.ibm.etools.server.core CONFIG  27/05/08 10:41.52.194 -<- Done loading .deployableFactories extension point -<-
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.06.973 ->- Loading .publish extension point ->-
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.06.983   Loaded publish manager: com.ibm.etools.server.core.publish.full
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.06.983   Loaded publish manager: com.ibm.etools.server.core.publish.smart
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.06.983   Loaded publish manager: com.ibm.etools.server.ui.publish.visual
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.06.983 -<- Done loading .publisher extension point -<-
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.06.983 ->- Loading .serverTasks extension point ->-
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.06.983   Loaded serverTask: com.ibm.etools.server.task.table.datasource
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.06.983   Loaded serverTask: com.ibm.etools.server.task.table.datasource
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.06.983 -<- Done loading .serverTasks extension point -<-
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.07.394 ->- Loading .deployableTasks extension point ->-
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.07.394   Loaded deployableTask: com.ibm.etools.server.task.ejbdeploy
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.07.394   Loaded deployableTask: com.ibm.etools.webtools.wdo.deploy.V5WDODeployableTask
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.07.394   Loaded deployableTask: com.ibm.etools.webtools.wdo.deploy.V51WDODeployableTask
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.07.394   Loaded deployableTask: com.ibm.etools.webtools.wdo.deploy.cloudscape.DisconnectTask
+com.ibm.etools.server.core CONFIG  27/05/08 10:42.07.394 -<- Done loading .deployableTasks extension point -<-
+com.ibm.etools.server.core WARNING 27/05/08 10:42.08.115 Could not load publish control information: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+com.ibm.etools.server.core SEVERE  27/05/08 10:42.08.425 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java:76)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:190)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.serverattach FINER   27/05/08 10:42.41.480 ----->----- Server attach plugin startup ----->-----
+com.ibm.etools.serverattach CONFIG  27/05/08 10:42.41.480 com.ibm.etools.serverattach - 5.1.1 - Tue May 27 10:42:41 MSD 2008
+com.ibm.etools.serverattach FINER   27/05/08 10:42.41.480 -----<----- Server attach plugin startup complete -----<-----
+com.ibm.etools.serverattach FINER   27/05/08 10:42.41.480 ----->----- Generic application server attach plugin startup ----->-----
+com.ibm.etools.serverattach CONFIG  27/05/08 10:42.41.480 com.ibm.etools.serverattach.generic - 5.1.1 - Tue May 27 10:42:41 MSD 2008
+com.ibm.etools.serverattach FINER   27/05/08 10:42.41.480 -----<----- Generic application server attach plugin startup complete -----<-----
+com.ibm.etools.tcpip.monitor CONFIG  27/05/08 10:42.41.500 ----->----- Monitor server plugin startup ----->-----
+com.ibm.etools.tcpip.monitor CONFIG  27/05/08 10:42.41.500 com.ibm.etools.tcpip.monitor - 5.1.2
+com.ibm.etools.tomcat        CONFIG  27/05/08 10:42.41.500 ----->----- Tomcat plugin startup ----->-----
+com.ibm.etools.tomcat        CONFIG  27/05/08 10:42.41.500 com.ibm.etools.tomcat - 5.1.1
+com.ibm.etools.tomcat        FINER   27/05/08 10:42.41.500 install loc: C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\eclipse\jre\jre
+com.ibm.etools.serverattach  FINER   27/05/08 10:42.41.530 ----->----- v4 server attach plugin startup ----->-----
+com.ibm.etools.serverattach  CONFIG  27/05/08 10:42.41.530 com.ibm.etools.serverattach.v4 - 5.1.1 - Tue May 27 10:42:41 MSD 2008
+com.ibm.etools.serverattach  FINER   27/05/08 10:42.41.530 -----<----- v4 server attach plugin startup complete -----<-----
+com.ibm.etools.serverattach  FINER   27/05/08 10:42.41.540 ----->----- V5 Express server attach plugin startup ----->-----
+com.ibm.etools.serverattach  CONFIG  27/05/08 10:42.41.540 com.ibm.etools.serverattach.express - 5.1.1 - Tue May 27 10:42:41 MSD 2008
+com.ibm.etools.serverattach  FINER   27/05/08 10:42.41.540 -----<----- V5 Express server attach plugin startup complete -----<-----
+com.ibm.etools.serverattach  FINER   27/05/08 10:42.41.540 ----->----- v5 server attach plugin startup ----->-----
+com.ibm.etools.serverattach  CONFIG  27/05/08 10:42.41.540 com.ibm.etools.serverattach.v5 - 5.1.1 - Tue May 27 10:42:41 MSD 2008
+com.ibm.etools.serverattach  FINER   27/05/08 10:42.41.540 -----<----- v5 server attach plugin startup complete -----<-----
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132 ->- Loading .launchableAdapters extension point ->-
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableAdapter: com.ibm.etools.publishing.server.web
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableAdapter: com.ibm.etools.publishing.server.staticweb
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableAdapter: com.ibm.etools.websphere.web
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableAdapter: com.ibm.etools.websphere.ejb
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableAdapter: com.ibm.etools.websphere.ear
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableAdapter: com.ibm.etools.serverattach.web
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableAdapter: com.ibm.etools.serverattach.ejb
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableAdapter: com.ibm.etools.tomcat.web
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132 -<- Done loading .launchableAdapters extension point -<-
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132 ->- Loading .launchableClients extension point ->-
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableClient: com.ibm.etools.tcpip.monitor.client
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableClient: com.ibm.etools.websphere.ejb.remote
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableClient: com.ibm.etools.websphere.ejb.local
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableClient: com.ibm.etools.server.core.launchableClient.null
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableClient: com.ibm.debug.activescript.ui.activescriptlauncher
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableClient: com.ibm.etools.server.util.web
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132   Loaded launchableClient: com.ibm.etools.server.util.jndi
+com.ibm.etools.server.core   CONFIG  27/05/08 10:42.43.132 -<- Done loading .launchableClients extension point -<-
+com.ibm.etools.server.ui     FINER   27/05/08 11:00.07.389 Attempting to load client: LaunchableClient[com.ibm.etools.websphere.ejb.local]
+com.ibm.etools.server.core   SEVERE  27/05/08 11:04.16.452 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:190)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.ui     FINER   27/05/08 11:04.49.176 Attempting to load client: LaunchableClient[com.ibm.etools.websphere.ejb.local]
+com.ibm.etools.server.core   SEVERE  27/05/08 11:09.45.503 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:190)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 11:12.08.154 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.ui     FINER   27/05/08 11:26.11.212 Getting command manager for L/Servers/NriServer.wsi
+com.ibm.etools.server.ui     FINER   27/05/08 11:26.11.212 Creating new command manager for L/Servers/NriServer.wsi
+com.ibm.etools.server.ui     FINER   27/05/08 11:26.11.212 Getting command manager for F/Servers/NriServer.wsc
+com.ibm.etools.server.ui     FINER   27/05/08 11:26.11.212 Creating new command manager for F/Servers/NriServer.wsc
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.332 ->- Loading .editorActionFactories extension point ->-
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.332   Loaded editorAction: com.ibm.etools.websphere.tools.v51.changeScope
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.332   Loaded editorAction: com.ibm.etools.websphere.tools.v5.changeScope
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.332 -<- Done loading .editorActionFactories extension point -<-
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.342 ->- Loading .editorPageFactories extension point ->-
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.tcpip.monitor.server.editor
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.publishing.server.editor.instance
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.publishing.server.editor.configuration
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.publishing.server.editor.staticWebServer
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.publishing.server.editor.staticWebConfiguration
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.serverattach.configuration.editor.express
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.serverattach.configuration.editor.v5
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.serverattach.configuration.editor.v4
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.server.editor.general
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.server.editor.remote
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.general
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.environment
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.web
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.datasource
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.port
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.variable
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.trace
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.security
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.ejb
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.j2c
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.jms
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v51.configuration.editor.applications
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.serverattach.editor
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.tomcat.server.editor.general
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.tomcat.server.editor.environment
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.tomcat.server.configuration.editor.port
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.tomcat.server.configuration.editor.webmodule
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.tomcat.server.configuration.editor.mimemapping
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.serverattach.configuration.editor
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.server.editor.general
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.server.editor.remote
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.general
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.environment
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.web
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.datasource
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.port
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.variable
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.trace
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.security
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.ejb
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.j2c
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.jms
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v5.configuration.editor.applications
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v4.server.editor.general
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v4.server.editor.environment
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v4.server.editor.general.remote
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v4.configuration.editor.general
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v4.configuration.editor.web
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v4.configuration.editor.datasource
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v4.configuration.editor.port
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v4.configuration.editor.trace
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.v4.configuration.editor.security
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352   Loaded editorPage: com.ibm.etools.websphere.tools.v4.configuration.editor.ejb
+com.ibm.etools.server.ui     CONFIG  27/05/08 11:26.11.352 -<- Done loading .editorPageFactories extension point -<-
+com.ibm.etools.server.core   SEVERE  27/05/08 11:27.13.295 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 11:28.23.269 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 12:02.01.029 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.ui     FINER   27/05/08 12:04.03.943 Attempting to load client: LaunchableClient[com.ibm.etools.websphere.ejb.local]
+com.ibm.etools.server.ui     WARNING 27/05/08 13:01.02.979 updateServerPath() failed
+java.lang.NullPointerException
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.NullPointerException.<init>(NullPointerException.java:63)
+	at com.ibm.etools.server.core.ServerUtil.findUnusedResourceName(ServerUtil.java:1016)
+	at com.ibm.etools.server.ui.internal.wizardpage.SelectServerWizardPage.updateServerPath(SelectServerWizardPage.java:1220)
+	at com.ibm.etools.server.ui.internal.wizardpage.SelectServerWizardPage.setVisible(SelectServerWizardPage.java:1208)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:986)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:476)
+	at org.eclipse.jface.window.Window.create(Window.java:302)
+	at org.eclipse.jface.window.Window.open(Window.java:552)
+	at com.ibm.etools.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:184)
+	at com.ibm.etools.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:408)
+	at com.ibm.etools.server.ui.actions.RunOnServerAction.run(RunOnServerAction.java:44)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:842)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:456)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetEvent(ActionContributionItem.java)
+	at org.eclipse.jface.action.ActionContributionItem.access$0(ActionContributionItem.java)
+	at org.eclipse.jface.action.ActionContributionItem$ActionListener.handleEvent(ActionContributionItem.java)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1402)
+	at org.eclipse.ui.internal.Workbench.run(Workbench.java:1385)
+	at org.eclipse.core.internal.boot.InternalBootLoader.run(InternalBootLoader.java:858)
+	at org.eclipse.core.boot.BootLoader.run(BootLoader.java:461)
+	at java.lang.reflect.AccessibleObject.invokeL(AccessibleObject.java:207)
+	at java.lang.reflect.Method.invoke(Method.java:271)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:291)
+	at org.eclipse.core.launcher.Main.run(Main.java:747)
+	at org.eclipse.core.launcher.Main.main(Main.java:583)
+com.ibm.etools.server.ui     FINER   27/05/08 13:01.13.493 Task: com.ibm.etools.server.task.ejbdeploy
+com.ibm.etools.server.ui     FINER   27/05/08 13:01.13.493   Result: 0 EJB deploy finished successfully
+com.ibm.etools.server.core   SEVERE  27/05/08 13:01.16.256 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 13:28.35.260 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.ui     WARNING 27/05/08 13:29.06.992 updateServerPath() failed
+java.lang.NullPointerException
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.NullPointerException.<init>(NullPointerException.java:63)
+	at com.ibm.etools.server.core.ServerUtil.findUnusedResourceName(ServerUtil.java:1016)
+	at com.ibm.etools.server.ui.internal.wizardpage.SelectServerWizardPage.updateServerPath(SelectServerWizardPage.java:1220)
+	at com.ibm.etools.server.ui.internal.wizardpage.SelectServerWizardPage.setVisible(SelectServerWizardPage.java:1208)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:986)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:476)
+	at org.eclipse.jface.window.Window.create(Window.java:302)
+	at org.eclipse.jface.window.Window.open(Window.java:552)
+	at com.ibm.etools.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:184)
+	at com.ibm.etools.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:408)
+	at com.ibm.etools.server.ui.actions.RunOnServerAction.run(RunOnServerAction.java:44)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:842)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:456)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetEvent(ActionContributionItem.java)
+	at org.eclipse.jface.action.ActionContributionItem.access$0(ActionContributionItem.java)
+	at org.eclipse.jface.action.ActionContributionItem$ActionListener.handleEvent(ActionContributionItem.java)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1402)
+	at org.eclipse.ui.internal.Workbench.run(Workbench.java:1385)
+	at org.eclipse.core.internal.boot.InternalBootLoader.run(InternalBootLoader.java:858)
+	at org.eclipse.core.boot.BootLoader.run(BootLoader.java:461)
+	at java.lang.reflect.AccessibleObject.invokeL(AccessibleObject.java:207)
+	at java.lang.reflect.Method.invoke(Method.java:271)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:291)
+	at org.eclipse.core.launcher.Main.run(Main.java:747)
+	at org.eclipse.core.launcher.Main.main(Main.java:583)
+com.ibm.etools.server.ui     WARNING 27/05/08 13:30.18.147 updateServerPath() failed
+java.lang.NullPointerException
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.NullPointerException.<init>(NullPointerException.java:63)
+	at com.ibm.etools.server.core.ServerUtil.findUnusedResourceName(ServerUtil.java:1016)
+	at com.ibm.etools.server.ui.internal.wizardpage.SelectServerWizardPage.updateServerPath(SelectServerWizardPage.java:1220)
+	at com.ibm.etools.server.ui.internal.wizardpage.SelectServerWizardPage.setVisible(SelectServerWizardPage.java:1208)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:986)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:476)
+	at org.eclipse.jface.window.Window.create(Window.java:302)
+	at org.eclipse.jface.window.Window.open(Window.java:552)
+	at com.ibm.etools.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:184)
+	at com.ibm.etools.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:408)
+	at com.ibm.etools.server.ui.actions.RunOnServerAction.run(RunOnServerAction.java:44)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:842)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:456)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetEvent(ActionContributionItem.java)
+	at org.eclipse.jface.action.ActionContributionItem.access$0(ActionContributionItem.java)
+	at org.eclipse.jface.action.ActionContributionItem$ActionListener.handleEvent(ActionContributionItem.java)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1402)
+	at org.eclipse.ui.internal.Workbench.run(Workbench.java:1385)
+	at org.eclipse.core.internal.boot.InternalBootLoader.run(InternalBootLoader.java:858)
+	at org.eclipse.core.boot.BootLoader.run(BootLoader.java:461)
+	at java.lang.reflect.AccessibleObject.invokeL(AccessibleObject.java:207)
+	at java.lang.reflect.Method.invoke(Method.java:271)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:291)
+	at org.eclipse.core.launcher.Main.run(Main.java:747)
+	at org.eclipse.core.launcher.Main.main(Main.java:583)
+com.ibm.etools.server.core   SEVERE  27/05/08 13:39.18.651 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.ui     WARNING 27/05/08 13:47.02.301 updateServerPath() failed
+java.lang.NullPointerException
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.NullPointerException.<init>(NullPointerException.java:63)
+	at com.ibm.etools.server.core.ServerUtil.findUnusedResourceName(ServerUtil.java:1016)
+	at com.ibm.etools.server.ui.internal.wizardpage.SelectServerWizardPage.updateServerPath(SelectServerWizardPage.java:1220)
+	at com.ibm.etools.server.ui.internal.wizardpage.SelectServerWizardPage.setVisible(SelectServerWizardPage.java:1208)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:986)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:476)
+	at org.eclipse.jface.window.Window.create(Window.java:302)
+	at org.eclipse.jface.window.Window.open(Window.java:552)
+	at com.ibm.etools.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:184)
+	at com.ibm.etools.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:408)
+	at com.ibm.etools.server.ui.actions.RunOnServerAction.run(RunOnServerAction.java:44)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:842)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:456)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetEvent(ActionContributionItem.java)
+	at org.eclipse.jface.action.ActionContributionItem.access$0(ActionContributionItem.java)
+	at org.eclipse.jface.action.ActionContributionItem$ActionListener.handleEvent(ActionContributionItem.java)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1402)
+	at org.eclipse.ui.internal.Workbench.run(Workbench.java:1385)
+	at org.eclipse.core.internal.boot.InternalBootLoader.run(InternalBootLoader.java:858)
+	at org.eclipse.core.boot.BootLoader.run(BootLoader.java:461)
+	at java.lang.reflect.AccessibleObject.invokeL(AccessibleObject.java:207)
+	at java.lang.reflect.Method.invoke(Method.java:271)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:291)
+	at org.eclipse.core.launcher.Main.run(Main.java:747)
+	at org.eclipse.core.launcher.Main.main(Main.java:583)
+com.ibm.etools.server.core   SEVERE  27/05/08 13:48.51.828 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 13:49.57.115 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.ui     WARNING 27/05/08 13:51.26.455 updateServerPath() failed
+java.lang.NullPointerException
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.NullPointerException.<init>(NullPointerException.java:63)
+	at com.ibm.etools.server.core.ServerUtil.findUnusedResourceName(ServerUtil.java:1016)
+	at com.ibm.etools.server.ui.internal.wizardpage.SelectServerWizardPage.updateServerPath(SelectServerWizardPage.java:1220)
+	at com.ibm.etools.server.ui.internal.wizardpage.SelectServerWizardPage.setVisible(SelectServerWizardPage.java:1208)
+	at org.eclipse.jface.wizard.WizardDialog.showStartingPage(WizardDialog.java:986)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:476)
+	at org.eclipse.jface.window.Window.create(Window.java:302)
+	at org.eclipse.jface.window.Window.open(Window.java:552)
+	at com.ibm.etools.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:184)
+	at com.ibm.etools.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:408)
+	at com.ibm.etools.server.ui.actions.RunOnServerAction.run(RunOnServerAction.java:44)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:842)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:456)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetEvent(ActionContributionItem.java)
+	at org.eclipse.jface.action.ActionContributionItem.access$0(ActionContributionItem.java)
+	at org.eclipse.jface.action.ActionContributionItem$ActionListener.handleEvent(ActionContributionItem.java)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1402)
+	at org.eclipse.ui.internal.Workbench.run(Workbench.java:1385)
+	at org.eclipse.core.internal.boot.InternalBootLoader.run(InternalBootLoader.java:858)
+	at org.eclipse.core.boot.BootLoader.run(BootLoader.java:461)
+	at java.lang.reflect.AccessibleObject.invokeL(AccessibleObject.java:207)
+	at java.lang.reflect.Method.invoke(Method.java:271)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:291)
+	at org.eclipse.core.launcher.Main.run(Main.java:747)
+	at org.eclipse.core.launcher.Main.main(Main.java:583)
+com.ibm.etools.server.core   SEVERE  27/05/08 15:55.24.278 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 16:01.31.732 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 16:17.23.665 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 16:18.19.900 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 16:24.48.870 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 16:27.13.614 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.core   SEVERE  27/05/08 16:30.55.361 Could not save publish control information
+java.io.FileNotFoundException: C:\workSpasesNew\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\publish\data0.xml (Системе не удается найти указанный путь.
+)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.lang.Throwable.<init>(Throwable.java)
+	at java.io.FileNotFoundException.<init>(FileNotFoundException.java)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:85)
+	at java.io.FileWriter.<init>(FileWriter.java:52)
+	at com.ibm.etools.server.core.util.XMLMemento.saveMemento(XMLMemento.java:374)
+	at com.ibm.etools.server.core.internal.PublishInfo.saveServerPublishControls(PublishInfo.java:263)
+	at com.ibm.etools.server.core.internal.PublishInfo.save(PublishInfo.java:215)
+	at com.ibm.etools.server.core.internal.ServerControl.publish(ServerControl.java:722)
+	at com.ibm.etools.server.ui.internal.publish.PublishDialog$7.run(PublishDialog.java:738)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:101)
+com.ibm.etools.server.ui     FINER   27/05/08 16:59.19.932 Releasing command manager for L/Servers/NriServer.wsi
+com.ibm.etools.server.ui     FINER   27/05/08 16:59.19.932 Releasing command manager for F/Servers/NriServer.wsc
+com.ibm.etools.tomcat        CONFIG  27/05/08 16:59.20.332 -----<----- Tomcat plugin shutdown -----<-----
+com.ibm.etools.server.util   CONFIG  27/05/08 16:59.20.372 ----->----- Server Util plugin shutdown ----->-----
+com.ibm.etools.server.java   FINER   27/05/08 16:59.20.402 -----<----- Java Server plugin shutdown -----<-----
+com.ibm.etools.server.ui     CONFIG  27/05/08 16:59.20.402 -----<----- Server UI plugin shutdown -----<-----
+com.ibm.etools.server.ui     FINER   27/05/08 16:59.20.402 Disposing of element images
+com.ibm.etools.server.ui     FINER   27/05/08 16:59.20.402 Could not dispose of images
+com.ibm.etools.server.core   CONFIG  27/05/08 16:59.20.413 -----<----- Server Core plugin shutdown -----<-----

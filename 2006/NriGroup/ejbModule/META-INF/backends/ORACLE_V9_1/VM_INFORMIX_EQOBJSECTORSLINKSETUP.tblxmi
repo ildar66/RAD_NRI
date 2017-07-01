@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="EQOBJSECTORSLINKSETUP" name="EQOBJSECTORSLINKSETUP">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CLASSID" name="CLASSID" allowNull="true" constraints="SQLConstraint_1211544520583 SQLConstraint_1211544520584">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520583" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECTORSLINK" name="SECTORSLINK" allowNull="true" constraints="SQLConstraint_1211544520585 SQLConstraint_1211544520586">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520583" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520583" name="PK_EQOBJSECTORSLIN" type="UNIQUE" members="CLASSID"/>
+  <constraints xmi:id="SQLConstraint_1211544520585" name="CKC_SECTORSL_EQOBJ" type="CHECK" body="sectorslink IN ('N' ,'O' ,'9' ,'T' )" members="SECTORSLINK"/>
+  <constraints xmi:id="SQLConstraint_1211544520584" name="SYS_C003469" type="CHECK" body="&quot;CLASSID&quot; IS NOT NULL" members="CLASSID"/>
+  <constraints xmi:id="SQLConstraint_1211544520586" name="SYS_C003470" type="CHECK" body="&quot;SECTORSLINK&quot; IS NOT NULL" members="SECTORSLINK"/>
+</RDBSchema:RDBTable>

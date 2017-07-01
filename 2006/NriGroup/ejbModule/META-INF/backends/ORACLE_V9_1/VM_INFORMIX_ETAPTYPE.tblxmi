@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ETAPTYPE" name="ETAPTYPE">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ETAPTYPEID" name="ETAPTYPEID" allowNull="true" constraints="SQLConstraint_1211544520693 SQLConstraint_1211544520694">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520693" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ETTYPENAME" name="ETTYPENAME" allowNull="true" constraints="SQLConstraint_1211544520695">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520693" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HAVEENDTIME" name="HAVEENDTIME" allowNull="true" constraints="SQLConstraint_1211544520696 SQLConstraint_1211544520697">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520694" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HAVEHOPSLINK" name="HAVEHOPSLINK" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544520698 SQLConstraint_1211544520699">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520695" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HAVEPAYCHECK" name="HAVEPAYCHECK" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544520700 SQLConstraint_1211544520701">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520696" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520693" name="PK_ETAPTYPE" type="UNIQUE" members="ETAPTYPEID"/>
+  <constraints xmi:id="SQLConstraint_1211544520696" name="CKC_HAVEENDT_ETAPT" type="CHECK" body="haveendtime IN ('Y' ,'N' )" members="HAVEENDTIME"/>
+  <constraints xmi:id="SQLConstraint_1211544520698" name="CKC_HAVEHOPS_ETAPT" type="CHECK" body="havehopslink IN ('Y' ,'N' )" members="HAVEHOPSLINK"/>
+  <constraints xmi:id="SQLConstraint_1211544520700" name="CKC_HAVEPAYC_ETAPT" type="CHECK" body="havepaycheck IN ('Y' ,'N' )" members="HAVEPAYCHECK"/>
+  <constraints xmi:id="SQLConstraint_1211544520694" name="SYS_C004694" type="CHECK" body="&quot;ETAPTYPEID&quot; IS NOT NULL" members="ETAPTYPEID"/>
+  <constraints xmi:id="SQLConstraint_1211544520695" name="SYS_C004695" type="CHECK" body="&quot;ETTYPENAME&quot; IS NOT NULL" members="ETTYPENAME"/>
+  <constraints xmi:id="SQLConstraint_1211544520697" name="SYS_C004696" type="CHECK" body="&quot;HAVEENDTIME&quot; IS NOT NULL" members="HAVEENDTIME"/>
+  <constraints xmi:id="SQLConstraint_1211544520699" name="SYS_C004697" type="CHECK" body="&quot;HAVEHOPSLINK&quot; IS NOT NULL" members="HAVEHOPSLINK"/>
+  <constraints xmi:id="SQLConstraint_1211544520701" name="SYS_C004698" type="CHECK" body="&quot;HAVEPAYCHECK&quot; IS NOT NULL" members="HAVEPAYCHECK"/>
+</RDBSchema:RDBTable>

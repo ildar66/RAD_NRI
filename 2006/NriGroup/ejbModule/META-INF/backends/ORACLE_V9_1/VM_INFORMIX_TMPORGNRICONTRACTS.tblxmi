@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TMPORGNRICONTRACTS" name="TMPORGNRICONTRACTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDORGNRI" name="IDORGNRI" allowNull="true" constraints="SQLConstraint_1211544525300 SQLConstraint_1211544525301">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525300" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDCONTRACT" name="IDCONTRACT" allowNull="true" constraints="SQLConstraint_1211544525300 SQLConstraint_1211544525302">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525301" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDFILIAL" name="IDFILIAL" allowNull="true" constraints="SQLConstraint_1211544525303">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525302" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDOWNERNFS" name="IDOWNERNFS" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525303" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPECONTRACT" name="TYPECONTRACT" allowNull="true" constraints="SQLConstraint_1211544525304">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525300" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525300" name="PK_TMPORGNRICONTRA" type="UNIQUE" members="IDORGNRI IDCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544525301" name="SYS_C005946" type="CHECK" body="&quot;IDORGNRI&quot; IS NOT NULL" members="IDORGNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544525302" name="SYS_C005947" type="CHECK" body="&quot;IDCONTRACT&quot; IS NOT NULL" members="IDCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544525303" name="SYS_C005948" type="CHECK" body="&quot;IDFILIAL&quot; IS NOT NULL" members="IDFILIAL"/>
+  <constraints xmi:id="SQLConstraint_1211544525304" name="SYS_C005949" type="CHECK" body="&quot;TYPECONTRACT&quot; IS NOT NULL" members="TYPECONTRACT"/>
+</RDBSchema:RDBTable>

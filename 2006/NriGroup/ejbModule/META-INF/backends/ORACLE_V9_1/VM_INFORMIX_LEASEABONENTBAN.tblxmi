@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEABONENTBAN" name="LEASEABONENTBAN">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEDOCUMENT" name="LEASEDOCUMENT" allowNull="true" constraints="SQLConstraint_1211544521404 SQLConstraint_1211544521405">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521404" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAN" name="BAN" allowNull="true" constraints="SQLConstraint_1211544521406">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521405" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIL_ACCOUNTTYPE" name="BIL_ACCOUNTTYPE" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521404" characterSet="800" length="12">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIL_ACCTYPENAME" name="BIL_ACCTYPENAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521405" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIL_INN" name="BIL_INN" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521406" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIL_NAME" name="BIL_NAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521407" characterSet="800" length="600">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIL_CONTRSTATUS" name="BIL_CONTRSTATUS" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521408" characterSet="800" length="8">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIL_CONTRSTNAME" name="BIL_CONTRSTNAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521409" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIL_CONTRSTDATE" name="BIL_CONTRSTDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521404" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIL_STARTSERVDATE" name="BIL_STARTSERVDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521405" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIL_SUSPDATE" name="BIL_SUSPDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521406" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIL_BILLADDRESS" name="BIL_BILLADDRESS" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521410" characterSet="800" length="400">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGWORKPIE" name="FLAGWORKPIE" allowNull="true" constraints="SQLConstraint_1211544521407 SQLConstraint_1211544521408">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521411" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="USEALLBEN" name="USEALLBEN" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521409 SQLConstraint_1211544521410">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521412" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BALANS" name="BALANS" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521406" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAINPOSITION" name="MAINPOSITION" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521407" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROCTYPE" name="PROCTYPE" allowNull="true" constraints="SQLConstraint_1211544521411">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521413" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="USEINACTS" name="USEINACTS" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521412 SQLConstraint_1211544521413">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521414" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TECHCONTRACT" name="TECHCONTRACT" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521414 SQLConstraint_1211544521415">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521415" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521404" name="PK_LEASEABONENTBAN" type="UNIQUE" members="LEASEDOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521407" name="CKC_FLAGWORK_PIEA" type="CHECK" body="flagworkpie IN ('Y' ,'N' )" members="FLAGWORKPIE"/>
+  <constraints xmi:id="SQLConstraint_1211544521409" name="CKC_USEALLBE_LEASE" type="CHECK" body="useallben IN ('Y' ,'N' )" members="USEALLBEN"/>
+  <constraints xmi:id="SQLConstraint_1211544521412" name="CKC_USEINACT_LEASE" type="CHECK" body="useinacts IN ('Y' ,'N' )" members="USEINACTS"/>
+  <constraints xmi:id="SQLConstraint_1211544521414" name="CKC_TECHCONT_LEASE" type="CHECK" body="techcontract IN ('Y' ,'N' )" members="TECHCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521411" name="CKC_PROCTYPE_LEASE" type="CHECK" body="(proctype IS NULL ) OR (proctype IN ('A' ,'B' ,'C' ,'D' ,'E' )) " members="PROCTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544521405" name="SYS_C004041" type="CHECK" body="&quot;LEASEDOCUMENT&quot; IS NOT NULL" members="LEASEDOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521406" name="SYS_C004042" type="CHECK" body="&quot;BAN&quot; IS NOT NULL" members="BAN"/>
+  <constraints xmi:id="SQLConstraint_1211544521408" name="SYS_C004043" type="CHECK" body="&quot;FLAGWORKPIE&quot; IS NOT NULL" members="FLAGWORKPIE"/>
+  <constraints xmi:id="SQLConstraint_1211544521410" name="SYS_C004044" type="CHECK" body="&quot;USEALLBEN&quot; IS NOT NULL" members="USEALLBEN"/>
+  <constraints xmi:id="SQLConstraint_1211544521413" name="SYS_C004045" type="CHECK" body="&quot;USEINACTS&quot; IS NOT NULL" members="USEINACTS"/>
+  <constraints xmi:id="SQLConstraint_1211544521415" name="SYS_C004046" type="CHECK" body="&quot;TECHCONTRACT&quot; IS NOT NULL" members="TECHCONTRACT"/>
+</RDBSchema:RDBTable>

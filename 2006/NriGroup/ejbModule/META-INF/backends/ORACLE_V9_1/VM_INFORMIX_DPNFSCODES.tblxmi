@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DPNFSCODES" name="DPNFSCODES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDREC" name="IDREC" allowNull="true" constraints="SQLConstraint_1211544520333 SQLConstraint_1211544520334">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520333" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECTID" name="SECTID" allowNull="true" constraints="SQLConstraint_1211544520335">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520334" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544520336">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520335" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAND" name="BAND" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520336" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARENT_ITEM_ID" name="PARENT_ITEM_ID" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520333" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ITEM_ID" name="ITEM_ID" allowNull="true" constraints="SQLConstraint_1211544520337">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520334" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="UNIT" name="UNIT" allowNull="true" constraints="SQLConstraint_1211544520338">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520343" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520333" name="PK_DPNFSCODES" type="UNIQUE" members="IDREC"/>
+  <constraints xmi:id="SQLConstraint_1211544520334" name="SYS_C003603" type="CHECK" body="&quot;IDREC&quot; IS NOT NULL" members="IDREC"/>
+  <constraints xmi:id="SQLConstraint_1211544520335" name="SYS_C003604" type="CHECK" body="&quot;SECTID&quot; IS NOT NULL" members="SECTID"/>
+  <constraints xmi:id="SQLConstraint_1211544520336" name="SYS_C003605" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544520337" name="SYS_C003606" type="CHECK" body="&quot;ITEM_ID&quot; IS NOT NULL" members="ITEM_ID"/>
+  <constraints xmi:id="SQLConstraint_1211544520338" name="SYS_C003607" type="CHECK" body="&quot;UNIT&quot; IS NOT NULL" members="UNIT"/>
+</RDBSchema:RDBTable>

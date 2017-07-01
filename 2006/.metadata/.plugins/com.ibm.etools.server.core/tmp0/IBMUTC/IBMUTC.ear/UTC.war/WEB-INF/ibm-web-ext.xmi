@@ -1,0 +1,10 @@
+<webappext:WebAppExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappext="webappext.xmi" xmlns:webapplication="webapplication.xmi" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmi:id="WebAppExtension_1"
+  reloadInterval="3"
+  reloadingEnabled="false"
+  defaultErrorPage="error.jsp"
+  additionalClassPath="C:\ildar\RAD_NRI\nri\jakarta-regexp-1.2.jar;C:\ildar\RAD_NRI\nri\junit.jar;C:\ildar\RAD_NRI\NRI-AppLogic\classes;C:/ildar/RAD_NRI/SequenceGenerator/ejbModule;C:/ildar/RAD_NRI/OIDGenerator/ejbModule;C:/ildar/RAD_NRI/NriGroup/ejbModule;C:\ildar\RAD_NRI\NriTestClient\appClientModule;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/classes;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/commons-beanutils.jar;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/commons-collections.jar;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/commons-digester.jar;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/commons-fileupload.jar;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/commons-lang.jar;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/commons-logging.jar;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/commons-validator.jar;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/jakarta-oro.jar;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/junit.jar;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/junitee.jar;C:/ildar/RAD_NRI/SecurityApp/WebContent/WEB-INF/lib/struts.jar"
+  fileServingEnabled="true"
+  directoryBrowsingEnabled="false"
+  serveServletsByClassnameEnabled="false">
+	<webApp href="WEB-INF/web.xml#WebApp"/>
+</webappext:WebAppExtension>

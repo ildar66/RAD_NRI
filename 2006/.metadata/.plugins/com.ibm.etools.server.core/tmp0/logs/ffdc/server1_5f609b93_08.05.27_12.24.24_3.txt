@@ -1,0 +1,94 @@
+------Start of DE processing------ = [08.05.27 12:24:24:317 MSD] , key = java.lang.RuntimeException com.ibm.ejs.util.tran.SyncDriver.beforeCompletion 155
+Exception = java.lang.RuntimeException
+Source = com.ibm.ejs.util.tran.SyncDriver.beforeCompletion
+probeid = 155
+Stack Dump = java.lang.RuntimeException: javax.ejb.EJBException: nested exception is: com.ibm.ws.ejbpersistence.utilpm.PersistenceManagerException: PMGR1000E: Exception occurred :DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: null..
+	at com.ibm.ejs.container.ContainerTx.beforeCompletion(ContainerTx.java:643)
+	at com.ibm.ejs.util.tran.SyncDriver.beforeCompletion(SyncDriver.java:279)
+	at com.ibm.ws.Transaction.JTA.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:110)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalPrepare(TransactionImpl.java:1211)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.commit(TransactionImpl.java:960)
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.commit(TranManagerImpl.java:150)
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.commit(TranManagerSet.java:182)
+	at com.ibm.ejs.csi.TranStrategy.commit(TranStrategy.java:712)
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java:167)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:565)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:3038)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:2916)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.addProfile(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:1340)
+	at com.nri.ejb._SecurityActionProcessorFacade_Stub.addProfile(_SecurityActionProcessorFacade_Stub.java:3610)
+	at com.nri.model.ejb.SecurityActionProcessorImpl.addProfile(SecurityActionProcessorImpl.java:1526)
+	at com.nri.security.model.test.SecurityActionProcessorTests.testAddFindDeleteProfile(SecurityActionProcessorTests.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at junit.htmlui.TestRunner.runTest(TestRunner.java:482)
+	at junit.htmlui.TestRunner.runTests(TestRunner.java:432)
+	at junit.htmlui.TestRunner.start(TestRunner.java:100)
+	at junit.htmlui.TestServletBase.doGet(TestServletBase.java:84)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.util.tran.SyncDriver
+com.ibm.ejs.util.tran.SyncDriver@6e545b8b
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue May 27 12:24:24 MSD 2008
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@2a0d1b95
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = com.ibm.ws.webcontainer.metadata.WebComponentMetaDataImpl@40429b87
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@6e511b8b
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@6e9c9b8b#tid=28
+  State                   = Active
+  Entered beforCompletion = true
+  Marked Rollback Only    = false
+  Method Began            = false
+  Isolation Level         = TRANSACTION_NONE
+
+  --- Dump of Enlisted Beans : 1 ---------------------- 
+
+    ContainerManaged2_0BeanO(BeanId(nri#NriGroup.jar#ProfileEJB, com.nri.ejb.ProfileEJBKey@ab768ef3), state = DESTROYED)
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@6e511b8b
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Tue May 27 12:24:24 MSD 2008

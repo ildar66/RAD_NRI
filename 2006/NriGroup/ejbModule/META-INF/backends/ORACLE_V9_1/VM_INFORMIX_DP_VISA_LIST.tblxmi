@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DP_VISA_LIST" name="DP_VISA_LIST">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID" name="ID" allowNull="true" constraints="SQLConstraint_1211544520463 SQLConstraint_1211544520464">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520463" precision="19" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PLANID" name="PLANID" allowNull="true" constraints="SQLConstraint_1211544520465">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520464" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VISAPROCESSID" name="VISAPROCESSID" allowNull="true" constraints="SQLConstraint_1211544520466">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520465" precision="19" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520463" name="PK_DP_VISA_LIST" type="UNIQUE" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544520464" name="SYS_C003383" type="CHECK" body="&quot;ID&quot; IS NOT NULL" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544520465" name="SYS_C003384" type="CHECK" body="&quot;PLANID&quot; IS NOT NULL" members="PLANID"/>
+  <constraints xmi:id="SQLConstraint_1211544520466" name="SYS_C003385" type="CHECK" body="&quot;VISAPROCESSID&quot; IS NOT NULL" members="VISAPROCESSID"/>
+</RDBSchema:RDBTable>

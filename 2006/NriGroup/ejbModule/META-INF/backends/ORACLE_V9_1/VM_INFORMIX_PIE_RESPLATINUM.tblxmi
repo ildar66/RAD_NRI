@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_RESPLATINUM" name="PIE_RESPLATINUM">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDRESPLATINUM" name="IDRESPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523547 SQLConstraint_1211544523548">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523547" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER" allowNull="true" constraints="SQLConstraint_1211544523547 SQLConstraint_1211544523549">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523547" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAMERES" name="NAMERES" allowNull="true" constraints="SQLConstraint_1211544523550">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523548" characterSet="800" length="400">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523547" name="PK_PIE_RESPLATINUM" type="UNIQUE" members="IDRESPLATINUM OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523548" name="SYS_C004166" type="CHECK" body="&quot;IDRESPLATINUM&quot; IS NOT NULL" members="IDRESPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523549" name="SYS_C004167" type="CHECK" body="&quot;OWNER&quot; IS NOT NULL" members="OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523550" name="SYS_C004168" type="CHECK" body="&quot;NAMERES&quot; IS NOT NULL" members="NAMERES"/>
+</RDBSchema:RDBTable>

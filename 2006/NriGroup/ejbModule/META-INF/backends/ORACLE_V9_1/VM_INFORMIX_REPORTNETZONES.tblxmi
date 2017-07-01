@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="REPORTNETZONES" name="REPORTNETZONES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDFILIAL" name="IDFILIAL" allowNull="true" constraints="SQLConstraint_1211544523968">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523968" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDCLASS" name="IDCLASS" allowNull="true" constraints="SQLConstraint_1211544523969 SQLConstraint_1211544523970">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523969" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDNETZONE" name="IDNETZONE" allowNull="true" constraints="SQLConstraint_1211544523969 SQLConstraint_1211544523971">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523970" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDSORT" name="IDSORT" allowNull="true" constraints="SQLConstraint_1211544523972">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523971" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523969" name="PK_REPORTNETZONES" type="UNIQUE" members="IDCLASS IDNETZONE"/>
+  <constraints xmi:id="SQLConstraint_1211544523968" name="SYS_C005939" type="CHECK" body="&quot;IDFILIAL&quot; IS NOT NULL" members="IDFILIAL"/>
+  <constraints xmi:id="SQLConstraint_1211544523970" name="SYS_C005940" type="CHECK" body="&quot;IDCLASS&quot; IS NOT NULL" members="IDCLASS"/>
+  <constraints xmi:id="SQLConstraint_1211544523971" name="SYS_C005941" type="CHECK" body="&quot;IDNETZONE&quot; IS NOT NULL" members="IDNETZONE"/>
+  <constraints xmi:id="SQLConstraint_1211544523972" name="SYS_C005942" type="CHECK" body="&quot;IDSORT&quot; IS NOT NULL" members="IDSORT"/>
+</RDBSchema:RDBTable>

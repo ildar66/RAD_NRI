@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="sequences" name="sequences" primaryKey="pk_sequences">
+  <database href="META-INF/backends/INFORMIX_V94_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V94_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="id" name="id">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1191224457425" characterSet="800" length="50">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V94_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="value" name="value">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1191224457425">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V94_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_sequences" name="pk_sequences" members="id" constraint="SQLConstraint_1191224457425"/>
+  <constraints xmi:id="SQLConstraint_1191224457425" name="pk_sequences" type="PRIMARYKEY" primaryKey="pk_sequences"/>
+</RDBSchema:RDBTable>

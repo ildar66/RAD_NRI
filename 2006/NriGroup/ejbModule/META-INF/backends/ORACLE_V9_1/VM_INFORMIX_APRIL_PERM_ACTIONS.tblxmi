@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="APRIL_PERM_ACTIONS" name="APRIL_PERM_ACTIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID" name="ID" allowNull="true" constraints="SQLConstraint_1211544518931 SQLConstraint_1211544518932">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518931" precision="19" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="KEY" name="KEY" allowNull="true" constraints="SQLConstraint_1211544518933">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518931" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPE_" name="TYPE_" allowNull="true" constraints="SQLConstraint_1211544518934">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518932" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DESCRIPTION" name="DESCRIPTION" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518933" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SHEME" name="SHEME" allowNull="true" constraints="SQLConstraint_1211544518935">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518932" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544518931" name="PK_APRIL_PERM_ACTIONS" type="UNIQUE" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544518934" name="CKC_TYPE_PERMACTION" type="CHECK" body="TYPE_ IN ('action' ,'visa' ,'notification' )" members="TYPE_"/>
+  <constraints xmi:id="SQLConstraint_1211544518932" name="SYS_C003632" type="CHECK" body="&quot;ID&quot; IS NOT NULL" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544518933" name="SYS_C003633" type="CHECK" body="&quot;KEY&quot; IS NOT NULL" members="KEY"/>
+  <constraints xmi:id="SQLConstraint_1211544518935" name="SYS_C003634" type="CHECK" body="&quot;SHEME&quot; IS NOT NULL" members="SHEME"/>
+</RDBSchema:RDBTable>

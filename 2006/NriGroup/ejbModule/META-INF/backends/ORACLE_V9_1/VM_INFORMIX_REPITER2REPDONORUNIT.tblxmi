@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="REPITER2REPDONORUNIT" name="REPITER2REPDONORUNIT">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDRECREPITER2REPDONORUNIT" name="IDRECREPITER2REPDONORUNIT" allowNull="true" constraints="SQLConstraint_1211544523958 SQLConstraint_1211544523959">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523958" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDRESREPITER" name="IDRESREPITER" allowNull="true" constraints="SQLConstraint_1211544523960">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523959" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDRESREPDONORUNIT" name="IDRESREPDONORUNIT" allowNull="true" constraints="SQLConstraint_1211544523961">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523960" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523958" name="PK_REPITER2REPDONO" type="UNIQUE" members="IDRECREPITER2REPDONORUNIT"/>
+  <constraints xmi:id="SQLConstraint_1211544523959" name="SYS_C006020" type="CHECK" body="&quot;IDRECREPITER2REPDONORUNIT&quot; IS NOT NULL" members="IDRECREPITER2REPDONORUNIT"/>
+  <constraints xmi:id="SQLConstraint_1211544523960" name="SYS_C006021" type="CHECK" body="&quot;IDRESREPITER&quot; IS NOT NULL" members="IDRESREPITER"/>
+  <constraints xmi:id="SQLConstraint_1211544523961" name="SYS_C006022" type="CHECK" body="&quot;IDRESREPDONORUNIT&quot; IS NOT NULL" members="IDRESREPDONORUNIT"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RTS_INIT2CHANSTLMNT" name="RTS_INIT2CHANSTLMNT">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="GROUPID" name="GROUPID" allowNull="true" constraints="SQLConstraint_1211544524308 SQLConstraint_1211544524309">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524308" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHANSTLMNTID" name="CHANSTLMNTID" allowNull="true" constraints="SQLConstraint_1211544524308 SQLConstraint_1211544524310">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524309" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524308" name="PK_RTS_INIT2CHANST" type="UNIQUE" members="GROUPID CHANSTLMNTID"/>
+  <constraints xmi:id="SQLConstraint_1211544524309" name="SYS_C005477" type="CHECK" body="&quot;GROUPID&quot; IS NOT NULL" members="GROUPID"/>
+  <constraints xmi:id="SQLConstraint_1211544524310" name="SYS_C005478" type="CHECK" body="&quot;CHANSTLMNTID&quot; IS NOT NULL" members="CHANSTLMNTID"/>
+</RDBSchema:RDBTable>

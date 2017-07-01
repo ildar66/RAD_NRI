@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:emfnotation="emfnotation.xmi" xmlns:refinement="refinement.xmi">
+  <emfnotation:Pack xmi:id="Pack_1" version="6">
+    <Diagram xmi:id="fddea780-59c0-1211-0000-028843b11818" xmi:uuid="DCE:fddea780-59c0-1211-0000-028843b11818:1">
+      <children xmi:type="emfnotation:PositionalGeneralView" xmi:id="PositionalGeneralView_1" LineColor="4009615" FillColor="13565951" Font="Tahoma|10|0|" Visible="true" FactoryHint="" SemanticReference="emfsemantic:(~ejb{%OIDGeneratorSession})" SemanticReferenceName="OIDGeneratorSession" SemanticReferenceKind="29" ShapeStereotypeStyle="2" PositionX="650" PositionY="650" ExtentX="150" ExtentY="150" Autosize="true" VisibilityStyle="2" ShowCompartmentTitle="false" CompartmentStereotypeStyle="2" ShowParentName="false">
+        <children xmi:type="emfnotation:NameCompartmentView" xmi:id="NameCompartmentView_1" Visible="true" FactoryHint="Stereotype" SemanticReference="emfsemantic:(~ejb{%OIDGeneratorSession})" SemanticReferenceName="OIDGeneratorSession" SemanticReferenceKind="29" ShapeStereotypeStyle="2"/>
+        <children xmi:type="emfnotation:NameCompartmentView" xmi:id="NameCompartmentView_2" Visible="true" FactoryHint="Name" SemanticReference="emfsemantic:(~ejb{%OIDGeneratorSession})" SemanticReferenceName="OIDGeneratorSession" SemanticReferenceKind="29" ShapeStereotypeStyle="2"/>
+        <children xmi:type="emfnotation:ListCompartmentView" xmi:id="ListCompartmentView_1" Visible="true" FactoryHint="Attribute" SemanticReference="emfsemantic:(~ejb{%OIDGeneratorSession})" SemanticReferenceName="OIDGeneratorSession" SemanticReferenceKind="29" ShapeStereotypeStyle="2" Ratio="-1.0" Collapsed="false"/>
+        <children xmi:type="emfnotation:ListCompartmentView" xmi:id="ListCompartmentView_2" Visible="true" FactoryHint="Operation" SemanticReference="emfsemantic:(~ejb{%OIDGeneratorSession})" SemanticReferenceName="OIDGeneratorSession" SemanticReferenceKind="29" ShapeStereotypeStyle="2" Ratio="-1.0" Collapsed="false" IsAccessorMethodsVisible="false" IsFinderMethodsVisible="true" IsLifeCycleMethodsVisible="true"/>
+      </children>
+    </Diagram>
+  </emfnotation:Pack>
+  <refinement:Refinements xmi:id="Refinements_1"/>
+</xmi:XMI>

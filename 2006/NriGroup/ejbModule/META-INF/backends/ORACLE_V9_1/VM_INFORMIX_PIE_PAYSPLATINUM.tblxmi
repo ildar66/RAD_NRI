@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_PAYSPLATINUM" name="PIE_PAYSPLATINUM">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDPAYPLATINUM" name="IDPAYPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523507 SQLConstraint_1211544523508">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523507" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDDOGOVORNRI" name="IDDOGOVORNRI" allowNull="true" constraints="SQLConstraint_1211544523509">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523507" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATE_" name="DATE_" allowNull="true" constraints="SQLConstraint_1211544523510">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523507" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGWORKNRI" name="FLAGWORKNRI" allowNull="true" constraints="SQLConstraint_1211544523511 SQLConstraint_1211544523512">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523508" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PURPOSEPAY" name="PURPOSEPAY" allowNull="true" constraints="SQLConstraint_1211544523513">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523509" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYSTATEPLATINUM" name="PAYSTATEPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523514">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523508" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCNUMBER" name="DOCNUMBER" allowNull="true" constraints="SQLConstraint_1211544523515">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523510" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCPOSITION" name="DOCPOSITION" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523509" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECORDSTATUS" name="RECORDSTATUS" allowNull="true" defaultValue="'A'" constraints="SQLConstraint_1211544523516 SQLConstraint_1211544523517">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523511" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER" allowNull="true" constraints="SQLConstraint_1211544523507 SQLConstraint_1211544523518 SQLConstraint_1211544523519">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523510" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SZSUM" name="SZSUM" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544523507" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SZNDS" name="SZNDS" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544523508" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SZVALUTE" name="SZVALUTE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523511" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYSUM" name="PAYSUM" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544523509" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYNDS" name="PAYNDS" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544523510" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYVALUTE" name="PAYVALUTE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523512" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RATEHOME" name="RATEHOME" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544523511" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RATEHOME1" name="RATEHOME1" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544523512" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523507" name="PK_PIE_PAYSPLATINU" type="UNIQUE" members="IDPAYPLATINUM OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523511" name="CKC_FLAGWORK_PIE_P" type="CHECK" body="flagworknri IN ('P' ,'N' ,'Y' ,'E' )" members="FLAGWORKNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523516" name="CKC_RECORDST_PIE_P" type="CHECK" body="recordstatus IN ('A' ,'D' )" members="RECORDSTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544523518" name="CKC_OWN_PPAYS" type="CHECK" body="owner IN (1 ,2 ,3 )" members="OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523508" name="SYS_C004479" type="CHECK" body="&quot;IDPAYPLATINUM&quot; IS NOT NULL" members="IDPAYPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523509" name="SYS_C004480" type="CHECK" body="&quot;IDDOGOVORNRI&quot; IS NOT NULL" members="IDDOGOVORNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523510" name="SYS_C004481" type="CHECK" body="&quot;DATE_&quot; IS NOT NULL" members="DATE_"/>
+  <constraints xmi:id="SQLConstraint_1211544523512" name="SYS_C004482" type="CHECK" body="&quot;FLAGWORKNRI&quot; IS NOT NULL" members="FLAGWORKNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523513" name="SYS_C004483" type="CHECK" body="&quot;PURPOSEPAY&quot; IS NOT NULL" members="PURPOSEPAY"/>
+  <constraints xmi:id="SQLConstraint_1211544523514" name="SYS_C004484" type="CHECK" body="&quot;PAYSTATEPLATINUM&quot; IS NOT NULL" members="PAYSTATEPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523515" name="SYS_C004485" type="CHECK" body="&quot;DOCNUMBER&quot; IS NOT NULL" members="DOCNUMBER"/>
+  <constraints xmi:id="SQLConstraint_1211544523517" name="SYS_C004486" type="CHECK" body="&quot;RECORDSTATUS&quot; IS NOT NULL" members="RECORDSTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544523519" name="SYS_C004487" type="CHECK" body="&quot;OWNER&quot; IS NOT NULL" members="OWNER"/>
+</RDBSchema:RDBTable>

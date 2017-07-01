@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigatorItems>
+	<navigatorItem nodeId="tasks" parentId="root" tooltip="Задачи:" value="" link="" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="taskSecurity" parentId="tasks" tooltip="Система разграничения доступа:" value="" link="" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>	
+	<navigatorItem nodeId="nodeId_peopleList" parentId="taskSecurity" tooltip="Физические лица" value="" link="/peopleList.do" icon="" isExternalLink="false">
+	    <role>administrator</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_workPositionList" parentId="taskSecurity" tooltip="Должности" value="" link="/workPositionList.do" icon="" isExternalLink="false">
+	    <role>administrator</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_companyList" parentId="taskSecurity" tooltip="Компании" value="" link="/companyList.do" icon="" isExternalLink="false">
+	    <role>administrator</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_roleList" parentId="taskSecurity" tooltip="Роли" value="" link="/roleList.do" icon="" isExternalLink="false">
+	    <role>administrator</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_msUserList" parentId="taskSecurity" tooltip="Пользователи MS" value="" link="/msUserList.do" icon="" isExternalLink="false">
+		<role>administrator</role>
+	    <role>builder</role>
+	</navigatorItem>				
+</navigatorItems>

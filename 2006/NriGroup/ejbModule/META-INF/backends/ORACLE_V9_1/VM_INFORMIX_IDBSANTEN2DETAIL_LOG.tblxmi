@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="IDBSANTEN2DETAIL_LOG" name="IDBSANTEN2DETAIL_LOG">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDLOGREC" name="IDLOGREC" allowNull="true" constraints="SQLConstraint_1211544521074 SQLConstraint_1211544521075">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521074" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDMAINREC" name="IDMAINREC" allowNull="true" constraints="SQLConstraint_1211544521076">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521075" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDDEPREC" name="IDDEPREC" allowNull="true" constraints="SQLConstraint_1211544521077">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521076" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DETAILID" name="DETAILID" allowNull="true" constraints="SQLConstraint_1211544521078">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521077" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ANTENID" name="ANTENID" allowNull="true" constraints="SQLConstraint_1211544521079">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521078" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521074" name="PK_IDBSANTEN2DETL" type="UNIQUE" members="IDLOGREC"/>
+  <constraints xmi:id="SQLConstraint_1211544521075" name="SYS_C005436" type="CHECK" body="&quot;IDLOGREC&quot; IS NOT NULL" members="IDLOGREC"/>
+  <constraints xmi:id="SQLConstraint_1211544521076" name="SYS_C005437" type="CHECK" body="&quot;IDMAINREC&quot; IS NOT NULL" members="IDMAINREC"/>
+  <constraints xmi:id="SQLConstraint_1211544521077" name="SYS_C005438" type="CHECK" body="&quot;IDDEPREC&quot; IS NOT NULL" members="IDDEPREC"/>
+  <constraints xmi:id="SQLConstraint_1211544521078" name="SYS_C005439" type="CHECK" body="&quot;DETAILID&quot; IS NOT NULL" members="DETAILID"/>
+  <constraints xmi:id="SQLConstraint_1211544521079" name="SYS_C005440" type="CHECK" body="&quot;ANTENID&quot; IS NOT NULL" members="ANTENID"/>
+</RDBSchema:RDBTable>

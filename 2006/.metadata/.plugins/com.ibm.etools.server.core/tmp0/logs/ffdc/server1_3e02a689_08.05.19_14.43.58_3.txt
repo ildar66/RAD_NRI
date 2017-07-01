@@ -1,0 +1,43 @@
+------Start of DE processing------ = [08.05.19 14:43:58:125 MSD] , key = com.ibm.ws.console.security.ConnectToRuntimeException com.ibm.ws.console.security.SecurityValidation.validate 20
+Exception = com.ibm.ws.console.security.ConnectToRuntimeException
+Source = com.ibm.ws.console.security.SecurityValidation.validate
+probeid = 20
+Stack Dump = com.ibm.ws.console.security.ConnectToRuntimeException: com.hps.july.util.JulyRegistry50
+	at com.ibm.ws.console.security.ConnectToRuntime.getRealm(ConnectToRuntime.java:242)
+	at com.ibm.ws.console.security.SecurityValidation.getCustomRealm(SecurityValidation.java:688)
+	at com.ibm.ws.console.security.SecurityValidation.validate(SecurityValidation.java:223)
+	at com.ibm.ws.console.security.SecurityDetailAction.perform(SecurityDetailAction.java:175)
+	at org.apache.struts.action.ActionServlet.processActionPerform(ActionServlet.java:1791)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1586)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:510)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+null
+
+Exception = com.ibm.ws.console.security.ConnectToRuntimeException
+Source = com.ibm.ws.console.security.SecurityValidation.validate
+probeid = 20
+Dump of callerThis = 
+null
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="AFSMOUNTACT" name="AFSMOUNTACT">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCUMENT" name="DOCUMENT" allowNull="true" constraints="SQLConstraint_1211544518791 SQLConstraint_1211544518792">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518791" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AFSTYPE" name="AFSTYPE" allowNull="true" defaultValue="'O'" constraints="SQLConstraint_1211544518793 SQLConstraint_1211544518794">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518791" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544518791" name="PK_AFSMOUNTACT" type="UNIQUE" members="DOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544518793" name="CKC_AFSTYPE_AFSMO" type="CHECK" body="afstype IN ('O' ,'I' )" members="AFSTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544518792" name="SYS_C004656" type="CHECK" body="&quot;DOCUMENT&quot; IS NOT NULL" members="DOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544518794" name="SYS_C004657" type="CHECK" body="&quot;AFSTYPE&quot; IS NOT NULL" members="AFSTYPE"/>
+</RDBSchema:RDBTable>

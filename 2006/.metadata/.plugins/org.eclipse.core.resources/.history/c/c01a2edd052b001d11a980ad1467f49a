@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="OPERATORS" name="OPERATORS" primaryKey="C2255841">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OPERATOR_" name="OPERATOR_" constraints="SQLConstraint_1211544523227">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523227" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAN" name="MAN" allowNull="true" constraints="SQLConstraint_1211544523229">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523228" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LOIGINID" name="LOIGINID" allowNull="true" constraints="SQLConstraint_1211544523230">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523227" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PASSWORD" name="PASSWORD" allowNull="true" constraints="SQLConstraint_1211544523231">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523228" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISENABLED" name="ISENABLED" allowNull="true" constraints="SQLConstraint_1211544523232 SQLConstraint_1211544523233">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523229" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MSUCODE" name="MSUCODE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523229" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDREGION" name="IDREGION" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523230" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LASTLOGINTIME" name="LASTLOGINTIME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523227" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OLDPWD" name="OLDPWD" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523230" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LASTREGIONID" name="LASTREGIONID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523231" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="C2255841" name="C2255841" members="OPERATOR_" constraint="SQLConstraint_1211545376702"/>
+  <constraints xmi:id="SQLConstraint_1211544523227" name="PK_OPERATORS" type="UNIQUE" members="OPERATOR_"/>
+  <constraints xmi:id="SQLConstraint_1211544523232" name="CKC_ISENABLE_OPERA" type="CHECK" body="isenabled IN ('Y' ,'N' )" members="ISENABLED"/>
+  <constraints xmi:id="SQLConstraint_1211544523229" name="SYS_C004375" type="CHECK" body="&quot;MAN&quot; IS NOT NULL" members="MAN"/>
+  <constraints xmi:id="SQLConstraint_1211544523230" name="SYS_C004376" type="CHECK" body="&quot;LOIGINID&quot; IS NOT NULL" members="LOIGINID"/>
+  <constraints xmi:id="SQLConstraint_1211544523231" name="SYS_C004377" type="CHECK" body="&quot;PASSWORD&quot; IS NOT NULL" members="PASSWORD"/>
+  <constraints xmi:id="SQLConstraint_1211544523233" name="SYS_C004378" type="CHECK" body="&quot;ISENABLED&quot; IS NOT NULL" members="ISENABLED"/>
+  <constraints xmi:id="SQLConstraint_1211545376702" name="C2255841" type="PRIMARYKEY" primaryKey="C2255841"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RTS_REQCOMMUNICATION" name="RTS_REQCOMMUNICATION">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID" name="ID" allowNull="true" constraints="SQLConstraint_1211544524338 SQLConstraint_1211544524339">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524338" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REQUESTID" name="REQUESTID" allowNull="true" constraints="SQLConstraint_1211544524340">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524338" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TEXT" name="TEXT" allowNull="true" constraints="SQLConstraint_1211544524341">
+    <type xmi:type="RDBSchema:SQLCharacterLargeObject" xmi:id="SQLCharacterLargeObject_1211544524338" characterSet="800" length="4000">
+      <originatingType xmi:type="RDBSchema:SQLCharacterLargeObject" href="ORACLE_V9_Primitives.xmi#SQLCharacterLargeObject_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATE_" name="DATE_" allowNull="true" constraints="SQLConstraint_1211544524342">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544524338" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAN" name="MAN" allowNull="true" constraints="SQLConstraint_1211544524343">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524339" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPE_" name="TYPE_" allowNull="true" defaultValue="'I'" constraints="SQLConstraint_1211544524344 SQLConstraint_1211544524345">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524339" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524338" name="PK_RTS_REQCOMMUNIC" type="UNIQUE" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544524344" name="CKC_TYPE_RTS_R" type="CHECK" body="TYPE_ IN ('I' ,'U' ,'E' ,'W' )" members="TYPE_"/>
+  <constraints xmi:id="SQLConstraint_1211544524339" name="SYS_C005773" type="CHECK" body="&quot;ID&quot; IS NOT NULL" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544524340" name="SYS_C005774" type="CHECK" body="&quot;REQUESTID&quot; IS NOT NULL" members="REQUESTID"/>
+  <constraints xmi:id="SQLConstraint_1211544524341" name="SYS_C005775" type="CHECK" body="&quot;TEXT&quot; IS NOT NULL" members="TEXT"/>
+  <constraints xmi:id="SQLConstraint_1211544524342" name="SYS_C005776" type="CHECK" body="&quot;DATE_&quot; IS NOT NULL" members="DATE_"/>
+  <constraints xmi:id="SQLConstraint_1211544524343" name="SYS_C005777" type="CHECK" body="&quot;MAN&quot; IS NOT NULL" members="MAN"/>
+  <constraints xmi:id="SQLConstraint_1211544524345" name="SYS_C005778" type="CHECK" body="&quot;TYPE_&quot; IS NOT NULL" members="TYPE_"/>
+</RDBSchema:RDBTable>

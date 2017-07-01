@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="SMSS_ACTUAL_PERMITS" name="SMSS_ACTUAL_PERMITS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EQUIPMENT" name="EQUIPMENT" allowNull="true" constraints="SQLConstraint_1211544524478 SQLConstraint_1211544524479">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524478" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PERMIT_TYPE" name="PERMIT_TYPE" allowNull="true" constraints="SQLConstraint_1211544524478 SQLConstraint_1211544524480">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524479" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FTYPE" name="FTYPE" allowNull="true" constraints="SQLConstraint_1211544524478 SQLConstraint_1211544524481">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524480" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PERMITID" name="PERMITID" allowNull="true" constraints="SQLConstraint_1211544524482">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524481" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PERMIT_NUMBER" name="PERMIT_NUMBER" allowNull="true" constraints="SQLConstraint_1211544524483">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524478" characterSet="800" length="512">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PERMIT_DATE" name="PERMIT_DATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544524478" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EXPIRE_DATE" name="EXPIRE_DATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544524479" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ADDRESS" name="ADDRESS" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524479" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LON" name="LON" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524482" precision="10" scale="6">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LAT" name="LAT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524483" precision="10" scale="6">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MSCCAPACITY" name="MSCCAPACITY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524484" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STATUS" name="STATUS" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544524484 SQLConstraint_1211544524485">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524485" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILENAME" name="FILENAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524480" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HOPSID" name="HOPSID" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544524478 SQLConstraint_1211544524486">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524486" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LANLENGTH" name="LANLENGTH" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524487" precision="15" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524478" name="PK_SMSS_ACTUAL_PER" type="UNIQUE" members="EQUIPMENT PERMIT_TYPE FTYPE HOPSID"/>
+  <constraints xmi:id="SQLConstraint_1211544524484" name="CKC_STATUS_SMSS_A" type="CHECK" body="status IN (0 ,1 )" members="STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544524479" name="SYS_C005470" type="CHECK" body="&quot;EQUIPMENT&quot; IS NOT NULL" members="EQUIPMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544524480" name="SYS_C005471" type="CHECK" body="&quot;PERMIT_TYPE&quot; IS NOT NULL" members="PERMIT_TYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544524481" name="SYS_C005472" type="CHECK" body="&quot;FTYPE&quot; IS NOT NULL" members="FTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544524482" name="SYS_C005473" type="CHECK" body="&quot;PERMITID&quot; IS NOT NULL" members="PERMITID"/>
+  <constraints xmi:id="SQLConstraint_1211544524483" name="SYS_C005474" type="CHECK" body="&quot;PERMIT_NUMBER&quot; IS NOT NULL" members="PERMIT_NUMBER"/>
+  <constraints xmi:id="SQLConstraint_1211544524485" name="SYS_C005475" type="CHECK" body="&quot;STATUS&quot; IS NOT NULL" members="STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544524486" name="SYS_C005476" type="CHECK" body="&quot;HOPSID&quot; IS NOT NULL" members="HOPSID"/>
+</RDBSchema:RDBTable>

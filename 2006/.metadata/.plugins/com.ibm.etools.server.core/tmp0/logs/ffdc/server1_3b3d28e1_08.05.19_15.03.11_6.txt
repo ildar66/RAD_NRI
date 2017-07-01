@@ -1,0 +1,86 @@
+------Start of DE processing------ = [08.05.19 15:03:11:573 MSD] , key = javax.management.JMRuntimeException com.ibm.ws.management.connector.soap.SOAPConnector.service 212
+Exception = javax.management.JMRuntimeException
+Source = com.ibm.ws.management.connector.soap.SOAPConnector.service
+probeid = 212
+Stack Dump = javax.management.JMRuntimeException: ADMN0022E: Access denied for the stop operation on Server MBean due to insufficient or empty credentials.
+	at com.ibm.ws.management.AdminServiceImpl.preInvoke(AdminServiceImpl.java:1354)
+	at com.ibm.ws.management.AdminServiceImpl.invoke(AdminServiceImpl.java:657)
+	at com.ibm.ws.management.connector.AdminServiceDelegator.invoke(AdminServiceDelegator.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.ws.management.connector.soap.SOAPConnector.invoke(SOAPConnector.java:306)
+	at com.ibm.ws.management.connector.soap.SOAPConnector.service(SOAPConnector.java:176)
+	at com.ibm.ws.management.connector.soap.SOAPConnection.handleRequest(SOAPConnection.java:55)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.management.connector.soap.SOAPConnector
+com.ibm.ws.management.connector.soap.SOAPConnector@2bcfe8fc
+
+==> Performing default dump from com.ibm.ws.management.dm.ConnectorDM  = Mon May 19 15:03:11 MSD 2008
+Dump of callerThis = 
+Object type = com.ibm.ws.management.connector.soap.SOAPConnector
+  class$com$ibm$ws$management$connector$soap$SOAPConnector = 
+    class$java$lang$Class = java.lang.Class@2dd32867
+    initted = true
+    reflectionFactory = sun.reflect.ReflectionFactory@3800a8e3
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = java.lang.ref.SoftReference@514968f3
+    useCaches = true
+    allPermDomain = java.security.ProtectionDomain@17b8e8ed
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  securityEnabled = true
+  smr = 
+    class$java$lang$Number = java.lang.Class@2e742867
+    class$java$lang$Character = java.lang.Class@2e36a867
+    class$java$lang$Boolean = java.lang.Class@2e3f2867
+    class$com$ibm$ws$management$connector$soap$AdminServiceSMR = java.lang.Class@3e90a8e1
+    singleton = this.smr
+    defaultSerializer = com.ibm.ws.management.connector.soap.GenericSerializer@734268fe
+    tc = com.ibm.ejs.ras.TraceComponent@605968fe
+    defaultEncodingStyle = null
+    java2XMLReg = java.util.Hashtable@7354a8fe
+    xml2JavaReg = java.util.Hashtable@734828fe
+    dsReg = java.util.Hashtable@734da8fe
+    sReg = java.util.Hashtable@734128fe
+  targetObject = 
+    class$com$ibm$ws$management$connector$AdminServiceDelegator = java.lang.Class@19468e1
+    _adminInstance = com.ibm.ws.management.AdminServiceImpl@71ae8eb
+    tc = com.ibm.ejs.ras.TraceComponent@2090e8ff
+  nls = 
+    class$com$ibm$ejs$ras$TraceNLS = java.lang.Class@6900e8e2
+    ivBundleName = com.ibm.ws.management.resources.connector
+    svMalformedMessage = No message text associated with key {0} in bundle {1}
+    svNullKeyMessage = Null key passed while using ResourceBundle {0}
+    svBundleNotLoaded = Unable to load ResourceBundle {0}
+    svNullBundleName = Resource Bundle name is null, key = {0}
+    nullKey = null Key
+    tc = com.ibm.ejs.ras.TraceComponent@4e1d68eb
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ws.management.resources.connector
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.management.connector.soap.SOAPConnector
+  bundleName = com.ibm.ws.management.resources.connector
+
++Data for directive [defaultconnector] obtained. = 
+==> Dump complete for com.ibm.ws.management.dm.ConnectorDM  = Mon May 19 15:03:11 MSD 2008

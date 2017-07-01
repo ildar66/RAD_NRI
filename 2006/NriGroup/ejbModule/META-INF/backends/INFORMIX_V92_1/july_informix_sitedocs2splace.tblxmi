@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="sitedocs2splace" name="sitedocs2splace" primaryKey="pk_sitedocs2splace">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="sitedoc" name="sitedoc">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1186066253613">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="storageplace" name="storageplace">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1186066253614">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_sitedocs2splace" name="pk_sitedocs2splace" members="sitedoc storageplace" constraint="SQLConstraint_1186066253613"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_93679_93679" name="fk_ref_93679_93679" members="storageplace" constraint="SQLConstraint_1186066253614">
+    <target href="META-INF/backends/INFORMIX_V92_1/july_informix_storageplaces.tblxmi#pk_storageplaces"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1186066253613" name="pk_sitedocs2splace" type="PRIMARYKEY" primaryKey="pk_sitedocs2splace"/>
+  <constraints xmi:id="SQLConstraint_1186066253614" name="fk_ref_93679_93679" type="FOREIGNKEY" referenceByKey="fk_ref_93679_93679"/>
+</RDBSchema:RDBTable>

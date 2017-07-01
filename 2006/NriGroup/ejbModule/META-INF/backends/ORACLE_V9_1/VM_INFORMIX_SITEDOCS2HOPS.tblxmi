@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="SITEDOCS2HOPS" name="SITEDOCS2HOPS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SITEDOC" name="SITEDOC" allowNull="true" constraints="SQLConstraint_1211544524458 SQLConstraint_1211544524459">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524458" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HOPSID" name="HOPSID" allowNull="true" constraints="SQLConstraint_1211544524458 SQLConstraint_1211544524460">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524459" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524458" name="PK_SITEDOCS2HOPS" type="UNIQUE" members="SITEDOC HOPSID"/>
+  <constraints xmi:id="SQLConstraint_1211544524459" name="SYS_C004477" type="CHECK" body="&quot;SITEDOC&quot; IS NOT NULL" members="SITEDOC"/>
+  <constraints xmi:id="SQLConstraint_1211544524460" name="SYS_C004478" type="CHECK" body="&quot;HOPSID&quot; IS NOT NULL" members="HOPSID"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RCHS_DECISION2BS" name="RCHS_DECISION2BS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DECISIONID" name="DECISIONID" allowNull="true" constraints="SQLConstraint_1211544523858 SQLConstraint_1211544523859">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523858" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDBSRCHS" name="IDBSRCHS" allowNull="true" constraints="SQLConstraint_1211544523858 SQLConstraint_1211544523860">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523859" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523858" name="PK_RCHS_DECISION2B" type="UNIQUE" members="DECISIONID IDBSRCHS"/>
+  <constraints xmi:id="SQLConstraint_1211544523859" name="SYS_C003582" type="CHECK" body="&quot;DECISIONID&quot; IS NOT NULL" members="DECISIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544523860" name="SYS_C003583" type="CHECK" body="&quot;IDBSRCHS&quot; IS NOT NULL" members="IDBSRCHS"/>
+</RDBSchema:RDBTable>

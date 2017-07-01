@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_LINKPRIHRASH" name="PIE_LINKPRIHRASH">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDLINKPRIHODRASHOD" name="IDLINKPRIHODRASHOD" allowNull="true" constraints="SQLConstraint_1211544523467 SQLConstraint_1211544523468">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523467" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCPOSPRIHOD" name="DOCPOSPRIHOD" allowNull="true" constraints="SQLConstraint_1211544523469">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523468" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FROMSTORAGEPRIHOD" name="FROMSTORAGEPRIHOD" allowNull="true" constraints="SQLConstraint_1211544523470">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523469" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCPOSRASHOD" name="DOCPOSRASHOD" allowNull="true" constraints="SQLConstraint_1211544523471">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523470" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="QTY" name="QTY" allowNull="true" constraints="SQLConstraint_1211544523472">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523471" precision="15" scale="3">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523467" name="PK_PIE_LINKPRIHRAS" type="UNIQUE" members="IDLINKPRIHODRASHOD"/>
+  <constraints xmi:id="SQLConstraint_1211544523468" name="SYS_C004054" type="CHECK" body="&quot;IDLINKPRIHODRASHOD&quot; IS NOT NULL" members="IDLINKPRIHODRASHOD"/>
+  <constraints xmi:id="SQLConstraint_1211544523469" name="SYS_C004055" type="CHECK" body="&quot;DOCPOSPRIHOD&quot; IS NOT NULL" members="DOCPOSPRIHOD"/>
+  <constraints xmi:id="SQLConstraint_1211544523470" name="SYS_C004056" type="CHECK" body="&quot;FROMSTORAGEPRIHOD&quot; IS NOT NULL" members="FROMSTORAGEPRIHOD"/>
+  <constraints xmi:id="SQLConstraint_1211544523471" name="SYS_C004057" type="CHECK" body="&quot;DOCPOSRASHOD&quot; IS NOT NULL" members="DOCPOSRASHOD"/>
+  <constraints xmi:id="SQLConstraint_1211544523472" name="SYS_C004058" type="CHECK" body="&quot;QTY&quot; IS NOT NULL" members="QTY"/>
+</RDBSchema:RDBTable>

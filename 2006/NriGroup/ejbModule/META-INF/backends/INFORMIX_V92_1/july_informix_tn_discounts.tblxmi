@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="tn_discounts" name="tn_discounts" primaryKey="pk_tn_discounts">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="organization" name="organization">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1188453352959">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="date" name="date">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1188453352959">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="value" name="value">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1188453352959" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="INFORMIX_V92_Primitives.xmi#SQLNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_tn_discounts" name="pk_tn_discounts" members="organization date" constraint="SQLConstraint_1188453352959"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_838844_8388" name="fk_ref_838844_8388" members="organization" constraint="SQLConstraint_1188453352960">
+    <target href="META-INF/backends/INFORMIX_V92_1/july_informix_organizations.tblxmi#pk_organizations"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1188453352959" name="pk_tn_discounts" type="PRIMARYKEY" primaryKey="pk_tn_discounts"/>
+  <constraints xmi:id="SQLConstraint_1188453352960" name="fk_ref_838844_8388" type="FOREIGNKEY" referenceByKey="fk_ref_838844_8388"/>
+</RDBSchema:RDBTable>

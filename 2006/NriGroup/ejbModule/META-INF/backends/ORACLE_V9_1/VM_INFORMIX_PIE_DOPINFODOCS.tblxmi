@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_DOPINFODOCS" name="PIE_DOPINFODOCS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCUMENT" name="DOCUMENT" allowNull="true" constraints="SQLConstraint_1211544523447 SQLConstraint_1211544523448">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523447" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGSYNCPLATINUM" name="FLAGSYNCPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523449 SQLConstraint_1211544523450">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523447" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523447" name="PK_PIE_DOPINFODOCS" type="UNIQUE" members="DOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544523449" name="CKC_FLAGSYNC_PIE_D" type="CHECK" body="flagsyncplatinum IN ('Y' ,'N' )" members="FLAGSYNCPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523448" name="SYS_C004061" type="CHECK" body="&quot;DOCUMENT&quot; IS NOT NULL" members="DOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544523450" name="SYS_C004062" type="CHECK" body="&quot;FLAGSYNCPLATINUM&quot; IS NOT NULL" members="FLAGSYNCPLATINUM"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="projectactioncomms" name="projectactioncomms" primaryKey="pk_projectactionco">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="projectaction" name="projectaction">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1187763183292">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="division" name="division">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1187763183293">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="comment" name="comment" allowNull="true">
+    <type xmi:type="RDBSchema:InformixSimpleLargeObject" xmi:id="InformixSimpleLargeObject_1187763183292" length="56">
+      <originatingType xmi:type="RDBSchema:InformixSimpleLargeObject" href="INFORMIX_V92_Primitives.xmi#InformixSimpleLargeObject_5"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_projectactionco" name="pk_projectactionco" members="projectaction division" constraint="SQLConstraint_1187763183292"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_83870_83870" name="fk_ref_83870_83870" members="division" constraint="SQLConstraint_1187763183293">
+    <target href="META-INF/backends/INFORMIX_V92_1/july_informix_divisions.tblxmi#pk_divisions"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1187763183292" name="pk_projectactionco" type="PRIMARYKEY" primaryKey="pk_projectactionco"/>
+  <constraints xmi:id="SQLConstraint_1187763183293" name="fk_ref_83870_83870" type="FOREIGNKEY" referenceByKey="fk_ref_83870_83870"/>
+</RDBSchema:RDBTable>

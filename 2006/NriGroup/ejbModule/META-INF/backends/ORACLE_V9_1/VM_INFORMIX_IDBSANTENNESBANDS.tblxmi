@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="IDBSANTENNESBANDS" name="IDBSANTENNESBANDS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ANTENID" name="ANTENID" allowNull="true" constraints="SQLConstraint_1211544521054 SQLConstraint_1211544521055">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521054" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAND" name="BAND" allowNull="true" constraints="SQLConstraint_1211544521054 SQLConstraint_1211544521056 SQLConstraint_1211544521057">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521055" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ELECTRICANGLE" name="ELECTRICANGLE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521056" precision="4" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="KIND_ANT" name="KIND_ANT" allowNull="true" constraints="SQLConstraint_1211544521058">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521054" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="KSWN" name="KSWN" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521057" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521054" name="PK_IDBSANTENNESBAN" type="UNIQUE" members="ANTENID BAND"/>
+  <constraints xmi:id="SQLConstraint_1211544521058" name="CKC_KIND_ANT_IDBSA" type="CHECK" body="(kind_ant IS NULL ) OR (kind_ant IN ('R' ,'T' ,'D' )) " members="KIND_ANT"/>
+  <constraints xmi:id="SQLConstraint_1211544521056" name="CKC_BAND_ANTBD" type="CHECK" body="band IN (800 ,900 ,1800 ,2100 )" members="BAND"/>
+  <constraints xmi:id="SQLConstraint_1211544521055" name="SYS_C003400" type="CHECK" body="&quot;ANTENID&quot; IS NOT NULL" members="ANTENID"/>
+  <constraints xmi:id="SQLConstraint_1211544521057" name="SYS_C003401" type="CHECK" body="&quot;BAND&quot; IS NOT NULL" members="BAND"/>
+</RDBSchema:RDBTable>

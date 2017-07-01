@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TRX2SECTORS" name="TRX2SECTORS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TRXID" name="TRXID" allowNull="true" constraints="SQLConstraint_1211544525620 SQLConstraint_1211544525621">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525620" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_SECT" name="ID_SECT" allowNull="true" constraints="SQLConstraint_1211544525620 SQLConstraint_1211544525622">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525621" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525620" name="PK_TRX2SECTORS" type="UNIQUE" members="TRXID ID_SECT"/>
+  <constraints xmi:id="SQLConstraint_1211544525621" name="SYS_C006009" type="CHECK" body="&quot;TRXID&quot; IS NOT NULL" members="TRXID"/>
+  <constraints xmi:id="SQLConstraint_1211544525622" name="SYS_C006010" type="CHECK" body="&quot;ID_SECT&quot; IS NOT NULL" members="ID_SECT"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CFGTRX2SECTORS" name="CFGTRX2SECTORS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SAVCONFIGID" name="SAVCONFIGID" allowNull="true" constraints="SQLConstraint_1211544519512 SQLConstraint_1211544519513">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519512" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TRXID" name="TRXID" allowNull="true" constraints="SQLConstraint_1211544519512 SQLConstraint_1211544519514">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519513" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_SECT" name="ID_SECT" allowNull="true" constraints="SQLConstraint_1211544519512 SQLConstraint_1211544519515">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519514" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTSTATUS" name="OBJECTSTATUS" allowNull="true" constraints="SQLConstraint_1211544519516 SQLConstraint_1211544519517">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519512" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519512" name="PK_CFGTRX2SECTORS" type="UNIQUE" members="SAVCONFIGID TRXID ID_SECT"/>
+  <constraints xmi:id="SQLConstraint_1211544519516" name="CKC_OBJECTST_CFTRS" type="CHECK" body="objectstatus IN ('K' ,'U' ,'A' ,'D' )" members="OBJECTSTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544519513" name="SYS_C005752" type="CHECK" body="&quot;SAVCONFIGID&quot; IS NOT NULL" members="SAVCONFIGID"/>
+  <constraints xmi:id="SQLConstraint_1211544519514" name="SYS_C005753" type="CHECK" body="&quot;TRXID&quot; IS NOT NULL" members="TRXID"/>
+  <constraints xmi:id="SQLConstraint_1211544519515" name="SYS_C005754" type="CHECK" body="&quot;ID_SECT&quot; IS NOT NULL" members="ID_SECT"/>
+  <constraints xmi:id="SQLConstraint_1211544519517" name="SYS_C005755" type="CHECK" body="&quot;OBJECTSTATUS&quot; IS NOT NULL" members="OBJECTSTATUS"/>
+</RDBSchema:RDBTable>

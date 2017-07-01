@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CFGANTENNES" name="CFGANTENNES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SAVCONFIGID" name="SAVCONFIGID" allowNull="true" constraints="SQLConstraint_1211544519422 SQLConstraint_1211544519423">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519422" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_ANTEN" name="ID_ANTEN" allowNull="true" constraints="SQLConstraint_1211544519422 SQLConstraint_1211544519424">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519423" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544519425">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519424" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NUM_ANT" name="NUM_ANT" allowNull="true" constraints="SQLConstraint_1211544519426">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519422" characterSet="800" length="128">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="KIND_ANT" name="KIND_ANT" allowNull="true" constraints="SQLConstraint_1211544519427 SQLConstraint_1211544519428">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519423" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAKL" name="NAKL" allowNull="true" constraints="SQLConstraint_1211544519429">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519425" precision="4" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AZ_ANT" name="AZ_ANT" allowNull="true" constraints="SQLConstraint_1211544519430">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519426" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="KSWN" name="KSWN" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519427" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="H_SET1" name="H_SET1" allowNull="true" constraints="SQLConstraint_1211544519431">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519428" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEN_CABLE" name="LEN_CABLE" allowNull="true" constraints="SQLConstraint_1211544519432">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519429" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CABLERES" name="CABLERES" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519430" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EQUIPMENT" name="EQUIPMENT" allowNull="true" constraints="SQLConstraint_1211544519433">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519431" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AZ_VARIATION" name="AZ_VARIATION" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519424" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAKL_VARIATION" name="NAKL_VARIATION" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519425" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="INPUT_POWER" name="INPUT_POWER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519432" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OPERATOR_" name="OPERATOR_" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519433" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BYHAND" name="BYHAND" allowNull="true" defaultValue="'Y'" constraints="SQLConstraint_1211544519434 SQLConstraint_1211544519435">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519426" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="GROUNDRESOURCE" name="GROUNDRESOURCE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519434" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="GROUNDCNT" name="GROUNDCNT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519435" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LOCATIONTYPE" name="LOCATIONTYPE" allowNull="true" defaultValue="'O'" constraints="SQLConstraint_1211544519436 SQLConstraint_1211544519437">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519427" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ELECTRICALTILT" name="ELECTRICALTILT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519436" precision="4" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STORAGECARD" name="STORAGECARD" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519437" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="QTY" name="QTY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519438" precision="15" scale="3">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATASOURCE" name="DATASOURCE" allowNull="true" constraints="SQLConstraint_1211544519438">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519439" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTSTATUS" name="OBJECTSTATUS" allowNull="true" constraints="SQLConstraint_1211544519439 SQLConstraint_1211544519440">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519428" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMMCABLE" name="COMMCABLE" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544519441 SQLConstraint_1211544519442">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519429" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519422" name="PK_CFGANTENNES" type="UNIQUE" members="SAVCONFIGID ID_ANTEN"/>
+  <constraints xmi:id="SQLConstraint_1211544519427" name="CKC_KIND_ANT_CFGAN" type="CHECK" body="kind_ant IN ('R' ,'T' ,'D' )" members="KIND_ANT"/>
+  <constraints xmi:id="SQLConstraint_1211544519434" name="CKC_BYHAND_CFGAN" type="CHECK" body="byhand IN ('Y' ,'N' )" members="BYHAND"/>
+  <constraints xmi:id="SQLConstraint_1211544519436" name="CKC_LOCATION_CFGAN" type="CHECK" body="locationtype IN ('I' ,'O' )" members="LOCATIONTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544519439" name="CKC_OBJTST_CFGAN" type="CHECK" body="objectstatus IN ('K' ,'U' ,'A' ,'D' )" members="OBJECTSTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544519441" name="CKC_COMMCABL_CFGAN" type="CHECK" body="commcable IN ('Y' ,'N' )" members="COMMCABLE"/>
+  <constraints xmi:id="SQLConstraint_1211544519424" name="SYS_C005867" type="CHECK" body="&quot;ID_ANTEN&quot; IS NOT NULL" members="ID_ANTEN"/>
+  <constraints xmi:id="SQLConstraint_1211544519425" name="SYS_C005868" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544519426" name="SYS_C005869" type="CHECK" body="&quot;NUM_ANT&quot; IS NOT NULL" members="NUM_ANT"/>
+  <constraints xmi:id="SQLConstraint_1211544519428" name="SYS_C005870" type="CHECK" body="&quot;KIND_ANT&quot; IS NOT NULL" members="KIND_ANT"/>
+  <constraints xmi:id="SQLConstraint_1211544519429" name="SYS_C005871" type="CHECK" body="&quot;NAKL&quot; IS NOT NULL" members="NAKL"/>
+  <constraints xmi:id="SQLConstraint_1211544519430" name="SYS_C005872" type="CHECK" body="&quot;AZ_ANT&quot; IS NOT NULL" members="AZ_ANT"/>
+  <constraints xmi:id="SQLConstraint_1211544519431" name="SYS_C005873" type="CHECK" body="&quot;H_SET1&quot; IS NOT NULL" members="H_SET1"/>
+  <constraints xmi:id="SQLConstraint_1211544519432" name="SYS_C005874" type="CHECK" body="&quot;LEN_CABLE&quot; IS NOT NULL" members="LEN_CABLE"/>
+  <constraints xmi:id="SQLConstraint_1211544519433" name="SYS_C005875" type="CHECK" body="&quot;EQUIPMENT&quot; IS NOT NULL" members="EQUIPMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544519435" name="SYS_C005876" type="CHECK" body="&quot;BYHAND&quot; IS NOT NULL" members="BYHAND"/>
+  <constraints xmi:id="SQLConstraint_1211544519437" name="SYS_C005877" type="CHECK" body="&quot;LOCATIONTYPE&quot; IS NOT NULL" members="LOCATIONTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544519438" name="SYS_C005878" type="CHECK" body="&quot;DATASOURCE&quot; IS NOT NULL" members="DATASOURCE"/>
+  <constraints xmi:id="SQLConstraint_1211544519440" name="SYS_C005879" type="CHECK" body="&quot;OBJECTSTATUS&quot; IS NOT NULL" members="OBJECTSTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544519442" name="SYS_C005880" type="CHECK" body="&quot;COMMCABLE&quot; IS NOT NULL" members="COMMCABLE"/>
+  <constraints xmi:id="SQLConstraint_1211544519423" name="SYS_C005866" type="CHECK" body="&quot;SAVCONFIGID&quot; IS NOT NULL" members="SAVCONFIGID"/>
+</RDBSchema:RDBTable>

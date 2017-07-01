@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="leaseregistrybuchdocshistory" name="leaseregistrybuchdocshistory" primaryKey="pk_leaseregistryhs">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="historyid" name="historyid">
+    <type xmi:type="RDBSchema:InformixSerialExactNumeric" xmi:id="InformixSerialExactNumeric_1185277710908" start="0">
+      <originatingType xmi:type="RDBSchema:InformixSerialExactNumeric" href="INFORMIX_V92_Primitives.xmi#InformixSerialExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="idregistrydoc" name="idregistrydoc">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1185277710908">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="actiontime" name="actiontime">
+    <type xmi:type="RDBSchema:InformixDateTimeInterval" xmi:id="InformixDateTimeInterval_1185277710908" qualifier="INFORMIX_DATETIME_YEAR_FRACTION" fractionalSecondsPrecision="3">
+      <originatingType xmi:type="RDBSchema:InformixDateTimeInterval" href="INFORMIX_V92_Primitives.xmi#InformixDateTimeInterval_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="state" name="state">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1185277710908" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="man" name="man">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1185277710909">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_leaseregistryhs" name="pk_leaseregistryhs" members="historyid" constraint="SQLConstraint_1185277710908"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_25170_2517026" name="fk_ref_25170_2517026" members="man" constraint="SQLConstraint_1185277710909">
+    <target href="META-INF/backends/INFORMIX_V92_1/july_informix_people.tblxmi#pk_people"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1185277710908" name="pk_leaseregistryhs" type="PRIMARYKEY" primaryKey="pk_leaseregistryhs"/>
+  <constraints xmi:id="SQLConstraint_1185277710909" name="fk_ref_25170_2517026" type="FOREIGNKEY" referenceByKey="fk_ref_25170_2517026"/>
+</RDBSchema:RDBTable>

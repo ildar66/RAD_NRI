@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="IDBSBANDS" name="IDBSBANDS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BANDID" name="BANDID" allowNull="true" constraints="SQLConstraint_1211544521074 SQLConstraint_1211544521075">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521074" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROJECTID" name="PROJECTID" allowNull="true" constraints="SQLConstraint_1211544521076">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521075" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAND" name="BAND" allowNull="true" constraints="SQLConstraint_1211544521077 SQLConstraint_1211544521078">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521076" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTION" name="ACTION" allowNull="true" constraints="SQLConstraint_1211544521079 SQLConstraint_1211544521080">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521074" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521074" name="PK_IDBSBANDS" type="UNIQUE" members="BANDID"/>
+  <constraints xmi:id="SQLConstraint_1211544521077" name="CKC_BAND_IDBSB" type="CHECK" body="band IN (800 ,900 ,1800 ,2100 )" members="BAND"/>
+  <constraints xmi:id="SQLConstraint_1211544521079" name="CKC_ACTION_IDBSB" type="CHECK" body="action IN ('A' ,'U' ,'D' )" members="ACTION"/>
+  <constraints xmi:id="SQLConstraint_1211544521075" name="SYS_C003813" type="CHECK" body="&quot;BANDID&quot; IS NOT NULL" members="BANDID"/>
+  <constraints xmi:id="SQLConstraint_1211544521076" name="SYS_C003814" type="CHECK" body="&quot;PROJECTID&quot; IS NOT NULL" members="PROJECTID"/>
+  <constraints xmi:id="SQLConstraint_1211544521078" name="SYS_C003815" type="CHECK" body="&quot;BAND&quot; IS NOT NULL" members="BAND"/>
+  <constraints xmi:id="SQLConstraint_1211544521080" name="SYS_C003816" type="CHECK" body="&quot;ACTION&quot; IS NOT NULL" members="ACTION"/>
+</RDBSchema:RDBTable>

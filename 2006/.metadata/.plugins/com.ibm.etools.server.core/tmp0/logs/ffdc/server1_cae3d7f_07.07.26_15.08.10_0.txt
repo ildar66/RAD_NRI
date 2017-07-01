@@ -1,0 +1,278 @@
+------Start of DE processing------ = [07.07.26 15:08:10:477 MSD] , key = java.lang.NoSuchMethodError com.ibm.ws.webcontainer.servlet.ServletManager.doService 396
+Exception = java.lang.NoSuchMethodError
+Source = com.ibm.ws.webcontainer.servlet.ServletManager.doService
+probeid = 396
+Stack Dump = java.lang.NoSuchMethodError: com.nri.model.SecurityActionProcessor: method findRolesByName(Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList; not found
+	at com.nri.security.actions.RoleListAction.execute(RoleListAction.java:34)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:507)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.servlet.StrictServletInstance
+com.ibm.ws.webcontainer.servlet.StrictServletInstance@1b40bd6e
+
+Exception = java.lang.NoSuchMethodError
+Source = com.ibm.ws.webcontainer.servlet.ServletManager.doService
+probeid = 396
+Dump of callerThis = 
+Object type = com.ibm.ws.webcontainer.servlet.StrictServletInstance
+  class$com$ibm$ws$webcontainer$servlet$StrictServletInstance = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@38aa3d76
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@20263dfe
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@36523d7d
+      soleInstance = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3f5dbd7d
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 15
+      clock = 15
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4a2b7d7c
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@3f46fd7d
+      referent = [Ljava.lang.reflect.Field;@76acbd76
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@7e597d79
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  _servicingCount = 0
+  _servletClassname = org.apache.struts.action.ActionServlet
+  _servletName = action
+  _servlet = 
+    class$java$lang$Short = null
+    class$java$lang$Long = null
+    class$java$lang$Integer = null
+    class$java$lang$Float = null
+    class$java$lang$Double = null
+    class$java$lang$Character = null
+    class$java$lang$Byte = null
+    class$java$lang$Boolean = null
+    class$java$math$BigInteger = null
+    class$java$math$BigDecimal = null
+    class$org$apache$struts$action$ActionServlet = 
+      class$java$lang$Class = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = java.lang.ref.SoftReference@6aba3d78
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = java.lang.ref.SoftReference@588dbd6f
+      publicMethods = java.lang.ref.SoftReference@60cd7d78
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@345b7d76
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$webcontainer$servlet$StrictServletInstance.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = java.lang.reflect.Constructor@588c3d6f
+      have_extensions = true
+    servletName = action
+    servletMapping = *.do
+    registrations = 
+      [0] = -//Apache Software Foundation//DTD Struts Configuration 1.0//EN
+      [1] = /org/apache/struts/resources/struts-config_1_0.dtd
+      [2] = -//Apache Software Foundation//DTD Struts Configuration 1.1//EN
+      [3] = /org/apache/struts/resources/struts-config_1_1.dtd
+      [4] = -//Sun Microsystems, Inc.//DTD Web Application 2.2//EN
+      [5] = /org/apache/struts/resources/web-app_2_2.dtd
+      [6] = -//Sun Microsystems, Inc.//DTD Web Application 2.3//EN
+      [7] = /org/apache/struts/resources/web-app_2_3.dtd
+    processor = null
+    log = 
+      component = UNKNOWN
+      method = 
+      webSphere = WebSphere
+      ibm = IBM
+      tc = com.ibm.ejs.ras.TraceComponent@f0abd6c
+    internalName = org.apache.struts.action.ActionResources
+    internal = 
+      class$org$apache$struts$util$PropertyMessageResources = java.lang.Class@c1a3d7f
+      messages = java.util.HashMap@6f5c7d6e
+      log = com.ibm.ws.commons.logging.TrLog@53edfd6e
+      locales = java.util.HashMap@6f407d6e
+      class$org$apache$struts$util$MessageResources = java.lang.Class@c533d7f
+      defaultFactory = org.apache.struts.util.PropertyMessageResourcesFactory@6f46bd6e
+      returnNull = true
+      formats = java.util.HashMap@6f447d6e
+      factory = this._servlet.internal.defaultFactory
+      defaultLocale = java.util.Locale@62f73d7c
+      config = org.apache.struts.action.ActionResources
+    debug = 2
+    dataSources = 
+      fast = true
+      map = java.util.HashMap@18b23d6e
+      class$java$util$HashMap$Entry = java.lang.Class@2126bdfe
+      serialVersionUID = 362498820763181265
+      entrySet = null
+      NULL_KEY = java.lang.Object@3f42bd7d
+      contentionFlag = 0
+      modCount = 0
+      loadFactor = 0.75
+      threshold = 16
+      size = 0
+      table = [Ljava.util.HashMap$Entry;@18b3bd6e
+      DEFAULT_LOAD_FACTOR = 0.75
+      MAXIMUM_CAPACITY = 1073741824
+      DEFAULT_INITIAL_CAPACITY = 16
+      values = null
+      keySet = null
+    convertNull = false
+    configDigester = null
+    config = WEB-INF/struts-config.xml
+    lStrings = 
+      lookup = java.util.HashMap@5558fd70
+      class$java$util$ResourceBundle = java.lang.Class@5c18bcf7
+      locale = java.util.Locale@552d7d70
+      parent = null
+      cacheList = sun.misc.SoftCache@3a2cfd7c
+      DEFAULT_NOT_FOUND = -1
+      underConstruction = java.util.Hashtable@3a2f7d7c
+      MAX_BUNDLES_SEARCHED = 3
+      CACHE_LOAD_FACTOR = 1.0
+      INITIAL_CACHE_SIZE = 25
+      cacheKey = java.util.ResourceBundle$ResourceCacheKey@3a50fd7c
+    LSTRING_FILE = javax.servlet.http.LocalStrings
+    HEADER_LASTMOD = Last-Modified
+    HEADER_IFMODSINCE = If-Modified-Since
+    METHOD_TRACE = TRACE
+    METHOD_PUT = PUT
+    METHOD_POST = POST
+    METHOD_OPTIONS = OPTIONS
+    METHOD_GET = GET
+    METHOD_HEAD = HEAD
+    METHOD_DELETE = DELETE
+    config = this._config
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ejs.resources.seriousMessages
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.webcontainer.servlet.StrictServletInstance
+  syncObject = java.lang.Object@1b403d6e
+  servicingCount = 1
+  _implementsSTM = false
+  _config = 
+    _servletName = action
+    _initParams = 
+      hexDigit[16] = {0123456789ABCDEF}
+      whiteSpaceChars =  	
+
+      specialSaveChars = =: 	
+#!
+      strictKeyValueSeparators = =:
+      keyValueSeparators = =: 	
+
+      defaults = null
+      serialVersionUID = 4112578634029874840
+      class$java$util$Hashtable$Entry = java.lang.Class@26abbdfe
+      emptyIterator = java.util.Hashtable$EmptyIterator@3f4f3d7d
+      emptyEnumerator = java.util.Hashtable$EmptyEnumerator@3f4fbd7d
+      ENTRIES = 2
+      VALUES = 1
+      KEYS = 0
+      values = null
+      entrySet = null
+      keySet = null
+      modCount = 4
+      loadFactor = 0.75
+      threshold = 8
+      count = 4
+      table = [Ljava.util.Hashtable$Entry;@1b7a3d6e
+    _servletContext = com.ibm.ws.webcontainer.webapp.WebApp@5cb5fd76
+  _unavailableUntil = -1
+  _servicingState = 
+    _instance = this._servicingState
+  _state = 
+    _instance = this._state
+  PERMANENTLY_UNAVAILABLE_FOR_SERVICE_STATE = 
+    _instance = this.PERMANENTLY_UNAVAILABLE_FOR_SERVICE_STATE
+  UNAVAILABLE_FOR_SERVICE_STATE = 
+    _instance = this.UNAVAILABLE_FOR_SERVICE_STATE
+  AVAILABLE_FOR_SERVICE_STATE = this._servicingState
+  ERROR_STATE = 
+    _instance = this.ERROR_STATE
+  DESTROYED_STATE = 
+    _instance = this.DESTROYED_STATE
+  DESTROYING_STATE = 
+    _instance = this.DESTROYING_STATE
+  STM_SERVICING_STATE = 
+    _instance = this.STM_SERVICING_STATE
+  SERVICING_STATE = this._state
+  IDLE_STATE = 
+    _instance = this.IDLE_STATE
+  INITIALIZING_STATE = 
+    _instance = this.PRE_INITIALIZED_STATE
+  PRE_INITIALIZED_STATE = 
+    _instance = this.PRE_INITIALIZED_STATE
+

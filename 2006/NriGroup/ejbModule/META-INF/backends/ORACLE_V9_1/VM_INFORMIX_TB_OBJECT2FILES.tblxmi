@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TB_OBJECT2FILES" name="TB_OBJECT2FILES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTID" name="OBJECTID" allowNull="true" constraints="SQLConstraint_1211544525009 SQLConstraint_1211544525010">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525009" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPEID" name="TYPEID" allowNull="true" constraints="SQLConstraint_1211544525009 SQLConstraint_1211544525011">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525010" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILEID" name="FILEID" allowNull="true" constraints="SQLConstraint_1211544525009 SQLConstraint_1211544525012">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525011" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPE_" name="TYPE_" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525009" characterSet="800" length="256">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525009" name="PK_TB_OBJECT2FILES" type="UNIQUE" members="OBJECTID TYPEID FILEID"/>
+  <constraints xmi:id="SQLConstraint_1211544525010" name="SYS_C005240" type="CHECK" body="&quot;OBJECTID&quot; IS NOT NULL" members="OBJECTID"/>
+  <constraints xmi:id="SQLConstraint_1211544525011" name="SYS_C005241" type="CHECK" body="&quot;TYPEID&quot; IS NOT NULL" members="TYPEID"/>
+  <constraints xmi:id="SQLConstraint_1211544525012" name="SYS_C005242" type="CHECK" body="&quot;FILEID&quot; IS NOT NULL" members="FILEID"/>
+</RDBSchema:RDBTable>

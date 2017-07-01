@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbrdbmapping:EjbRdbDocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmlns:ejb="ejb.xmi" xmlns:ejbrdbmapping="ejbrdbmapping.xmi" xmlns:Mapping="Mapping.xmi" xmi:id="EjbRdbDocumentRoot_1185538366796" topToBottom="true" commandStack="">
+  <helper xmi:type="ejbrdbmapping:RdbSchemaProperies" xmi:id="RdbSchemaProperies_1185538366796" primitivesDocument="INFORMIX_V94"/>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1185538421631">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1185538421631">
+      <table href="META-INF/backends/INFORMIX_V94_1/july_informix_sequences.tblxmi#sequences"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1185538421631">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1050159450101"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/INFORMIX_V94_1/july_informix_sequences.tblxmi#id"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1185538421632" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1050159450091"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/INFORMIX_V94_1/july_informix_sequences.tblxmi#value"/>
+      <typeMapping href="JavatoINFORMIX_V94TypeMaps.xmi#int-INTEGER"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OIDvalue"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V94_1/july_informix_sequences.tblxmi#sequences"/>
+  </nested>
+  <inputs xmi:type="ejb:EJBJar" href="META-INF/ejb-jar.xml#EJBJar_1050158862576"/>
+  <outputs xmi:type="RDBSchema:RDBDatabase" href="META-INF/backends/INFORMIX_V94_1/july.dbxmi#july"/>
+  <typeMapping xmi:type="Mapping:MappingRoot" href="JavatoINFORMIX_V94TypeMaps.xmi#Java_to_INFORMIX_V94_TypeMaps"/>
+</ejbrdbmapping:EjbRdbDocumentRoot>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appcfg="http://www.ibm.com/websphere/appserver/schemas/5.0/appcfg.xmi" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1" deploymentId="0" startingWeight="1" binariesURL="${WS_EAR_adminconsole}" useMetadataFromBinaries="false" enableDistribution="true" createMBeansForResources="true" reloadInterval="0" reloadEnabled="false">
+    <targetMappings xmi:id="DeploymentTargetMapping_1" enable="true" target="ServerTarget_1" config="ApplicationConfig_1068045462234"/>
+    <configs xmi:type="appcfg:ApplicationConfig" xmi:id="ApplicationConfig_1068045462234">
+      <sessionManagement xmi:id="SessionManager_1068045462234" enable="true" enableUrlRewriting="false" enableCookies="true" enableSSLTracking="false" enableProtocolSwitchRewriting="false" sessionPersistenceMode="NONE" enableSecurityIntegration="false" allowSerializedSessionAccess="false" maxWaitTime="5" accessSessionOnTimeout="true">
+        <defaultCookieSettings xmi:id="Cookie_1068045462234" domain="" maximumAge="-1" secure="false"/>
+        <sessionDatabasePersistence xmi:id="SessionDatabasePersistence_1068045462234" datasourceJNDIName="jdbc/Sessions" userId="db2admin" password="{xor}Oz1tPjsyNjE=" db2RowSize="ROW_SIZE_4KB" tableSpaceName=""/>
+        <tuningParams xmi:id="TuningParams_1068045462234" usingMultiRowSchema="false" maxInMemorySessionCount="1000" allowOverflow="true" scheduleInvalidation="false" writeFrequency="TIME_BASED_WRITE" writeInterval="10" writeContents="ONLY_UPDATED_ATTRIBUTES" invalidationTimeout="30">
+          <invalidationSchedule xmi:id="InvalidationSchedule_1068045462234" firstHour="14" secondHour="2"/>
+        </tuningParams>
+      </sessionManagement>
+    </configs>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1" deploymentId="1" startingWeight="10000" uri="adminconsole.war">
+      <targetMappings xmi:id="DeploymentTargetMapping_2" target="ServerTarget_1"/>
+    </modules>
+    <classloader xmi:id="Classloader_1" mode="PARENT_FIRST"/>
+  </deployedObject>
+  <deploymentTargets xmi:type="appdeployment:ServerTarget" xmi:id="ServerTarget_1" name="server1" nodeName="localhost"/>
+</appdeployment:Deployment>

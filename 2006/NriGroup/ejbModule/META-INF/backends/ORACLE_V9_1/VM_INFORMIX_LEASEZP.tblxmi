@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEZP" name="LEASEZP">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEDOCUMENT" name="LEASEDOCUMENT" allowNull="true" constraints="SQLConstraint_1211544521715 SQLConstraint_1211544521716">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521715" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDZPNFS" name="IDZPNFS" allowNull="true" constraints="SQLConstraint_1211544521715 SQLConstraint_1211544521717">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521716" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISACTIVE" name="ISACTIVE" allowNull="true" constraints="SQLConstraint_1211544521718 SQLConstraint_1211544521719">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521715" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521715" name="PK_LEASEZP" type="UNIQUE" members="LEASEDOCUMENT IDZPNFS"/>
+  <constraints xmi:id="SQLConstraint_1211544521718" name="CKCISACTIVELEASEZP" type="CHECK" body="isactive IN ('Y' ,'N' )" members="ISACTIVE"/>
+  <constraints xmi:id="SQLConstraint_1211544521716" name="SYS_C004691" type="CHECK" body="&quot;LEASEDOCUMENT&quot; IS NOT NULL" members="LEASEDOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521717" name="SYS_C004692" type="CHECK" body="&quot;IDZPNFS&quot; IS NOT NULL" members="IDZPNFS"/>
+  <constraints xmi:id="SQLConstraint_1211544521719" name="SYS_C004693" type="CHECK" body="&quot;ISACTIVE&quot; IS NOT NULL" members="ISACTIVE"/>
+</RDBSchema:RDBTable>

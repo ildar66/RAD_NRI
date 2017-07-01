@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RES_BSC_CONFIGURATIONS" name="RES_BSC_CONFIGURATIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONFIGID" name="CONFIGID" allowNull="true" constraints="SQLConstraint_1211544524028 SQLConstraint_1211544524029">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524028" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BSCTYPE" name="BSCTYPE" allowNull="true" constraints="SQLConstraint_1211544524030 SQLConstraint_1211544524031">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524028" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RACK_COUNT" name="RACK_COUNT" allowNull="true" constraints="SQLConstraint_1211544524032">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524029" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BTS_COUNT" name="BTS_COUNT" allowNull="true" constraints="SQLConstraint_1211544524033">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524030" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TRX_FR" name="TRX_FR" allowNull="true" constraints="SQLConstraint_1211544524034">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524031" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TRX_HR" name="TRX_HR" allowNull="true" constraints="SQLConstraint_1211544524035">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524032" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="E1_COUNT" name="E1_COUNT" allowNull="true" constraints="SQLConstraint_1211544524036">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524033" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POWER_SUPPLY_CATEGORY" name="POWER_SUPPLY_CATEGORY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524034" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ENERGY_CONSUMPTION_NOMINAL_MOD" name="ENERGY_CONSUMPTION_NOMINAL_MOD" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524035" precision="4" scale="1">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ENERGY_CONSUMPTION_NOMINAL_ACC" name="ENERGY_CONSUMPTION_NOMINAL_ACC" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524036" precision="4" scale="1">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HAVEDDF" name="HAVEDDF" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544524037">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524029" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LOCATION_AREA" name="LOCATION_AREA" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524037" precision="6" scale="1">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LENGTH" name="LENGTH" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524038" precision="6" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HEIGHT" name="HEIGHT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524039" precision="6" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="WIDTH" name="WIDTH" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524040" precision="6" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="WEIGHT" name="WEIGHT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524041" precision="4" scale="1">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POWER" name="POWER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524042" precision="4" scale="1">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECYCLING_TERM_EMISSION" name="RECYCLING_TERM_EMISSION" allowNull="true" constraints="SQLConstraint_1211544524038 SQLConstraint_1211544524039">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524030" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECYCLING_TERM_EMISSION_MIN" name="RECYCLING_TERM_EMISSION_MIN" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524043" precision="3" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECYCLING_TERM_EMISSION_MAX" name="RECYCLING_TERM_EMISSION_MAX" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524044" precision="3" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AIR_TEMPERATURE_MIN" name="AIR_TEMPERATURE_MIN" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524045" precision="2" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AIR_TEMPERATURE_MAX" name="AIR_TEMPERATURE_MAX" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524046" precision="2" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AIR_HUMIDITY_MIN" name="AIR_HUMIDITY_MIN" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524047" precision="2" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AIR_HUMIDITY_MAX" name="AIR_HUMIDITY_MAX" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524048" precision="2" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AIR_TEMPERATURE_WITHOUT_ENERGY" name="AIR_TEMPERATURE_WITHOUT_ENERGY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524049" precision="2" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AIR_TEMPERATURE_WITHOUT_ENER_1" name="AIR_TEMPERATURE_WITHOUT_ENER_1" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524050" precision="2" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524028" name="PK_RES_BSC_CONFIGU" type="UNIQUE" members="CONFIGID"/>
+  <constraints xmi:id="SQLConstraint_1211544524030" name="CKC_BSCTYPE_RES_B" type="CHECK" body="bsctype IN ('A' ,'B' ,'C' )" members="BSCTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544524037" name="CKC_HAVEDDF_RES_B" type="CHECK" body="(haveddf IS NULL ) OR (haveddf IN ('Y' ,'N' )) " members="HAVEDDF"/>
+  <constraints xmi:id="SQLConstraint_1211544524038" name="CKC_RECYCLIN_RES_B" type="CHECK" body="recycling_term_emission IN ('A' ,'S' )" members="RECYCLING_TERM_EMISSION"/>
+  <constraints xmi:id="SQLConstraint_1211544524029" name="SYS_C003832" type="CHECK" body="&quot;CONFIGID&quot; IS NOT NULL" members="CONFIGID"/>
+  <constraints xmi:id="SQLConstraint_1211544524031" name="SYS_C003833" type="CHECK" body="&quot;BSCTYPE&quot; IS NOT NULL" members="BSCTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544524032" name="SYS_C003834" type="CHECK" body="&quot;RACK_COUNT&quot; IS NOT NULL" members="RACK_COUNT"/>
+  <constraints xmi:id="SQLConstraint_1211544524033" name="SYS_C003835" type="CHECK" body="&quot;BTS_COUNT&quot; IS NOT NULL" members="BTS_COUNT"/>
+  <constraints xmi:id="SQLConstraint_1211544524034" name="SYS_C003836" type="CHECK" body="&quot;TRX_FR&quot; IS NOT NULL" members="TRX_FR"/>
+  <constraints xmi:id="SQLConstraint_1211544524035" name="SYS_C003837" type="CHECK" body="&quot;TRX_HR&quot; IS NOT NULL" members="TRX_HR"/>
+  <constraints xmi:id="SQLConstraint_1211544524036" name="SYS_C003838" type="CHECK" body="&quot;E1_COUNT&quot; IS NOT NULL" members="E1_COUNT"/>
+  <constraints xmi:id="SQLConstraint_1211544524039" name="SYS_C003839" type="CHECK" body="&quot;RECYCLING_TERM_EMISSION&quot; IS NOT NULL" members="RECYCLING_TERM_EMISSION"/>
+</RDBSchema:RDBTable>

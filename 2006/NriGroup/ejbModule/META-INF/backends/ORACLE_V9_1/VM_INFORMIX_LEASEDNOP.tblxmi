@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEDNOP" name="LEASEDNOP">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASECHARGE" name="LEASECHARGE" allowNull="true" constraints="SQLConstraint_1211544521484 SQLConstraint_1211544521485">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521484" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEPAYMENT" name="LEASEPAYMENT" allowNull="true" constraints="SQLConstraint_1211544521484 SQLConstraint_1211544521486">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521485" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHARGESUM" name="CHARGESUM" allowNull="true" constraints="SQLConstraint_1211544521487">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521486" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHARGERURRATE" name="CHARGERURRATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521487" precision="15" scale="4">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHARGERURSUM" name="CHARGERURSUM" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521488" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYRURSUM" name="PAYRURSUM" allowNull="true" constraints="SQLConstraint_1211544521488">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521489" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SOURCE" name="SOURCE" allowNull="true" constraints="SQLConstraint_1211544521489 SQLConstraint_1211544521490">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521484" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACT" name="ACT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521490" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="USEDINACT" name="USEDINACT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521491" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BYHANDCHRGRATERUR" name="BYHANDCHRGRATERUR" allowNull="true" constraints="SQLConstraint_1211544521491 SQLConstraint_1211544521492">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521485" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYRURNDS" name="PAYRURNDS" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521492" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHARGENDS" name="CHARGENDS" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521493" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHARGERURNDS" name="CHARGERURNDS" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521494" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CURRLINK" name="CURRLINK" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521495" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521484" name="PK_LEASEDNOP" type="UNIQUE" members="LEASECHARGE LEASEPAYMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521489" name="CKC_SOURCE_LDNOP" type="CHECK" body="source IN ('B' ,'H' ,'A' )" members="SOURCE"/>
+  <constraints xmi:id="SQLConstraint_1211544521491" name="CKC_BYHANDCH_LEASE" type="CHECK" body="byhandchrgraterur IN ('Y' ,'N' )" members="BYHANDCHRGRATERUR"/>
+  <constraints xmi:id="SQLConstraint_1211544521485" name="SYS_C004316" type="CHECK" body="&quot;LEASECHARGE&quot; IS NOT NULL" members="LEASECHARGE"/>
+  <constraints xmi:id="SQLConstraint_1211544521486" name="SYS_C004317" type="CHECK" body="&quot;LEASEPAYMENT&quot; IS NOT NULL" members="LEASEPAYMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521487" name="SYS_C004318" type="CHECK" body="&quot;CHARGESUM&quot; IS NOT NULL" members="CHARGESUM"/>
+  <constraints xmi:id="SQLConstraint_1211544521488" name="SYS_C004319" type="CHECK" body="&quot;PAYRURSUM&quot; IS NOT NULL" members="PAYRURSUM"/>
+  <constraints xmi:id="SQLConstraint_1211544521490" name="SYS_C004320" type="CHECK" body="&quot;SOURCE&quot; IS NOT NULL" members="SOURCE"/>
+  <constraints xmi:id="SQLConstraint_1211544521492" name="SYS_C004321" type="CHECK" body="&quot;BYHANDCHRGRATERUR&quot; IS NOT NULL" members="BYHANDCHRGRATERUR"/>
+</RDBSchema:RDBTable>

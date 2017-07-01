@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBDatabase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="VM" name="VM">
+  <schemata href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <connection href="META-INF/backends/ORACLE_V9_1/ConToOracle.conxmi#ConToOracle"/>
+  <domain href="ORACLE_V9_Domain.xmi#SQLVendor_1"/>
+</RDBSchema:RDBDatabase>

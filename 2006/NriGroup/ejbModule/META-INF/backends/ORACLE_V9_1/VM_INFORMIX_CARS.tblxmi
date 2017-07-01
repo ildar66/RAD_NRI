@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CARS" name="CARS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CAR" name="CAR" allowNull="true" constraints="SQLConstraint_1211544519392 SQLConstraint_1211544519393">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519392" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISOUR" name="ISOUR" allowNull="true" defaultValue="'Y'" constraints="SQLConstraint_1211544519394 SQLConstraint_1211544519395">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519392" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ORGANIZATION_" name="ORGANIZATION_" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519393" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIVISION" name="DIVISION" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519394" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CAR_MODEL" name="CAR_MODEL" allowNull="true" constraints="SQLConstraint_1211544519396">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519393" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CAR_NUMBER" name="CAR_NUMBER" allowNull="true" constraints="SQLConstraint_1211544519397">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519394" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519392" name="PK_CARS" type="UNIQUE" members="CAR"/>
+  <constraints xmi:id="SQLConstraint_1211544519394" name="CKC_ISOUR_CARS" type="CHECK" body="isour IN ('Y' ,'N' )" members="ISOUR"/>
+  <constraints xmi:id="SQLConstraint_1211544519397" name="SYS_C004662" type="CHECK" body="&quot;CAR_NUMBER&quot; IS NOT NULL" members="CAR_NUMBER"/>
+  <constraints xmi:id="SQLConstraint_1211544519393" name="SYS_C004659" type="CHECK" body="&quot;CAR&quot; IS NOT NULL" members="CAR"/>
+  <constraints xmi:id="SQLConstraint_1211544519395" name="SYS_C004660" type="CHECK" body="&quot;ISOUR&quot; IS NOT NULL" members="ISOUR"/>
+  <constraints xmi:id="SQLConstraint_1211544519396" name="SYS_C004661" type="CHECK" body="&quot;CAR_MODEL&quot; IS NOT NULL" members="CAR_MODEL"/>
+</RDBSchema:RDBTable>

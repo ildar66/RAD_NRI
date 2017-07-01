@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="people" name="people" primaryKey="pk_people">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="man" name="man">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1185277710828">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="firstname" name="firstname">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1185277710828" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="lastname" name="lastname">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1185277710829" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="middlename" name="middlename">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1185277710830" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="passportser" name="passportser">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1185277710831" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="passportdate" name="passportdate" allowNull="true">
+    <type xmi:type="RDBSchema:SQLDate" xmi:id="SQLDate_1185277710828">
+      <originatingType xmi:type="RDBSchema:SQLDate" href="INFORMIX_V92_Primitives.xmi#SQLDate_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="passportwhom" name="passportwhom" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1185277710832" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="isactive" name="isactive" defaultValue="Y">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1185277710833" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="tabnum" name="tabnum" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1185277710829">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_people" name="pk_people" members="man" constraint="SQLConstraint_1185277710828">
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_changeslog.tblxmi#fk_ref_67980_67980"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_cidnes_d2p.tblxmi#fk_fk_people_688255"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_dpdevplans.tblxmi#fk_ref_26050_2605028"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_lawyearnoteonposition.tblxmi#fk_ref_46442_464424"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_leasecontractproblem.tblxmi#fk_ref_13060_1306060"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_leaseregistrybuchdocshistory.tblxmi#fk_ref_25170_2517026"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_nfs_lnkuser.tblxmi#fk_ref_nfsuser_people"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_projectstates.tblxmi#fk_ref_42794_42794"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_reglamentworks.tblxmi#fk_ref_48901_489011"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_sitedocs.tblxmi#fk_ref_113652_1136"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_smss_permits.tblxmi#fk_ref_770758_7707"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1185277710828" name="pk_people" type="PRIMARYKEY" primaryKey="pk_people"/>
+</RDBSchema:RDBTable>

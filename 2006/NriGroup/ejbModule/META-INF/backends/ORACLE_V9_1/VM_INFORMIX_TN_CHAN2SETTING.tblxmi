@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TN_CHAN2SETTING" name="TN_CHAN2SETTING">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SETTINGID" name="SETTINGID" allowNull="true" constraints="SQLConstraint_1211544525500 SQLConstraint_1211544525501">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525500" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONSCHANID" name="CONSCHANID" allowNull="true" constraints="SQLConstraint_1211544525500 SQLConstraint_1211544525502">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525501" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525500" name="PK_TN_CHAN2SETTING" type="UNIQUE" members="SETTINGID CONSCHANID"/>
+  <constraints xmi:id="SQLConstraint_1211544525501" name="SYS_C003531" type="CHECK" body="&quot;SETTINGID&quot; IS NOT NULL" members="SETTINGID"/>
+  <constraints xmi:id="SQLConstraint_1211544525502" name="SYS_C003532" type="CHECK" body="&quot;CONSCHANID&quot; IS NOT NULL" members="CONSCHANID"/>
+</RDBSchema:RDBTable>

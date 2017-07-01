@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="expedition" name="expedition" primaryKey="pk_expedition">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="expedition_1" name="expedition">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1188453352979">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="expeditor" name="expeditor" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1188453352980">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="organization" name="organization" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1188453352981">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_expedition" name="pk_expedition" members="expedition_1" constraint="SQLConstraint_1188453352979"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_7452_7452" name="fk_ref_7452_7452" members="organization" constraint="SQLConstraint_1188453352980">
+    <target href="META-INF/backends/INFORMIX_V92_1/july_informix_organizations.tblxmi#pk_organizations"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1188453352979" name="pk_expedition" type="PRIMARYKEY" primaryKey="pk_expedition"/>
+  <constraints xmi:id="SQLConstraint_1188453352980" name="fk_ref_7452_7452" type="FOREIGNKEY" referenceByKey="fk_ref_7452_7452"/>
+</RDBSchema:RDBTable>

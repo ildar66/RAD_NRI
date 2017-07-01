@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="NFS_LNKCURRENCY" name="NFS_LNKCURRENCY">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDCURRENCYNFS" name="IDCURRENCYNFS" allowNull="true" constraints="SQLConstraint_1211544522155 SQLConstraint_1211544522156">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522155" characterSet="800" length="60">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDCURRENCYNRI" name="IDCURRENCYNRI" allowNull="true" constraints="SQLConstraint_1211544522157">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522155" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGMAIN" name="FLAGMAIN" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544522158 SQLConstraint_1211544522159">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522156" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544522155" name="PK_NFS_LNKCURRENCY" type="UNIQUE" members="IDCURRENCYNFS"/>
+  <constraints xmi:id="SQLConstraint_1211544522158" name="CKC_FLAGMAIN_NFSLC" type="CHECK" body="flagmain IN ('Y' ,'N' )" members="FLAGMAIN"/>
+  <constraints xmi:id="SQLConstraint_1211544522156" name="SYS_C004674" type="CHECK" body="&quot;IDCURRENCYNFS&quot; IS NOT NULL" members="IDCURRENCYNFS"/>
+  <constraints xmi:id="SQLConstraint_1211544522157" name="SYS_C004675" type="CHECK" body="&quot;IDCURRENCYNRI&quot; IS NOT NULL" members="IDCURRENCYNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544522159" name="SYS_C004676" type="CHECK" body="&quot;FLAGMAIN&quot; IS NOT NULL" members="FLAGMAIN"/>
+</RDBSchema:RDBTable>

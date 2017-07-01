@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulemap:EARProjectMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:application="application.xmi" xmlns:modulemap="modulemap.xmi" xmi:id="EARProjectMap_1184592432053">
+  <mappings xmi:id="ModuleMapping_1184592432053" projectName="NriGroup">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1184592432053"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1185184155298" projectName="SecurityApp">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1185184155298"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1185528086867" projectName="OIDGenerator">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1185528086867"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1185799941416" projectName="NriTestClient">
+    <module xmi:type="application:JavaClientModule" href="META-INF/application.xml#JavaClientModule_1185799941416"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1191223328131" projectName="SequenceGenerator">
+    <module xmi:type="application:EjbModule" href="META-INF/application.xml#EjbModule_1191223328131"/>
+  </mappings>
+  <utilityJARMappings xmi:id="UtilityJARMapping_1184592452425" projectName="NRI-AppLogic" uri="NRI-AppLogic.jar"/>
+</modulemap:EARProjectMap>

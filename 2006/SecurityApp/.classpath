@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path="JavaSource"/>
+    <classpathentry kind="src" path="unit_test_sourse"/>
+    <classpathentry kind="var"
+        path="SERVERJDK_50_PLUGINDIR/jre/lib/rt.jar" sourcepath="SERVERJDK_50_PLUGINDIR/src.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/j2ee.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/servletevent.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/ivjejb35.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/runtime.jar"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-beanutils.jar"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-collections.jar"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-digester.jar"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-fileupload.jar"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-lang.jar"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-logging.jar"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/commons-validator.jar"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/jakarta-oro.jar"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/struts.jar"/>
+    <classpathentry exported="true" kind="src" path="/NRI-AppLogic"/>
+    <classpathentry exported="true" kind="src" path="/NriGroup"/>
+    <classpathentry exported="true" kind="src" path="/OIDGenerator"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/junit.jar"/>
+    <classpathentry kind="lib" path="WebContent/WEB-INF/lib/junitee.jar"/>
+    <classpathentry exported="true" kind="lib" path="/nri/jakarta-regexp-1.2.jar"/>
+    <classpathentry exported="true" kind="src" path="/SequenceGenerator"/>
+    <classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
+</classpath>

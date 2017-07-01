@@ -1,0 +1,217 @@
+------Start of DE processing------ = [08.05.23 14:12:34:203 MSD] , key = javax.ejb.EJBException com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate 131
+Exception = javax.ejb.EJBException
+Source = com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate
+probeid = 131
+Stack Dump = javax.ejb.EJBException: nested exception is: com.ibm.ws.ejbpersistence.utilpm.ResourceAdapterException: PMGR6020E: Error connecting to adapter com.ibm.ws.rsadapter.cci.WSRdbConnectionFactoryImpl@1a138f97
+com.ibm.ws.ejbpersistence.utilpm.ResourceAdapterException: PMGR6020E: Error connecting to adapter com.ibm.ws.rsadapter.cci.WSRdbConnectionFactoryImpl@1a138f97
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.executeOneRowFBPK(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.fetchRecordFromDataStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.getRecordForLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbLoad(Unknown Source)
+	at com.god.oidgen.ConcreteOIDvalue_9352f82e.ejbLoad(ConcreteOIDvalue_9352f82e.java:37)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.loadForEnlist(ContainerManaged2_0BeanO.java:351)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean_Local(EJSHome.java:1230)
+	at com.god.oidgen.EJSCMPOIDvalueHomeBean_9352f82e.findByPrimaryKey_Local(EJSCMPOIDvalueHomeBean_9352f82e.java:18)
+	at com.god.oidgen.EJSLocalCMPOIDvalueHome_9352f82e.findByPrimaryKey(EJSLocalCMPOIDvalueHome_9352f82e.java:55)
+	at com.god.oidgen.OIDGeneratorSessionBean.getNextOID(OIDGeneratorSessionBean.java:68)
+	at com.god.oidgen.EJSLocalStatelessOIDGeneratorSessionBean_56849065.getNextOID(EJSLocalStatelessOIDGeneratorSessionBean_56849065.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: javax.resource.spi.ResourceAllocationException: DSRA8100E: Unable to get a PooledConnection from the DataSource.
+	at com.ibm.ejs.j2c.poolmanager.FreePool.createManagedConnectionWithMCWrapper(FreePool.java:1351)
+	at com.ibm.ejs.j2c.poolmanager.FreePool.createOrWaitForConnection(FreePool.java:1065)
+	at com.ibm.ejs.j2c.poolmanager.PoolManager.reserve(PoolManager.java:1603)
+	at com.ibm.ejs.j2c.ConnectionManager.allocateMCWrapper(ConnectionManager.java:677)
+	at com.ibm.ejs.j2c.ConnectionManager.allocateConnection(ConnectionManager.java:461)
+	at com.ibm.ws.rsadapter.cci.WSRdbConnectionFactoryImpl.getConnection(WSRdbConnectionFactoryImpl.java:261)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.getConnection(WSRelationalRAAdapter.java:373)
+	at com.ibm.ws.ejbpersistence.cache.TransactionListenerImpl.getConnection(Unknown Source)
+	... 46 more
+---- Begin backtrace for nested exception
+javax.resource.spi.ResourceAllocationException: DSRA8100E: Unable to get a PooledConnection from the DataSource.
+	at com.ibm.ejs.j2c.poolmanager.FreePool.createManagedConnectionWithMCWrapper(FreePool.java:1351)
+	at com.ibm.ejs.j2c.poolmanager.FreePool.createOrWaitForConnection(FreePool.java:1065)
+	at com.ibm.ejs.j2c.poolmanager.PoolManager.reserve(PoolManager.java:1603)
+	at com.ibm.ejs.j2c.ConnectionManager.allocateMCWrapper(ConnectionManager.java:677)
+	at com.ibm.ejs.j2c.ConnectionManager.allocateConnection(ConnectionManager.java:461)
+	at com.ibm.ws.rsadapter.cci.WSRdbConnectionFactoryImpl.getConnection(WSRdbConnectionFactoryImpl.java:261)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.getConnection(WSRelationalRAAdapter.java:373)
+	at com.ibm.ws.ejbpersistence.cache.TransactionListenerImpl.getConnection(Unknown Source)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.executeOneRowFBPK(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.fetchRecordFromDataStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.getRecordForLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbLoad(Unknown Source)
+	at com.god.oidgen.ConcreteOIDvalue_9352f82e.ejbLoad(ConcreteOIDvalue_9352f82e.java:37)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.loadForEnlist(ContainerManaged2_0BeanO.java:351)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean_Local(EJSHome.java:1230)
+	at com.god.oidgen.EJSCMPOIDvalueHomeBean_9352f82e.findByPrimaryKey_Local(EJSCMPOIDvalueHomeBean_9352f82e.java:18)
+	at com.god.oidgen.EJSLocalCMPOIDvalueHome_9352f82e.findByPrimaryKey(EJSLocalCMPOIDvalueHome_9352f82e.java:55)
+	at com.god.oidgen.OIDGeneratorSessionBean.getNextOID(OIDGeneratorSessionBean.java:68)
+	at com.god.oidgen.EJSLocalStatelessOIDGeneratorSessionBean_56849065.getNextOID(EJSLocalStatelessOIDGeneratorSessionBean_56849065.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+javax.ejb.EJBException: nested exception is: com.ibm.ws.ejbpersistence.utilpm.ResourceAdapterException: PMGR6020E: Error connecting to adapter com.ibm.ws.rsadapter.cci.WSRdbConnectionFactoryImpl@1a138f97
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.getRecordForLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbLoad(Unknown Source)
+	at com.god.oidgen.ConcreteOIDvalue_9352f82e.ejbLoad(ConcreteOIDvalue_9352f82e.java:37)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.loadForEnlist(ContainerManaged2_0BeanO.java:351)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean_Local(EJSHome.java:1230)
+	at com.god.oidgen.EJSCMPOIDvalueHomeBean_9352f82e.findByPrimaryKey_Local(EJSCMPOIDvalueHomeBean_9352f82e.java:18)
+	at com.god.oidgen.EJSLocalCMPOIDvalueHome_9352f82e.findByPrimaryKey(EJSLocalCMPOIDvalueHome_9352f82e.java:55)
+	at com.god.oidgen.OIDGeneratorSessionBean.getNextOID(OIDGeneratorSessionBean.java:68)
+	at com.god.oidgen.EJSLocalStatelessOIDGeneratorSessionBean_56849065.getNextOID(EJSLocalStatelessOIDGeneratorSessionBean_56849065.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.activator.OptCEntityActivationStrategy
+com.ibm.ejs.container.activator.OptCEntityActivationStrategy@76fb4f84
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Fri May 23 14:12:34 MSD 2008
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@658a4f89
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = nri#OIDGenerator.jar#OIDvalue
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 2.0
+                                 CMP Version    = 2.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=1
+                                     ******* Resource-Ref ******* 
+                                 Description=WebSphere CMP Resource Ref Connection Factory
+                                 Name=WebSphereCMPConnectionFactory
+                                 JNDIName=jdbc/oracle
+                                 Type=javax.resource.cci.ConnectionFactory
+                                 ResAuth=APPLICATION
+                                 ResSharingScope=SHAREABLE
+                                 IsolationLevel=TRANSACTION_NONE
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@5cff8f96
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@5ce98f96#tid=37
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = false
+  Isolation Level         = TRANSACTION_NONE
+
+  --- Dump of Enlisted Beans : 0 ---------------------- 
+
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@5cff8f96
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Fri May 23 14:12:34 MSD 2008

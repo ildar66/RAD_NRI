@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.ibm.etools.websphere.tools.v51.launchConfigurationType">
+    <listAttribute key="org.eclipse.jdt.launching.CLASSPATH">
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;runtimeClasspathEntry
+    externalArchive=&quot;C:/Program Files/IBM/WebSphere Studio/Application Developer/v5.1.2/runtimes/express_v51/properties&quot;
+    path=&quot;3&quot; type=&quot;2&quot;/&gt;
+"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;runtimeClasspathEntry
+    externalArchive=&quot;C:/Program Files/IBM/WebSphere Studio/Application Developer/v5.1.2/runtimes/express_v51/lib/bootstrap.jar&quot;
+    path=&quot;3&quot; type=&quot;2&quot;/&gt;
+"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;runtimeClasspathEntry
+    externalArchive=&quot;C:/Program Files/IBM/WebSphere Studio/Application Developer/v5.1.2/runtimes/express_v51/lib/j2ee.jar&quot;
+    path=&quot;3&quot; type=&quot;2&quot;/&gt;
+"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;runtimeClasspathEntry
+    externalArchive=&quot;C:/Program Files/IBM/WebSphere Studio/Application Developer/v5.1.2/runtimes/express_v51/lib/lmproxy.jar&quot;
+    path=&quot;3&quot; type=&quot;2&quot;/&gt;
+"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;runtimeClasspathEntry path=&quot;3&quot; projectName=&quot;NriTestClient&quot; type=&quot;1&quot;/&gt;
+"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;runtimeClasspathEntry path=&quot;3&quot; projectName=&quot;NRI-AppLogic&quot; type=&quot;1&quot;/&gt;
+"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;runtimeClasspathEntry path=&quot;3&quot; projectName=&quot;NriGroup&quot; type=&quot;1&quot;/&gt;
+"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;runtimeClasspathEntry internalArchive=&quot;/nri/junit.jar&quot; path=&quot;3&quot; type=&quot;2&quot;/&gt;
+"/>
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;runtimeClasspathEntry path=&quot;3&quot; projectName=&quot;OIDGenerator&quot; type=&quot;1&quot;/&gt;
+"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.debug.ui.target_debug_perspective" value="perspective_default"/>
+    <stringAttribute key="org.eclipse.debug.ui.target_run_perspective" value="perspective_none"/>
+    <stringAttribute key="enterprise_application" value="com.ibm.etools.server.j2ee.ear13:nri"/>
+    <stringAttribute key="app_client" value="com.ibm.etools.server.j2ee.appclient13:NriTestClient"/>
+    <intAttribute key="server_type" value="13"/>
+    <booleanAttribute key="hot_method_replace" value="true"/>
+    <booleanAttribute key="profile_process" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.DEFAULT_CLASSPATH" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-CCverbose=true com.nri.tests.junit.ejb.AllEJBTests"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Dws.output.encoding=console -Dcom.ibm.CORBA.ConfigURL=&quot;file:/C:\ildar\RAD_NRI\.metadata\.plugins\com.ibm.etools.websphere.tools.v51\sas.client.props&quot; -Dserver.root=&quot;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\express_v51&quot; -Dws.ext.dirs=&quot;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\express_v51\java\lib;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\express_v51\classes;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\express_v51\lib;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\express_v51\lib\ext;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\express_v51\web\help&quot; -Djava.security.auth.login.config=&quot;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\express_v51\properties\wsjaas_client.conf&quot; -Dcom.ibm.CORBA.BootstrapHost=ms-w60531-12 -Djava.naming.factory.initial=com.ibm.websphere.naming.WsnInitialContextFactory -Xbootclasspath/p:&quot;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\express_v51\java\jre\lib\ext\ibmorb.jar&quot;"/>
+</launchConfiguration>

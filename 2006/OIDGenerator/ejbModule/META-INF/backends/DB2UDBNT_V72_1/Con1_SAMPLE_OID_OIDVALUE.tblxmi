@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RDBTable_1050159624872" name="OIDVALUE" primaryKey="SQLReference_1050159624872">
+  <database href="META-INF/backends/DB2UDBNT_V72_1/SAMPLE.dbxmi#RDBDatabase_1050159624692"/>
+  <schema href="META-INF/backends/DB2UDBNT_V72_1/Con1_SAMPLE_OID.schxmi#RDBSchema_1050159624832"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RDBColumn_1050159624882" name="TYPE1" allowNull="false">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1050159624882" characterSet="800" length="250">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="DB2UDBNT_V72_Primitives.xmi#SQLCharacterStringType_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RDBColumn_1050159624883" name="NEXTOID" allowNull="false">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1050159624882">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="DB2UDBNT_V72_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="SQLReference_1050159624872" name="PK_OIDVALUE" members="RDBColumn_1050159624882" constraint="SQLConstraint_1050159624882"/>
+  <constraints xmi:id="SQLConstraint_1050159624882" name="PK_OIDVALUE" type="PRIMARYKEY" primaryKey="SQLReference_1050159624872"/>
+</RDBSchema:RDBTable>

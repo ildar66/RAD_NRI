@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="EQEQUIPFORECASTBAND" name="EQEQUIPFORECASTBAND">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CLASSID" name="CLASSID" allowNull="true" constraints="SQLConstraint_1211544520543 SQLConstraint_1211544520544">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520543" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FINCATEGID" name="FINCATEGID" allowNull="true" constraints="SQLConstraint_1211544520543 SQLConstraint_1211544520545">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520544" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAND900" name="BAND900" allowNull="true" constraints="SQLConstraint_1211544520543 SQLConstraint_1211544520546 SQLConstraint_1211544520547">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520543" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAND1800" name="BAND1800" allowNull="true" constraints="SQLConstraint_1211544520543 SQLConstraint_1211544520548 SQLConstraint_1211544520549">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520544" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAND2000" name="BAND2000" allowNull="true" constraints="SQLConstraint_1211544520543 SQLConstraint_1211544520550 SQLConstraint_1211544520551">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520545" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PERCENT" name="PERCENT" allowNull="true" constraints="SQLConstraint_1211544520552">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520545" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520543" name="PK_EQEQUIPFOREBD" type="UNIQUE" members="CLASSID FINCATEGID BAND900 BAND1800 BAND2000"/>
+  <constraints xmi:id="SQLConstraint_1211544520546" name="CKC_BAND900_EQEQU" type="CHECK" body="band900 IN ('Y' ,'N' )" members="BAND900"/>
+  <constraints xmi:id="SQLConstraint_1211544520548" name="CKC_BAND1800_EQEQU" type="CHECK" body="band1800 IN ('Y' ,'N' )" members="BAND1800"/>
+  <constraints xmi:id="SQLConstraint_1211544520550" name="CKC_BAND2000_EQEQU" type="CHECK" body="band2000 IN ('Y' ,'N' )" members="BAND2000"/>
+  <constraints xmi:id="SQLConstraint_1211544520544" name="SYS_C003501" type="CHECK" body="&quot;CLASSID&quot; IS NOT NULL" members="CLASSID"/>
+  <constraints xmi:id="SQLConstraint_1211544520545" name="SYS_C003502" type="CHECK" body="&quot;FINCATEGID&quot; IS NOT NULL" members="FINCATEGID"/>
+  <constraints xmi:id="SQLConstraint_1211544520547" name="SYS_C003503" type="CHECK" body="&quot;BAND900&quot; IS NOT NULL" members="BAND900"/>
+  <constraints xmi:id="SQLConstraint_1211544520549" name="SYS_C003504" type="CHECK" body="&quot;BAND1800&quot; IS NOT NULL" members="BAND1800"/>
+  <constraints xmi:id="SQLConstraint_1211544520551" name="SYS_C003505" type="CHECK" body="&quot;BAND2000&quot; IS NOT NULL" members="BAND2000"/>
+  <constraints xmi:id="SQLConstraint_1211544520552" name="SYS_C003506" type="CHECK" body="&quot;PERCENT&quot; IS NOT NULL" members="PERCENT"/>
+</RDBSchema:RDBTable>

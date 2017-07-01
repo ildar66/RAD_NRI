@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application PUBLIC "-//Sun Microsystems, Inc.//DTD J2EE Application 1.3//EN" "http://java.sun.com/dtd/application_1_3.dtd">
+<application id="Application_ID">
+	<display-name>nri</display-name>
+	<module id="EjbModule_1184592432053">
+		<ejb>NriGroup.jar</ejb>
+	</module>
+	<module id="WebModule_1185184155298">
+		<web>
+			<web-uri>SecurityApp.war</web-uri>
+			<context-root>SecurityApp</context-root>
+		</web>
+	</module>
+	<module id="EjbModule_1185528086867">
+		<ejb>OIDGenerator.jar</ejb>
+	</module>
+	<module id="JavaClientModule_1185799941416">
+		<java>NriTestClient.jar</java>
+	</module>
+	<module id="EjbModule_1191223328131">
+		<ejb>SequenceGenerator.jar</ejb>
+	</module>
+	<security-role id="SecurityRole_1191481309159">
+		<description></description>
+		<role-name>AllAuthenticated</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1191481688139">
+		<description></description>
+		<role-name>Everyone</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1191481717635">
+		<description></description>
+		<role-name>administrator</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1191482517000">
+		<description></description>
+		<role-name>builder</role-name>
+	</security-role>
+</application>

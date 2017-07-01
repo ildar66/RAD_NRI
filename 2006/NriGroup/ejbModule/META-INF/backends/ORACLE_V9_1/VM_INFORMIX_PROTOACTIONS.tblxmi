@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PROTOACTIONS" name="PROTOACTIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROJECTACTION" name="PROJECTACTION" allowNull="true" constraints="SQLConstraint_1211544523727 SQLConstraint_1211544523728">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523727" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STEPBEFORE" name="STEPBEFORE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523728" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ORDER_" name="ORDER_" allowNull="true" constraints="SQLConstraint_1211544523729">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523729" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROJECTTYPE" name="PROJECTTYPE" allowNull="true" constraints="SQLConstraint_1211544523737">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523737" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROJECTACTIONTYPE" name="PROJECTACTIONTYPE" allowNull="true" constraints="SQLConstraint_1211544523738">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523738" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DURATION" name="DURATION" allowNull="true" constraints="SQLConstraint_1211544523739">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523739" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523727" name="PK_PROTOACTIONS" type="UNIQUE" members="PROJECTACTION"/>
+  <constraints xmi:id="SQLConstraint_1211544523728" name="SYS_C004272" type="CHECK" body="&quot;PROJECTACTION&quot; IS NOT NULL" members="PROJECTACTION"/>
+  <constraints xmi:id="SQLConstraint_1211544523729" name="SYS_C004273" type="CHECK" body="&quot;ORDER_&quot; IS NOT NULL" members="ORDER_"/>
+  <constraints xmi:id="SQLConstraint_1211544523737" name="SYS_C004274" type="CHECK" body="&quot;PROJECTTYPE&quot; IS NOT NULL" members="PROJECTTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523738" name="SYS_C004275" type="CHECK" body="&quot;PROJECTACTIONTYPE&quot; IS NOT NULL" members="PROJECTACTIONTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523739" name="SYS_C004276" type="CHECK" body="&quot;DURATION&quot; IS NOT NULL" members="DURATION"/>
+</RDBSchema:RDBTable>

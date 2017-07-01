@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASESFSTATE" name="LEASESFSTATE">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDREC" name="IDREC" allowNull="true" constraints="SQLConstraint_1211544521675 SQLConstraint_1211544521676">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521675" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDSCHETFAKT" name="IDSCHETFAKT" allowNull="true" constraints="SQLConstraint_1211544521677">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521676" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STATE" name="STATE" allowNull="true" constraints="SQLConstraint_1211544521678">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521675" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="WHEN_" name="WHEN_" allowNull="true" defaultValue="SYSDATE" constraints="SQLConstraint_1211544521679">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521675" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="WHO" name="WHO" allowNull="true" constraints="SQLConstraint_1211544521680">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521677" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521675" name="PK_LEASESFSTATE" type="UNIQUE" members="IDREC"/>
+  <constraints xmi:id="SQLConstraint_1211544521676" name="SYS_C005324" type="CHECK" body="&quot;IDREC&quot; IS NOT NULL" members="IDREC"/>
+  <constraints xmi:id="SQLConstraint_1211544521677" name="SYS_C005325" type="CHECK" body="&quot;IDSCHETFAKT&quot; IS NOT NULL" members="IDSCHETFAKT"/>
+  <constraints xmi:id="SQLConstraint_1211544521678" name="SYS_C005326" type="CHECK" body="&quot;STATE&quot; IS NOT NULL" members="STATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521679" name="SYS_C005327" type="CHECK" body="&quot;WHEN_&quot; IS NOT NULL" members="WHEN_"/>
+  <constraints xmi:id="SQLConstraint_1211544521680" name="SYS_C005328" type="CHECK" body="&quot;WHO&quot; IS NOT NULL" members="WHO"/>
+</RDBSchema:RDBTable>

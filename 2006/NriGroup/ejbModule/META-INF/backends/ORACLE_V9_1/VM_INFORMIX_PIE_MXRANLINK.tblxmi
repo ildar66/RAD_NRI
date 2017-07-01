@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_MXRANLINK" name="PIE_MXRANLINK">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MXRANNRI" name="MXRANNRI" allowNull="true" constraints="SQLConstraint_1211544523477 SQLConstraint_1211544523478">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523477" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER" allowNull="true" constraints="SQLConstraint_1211544523477 SQLConstraint_1211544523479">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523478" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MXRANPLATINUM" name="MXRANPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523477 SQLConstraint_1211544523480">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523477" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523477" name="PK_PIE_MXRANLINK" type="UNIQUE" members="MXRANNRI OWNER MXRANPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523478" name="SYS_C004526" type="CHECK" body="&quot;MXRANNRI&quot; IS NOT NULL" members="MXRANNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523479" name="SYS_C004527" type="CHECK" body="&quot;OWNER&quot; IS NOT NULL" members="OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523480" name="SYS_C004528" type="CHECK" body="&quot;MXRANPLATINUM&quot; IS NOT NULL" members="MXRANPLATINUM"/>
+</RDBSchema:RDBTable>

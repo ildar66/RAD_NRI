@@ -1,0 +1,39 @@
+------Start of DE processing------ = [07.08.23 15:11:37:260 MSD] , key = java.rmi.NoSuchObjectException com.ibm.ejs.container.EJSHome.activateBean_Common 1119
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.EJSHome.activateBean_Common
+probeid = 1119
+Stack Dump = java.rmi.NoSuchObjectException: javax.ejb.NoSuchEntityException: Single object finder returned 0 objects.
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.loadForEnlist(ContainerManaged2_0BeanO.java:360)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean_Local(EJSHome.java:1230)
+	at com.nri.ejb.EJSCMPRoleEJBHomeBean_a79cd5a9.findByPrimaryKey_Local(EJSCMPRoleEJBHomeBean_a79cd5a9.java:18)
+	at com.nri.ejb.EJSLocalCMPRoleEJBHome_a79cd5a9.findByPrimaryKey(EJSLocalCMPRoleEJBHome_a79cd5a9.java:87)
+	at com.nri.mapping.ejb.RoleMapper.findEJBObjectMatching(RoleMapper.java:62)
+	at com.nri.mapping.ejb.DomainEJBMapper.findByPrimaryKey(DomainEJBMapper.java:76)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.findRoleByKey(SecurityActionProcessorFacadeBean.java:194)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.findRoleByKey(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:159)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.findRoleByKey(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:410)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie._invoke(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:203)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatchInvokeHandler(ServerDelegate.java:602)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatch(ServerDelegate.java:455)
+	at com.ibm.rmi.iiop.ORB.process(ORB.java:402)
+	at com.ibm.CORBA.iiop.ORB.process(ORB.java:1685)
+	at com.ibm.rmi.iiop.Connection.doWork(Connection.java:2173)
+	at com.ibm.rmi.iiop.WorkUnitImpl.doWork(WorkUnitImpl.java:64)
+	at com.ibm.ejs.oa.pool.PooledThread.run(ThreadPool.java:95)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.nri.ejb.EJSCMPRoleEJBHomeBean_a79cd5a9
+com.nri.ejb.EJSCMPRoleEJBHomeBean_a79cd5a9@6d0b0cf
+
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.EJSHome.activateBean_Common
+probeid = 1119
+Dump of callerThis = 
+Object type = com.nri.ejb.EJSCMPRoleEJBHomeBean_a79cd5a9
+com.nri.ejb.EJSCMPRoleEJBHomeBean_a79cd5a9@6d0b0cf
+

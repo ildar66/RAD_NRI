@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+    <classpathentry kind="src" path=""/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/appprofile.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/bootstrap.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/bsf.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/cm.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/cmInt.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/commons-discovery.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/commons-logging-api.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/dynacache.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/ecutils.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/ejbcontainer.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/ejbportable.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/ffdc.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/ivjejb35.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/j2ee.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/mofj2ee.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/naming.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/pm.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/pmimpl.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/processintf.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/qname.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/querymd.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/ras.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/rsadaptercci.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/rsadapterspi.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/rsaexternal.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/runtime.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/runtimefw.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/servletevent.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/soap.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/soap-sec.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/utils.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/vaprt.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/webcontainer.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/webservices.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/wsdl4j.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/wsexception.jar"/>
+    <classpathentry kind="var" path="WAS_50_PLUGINDIR/lib/xerces.jar"/>
+    <classpathentry kind="var" path="ECLIPSE_HOME_COM_IBM_WSTOOLS_LINK/com.ibm.websphere.v5_5.0.4/lib/sas.jar"/>
+    <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/WebSphere v5.1 JRE"/>
+    <classpathentry kind="output" path=""/>
+</classpath>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TRXRES" name="TRXRES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544525610 SQLConstraint_1211544525611">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525610" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAND" name="BAND" allowNull="true" constraints="SQLConstraint_1211544525612">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525611" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOUBLETRX" name="DOUBLETRX" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544525613 SQLConstraint_1211544525614">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525610" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525610" name="PK_TRXRES" type="UNIQUE" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544525612" name="CKC_BAND_TRXRE" type="CHECK" body="(band IS NULL ) OR (band IN (900 ,1800 )) " members="BAND"/>
+  <constraints xmi:id="SQLConstraint_1211544525613" name="CKC_DOUBLETR_TRXRE" type="CHECK" body="doubletrx IN ('Y' ,'N' )" members="DOUBLETRX"/>
+  <constraints xmi:id="SQLConstraint_1211544525611" name="SYS_C003595" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544525614" name="SYS_C003596" type="CHECK" body="&quot;DOUBLETRX&quot; IS NOT NULL" members="DOUBLETRX"/>
+</RDBSchema:RDBTable>

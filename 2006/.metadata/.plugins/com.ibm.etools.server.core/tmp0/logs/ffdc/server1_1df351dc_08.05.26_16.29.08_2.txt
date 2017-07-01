@@ -1,0 +1,241 @@
+------Start of DE processing------ = [08.05.26 16:29:08:121 MSD] , key = javax.ejb.EJBException com.ibm.ejs.container.ContainerManaged2_0BeanO.store 187
+Exception = javax.ejb.EJBException
+Source = com.ibm.ejs.container.ContainerManaged2_0BeanO.store
+probeid = 187
+Stack Dump = javax.ejb.EJBException: nested exception is: com.ibm.ws.ejbpersistence.utilpm.PersistenceManagerException: PMGR6022E: Error using adapter to create or execute an Interaction. com.ibm.ws.rsadapter.cci.WSInteractionImpl@24ed51d9
+com.ibm.ws.ejbpersistence.utilpm.PersistenceManagerException: PMGR6022E: Error using adapter to create or execute an Interaction. com.ibm.ws.rsadapter.cci.WSInteractionImpl@24ed51d9
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbStore(Unknown Source)
+	at com.nri.ejb.ConcreteMsUserEJB_da8ec80c.ejbStore(ConcreteMsUserEJB_da8ec80c.java:58)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.store(ContainerManaged2_0BeanO.java:254)
+	at com.ibm.ejs.container.EntityBeanO.beforeCompletion(EntityBeanO.java:1062)
+	at com.ibm.ejs.container.ContainerTx.beforeCompletion(ContainerTx.java:542)
+	at com.ibm.ejs.util.tran.SyncDriver.beforeCompletion(SyncDriver.java:279)
+	at com.ibm.ws.Transaction.JTA.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:110)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalPrepare(TransactionImpl.java:1211)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.commit(TransactionImpl.java:960)
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.commit(TranManagerImpl.java:150)
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.commit(TranManagerSet.java:182)
+	at com.ibm.ejs.csi.TranStrategy.commit(TranStrategy.java:712)
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java:167)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:565)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:3038)
+	at com.nri.ejb.EJSLocalCMPMsUserEJB_da8ec80c.setMsPassword(EJSLocalCMPMsUserEJB_da8ec80c.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: java.sql.SQLException: ORA-12899: значение для столбца "INFORMIX"."MSUSERS"."MSUSER" слишком велико (фактическое: 320, максимальное: 80)
+
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:134)
+	at oracle.jdbc.ttc7.TTIoer.processError(TTIoer.java:289)
+	at oracle.jdbc.ttc7.Oall7.receive(Oall7.java:579)
+	at oracle.jdbc.ttc7.TTC7Protocol.doOall7(TTC7Protocol.java:1894)
+	at oracle.jdbc.ttc7.TTC7Protocol.parseExecuteFetch(TTC7Protocol.java:1094)
+	at oracle.jdbc.driver.OracleStatement.executeNonQuery(OracleStatement.java:2132)
+	at oracle.jdbc.driver.OracleStatement.doExecuteOther(OracleStatement.java:2015)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:2877)
+	at oracle.jdbc.driver.OraclePreparedStatement.doScrollPstmtExecuteUpdate(OraclePreparedStatement.java:4201)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:642)
+	at com.nri.ejb.websphere_deploy.ORACLE_V9_1.MsUserEJBBeanFunctionSet_da8ec80c.Store(MsUserEJBBeanFunctionSet_da8ec80c.java:149)
+	at com.nri.ejb.websphere_deploy.ORACLE_V9_1.MsUserEJBBeanFunctionSet_da8ec80c.execute(MsUserEJBBeanFunctionSet_da8ec80c.java:310)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.wsspi.ejbpersistence.WSEJBToRAAdapter.executeUpdate(WSEJBToRAAdapter.java:242)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeUpdate(WSRelationalRAAdapter.java:301)
+	... 48 more
+---- Begin backtrace for nested exception
+java.sql.SQLException: ORA-12899: значение для столбца "INFORMIX"."MSUSERS"."MSUSER" слишком велико (фактическое: 320, максимальное: 80)
+
+	at oracle.jdbc.dbaccess.DBError.throwSqlException(DBError.java:134)
+	at oracle.jdbc.ttc7.TTIoer.processError(TTIoer.java:289)
+	at oracle.jdbc.ttc7.Oall7.receive(Oall7.java:579)
+	at oracle.jdbc.ttc7.TTC7Protocol.doOall7(TTC7Protocol.java:1894)
+	at oracle.jdbc.ttc7.TTC7Protocol.parseExecuteFetch(TTC7Protocol.java:1094)
+	at oracle.jdbc.driver.OracleStatement.executeNonQuery(OracleStatement.java:2132)
+	at oracle.jdbc.driver.OracleStatement.doExecuteOther(OracleStatement.java:2015)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:2877)
+	at oracle.jdbc.driver.OraclePreparedStatement.doScrollPstmtExecuteUpdate(OraclePreparedStatement.java:4201)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:642)
+	at com.nri.ejb.websphere_deploy.ORACLE_V9_1.MsUserEJBBeanFunctionSet_da8ec80c.Store(MsUserEJBBeanFunctionSet_da8ec80c.java:149)
+	at com.nri.ejb.websphere_deploy.ORACLE_V9_1.MsUserEJBBeanFunctionSet_da8ec80c.execute(MsUserEJBBeanFunctionSet_da8ec80c.java:310)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.wsspi.ejbpersistence.WSEJBToRAAdapter.executeUpdate(WSEJBToRAAdapter.java:242)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeUpdate(WSRelationalRAAdapter.java:301)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbStore(Unknown Source)
+	at com.nri.ejb.ConcreteMsUserEJB_da8ec80c.ejbStore(ConcreteMsUserEJB_da8ec80c.java:58)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.store(ContainerManaged2_0BeanO.java:254)
+	at com.ibm.ejs.container.EntityBeanO.beforeCompletion(EntityBeanO.java:1062)
+	at com.ibm.ejs.container.ContainerTx.beforeCompletion(ContainerTx.java:542)
+	at com.ibm.ejs.util.tran.SyncDriver.beforeCompletion(SyncDriver.java:279)
+	at com.ibm.ws.Transaction.JTA.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:110)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalPrepare(TransactionImpl.java:1211)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.commit(TransactionImpl.java:960)
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.commit(TranManagerImpl.java:150)
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.commit(TranManagerSet.java:182)
+	at com.ibm.ejs.csi.TranStrategy.commit(TranStrategy.java:712)
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java:167)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:565)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:3038)
+	at com.nri.ejb.EJSLocalCMPMsUserEJB_da8ec80c.setMsPassword(EJSLocalCMPMsUserEJB_da8ec80c.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+javax.ejb.EJBException: nested exception is: com.ibm.ws.ejbpersistence.utilpm.PersistenceManagerException: PMGR6022E: Error using adapter to create or execute an Interaction. com.ibm.ws.rsadapter.cci.WSInteractionImpl@24ed51d9
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbStore(Unknown Source)
+	at com.nri.ejb.ConcreteMsUserEJB_da8ec80c.ejbStore(ConcreteMsUserEJB_da8ec80c.java:58)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.store(ContainerManaged2_0BeanO.java:254)
+	at com.ibm.ejs.container.EntityBeanO.beforeCompletion(EntityBeanO.java:1062)
+	at com.ibm.ejs.container.ContainerTx.beforeCompletion(ContainerTx.java:542)
+	at com.ibm.ejs.util.tran.SyncDriver.beforeCompletion(SyncDriver.java:279)
+	at com.ibm.ws.Transaction.JTA.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:110)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalPrepare(TransactionImpl.java:1211)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.commit(TransactionImpl.java:960)
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.commit(TranManagerImpl.java:150)
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.commit(TranManagerSet.java:182)
+	at com.ibm.ejs.csi.TranStrategy.commit(TranStrategy.java:712)
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java:167)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:565)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:3038)
+	at com.nri.ejb.EJSLocalCMPMsUserEJB_da8ec80c.setMsPassword(EJSLocalCMPMsUserEJB_da8ec80c.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.ContainerManaged2_0BeanO
+com.ibm.ejs.container.ContainerManaged2_0BeanO@3d5cd1c5
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Mon May 26 16:29:08 MSD 2008
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@722fd1d8
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = nri#NriGroup.jar#MsUserEJB
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 2.0
+                                 CMP Version    = 2.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=1
+                                     ******* Resource-Ref ******* 
+                                 Description=WebSphere CMP Resource Ref Connection Factory
+                                 Name=WebSphereCMPConnectionFactory
+                                 JNDIName=jdbc/oracle
+                                 Type=javax.resource.cci.ConnectionFactory
+                                 ResAuth=APPLICATION
+                                 ResSharingScope=SHAREABLE
+                                 IsolationLevel=TRANSACTION_NONE
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@5b6591d0
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@5b6b91d0#tid=2
+  State                   = Active
+  Entered beforCompletion = true
+  Marked Rollback Only    = false
+  Method Began            = false
+  Isolation Level         = TRANSACTION_NONE
+
+  --- Dump of Enlisted Beans : 1 ---------------------- 
+
+    ContainerManaged2_0BeanO(BeanId(nri#NriGroup.jar#MsUserEJB, -2), state = STORING)
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@5b6591d0
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Mon May 26 16:29:08 MSD 2008

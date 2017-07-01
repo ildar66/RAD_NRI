@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmlns:common="common.xmi" xmi:id="EJBJarBinding_1184663067087" currentBackendId="ORACLE_V9_1">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1184663067087" jndiName="ejb/com/nri/ejb/PeopleEJBLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PeopleEJB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1184743436351" jndiName="ejb/com/nri/ejb/SecurityActionProcessorFacadeHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#SecurityActionProcessorFacade"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1185197132235" jndiName="jdbc/july">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1185197132235"/>
+    </resRefBindings>
+    <resRefBindings xmi:id="ResourceRefBinding_1211891414937" jndiName="jdbc/oracle">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1211891414937"/>
+    </resRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1184749986694" jndiName="ejb/com/nri/ejb/PeopleEJBLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1184749986694"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1185275852492" jndiName="ejb/com/nri/ejb/RoleEJBLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1185275852492"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1185953392524" jndiName="ejb/com/nri/ejb/WorkPositionEJBLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1185953392524"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1186068175606" jndiName="ejb/com/nri/ejb/MsUserEJBLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1186068175606"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1186491131800" jndiName="ejb/com/nri/ejb/CompanyEJBLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1186491131800"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1187778309644" jndiName="ejb/com/nri/ejb/DivisionEJBLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1187778309644"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1188463531262" jndiName="ejb/com/nri/ejb/WorkerEJBLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1188463531262"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1189671160414" jndiName="ejb/com/nri/ejb/OperatorEJBLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1189671160414"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1192189719037" jndiName="ejb/com/nri/ejb/ProfileEJBLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1192189719037"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1185260800518" jndiName="ejb/com/nri/ejb/RoleEJBLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RoleEJB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1185890356890" jndiName="ejb/com/nri/ejb/WorkPositionEJBLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#WorkPositionEJB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1186066460254" jndiName="ejb/com/nri/ejb/MsUserEJBLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MsUserEJB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1186489938291" jndiName="ejb/com/nri/ejb/CompanyEJBLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CompanyEJB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1187763509837" jndiName="ejb/com/nri/ejb/DivisionEJBLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#DivisionEJB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1188454051427" jndiName="ejb/com/nri/ejb/WorkerEJBLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#WorkerEJB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1189669779417" jndiName="ejb/com/nri/ejb/OperatorEJBLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OperatorEJB"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1192186645770" jndiName="ejb/com/nri/ejb/ProfileEJBLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#ProfileEJB"/>
+  </ejbBindings>
+  <defaultCMPConnectionFactory xmi:id="CMPConnectionFactoryBinding_1184663067087" jndiName="jdbc/oracle" resAuth="Per_Connection_Factory"/>
+</ejbbnd:EJBJarBinding>

@@ -1,0 +1,140 @@
+------Start of DE processing------ = [08.05.23 13:14:18:711 MSD] , key = javax.resource.spi.ResourceAllocationException com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.executeOneRowFBPK 69
+Exception = javax.resource.spi.ResourceAllocationException
+Source = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.executeOneRowFBPK
+probeid = 69
+Stack Dump = javax.resource.spi.ResourceAllocationException: DSRA8100E: Unable to get a PooledConnection from the DataSource.
+	at com.ibm.ejs.j2c.poolmanager.FreePool.createManagedConnectionWithMCWrapper(FreePool.java:1351)
+	at com.ibm.ejs.j2c.poolmanager.FreePool.createOrWaitForConnection(FreePool.java:1065)
+	at com.ibm.ejs.j2c.poolmanager.PoolManager.reserve(PoolManager.java:1603)
+	at com.ibm.ejs.j2c.ConnectionManager.allocateMCWrapper(ConnectionManager.java:677)
+	at com.ibm.ejs.j2c.ConnectionManager.allocateConnection(ConnectionManager.java:461)
+	at com.ibm.ws.rsadapter.cci.WSRdbConnectionFactoryImpl.getConnection(WSRdbConnectionFactoryImpl.java:261)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.getConnection(WSRelationalRAAdapter.java:373)
+	at com.ibm.ws.ejbpersistence.cache.TransactionListenerImpl.getConnection(Unknown Source)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.executeOneRowFBPK(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.fetchRecordFromDataStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.getRecordForLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbLoad(Unknown Source)
+	at com.god.oidgen.ConcreteOIDvalue_9352f82e.ejbLoad(ConcreteOIDvalue_9352f82e.java:37)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.loadForEnlist(ContainerManaged2_0BeanO.java:351)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean_Local(EJSHome.java:1230)
+	at com.god.oidgen.EJSCMPOIDvalueHomeBean_9352f82e.findByPrimaryKey_Local(EJSCMPOIDvalueHomeBean_9352f82e.java:18)
+	at com.god.oidgen.EJSLocalCMPOIDvalueHome_9352f82e.findByPrimaryKey(EJSLocalCMPOIDvalueHome_9352f82e.java:55)
+	at com.god.oidgen.OIDGeneratorSessionBean.getNextOID(OIDGeneratorSessionBean.java:68)
+	at com.god.oidgen.EJSLocalStatelessOIDGeneratorSessionBean_56849065.getNextOID(EJSLocalStatelessOIDGeneratorSessionBean_56849065.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl@51a3065d
+
+Exception = javax.resource.spi.ResourceAllocationException
+Source = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.executeOneRowFBPK
+probeid = 69
+Dump of callerThis = 
+Object type = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+  class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@13844651
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@2f6dc6c6
+      class$java$lang$Class = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@328d8642
+      soleInstance = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3806c642
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 13
+      clock = 13
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4d608643
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@380d4642
+      referent = [Ljava.lang.reflect.Field;@144f4651
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@2444064d
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  mytc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ws.ejbpersistence.utilpm.ejbpersistence_NLS
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+

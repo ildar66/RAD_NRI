@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="EQUIPMENTDATALOADS" name="EQUIPMENTDATALOADS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATALOADID" name="DATALOADID" allowNull="true" constraints="SQLConstraint_1211544520613 SQLConstraint_1211544520614">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520613" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PLMN" name="PLMN" allowNull="true" constraints="SQLConstraint_1211544520615">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520614" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATALOADDATE" name="DATALOADDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520613" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520613" name="PK_EQUIPMENTDATALO" type="UNIQUE" members="DATALOADID"/>
+  <constraints xmi:id="SQLConstraint_1211544520614" name="SYS_C005197" type="CHECK" body="&quot;DATALOADID&quot; IS NOT NULL" members="DATALOADID"/>
+  <constraints xmi:id="SQLConstraint_1211544520615" name="SYS_C005198" type="CHECK" body="&quot;PLMN&quot; IS NOT NULL" members="PLMN"/>
+</RDBSchema:RDBTable>

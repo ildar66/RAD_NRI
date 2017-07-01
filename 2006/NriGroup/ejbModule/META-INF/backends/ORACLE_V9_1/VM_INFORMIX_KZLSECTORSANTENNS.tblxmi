@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="KZLSECTORSANTENNS" name="KZLSECTORSANTENNS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ANTENNNO" name="ANTENNNO" allowNull="true" constraints="SQLConstraint_1211544521374 SQLConstraint_1211544521375">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521374" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ANTENNID" name="ANTENNID" allowNull="true" constraints="SQLConstraint_1211544521376">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521375" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECTORID" name="SECTORID" allowNull="true" constraints="SQLConstraint_1211544521377">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521376" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SAHEIGHT" name="SAHEIGHT" allowNull="true" constraints="SQLConstraint_1211544521378">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544521374" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SAAZIMUTH" name="SAAZIMUTH" allowNull="true" constraints="SQLConstraint_1211544521379">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521377" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SATILT" name="SATILT" allowNull="true" constraints="SQLConstraint_1211544521380">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521378" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SAPOWER" name="SAPOWER" allowNull="true" constraints="SQLConstraint_1211544521381">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544521375" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SATRX" name="SATRX" allowNull="true" constraints="SQLConstraint_1211544521382">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521379" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SATIME" name="SATIME" allowNull="true" constraints="SQLConstraint_1211544521383">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521374" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SACOMMENT" name="SACOMMENT" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521374" characterSet="800" length="400">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECORDSTATUS" name="RECORDSTATUS" allowNull="true" constraints="SQLConstraint_1211544521384 SQLConstraint_1211544521385">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521375" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521374" name="PK_KZLSECTORSANTEN" type="UNIQUE" members="ANTENNNO"/>
+  <constraints xmi:id="SQLConstraint_1211544521384" name="CKC_RECO23_K34" type="CHECK" body="recordstatus IN ('A' ,'D' )" members="RECORDSTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544521375" name="SYS_C004916" type="CHECK" body="&quot;ANTENNNO&quot; IS NOT NULL" members="ANTENNNO"/>
+  <constraints xmi:id="SQLConstraint_1211544521376" name="SYS_C004917" type="CHECK" body="&quot;ANTENNID&quot; IS NOT NULL" members="ANTENNID"/>
+  <constraints xmi:id="SQLConstraint_1211544521377" name="SYS_C004918" type="CHECK" body="&quot;SECTORID&quot; IS NOT NULL" members="SECTORID"/>
+  <constraints xmi:id="SQLConstraint_1211544521378" name="SYS_C004919" type="CHECK" body="&quot;SAHEIGHT&quot; IS NOT NULL" members="SAHEIGHT"/>
+  <constraints xmi:id="SQLConstraint_1211544521379" name="SYS_C004920" type="CHECK" body="&quot;SAAZIMUTH&quot; IS NOT NULL" members="SAAZIMUTH"/>
+  <constraints xmi:id="SQLConstraint_1211544521380" name="SYS_C004921" type="CHECK" body="&quot;SATILT&quot; IS NOT NULL" members="SATILT"/>
+  <constraints xmi:id="SQLConstraint_1211544521381" name="SYS_C004922" type="CHECK" body="&quot;SAPOWER&quot; IS NOT NULL" members="SAPOWER"/>
+  <constraints xmi:id="SQLConstraint_1211544521382" name="SYS_C004923" type="CHECK" body="&quot;SATRX&quot; IS NOT NULL" members="SATRX"/>
+  <constraints xmi:id="SQLConstraint_1211544521383" name="SYS_C004924" type="CHECK" body="&quot;SATIME&quot; IS NOT NULL" members="SATIME"/>
+  <constraints xmi:id="SQLConstraint_1211544521385" name="SYS_C004925" type="CHECK" body="&quot;RECORDSTATUS&quot; IS NOT NULL" members="RECORDSTATUS"/>
+</RDBSchema:RDBTable>

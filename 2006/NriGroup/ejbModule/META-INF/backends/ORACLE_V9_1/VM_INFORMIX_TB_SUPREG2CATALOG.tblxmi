@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TB_SUPREG2CATALOG" name="TB_SUPREG2CATALOG">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUPREGID" name="SUPREGID" allowNull="true" constraints="SQLConstraint_1211544525049 SQLConstraint_1211544525050">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525049" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CATALOGID" name="CATALOGID" allowNull="true" constraints="SQLConstraint_1211544525049 SQLConstraint_1211544525051">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525050" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525049" name="PK_TB_SUPREG2CATAL" type="UNIQUE" members="SUPREGID CATALOGID"/>
+  <constraints xmi:id="SQLConstraint_1211544525050" name="SYS_C005190" type="CHECK" body="&quot;SUPREGID&quot; IS NOT NULL" members="SUPREGID"/>
+  <constraints xmi:id="SQLConstraint_1211544525051" name="SYS_C005191" type="CHECK" body="&quot;CATALOGID&quot; IS NOT NULL" members="CATALOGID"/>
+</RDBSchema:RDBTable>

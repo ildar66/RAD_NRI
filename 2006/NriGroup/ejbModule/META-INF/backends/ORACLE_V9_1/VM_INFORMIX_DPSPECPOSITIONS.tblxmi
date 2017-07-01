@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DPSPECPOSITIONS" name="DPSPECPOSITIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECPOSID" name="SPECPOSID" allowNull="true" constraints="SQLConstraint_1211544520413 SQLConstraint_1211544520414">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520413" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECWORKID" name="SPECWORKID" allowNull="true" constraints="SQLConstraint_1211544520415">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520414" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECTID" name="SECTID" allowNull="true" constraints="SQLConstraint_1211544520416">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520415" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NFSITEM_ID" name="NFSITEM_ID" allowNull="true" constraints="SQLConstraint_1211544520417">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520413" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="QTY" name="QTY" allowNull="true" constraints="SQLConstraint_1211544520418">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520416" precision="15" scale="3">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="UNIT" name="UNIT" allowNull="true" constraints="SQLConstraint_1211544520419">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520417" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520413" name="PK_DPSPECPOSITIONS" type="UNIQUE" members="SPECPOSID"/>
+  <constraints xmi:id="SQLConstraint_1211544520414" name="SYS_C003735" type="CHECK" body="&quot;SPECPOSID&quot; IS NOT NULL" members="SPECPOSID"/>
+  <constraints xmi:id="SQLConstraint_1211544520415" name="SYS_C003736" type="CHECK" body="&quot;SPECWORKID&quot; IS NOT NULL" members="SPECWORKID"/>
+  <constraints xmi:id="SQLConstraint_1211544520416" name="SYS_C003737" type="CHECK" body="&quot;SECTID&quot; IS NOT NULL" members="SECTID"/>
+  <constraints xmi:id="SQLConstraint_1211544520417" name="SYS_C003738" type="CHECK" body="&quot;NFSITEM_ID&quot; IS NOT NULL" members="NFSITEM_ID"/>
+  <constraints xmi:id="SQLConstraint_1211544520418" name="SYS_C003739" type="CHECK" body="&quot;QTY&quot; IS NOT NULL" members="QTY"/>
+  <constraints xmi:id="SQLConstraint_1211544520419" name="SYS_C003740" type="CHECK" body="&quot;UNIT&quot; IS NOT NULL" members="UNIT"/>
+</RDBSchema:RDBTable>

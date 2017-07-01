@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="I13ACTPOS" name="I13ACTPOS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCPOSITION" name="DOCPOSITION" allowNull="true" constraints="SQLConstraint_1211544521244 SQLConstraint_1211544521245">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521244" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTRACT" name="CONTRACT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521245" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTENTSSCANED" name="CONTENTSSCANED" allowNull="true" constraints="SQLConstraint_1211544521246">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521244" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STATE" name="STATE" allowNull="true" constraints="SQLConstraint_1211544521247 SQLConstraint_1211544521248">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521245" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NOTE" name="NOTE" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521246" characterSet="800" length="400">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CORDOCNUM" name="CORDOCNUM" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521247" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521244" name="PK_I13ACTPOS" type="UNIQUE" members="DOCPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544521246" name="CKC_CONTENTS_I13AC" type="CHECK" body="(contentsscaned IS NULL ) OR (contentsscaned IN ('Y' ,'N' )) " members="CONTENTSSCANED"/>
+  <constraints xmi:id="SQLConstraint_1211544521247" name="CKC_STATE_I13AC" type="CHECK" body="state IN ('B' ,'C' ,'R' ,'F' ,'L' ,'N' )" members="STATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521245" name="SYS_C004282" type="CHECK" body="&quot;DOCPOSITION&quot; IS NOT NULL" members="DOCPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544521248" name="SYS_C004283" type="CHECK" body="&quot;STATE&quot; IS NOT NULL" members="STATE"/>
+</RDBSchema:RDBTable>

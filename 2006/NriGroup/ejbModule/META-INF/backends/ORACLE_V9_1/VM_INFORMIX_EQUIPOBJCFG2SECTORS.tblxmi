@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="EQUIPOBJCFG2SECTORS" name="EQUIPOBJCFG2SECTORS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJCFGID" name="OBJCFGID" allowNull="true" constraints="SQLConstraint_1211544520633 SQLConstraint_1211544520634">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520633" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_SECT" name="ID_SECT" allowNull="true" constraints="SQLConstraint_1211544520633 SQLConstraint_1211544520635">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520634" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520633" name="PK_EQUIPOBJCFG2SEC" type="UNIQUE" members="OBJCFGID ID_SECT"/>
+  <constraints xmi:id="SQLConstraint_1211544520634" name="SYS_C003467" type="CHECK" body="&quot;OBJCFGID&quot; IS NOT NULL" members="OBJCFGID"/>
+  <constraints xmi:id="SQLConstraint_1211544520635" name="SYS_C003468" type="CHECK" body="&quot;ID_SECT&quot; IS NOT NULL" members="ID_SECT"/>
+</RDBSchema:RDBTable>

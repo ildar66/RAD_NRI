@@ -1,0 +1,584 @@
+------Start of DE processing------ = [07.07.27 16:19:48:609 MSD] , key = java.sql.SQLException com.ibm.ws.rsadapter.cci.WSResourceAdapterBase.prepareStatement 163
+Exception = java.sql.SQLException
+Source = com.ibm.ws.rsadapter.cci.WSResourceAdapterBase.prepareStatement
+probeid = 163
+Stack Dump = java.sql.SQLException: The specified table (oidvalue) is not in the database.
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java:2259)
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java:2179)
+	at com.informix.jdbc.IfxSqli.executePrepare(IfxSqli.java:1082)
+	at com.informix.jdbc.IfxResultSet.executePrepare(IfxResultSet.java:182)
+	at com.informix.jdbc.IfxPreparedStatement.setupExecutePrepare(IfxPreparedStatement.java:197)
+	at com.informix.jdbc.IfxPreparedStatement.<init>(IfxPreparedStatement.java:175)
+	at com.informix.jdbc.IfxSqliConnect.prepareStatement(IfxSqliConnect.java:1939)
+	at com.ibm.ws.rsadapter.cci.WSRdbConnectionImpl.getPreparedStatement(WSRdbConnectionImpl.java:896)
+	at com.ibm.ws.rsadapter.cci.WSResourceAdapterBase.prepareStatement(WSResourceAdapterBase.java:423)
+	at com.god.oidgen.websphere_deploy.DB2UDBNT_V72_1.OIDvalueBeanFunctionSet_9352f82e.FindByPrimaryKey(OIDvalueBeanFunctionSet_9352f82e.java:210)
+	at com.god.oidgen.websphere_deploy.DB2UDBNT_V72_1.OIDvalueBeanFunctionSet_9352f82e.execute(OIDvalueBeanFunctionSet_9352f82e.java:294)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.wsspi.ejbpersistence.WSEJBToRAAdapter.executeFinder(WSEJBToRAAdapter.java:149)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeFinder(WSRelationalRAAdapter.java:181)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.executeOneRowFBPK(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.fetchRecordFromDataStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.getRecordForLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbLoad(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbLoad(Unknown Source)
+	at com.god.oidgen.ConcreteOIDvalue_9352f82e.ejbLoad(ConcreteOIDvalue_9352f82e.java:37)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.loadForEnlist(ContainerManaged2_0BeanO.java:351)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean_Local(EJSHome.java:1230)
+	at com.god.oidgen.EJSCMPOIDvalueHomeBean_9352f82e.findByPrimaryKey_Local(EJSCMPOIDvalueHomeBean_9352f82e.java:18)
+	at com.god.oidgen.EJSLocalCMPOIDvalueHome_9352f82e.findByPrimaryKey(EJSLocalCMPOIDvalueHome_9352f82e.java:55)
+	at com.god.oidgen.OIDGeneratorSessionBean.getNextOID(OIDGeneratorSessionBean.java:68)
+	at com.god.oidgen.EJSLocalStatelessOIDGeneratorSessionBean_56849065.getNextOID(EJSLocalStatelessOIDGeneratorSessionBean_56849065.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:41)
+	at java.lang.reflect.Method.invoke(Method.java:386)
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.god.oidgen.websphere_deploy.DB2UDBNT_V72_1.OIDvalueBeanFunctionSet_9352f82e
+com.god.oidgen.websphere_deploy.DB2UDBNT_V72_1.OIDvalueBeanFunctionSet_9352f82e@56c7f499
+
+Exception = java.sql.SQLException
+Source = com.ibm.ws.rsadapter.cci.WSResourceAdapterBase.prepareStatement
+probeid = 163
+Dump of callerThis = 
+Object type = com.god.oidgen.websphere_deploy.DB2UDBNT_V72_1.OIDvalueBeanFunctionSet_9352f82e
+  functionHash = 
+    class$java$util$HashMap$Entry = 
+      class$java$lang$Class = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = null
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    serialVersionUID = 362498820763181265
+    entrySet = null
+    NULL_KEY = java.lang.Object@3f4d7490
+    contentionFlag = 0
+    modCount = 6
+    loadFactor = 0.75
+    threshold = 6
+    size = 6
+    table = 
+      [0] = null
+      [1] = java.util.HashMap$Entry@56a8b499
+      [2] = java.util.HashMap$Entry@56d93499
+      [3] = null
+      [4] = java.util.HashMap$Entry@56d67499
+      [5] = null
+      [6] = java.util.HashMap$Entry@56a43499
+      [7] = java.util.HashMap$Entry@56a03499
+    DEFAULT_LOAD_FACTOR = 0.75
+    MAXIMUM_CAPACITY = 1073741824
+    DEFAULT_INITIAL_CAPACITY = 16
+    values = null
+    keySet = null
+  class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@7ac8749a
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@2029f413
+      class$java$lang$Class = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@35c9b490
+      soleInstance = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3f42f490
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 9
+      clock = 9
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4a24b491
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@3f497490
+      referent = [Ljava.lang.reflect.Field;@6bcff49a
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@d787495
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  _supportsBatchRead = false
+  objectCache = 
+    class$com$ibm$ws$rsadapter$ObjectCache = 
+      class$java$lang$Class = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@1671f49a
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    rdbRecords = 
+      [0] = null
+      [1] = null
+      [2] = null
+      [3] = null
+      [4] = null
+      [5] = null
+      [6] = null
+      [7] = null
+      [8] = null
+      [9] = null
+      [10] = null
+      [11] = null
+      [12] = null
+      [13] = null
+      [14] = null
+      [15] = null
+      [16] = null
+      [17] = null
+      [18] = null
+      [19] = null
+      [20] = null
+      [21] = null
+      [22] = null
+      [23] = null
+      [24] = null
+      [25] = null
+      [26] = null
+      [27] = null
+      [28] = null
+      [29] = null
+      [30] = null
+      [31] = null
+      [32] = null
+      [33] = null
+      [34] = null
+      [35] = null
+      [36] = null
+      [37] = null
+      [38] = null
+      [39] = null
+      [40] = null
+      [41] = null
+      [42] = null
+      [43] = null
+      [44] = null
+      [45] = null
+      [46] = null
+      [47] = null
+      [48] = null
+      [49] = null
+    numRdbRecords = 0
+    maxRdbRecords = 50
+    cciCStmts = 
+      [0] = null
+      [1] = null
+      [2] = null
+      [3] = null
+      [4] = null
+      [5] = null
+      [6] = null
+      [7] = null
+      [8] = null
+      [9] = null
+      [10] = null
+      [11] = null
+      [12] = null
+      [13] = null
+      [14] = null
+      [15] = null
+      [16] = null
+      [17] = null
+      [18] = null
+      [19] = null
+      [20] = null
+      [21] = null
+      [22] = null
+      [23] = null
+      [24] = null
+      [25] = null
+      [26] = null
+      [27] = null
+      [28] = null
+      [29] = null
+      [30] = null
+      [31] = null
+      [32] = null
+      [33] = null
+      [34] = null
+      [35] = null
+      [36] = null
+      [37] = null
+      [38] = null
+      [39] = null
+      [40] = null
+      [41] = null
+      [42] = null
+      [43] = null
+      [44] = null
+      [45] = null
+      [46] = null
+      [47] = null
+      [48] = null
+      [49] = null
+    numCCICStmts = 0
+    maxCCICStmts = 50
+    cciRSets = 
+      [0] = null
+      [1] = null
+      [2] = null
+      [3] = null
+      [4] = null
+      [5] = null
+      [6] = null
+      [7] = null
+      [8] = null
+      [9] = null
+      [10] = null
+      [11] = null
+      [12] = null
+      [13] = null
+      [14] = null
+      [15] = null
+      [16] = null
+      [17] = null
+      [18] = null
+      [19] = null
+      [20] = null
+      [21] = null
+      [22] = null
+      [23] = null
+      [24] = null
+      [25] = null
+      [26] = null
+      [27] = null
+      [28] = null
+      [29] = null
+      [30] = null
+      [31] = null
+      [32] = null
+      [33] = null
+      [34] = null
+      [35] = null
+      [36] = null
+      [37] = null
+      [38] = null
+      [39] = null
+      [40] = null
+      [41] = null
+      [42] = null
+      [43] = null
+      [44] = null
+      [45] = null
+      [46] = null
+      [47] = null
+      [48] = null
+      [49] = null
+      [50] = null
+      [51] = null
+      [52] = null
+      [53] = null
+      [54] = null
+      [55] = null
+      [56] = null
+      [57] = null
+      [58] = null
+      [59] = null
+      [60] = null
+      [61] = null
+      [62] = null
+      [63] = null
+      [64] = null
+      [65] = null
+      [66] = null
+      [67] = null
+      [68] = null
+      [69] = null
+      [70] = null
+      [71] = null
+      [72] = null
+      [73] = null
+      [74] = null
+      [75] = null
+      [76] = null
+      [77] = null
+      [78] = null
+      [79] = null
+      [80] = null
+      [81] = null
+      [82] = null
+      [83] = null
+      [84] = null
+      [85] = null
+      [86] = null
+      [87] = null
+      [88] = null
+      [89] = null
+      [90] = null
+      [91] = null
+      [92] = null
+      [93] = null
+      [94] = null
+      [95] = null
+      [96] = null
+      [97] = null
+      [98] = null
+      [99] = null
+      [100] = null
+      [101] = null
+      [102] = null
+      [103] = null
+      [104] = null
+      [105] = null
+      [106] = null
+      [107] = null
+      [108] = null
+      [109] = null
+      [110] = null
+      [111] = null
+      [112] = null
+      [113] = null
+      [114] = null
+      [115] = null
+      [116] = null
+      [117] = null
+      [118] = null
+      [119] = null
+    numCCIRSets = 0
+    maxCCIRSets = 120
+    cciConnSpecs = 
+      [0] = null
+      [1] = null
+      [2] = null
+      [3] = null
+      [4] = null
+      [5] = null
+      [6] = null
+      [7] = null
+      [8] = null
+      [9] = null
+      [10] = null
+      [11] = null
+      [12] = null
+      [13] = null
+      [14] = null
+      [15] = null
+      [16] = null
+      [17] = null
+      [18] = null
+      [19] = null
+      [20] = null
+      [21] = null
+      [22] = null
+      [23] = null
+      [24] = null
+      [25] = null
+      [26] = null
+      [27] = null
+      [28] = null
+      [29] = null
+      [30] = null
+      [31] = null
+      [32] = null
+      [33] = null
+      [34] = null
+      [35] = null
+      [36] = null
+      [37] = null
+      [38] = null
+      [39] = null
+      [40] = null
+      [41] = null
+      [42] = null
+      [43] = null
+      [44] = null
+      [45] = null
+      [46] = null
+      [47] = null
+      [48] = null
+      [49] = null
+    numCCIConnSpecs = 0
+    maxCCIConnSpecs = 50
+    cciHandles = 
+      [0] = null
+      [1] = null
+      [2] = null
+      [3] = null
+      [4] = null
+      [5] = null
+      [6] = null
+      [7] = null
+      [8] = null
+      [9] = null
+      [10] = null
+      [11] = null
+      [12] = null
+      [13] = null
+      [14] = null
+      [15] = null
+      [16] = null
+      [17] = null
+      [18] = null
+      [19] = null
+      [20] = null
+      [21] = null
+      [22] = null
+      [23] = null
+      [24] = null
+      [25] = null
+      [26] = null
+      [27] = null
+      [28] = null
+      [29] = null
+      [30] = null
+      [31] = null
+      [32] = null
+      [33] = null
+      [34] = null
+      [35] = null
+      [36] = null
+      [37] = null
+      [38] = null
+      [39] = null
+      [40] = null
+      [41] = null
+      [42] = null
+      [43] = null
+      [44] = null
+      [45] = null
+      [46] = null
+      [47] = null
+      [48] = null
+      [49] = null
+      [50] = null
+      [51] = null
+      [52] = null
+      [53] = null
+      [54] = null
+      [55] = null
+      [56] = null
+      [57] = null
+      [58] = null
+      [59] = null
+      [60] = null
+      [61] = null
+      [62] = null
+      [63] = null
+      [64] = null
+      [65] = null
+      [66] = null
+      [67] = null
+      [68] = null
+      [69] = null
+      [70] = null
+      [71] = null
+      [72] = null
+      [73] = null
+      [74] = null
+    numCCIHandles = 0
+    maxCCIHandles = 75
+    cache = this.objectCache
+    tc = 
+      ivLogger = null
+      ivResourceBundleName = IBMDataStoreAdapterNLS
+      ivDumpEnabled = false
+      defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+      ivEntryEnabled = false
+      ivEventEnabled = false
+      ivDebugEnabled = false
+      ivName = com.ibm.ws.rsadapter.ObjectCache
+  currClass = this.class$com$ibm$ws$rsadapter$cci$WSResourceAdapterBase
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = IBMDataStoreAdapterNLS
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.rsadapter.cci.WSResourceAdapterBase
+

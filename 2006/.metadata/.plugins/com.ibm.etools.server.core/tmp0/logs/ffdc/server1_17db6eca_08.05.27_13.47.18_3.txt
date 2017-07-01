@@ -1,0 +1,176 @@
+------Start of DE processing------ = [08.05.27 13:47:18:593 MSD] , key = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute 139
+Exception = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException
+Source = com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute
+probeid = 139
+Stack Dump = com.ibm.ws.exception.WsException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: ORA-00001: нарушено ограничение уникальности (INFORMIX.PK_SEQUENCES)
+.
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:244)
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:171)
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:124)
+	at com.god.oidgen.websphere_deploy.ORACLE_V9_1.OIDvalueBeanFunctionSet_9352f82e.Create(OIDvalueBeanFunctionSet_9352f82e.java:49)
+	at com.god.oidgen.websphere_deploy.ORACLE_V9_1.OIDvalueBeanFunctionSet_9352f82e.execute(OIDvalueBeanFunctionSet_9352f82e.java:282)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate(WSRelationalRAAdapter.java:130)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBNotExistState.ejbCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbPostCreate(Unknown Source)
+	at com.god.oidgen.ConcreteOIDvalue_9352f82e.ejbPostCreate(ConcreteOIDvalue_9352f82e.java:130)
+	at com.god.oidgen.EJSCMPOIDvalueHomeBean_9352f82e.create_Local(EJSCMPOIDvalueHomeBean_9352f82e.java:35)
+	at com.god.oidgen.EJSLocalCMPOIDvalueHome_9352f82e.create(EJSLocalCMPOIDvalueHome_9352f82e.java:23)
+	at com.god.oidgen.OIDGeneratorSessionBean.getNextOID(OIDGeneratorSessionBean.java:72)
+	at com.god.oidgen.EJSLocalStatelessOIDGeneratorSessionBean_56849065.getNextOID(EJSLocalStatelessOIDGeneratorSessionBean_56849065.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: java.sql.SQLException: ORA-00001: нарушено ограничение уникальности (INFORMIX.PK_SEQUENCES)
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:111)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:330)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:287)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:742)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:212)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:951)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1159)
+	at oracle.jdbc.driver.OracleStatement.doScrollExecuteCommon(OracleStatement.java:4034)
+	at oracle.jdbc.driver.OraclePreparedStatement.doScrollPstmtExecuteUpdate(OraclePreparedStatement.java:10762)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3282)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3367)
+	at com.god.oidgen.websphere_deploy.ORACLE_V9_1.OIDvalueBeanFunctionSet_9352f82e.Create(OIDvalueBeanFunctionSet_9352f82e.java:44)
+	... 41 more
+---- Begin backtrace for nested exception
+java.sql.SQLException: ORA-00001: нарушено ограничение уникальности (INFORMIX.PK_SEQUENCES)
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:111)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:330)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:287)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:742)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:212)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:951)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1159)
+	at oracle.jdbc.driver.OracleStatement.doScrollExecuteCommon(OracleStatement.java:4034)
+	at oracle.jdbc.driver.OraclePreparedStatement.doScrollPstmtExecuteUpdate(OraclePreparedStatement.java:10762)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3282)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3367)
+	at com.god.oidgen.websphere_deploy.ORACLE_V9_1.OIDvalueBeanFunctionSet_9352f82e.Create(OIDvalueBeanFunctionSet_9352f82e.java:44)
+	at com.god.oidgen.websphere_deploy.ORACLE_V9_1.OIDvalueBeanFunctionSet_9352f82e.execute(OIDvalueBeanFunctionSet_9352f82e.java:282)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate(WSRelationalRAAdapter.java:130)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBNotExistState.ejbCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbPostCreate(Unknown Source)
+	at com.god.oidgen.ConcreteOIDvalue_9352f82e.ejbPostCreate(ConcreteOIDvalue_9352f82e.java:130)
+	at com.god.oidgen.EJSCMPOIDvalueHomeBean_9352f82e.create_Local(EJSCMPOIDvalueHomeBean_9352f82e.java:35)
+	at com.god.oidgen.EJSLocalCMPOIDvalueHome_9352f82e.create(EJSLocalCMPOIDvalueHome_9352f82e.java:23)
+	at com.god.oidgen.OIDGeneratorSessionBean.getNextOID(OIDGeneratorSessionBean.java:72)
+	at com.god.oidgen.EJSLocalStatelessOIDGeneratorSessionBean_56849065.getNextOID(EJSLocalStatelessOIDGeneratorSessionBean_56849065.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.rsadapter.cci.WSInteractionImpl
+com.ibm.ws.rsadapter.cci.WSInteractionImpl@68196ee8
+
+==> Performing default dump from com.ibm.ws.rsadapter.DiagnosticModuleForAdapter  = Tue May 27 13:47:18 MSD 2008
+This is a FFDC log generated for the Default Resource Adapter from source = com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute
+The exception caught = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: ORA-00001: нарушено ограничение уникальности (INFORMIX.PK_SEQUENCES)
+.
+Operating System = Windows XP 5.1 x86
+Classpath = C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51/properties;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51/properties;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51/lib/bootstrap.jar;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51/lib/j2ee.jar;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51/lib/lmproxy.jar;C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51/lib/urlprotocols.jar;C:/Program Files/IBM/WebSphere Studio/Application Developer/v5.1.2/wstools/eclipse/plugins/com.ibm.etools.websphere.tools.common_5.1.1.1/runtime/wteServers.jar;C:/Program Files/IBM/WebSphere Studio/Application Developer/v5.1.2/wstools/eclipse/plugins/com.ibm.etools.websphere.tools.common_5.1.1.1/runtime/wasToolsCommon.jar
+Ext dirs = C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51\java\jre\lib\ext
+Other related data. If null, nothing was passed in = 
+null
+
+The Objects' instance variables are printed below recursively 2 levels deep = 
+Object type = com.ibm.ws.rsadapter.cci.WSInteractionImpl
+  class$javax$resource$cci$IndexedRecord = null
+  class$com$ibm$websphere$rsadapter$WSInteractionSpec = null
+  class$com$ibm$ws$rsadapter$cci$WSInteractionImpl = 
+    class$java$lang$Class = java.lang.Class@2decee4c
+    initted = true
+    reflectionFactory = sun.reflect.ReflectionFactory@383f6ec8
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = java.lang.ref.SoftReference@656beede
+    useCaches = true
+    allPermDomain = java.security.ProtectionDomain@5f3daed8
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  batchRead = false
+  isClosed = false
+  cciConn = com.ibm.ws.rsadapter.cci.WSRdbConnectionImpl@6ec22ee8
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = IBMDataStoreAdapterNLS
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.rsadapter.cci.WSInteractionImpl
+
++Data for directive [defaultadapter] obtained. = 
+==> Dump complete for com.ibm.ws.rsadapter.DiagnosticModuleForAdapter  = Tue May 27 13:47:18 MSD 2008

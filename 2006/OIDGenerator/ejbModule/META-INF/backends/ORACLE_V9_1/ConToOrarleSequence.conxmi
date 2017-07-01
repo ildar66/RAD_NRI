@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ConToOrarleSequence" name="ConToOrarleSequence" userid="informix" password="encoded:AQECAgQEBwcICwgJDg0ODxAVFhcUERYXEBEaExwVFhcgISIjNCUmNwgJCgsMDQ4PcHFyc3R1dnc4OTo7PD0+Pw==" url="jdbc:oracle:thin:@192.168.144.84:1521:VM" host="192.168.144.84" driver="oracle.jdbc.OracleDriver" otherDriver="oracle.jdbc.OracleDriver" classLocation="C:\Utils\JavaLibs\JDBCDrivers\OracleJDBC\classes12.zip" dbName="VM">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <filter xmi:id="RDBConnectionFilter_1211360086743" languageType="15">
+    <filterElement xmi:id="FilterElement_1211360086743" target="SCHEMA" text="informix"/>
+    <filterElement xmi:id="FilterElement_1211360086744" text="SEQUENCES"/>
+  </filter>
+  <jdbcDriver href="ORACLE_V9_Domain.xmi#JDBCDriver_2"/>
+</RDBSchema:RDBConnection>

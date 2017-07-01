@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DPSPECLOG" name="DPSPECLOG">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECLOGID" name="SPECLOGID" allowNull="true" constraints="SQLConstraint_1211544520403 SQLConstraint_1211544520404">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520403" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECHEADERID" name="SPECHEADERID" allowNull="true" constraints="SQLConstraint_1211544520405">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520404" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECWORKID" name="SPECWORKID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520405" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ERRORCODE" name="ERRORCODE" allowNull="true" constraints="SQLConstraint_1211544520406">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520406" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ERRORLEVEL" name="ERRORLEVEL" allowNull="true" constraints="SQLConstraint_1211544520407 SQLConstraint_1211544520408">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520407" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ERRORMESSAGE" name="ERRORMESSAGE" allowNull="true" constraints="SQLConstraint_1211544520409">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520403" characterSet="800" length="4000">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520408" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520403" name="PK_DPSPECLOG" type="UNIQUE" members="SPECLOGID"/>
+  <constraints xmi:id="SQLConstraint_1211544520407" name="CKC_ERRORLEV_DPSPE" type="CHECK" body="errorlevel IN (1 ,2 )" members="ERRORLEVEL"/>
+  <constraints xmi:id="SQLConstraint_1211544520404" name="SYS_C003741" type="CHECK" body="&quot;SPECLOGID&quot; IS NOT NULL" members="SPECLOGID"/>
+  <constraints xmi:id="SQLConstraint_1211544520405" name="SYS_C003742" type="CHECK" body="&quot;SPECHEADERID&quot; IS NOT NULL" members="SPECHEADERID"/>
+  <constraints xmi:id="SQLConstraint_1211544520406" name="SYS_C003743" type="CHECK" body="&quot;ERRORCODE&quot; IS NOT NULL" members="ERRORCODE"/>
+  <constraints xmi:id="SQLConstraint_1211544520408" name="SYS_C003744" type="CHECK" body="&quot;ERRORLEVEL&quot; IS NOT NULL" members="ERRORLEVEL"/>
+  <constraints xmi:id="SQLConstraint_1211544520409" name="SYS_C003745" type="CHECK" body="&quot;ERRORMESSAGE&quot; IS NOT NULL" members="ERRORMESSAGE"/>
+</RDBSchema:RDBTable>

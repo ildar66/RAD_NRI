@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="REGLAMENTWORKTYPES" name="REGLAMENTWORKTYPES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDTYPE" name="IDTYPE" allowNull="true" constraints="SQLConstraint_1211544523928 SQLConstraint_1211544523929">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523928" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAMETYPE" name="NAMETYPE" allowNull="true" constraints="SQLConstraint_1211544523930">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523928" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523928" name="PK_REGLAMENTWORKTY" type="UNIQUE" members="IDTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523929" name="SYS_C005178" type="CHECK" body="&quot;IDTYPE&quot; IS NOT NULL" members="IDTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523930" name="SYS_C005179" type="CHECK" body="&quot;NAMETYPE&quot; IS NOT NULL" members="NAMETYPE"/>
+</RDBSchema:RDBTable>

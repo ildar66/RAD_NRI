@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="SEGMENTCONTENTS" name="SEGMENTCONTENTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TRAILSEGMENTID" name="TRAILSEGMENTID" allowNull="true" constraints="SQLConstraint_1211544524408 SQLConstraint_1211544524409">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524408" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PORTID" name="PORTID" allowNull="true" constraints="SQLConstraint_1211544524408 SQLConstraint_1211544524410">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524409" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524408" name="PK_SEGMENTCONTENTS" type="UNIQUE" members="TRAILSEGMENTID PORTID"/>
+  <constraints xmi:id="SQLConstraint_1211544524409" name="SYS_C004567" type="CHECK" body="&quot;TRAILSEGMENTID&quot; IS NOT NULL" members="TRAILSEGMENTID"/>
+  <constraints xmi:id="SQLConstraint_1211544524410" name="SYS_C004568" type="CHECK" body="&quot;PORTID&quot; IS NOT NULL" members="PORTID"/>
+</RDBSchema:RDBTable>

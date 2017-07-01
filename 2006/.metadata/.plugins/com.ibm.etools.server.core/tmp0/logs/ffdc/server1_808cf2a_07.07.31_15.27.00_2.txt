@@ -1,0 +1,107 @@
+------Start of DE processing------ = [07.07.31 15:27:00:679 MSD] , key = javax.ejb.DuplicateKeyException com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute 103
+Exception = javax.ejb.DuplicateKeyException
+Source = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute
+probeid = 103
+Stack Dump = javax.ejb.DuplicateKeyException
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate(WSRelationalRAAdapter.java:144)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBNotExistState.ejbCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbPostCreate(Unknown Source)
+	at com.nri.ejb.ConcretePeopleEJB_6bbce083.ejbPostCreate(ConcretePeopleEJB_6bbce083.java:145)
+	at com.nri.ejb.EJSCMPPeopleEJBHomeBean_6bbce083.create_Local(EJSCMPPeopleEJBHomeBean_6bbce083.java:71)
+	at com.nri.ejb.EJSLocalCMPPeopleEJBHome_6bbce083.create(EJSLocalCMPPeopleEJBHome_6bbce083.java:55)
+	at com.nri.mapping.ejb.PeopleMapper.insert(PeopleMapper.java:113)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.addPeople(SecurityActionProcessorFacadeBean.java:112)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.addPeople(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:252)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.addPeople(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:205)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie._invoke(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:113)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatchInvokeHandler(ServerDelegate.java:602)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatch(ServerDelegate.java:455)
+	at com.ibm.rmi.iiop.ORB.process(ORB.java:402)
+	at com.ibm.CORBA.iiop.ORB.process(ORB.java:1685)
+	at com.ibm.rmi.iiop.Connection.doWork(Connection.java:2173)
+	at com.ibm.rmi.iiop.WorkUnitImpl.doWork(WorkUnitImpl.java:64)
+	at com.ibm.ejs.oa.pool.PooledThread.run(ThreadPool.java:95)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl@3170cf38
+
+Exception = javax.ejb.DuplicateKeyException
+Source = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute
+probeid = 103
+Dump of callerThis = 
+Object type = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+  class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@7012cf26
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@202a8fab
+      class$java$lang$Class = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@35cacf28
+      soleInstance = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@3f418f28
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 9
+      clock = 9
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4a27cf29
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@3f4a0f28
+      referent = [Ljava.lang.reflect.Field;@603d8f38
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@69b04f2c
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  mytc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ws.ejbpersistence.utilpm.ejbpersistence_NLS
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+

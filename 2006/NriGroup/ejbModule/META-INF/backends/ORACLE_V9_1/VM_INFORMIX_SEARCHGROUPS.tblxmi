@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="SEARCHGROUPS" name="SEARCHGROUPS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SEARCHGROUP" name="SEARCHGROUP" allowNull="true" constraints="SQLConstraint_1211544524378 SQLConstraint_1211544524379">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524378" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544524380">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524378" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524378" name="PK_SEARCHGROUPS" type="UNIQUE" members="SEARCHGROUP"/>
+  <constraints xmi:id="SQLConstraint_1211544524379" name="SYS_C004146" type="CHECK" body="&quot;SEARCHGROUP&quot; IS NOT NULL" members="SEARCHGROUP"/>
+  <constraints xmi:id="SQLConstraint_1211544524380" name="SYS_C004147" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+</RDBSchema:RDBTable>

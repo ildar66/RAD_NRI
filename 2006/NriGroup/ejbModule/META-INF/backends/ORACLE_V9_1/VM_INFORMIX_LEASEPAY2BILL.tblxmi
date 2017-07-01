@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEPAY2BILL" name="LEASEPAY2BILL">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEMUTUALACT" name="LEASEMUTUALACT" allowNull="true" constraints="SQLConstraint_1211544521605 SQLConstraint_1211544521606">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521605" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASECONTRACT" name="LEASECONTRACT" allowNull="true" constraints="SQLConstraint_1211544521605 SQLConstraint_1211544521607">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521606" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUMMUSD" name="SUMMUSD" allowNull="true" constraints="SQLConstraint_1211544521608">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521607" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGWORKPIE" name="FLAGWORKPIE" allowNull="true" constraints="SQLConstraint_1211544521609 SQLConstraint_1211544521610">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521605" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECORD_STATUS" name="RECORD_STATUS" allowNull="true" constraints="SQLConstraint_1211544521611 SQLConstraint_1211544521612">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521606" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521605" name="PK_LEASEPAY2BILL" type="UNIQUE" members="LEASEMUTUALACT LEASECONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521609" name="CKC_FLAGWORK_LEASE" type="CHECK" body="flagworkpie IN ('Y' ,'N' )" members="FLAGWORKPIE"/>
+  <constraints xmi:id="SQLConstraint_1211544521611" name="CKC_REC_S_LPAY" type="CHECK" body="record_status IN ('A' ,'D' )" members="RECORD_STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544521606" name="SYS_C004084" type="CHECK" body="&quot;LEASEMUTUALACT&quot; IS NOT NULL" members="LEASEMUTUALACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521607" name="SYS_C004085" type="CHECK" body="&quot;LEASECONTRACT&quot; IS NOT NULL" members="LEASECONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521608" name="SYS_C004086" type="CHECK" body="&quot;SUMMUSD&quot; IS NOT NULL" members="SUMMUSD"/>
+  <constraints xmi:id="SQLConstraint_1211544521610" name="SYS_C004087" type="CHECK" body="&quot;FLAGWORKPIE&quot; IS NOT NULL" members="FLAGWORKPIE"/>
+  <constraints xmi:id="SQLConstraint_1211544521612" name="SYS_C004088" type="CHECK" body="&quot;RECORD_STATUS&quot; IS NOT NULL" members="RECORD_STATUS"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CONFBSNFS" name="CONFBSNFS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID" name="ID" allowNull="true" constraints="SQLConstraint_1211544520013 SQLConstraint_1211544520014">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520013" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CODENRI" name="CODENRI" allowNull="true" constraints="SQLConstraint_1211544520015">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520014" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECT_A" name="SECT_A" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544520016">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520015" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECT_B" name="SECT_B" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544520017">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520016" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECT_C" name="SECT_C" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544520018">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520017" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECT_D" name="SECT_D" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544520019">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520018" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECT_E" name="SECT_E" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544520020">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520019" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECT_F" name="SECT_F" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544520021">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520020" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECT_G" name="SECT_G" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544520022">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520021" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECT_H" name="SECT_H" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544520023">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520022" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NFSITEM_ID" name="NFSITEM_ID" allowNull="true" constraints="SQLConstraint_1211544520024">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520013" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONFTYPE" name="CONFTYPE" allowNull="true" defaultValue="'S'" constraints="SQLConstraint_1211544520025 SQLConstraint_1211544520026">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520014" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VOLTAGE" name="VOLTAGE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520023" precision="6" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECT_O900" name="SECT_O900" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544520027">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520024" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECT_O1800" name="SECT_O1800" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544520028">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520025" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520013" name="PK_CONFBSNFS" type="UNIQUE" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544520025" name="CKC_CONFTYPE_CONFB" type="CHECK" body="conftype IN ('S' ,'A' )" members="CONFTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544520014" name="SYS_C005965" type="CHECK" body="&quot;ID&quot; IS NOT NULL" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544520015" name="SYS_C005966" type="CHECK" body="&quot;CODENRI&quot; IS NOT NULL" members="CODENRI"/>
+  <constraints xmi:id="SQLConstraint_1211544520016" name="SYS_C005967" type="CHECK" body="&quot;SECT_A&quot; IS NOT NULL" members="SECT_A"/>
+  <constraints xmi:id="SQLConstraint_1211544520017" name="SYS_C005968" type="CHECK" body="&quot;SECT_B&quot; IS NOT NULL" members="SECT_B"/>
+  <constraints xmi:id="SQLConstraint_1211544520018" name="SYS_C005969" type="CHECK" body="&quot;SECT_C&quot; IS NOT NULL" members="SECT_C"/>
+  <constraints xmi:id="SQLConstraint_1211544520019" name="SYS_C005970" type="CHECK" body="&quot;SECT_D&quot; IS NOT NULL" members="SECT_D"/>
+  <constraints xmi:id="SQLConstraint_1211544520020" name="SYS_C005971" type="CHECK" body="&quot;SECT_E&quot; IS NOT NULL" members="SECT_E"/>
+  <constraints xmi:id="SQLConstraint_1211544520021" name="SYS_C005972" type="CHECK" body="&quot;SECT_F&quot; IS NOT NULL" members="SECT_F"/>
+  <constraints xmi:id="SQLConstraint_1211544520022" name="SYS_C005973" type="CHECK" body="&quot;SECT_G&quot; IS NOT NULL" members="SECT_G"/>
+  <constraints xmi:id="SQLConstraint_1211544520023" name="SYS_C005974" type="CHECK" body="&quot;SECT_H&quot; IS NOT NULL" members="SECT_H"/>
+  <constraints xmi:id="SQLConstraint_1211544520024" name="SYS_C005975" type="CHECK" body="&quot;NFSITEM_ID&quot; IS NOT NULL" members="NFSITEM_ID"/>
+  <constraints xmi:id="SQLConstraint_1211544520026" name="SYS_C005976" type="CHECK" body="&quot;CONFTYPE&quot; IS NOT NULL" members="CONFTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544520027" name="SYS_C005977" type="CHECK" body="&quot;SECT_O900&quot; IS NOT NULL" members="SECT_O900"/>
+  <constraints xmi:id="SQLConstraint_1211544520028" name="SYS_C005978" type="CHECK" body="&quot;SECT_O1800&quot; IS NOT NULL" members="SECT_O1800"/>
+</RDBSchema:RDBTable>

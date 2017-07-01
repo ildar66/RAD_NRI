@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="EMC" name="EMC">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCID" name="EMCID" allowNull="true" constraints="SQLConstraint_1211544520513 SQLConstraint_1211544520514">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520513" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCNUMBER" name="EMCNUMBER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520514" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCDATE" name="EMCDATE" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520513" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STORAGEPLACE" name="STORAGEPLACE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520515" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCTXENDA" name="EMCTXENDA" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544520513" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCPTXENDA" name="EMCPTXENDA" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544520514" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCANTENNAENDA" name="EMCANTENNAENDA" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544520515" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCHEIGHTENDA" name="EMCHEIGHTENDA" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544520516" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POSITION_ENDB" name="POSITION_ENDB" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520516" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCTXENDB" name="EMCTXENDB" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544520517" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCPTXENDB" name="EMCPTXENDB" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544520518" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCANTENNAENDB" name="EMCANTENNAENDB" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544520519" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EMCHEIGHTENDB" name="EMCHEIGHTENDB" allowNull="true">
+    <type xmi:type="RDBSchema:RDBFloat" xmi:id="RDBFloat_1211544520520" precision="126">
+      <originatingType xmi:type="RDBSchema:RDBFloat" href="ORACLE_V9_Primitives.xmi#RDBFloat_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520513" name="PK_EMC" type="UNIQUE" members="EMCID"/>
+  <constraints xmi:id="SQLConstraint_1211544520514" name="SYS_C004189" type="CHECK" body="&quot;EMCID&quot; IS NOT NULL" members="EMCID"/>
+</RDBSchema:RDBTable>

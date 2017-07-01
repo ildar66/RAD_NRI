@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="BSNUMBERS" name="BSNUMBERS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STORAGEPLACE" name="STORAGEPLACE" allowNull="true" constraints="SQLConstraint_1211544519302 SQLConstraint_1211544519303">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519302" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NUMTYPE" name="NUMTYPE" allowNull="true" constraints="SQLConstraint_1211544519302 SQLConstraint_1211544519304 SQLConstraint_1211544519305">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519303" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BSNUMBER" name="BSNUMBER" allowNull="true" constraints="SQLConstraint_1211544519306">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519302" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CREATED" name="CREATED" allowNull="true" defaultValue="SYSDATE" constraints="SQLConstraint_1211544519307">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544519302" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519302" name="PK_BSNUMBERS" type="UNIQUE" members="STORAGEPLACE NUMTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544519304" name="CKC_NUMTYPE_BSNUM" type="CHECK" body="numtype IN (1 ,2 ,3 )" members="NUMTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544519303" name="SYS_C005498" type="CHECK" body="&quot;STORAGEPLACE&quot; IS NOT NULL" members="STORAGEPLACE"/>
+  <constraints xmi:id="SQLConstraint_1211544519305" name="SYS_C005499" type="CHECK" body="&quot;NUMTYPE&quot; IS NOT NULL" members="NUMTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544519306" name="SYS_C005500" type="CHECK" body="&quot;BSNUMBER&quot; IS NOT NULL" members="BSNUMBER"/>
+  <constraints xmi:id="SQLConstraint_1211544519307" name="SYS_C005501" type="CHECK" body="&quot;CREATED&quot; IS NOT NULL" members="CREATED"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="COMLINES" name="COMLINES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMLINE" name="COMLINE" allowNull="true" constraints="SQLConstraint_1211544519632 SQLConstraint_1211544519633">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519632" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPE_" name="TYPE_" allowNull="true" constraints="SQLConstraint_1211544519634 SQLConstraint_1211544519635">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519632" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STORAGEPLACE" name="STORAGEPLACE" allowNull="true" constraints="SQLConstraint_1211544519636">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519633" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FROMPOSITION" name="FROMPOSITION" allowNull="true" constraints="SQLConstraint_1211544519637">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519634" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519632" name="PK_COMLINES" type="UNIQUE" members="COMLINE"/>
+  <constraints xmi:id="SQLConstraint_1211544519634" name="CKC_TYPE_COMLI" type="CHECK" body="TYPE_ IN ('R' ,'O' )" members="TYPE_"/>
+  <constraints xmi:id="SQLConstraint_1211544519633" name="SYS_C003880" type="CHECK" body="&quot;COMLINE&quot; IS NOT NULL" members="COMLINE"/>
+  <constraints xmi:id="SQLConstraint_1211544519635" name="SYS_C003881" type="CHECK" body="&quot;TYPE_&quot; IS NOT NULL" members="TYPE_"/>
+  <constraints xmi:id="SQLConstraint_1211544519636" name="SYS_C003882" type="CHECK" body="&quot;STORAGEPLACE&quot; IS NOT NULL" members="STORAGEPLACE"/>
+  <constraints xmi:id="SQLConstraint_1211544519637" name="SYS_C003883" type="CHECK" body="&quot;FROMPOSITION&quot; IS NOT NULL" members="FROMPOSITION"/>
+</RDBSchema:RDBTable>

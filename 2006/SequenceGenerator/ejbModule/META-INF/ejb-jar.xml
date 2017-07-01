@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<ejb-jar id="ejb-jar_ID">
+	<display-name>SequenceGenerator</display-name>
+	<enterprise-beans>
+		<entity id="Sequence">
+			<ejb-name>Sequence</ejb-name>
+			<local-home>com.nri.sequence.ejb.SequenceLocalHome</local-home>
+			<local>com.nri.sequence.ejb.SequenceLocal</local>
+			<ejb-class>com.nri.sequence.ejb.SequenceBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.String</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>Sequence</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1191224466899">
+				<field-name>id</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1191224469783">
+				<field-name>value</field-name>
+			</cmp-field>
+			<primkey-field>id</primkey-field>
+		</entity>
+		<session id="SequenceSession">
+			<ejb-name>SequenceSession</ejb-name>
+			<home>com.nri.sequence.ejb.SequenceSessionHome</home>
+			<remote>com.nri.sequence.ejb.SequenceSession</remote>
+			<local-home>com.nri.sequence.ejb.SequenceSessionLocalHome</local-home>
+			<local>com.nri.sequence.ejb.SequenceSessionLocal</local>
+			<ejb-class>com.nri.sequence.ejb.SequenceSessionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<env-entry>
+				<description></description>
+				<env-entry-name>retryCount</env-entry-name>
+				<env-entry-type>java.lang.Integer</env-entry-type>
+				<env-entry-value>5</env-entry-value>
+			</env-entry>
+			<env-entry>
+				<description></description>
+				<env-entry-name>blockSize</env-entry-name>
+				<env-entry-type>java.lang.Integer</env-entry-type>
+				<env-entry-value>10</env-entry-value>
+			</env-entry>
+			<ejb-local-ref id="EJBLocalRef_1191226267229">
+				<ejb-ref-name>ejb/Sequence</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.nri.sequence.ejb.SequenceLocalHome</local-home>
+				<local>com.nri.sequence.ejb.SequenceLocal</local>
+				<ejb-link>Sequence</ejb-link>
+			</ejb-local-ref>
+		</session>
+	</enterprise-beans>
+	<assembly-descriptor>
+		<container-transaction>
+			<method>
+				<ejb-name>Sequence</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Mandatory</trans-attribute>
+		</container-transaction>
+		<container-transaction>
+			<method>
+				<ejb-name>SequenceSession</ejb-name>
+				<method-intf>Remote</method-intf>
+				<method-name>getNextNumberInSequence</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<method>
+				<ejb-name>SequenceSession</ejb-name>
+				<method-intf>Local</method-intf>
+				<method-name>getNextNumberInSequence</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<trans-attribute>RequiresNew</trans-attribute>
+		</container-transaction>
+	</assembly-descriptor>
+</ejb-jar>

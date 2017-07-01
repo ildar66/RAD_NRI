@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DOCUMENTS" name="DOCUMENTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCUMENT" name="DOCUMENT" allowNull="true" constraints="SQLConstraint_1211544520233 SQLConstraint_1211544520234">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520233" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER" allowNull="true" constraints="SQLConstraint_1211544520235">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520234" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FROM_" name="FROM_" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520235" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TO_" name="TO_" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520236" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BLANKDATE" name="BLANKDATE" allowNull="true" constraints="SQLConstraint_1211544520236">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520233" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPE_" name="TYPE_" allowNull="true" constraints="SQLConstraint_1211544520237 SQLConstraint_1211544520238">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520233" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BLANKNUMBER" name="BLANKNUMBER" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520234" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BLANKINDEX" name="BLANKINDEX" allowNull="true" constraints="SQLConstraint_1211544520239">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520237" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STATE" name="STATE" allowNull="true" constraints="SQLConstraint_1211544520240 SQLConstraint_1211544520241">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520235" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTRAGENT" name="CONTRAGENT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520238" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="INSURANCEACT" name="INSURANCEACT" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520236" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="INSURANCEDATE" name="INSURANCEDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520234" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="INSURANCEMAN" name="INSURANCEMAN" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520237" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROCESSSOURCE" name="PROCESSSOURCE" allowNull="true" constraints="SQLConstraint_1211544520242">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520238" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROCESSDESTINATION" name="PROCESSDESTINATION" allowNull="true" constraints="SQLConstraint_1211544520243">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520239" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STORAGEMANAGER" name="STORAGEMANAGER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520239" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SHOWTOUSER" name="SHOWTOUSER" allowNull="true" constraints="SQLConstraint_1211544520244 SQLConstraint_1211544520245">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520243" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OPERATOR_" name="OPERATOR_" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520243" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARENTDOCUMENT" name="PARENTDOCUMENT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520244" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISAUTODOC" name="ISAUTODOC" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544520246 SQLConstraint_1211544520247">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520244" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TO2" name="TO2" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520245" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CALCULATEORDER" name="CALCULATEORDER" allowNull="true" defaultValue="'A'" constraints="SQLConstraint_1211544520248 SQLConstraint_1211544520249">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520245" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CALCTIME" name="CALCTIME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520243" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NEEDAPPROVE" name="NEEDAPPROVE" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544520250 SQLConstraint_1211544520251">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520246" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="APPROVED" name="APPROVED" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544520252 SQLConstraint_1211544520253">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520247" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROJECTID" name="PROJECTID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520246" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PRJSTATUS" name="PRJSTATUS" allowNull="true" defaultValue="'A'" constraints="SQLConstraint_1211544520254 SQLConstraint_1211544520255">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520248" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VISUALTYPE" name="VISUALTYPE" allowNull="true" constraints="SQLConstraint_1211544520256">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520247" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520233" name="PK_DOCUMENTS" type="UNIQUE" members="DOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544520250" name="CKC_NEEDAPPR_DOCUM" type="CHECK" body="needapprove IN ('Y' ,'N' )" members="NEEDAPPROVE"/>
+  <constraints xmi:id="SQLConstraint_1211544520252" name="CKC_APPROVED_DOCUM" type="CHECK" body="approved IN ('Y' ,'N' )" members="APPROVED"/>
+  <constraints xmi:id="SQLConstraint_1211544520254" name="CKC_PRJSTATU_DOCUM" type="CHECK" body="prjstatus IN ('A' ,'B' ,'C' ,'D' )" members="PRJSTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544520237" name="CKC_TYPE_DOCUM" type="CHECK" body="TYPE_ IN ('C' ,'I' ,'W' ,'P' ,'S' ,'N' ,'A' ,'H' ,'T' ,'O' ,'R' ,'F' ,'B' ,'G' ,'K' )" members="TYPE_"/>
+  <constraints xmi:id="SQLConstraint_1211544520256" name="CKC_VISUALTY_DOCUM" type="CHECK" body="(visualtype IS NULL ) OR (visualtype IN (1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 ,10 ,11 ,12 ,13 ,14 ,15 )) " members="VISUALTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544520240" name="CKC_STATE_DOCUM" type="CHECK" body="state IN ('1' ,'2' )" members="STATE"/>
+  <constraints xmi:id="SQLConstraint_1211544520242" name="CKC_PROCESSS_DOCUM" type="CHECK" body="(processsource IS NULL ) OR (processsource IN ('Y' ,'N' )) " members="PROCESSSOURCE"/>
+  <constraints xmi:id="SQLConstraint_1211544520243" name="CKC_PROCESSD_DOCUM" type="CHECK" body="(processdestination IS NULL ) OR (processdestination IN ('Y' ,'N' )) " members="PROCESSDESTINATION"/>
+  <constraints xmi:id="SQLConstraint_1211544520244" name="CKC_SHOWTOUS_DOCUM" type="CHECK" body="showtouser IN ('Y' ,'N' )" members="SHOWTOUSER"/>
+  <constraints xmi:id="SQLConstraint_1211544520246" name="CKC_ISAUTODO_DOCUM" type="CHECK" body="isautodoc IN ('Y' ,'N' )" members="ISAUTODOC"/>
+  <constraints xmi:id="SQLConstraint_1211544520248" name="CKC_CALCULAT_DOCUM" type="CHECK" body="calculateorder IN ('A' ,'B' )" members="CALCULATEORDER"/>
+  <constraints xmi:id="SQLConstraint_1211544520234" name="SYS_C004018" type="CHECK" body="&quot;DOCUMENT&quot; IS NOT NULL" members="DOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544520235" name="SYS_C004019" type="CHECK" body="&quot;OWNER&quot; IS NOT NULL" members="OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544520236" name="SYS_C004020" type="CHECK" body="&quot;BLANKDATE&quot; IS NOT NULL" members="BLANKDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544520238" name="SYS_C004021" type="CHECK" body="&quot;TYPE_&quot; IS NOT NULL" members="TYPE_"/>
+  <constraints xmi:id="SQLConstraint_1211544520239" name="SYS_C004022" type="CHECK" body="&quot;BLANKINDEX&quot; IS NOT NULL" members="BLANKINDEX"/>
+  <constraints xmi:id="SQLConstraint_1211544520241" name="SYS_C004023" type="CHECK" body="&quot;STATE&quot; IS NOT NULL" members="STATE"/>
+  <constraints xmi:id="SQLConstraint_1211544520245" name="SYS_C004024" type="CHECK" body="&quot;SHOWTOUSER&quot; IS NOT NULL" members="SHOWTOUSER"/>
+  <constraints xmi:id="SQLConstraint_1211544520247" name="SYS_C004025" type="CHECK" body="&quot;ISAUTODOC&quot; IS NOT NULL" members="ISAUTODOC"/>
+  <constraints xmi:id="SQLConstraint_1211544520249" name="SYS_C004026" type="CHECK" body="&quot;CALCULATEORDER&quot; IS NOT NULL" members="CALCULATEORDER"/>
+  <constraints xmi:id="SQLConstraint_1211544520251" name="SYS_C004027" type="CHECK" body="&quot;NEEDAPPROVE&quot; IS NOT NULL" members="NEEDAPPROVE"/>
+  <constraints xmi:id="SQLConstraint_1211544520253" name="SYS_C004028" type="CHECK" body="&quot;APPROVED&quot; IS NOT NULL" members="APPROVED"/>
+  <constraints xmi:id="SQLConstraint_1211544520255" name="SYS_C004029" type="CHECK" body="&quot;PRJSTATUS&quot; IS NOT NULL" members="PRJSTATUS"/>
+</RDBSchema:RDBTable>

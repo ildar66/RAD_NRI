@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappbnd="webappbnd.xmi" xmlns:common="common.xmi" xmi:id="WebAppBinding_1" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp"/>
+  <resRefBindings xmi:id="ResourceRefBinding_1185198828648" jndiName="jdbc/july">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1185198828648"/>
+  </resRefBindings>
+  <resRefBindings xmi:id="ResourceRefBinding_1211890545754" jndiName="jdbc/oracle">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1211890545754"/>
+  </resRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1185191126050" jndiName="ejb/com/nri/ejb/SecurityActionProcessorFacadeHome">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1185191126050"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1185458734265" jndiName="ejb/com/nri/ejb/SecurityActionProcessorFacadeHome">
+    <bindingEjbRef xmi:type="common:EJBLocalRef" href="WEB-INF/web.xml#EJBLocalRef_1185458734265"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1185782563949" jndiName="ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome">
+    <bindingEjbRef xmi:type="common:EJBLocalRef" href="WEB-INF/web.xml#EJBLocalRef_1185782563949"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1191230364608" jndiName="ejb/com/nri/sequence/ejb/SequenceSessionHome">
+    <bindingEjbRef xmi:type="common:EJBLocalRef" href="WEB-INF/web.xml#EJBLocalRef_1191230364608"/>
+  </ejbRefBindings>
+</webappbnd:WebAppBinding>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ERICSSONTG12" name="ERICSSONTG12">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATALOADID" name="DATALOADID" allowNull="true" constraints="SQLConstraint_1211544520683 SQLConstraint_1211544520684">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520683" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BPSET" name="BPSET" allowNull="true" constraints="SQLConstraint_1211544520683 SQLConstraint_1211544520685">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520684" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BPKEY" name="BPKEY" allowNull="true" constraints="SQLConstraint_1211544520683 SQLConstraint_1211544520686">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520685" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARENT" name="PARENT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520686" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520683" name="PK_ERICSSONTG12" type="UNIQUE" members="DATALOADID BPSET BPKEY"/>
+  <constraints xmi:id="SQLConstraint_1211544520684" name="SYS_C005151" type="CHECK" body="&quot;DATALOADID&quot; IS NOT NULL" members="DATALOADID"/>
+  <constraints xmi:id="SQLConstraint_1211544520685" name="SYS_C005152" type="CHECK" body="&quot;BPSET&quot; IS NOT NULL" members="BPSET"/>
+  <constraints xmi:id="SQLConstraint_1211544520686" name="SYS_C005153" type="CHECK" body="&quot;BPKEY&quot; IS NOT NULL" members="BPKEY"/>
+</RDBSchema:RDBTable>

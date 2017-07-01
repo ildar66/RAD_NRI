@@ -1,0 +1,73 @@
+package com.nri.ejb.websphere_deploy.ORACLE_V9_1;
+
+/**
+ * MsUserEJBBeanCacheEntryImpl_da8ec80c
+ */
+public class MsUserEJBBeanCacheEntryImpl_da8ec80c extends com.ibm.ws.ejbpersistence.cache.DataCacheEntry implements com.nri.ejb.websphere_deploy.MsUserEJBBeanCacheEntry_da8ec80c {
+	/**
+	 * getMsuCode
+	 */
+	public java.lang.Integer getMsuCode() {
+		if(MSUCODE_IsNull)
+			return null;
+		else
+			return new Integer(MSUCODE_Data);
+	}
+	/**
+	 * setMsuCode
+	 */
+	public void setMsuCode(Integer data) {
+		if (data == null)
+			this.MSUCODE_IsNull= true;
+		else {
+			this.MSUCODE_IsNull= false;
+			this.MSUCODE_Data=data.intValue(); }
+	}
+	/**
+	 * setDataForMSUCODE
+	 */
+	public void setDataForMSUCODE(int data, boolean isNull) {
+		this.MSUCODE_Data=data;
+		this.MSUCODE_IsNull=isNull;
+	}
+	private int MSUCODE_Data;
+	private boolean MSUCODE_IsNull = true;
+	/**
+	 * getMsUser
+	 */
+	public java.lang.String getMsUser() {
+		return MSUSER_Data;
+	}
+	/**
+	 * setMsUser
+	 */
+	public void setMsUser(String data) {
+		this.MSUSER_Data=data;
+	}
+	/**
+	 * setDataForMSUSER
+	 */
+	public void setDataForMSUSER(String data) {
+		this.MSUSER_Data=data;
+	}
+	private String MSUSER_Data;
+	/**
+	 * getMsPassword
+	 */
+	public java.lang.String getMsPassword() {
+		return MSPASSWORD_Data;
+	}
+	/**
+	 * setMsPassword
+	 */
+	public void setMsPassword(String data) {
+		this.MSPASSWORD_Data=data;
+	}
+	/**
+	 * setDataForMSPASSWORD
+	 */
+	public void setDataForMSPASSWORD(String data) {
+		this.MSPASSWORD_Data=data;
+	}
+	private String MSPASSWORD_Data;
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEMUTUALRULES" name="LEASEMUTUALRULES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGLAMENT" name="REGLAMENT" allowNull="true" constraints="SQLConstraint_1211544521545 SQLConstraint_1211544521546">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521545" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544521545 SQLConstraint_1211544521547">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521546" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHARGEDATERULE" name="CHARGEDATERULE" allowNull="true" constraints="SQLConstraint_1211544521548 SQLConstraint_1211544521549">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521545" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYDATERULE" name="PAYDATERULE" allowNull="true" constraints="SQLConstraint_1211544521550 SQLConstraint_1211544521551">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521546" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOPCHARGDATRUL" name="DOPCHARGDATRUL" allowNull="true" constraints="SQLConstraint_1211544521552 SQLConstraint_1211544521553">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521547" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RATETYPE" name="RATETYPE" allowNull="true" defaultValue="1" constraints="SQLConstraint_1211544521554">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521547" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521545" name="PK_LEASEMUTUALRULE" type="UNIQUE" members="REGLAMENT RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544521552" name="CKC_DOPCHARG_LEASE" type="CHECK" body="dopchargdatrul IN ('Y' ,'N' )" members="DOPCHARGDATRUL"/>
+  <constraints xmi:id="SQLConstraint_1211544521548" name="CKC_CHRGED_LEASE" type="CHECK" body="chargedaterule IN ('A' ,'B' ,'C' ,'D' ,'E' ,'F' ,'G' ,'H' ,'J' ,'K' )" members="CHARGEDATERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521550" name="CKC_PAYDTR_LEASE" type="CHECK" body="paydaterule IN ('A' ,'B' ,'C' ,'K' )" members="PAYDATERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521546" name="SYS_C004307" type="CHECK" body="&quot;REGLAMENT&quot; IS NOT NULL" members="REGLAMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521547" name="SYS_C004308" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544521549" name="SYS_C004309" type="CHECK" body="&quot;CHARGEDATERULE&quot; IS NOT NULL" members="CHARGEDATERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521551" name="SYS_C004310" type="CHECK" body="&quot;PAYDATERULE&quot; IS NOT NULL" members="PAYDATERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521553" name="SYS_C004311" type="CHECK" body="&quot;DOPCHARGDATRUL&quot; IS NOT NULL" members="DOPCHARGDATRUL"/>
+  <constraints xmi:id="SQLConstraint_1211544521554" name="SYS_C004312" type="CHECK" body="&quot;RATETYPE&quot; IS NOT NULL" members="RATETYPE"/>
+</RDBSchema:RDBTable>

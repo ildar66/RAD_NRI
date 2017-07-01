@@ -1,0 +1,225 @@
+------Start of DE processing------ = [08.05.27 15:58:20:284 MSD] , key = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute 89
+Exception = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException
+Source = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute
+probeid = 89
+Stack Dump = com.ibm.ws.exception.WsException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: ORA-01502: индекс 'INFORMIX.PEOPLE_ALL' или часть такого индекса находится в неиспользуемом состоянии
+.
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:244)
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:171)
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:124)
+	at com.nri.ejb.websphere_deploy.ORACLE_V9_1.PeopleEJBBeanFunctionSet_6bbce083.Store(PeopleEJBBeanFunctionSet_6bbce083.java:286)
+	at com.nri.ejb.websphere_deploy.ORACLE_V9_1.PeopleEJBBeanFunctionSet_6bbce083.execute(PeopleEJBBeanFunctionSet_6bbce083.java:508)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.wsspi.ejbpersistence.WSEJBToRAAdapter.executeUpdate(WSEJBToRAAdapter.java:242)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeUpdate(WSRelationalRAAdapter.java:301)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbStore(Unknown Source)
+	at com.nri.ejb.ConcretePeopleEJB_6bbce083.ejbStore(ConcretePeopleEJB_6bbce083.java:58)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.store(ContainerManaged2_0BeanO.java:254)
+	at com.ibm.ejs.container.EntityBeanO.beforeCompletion(EntityBeanO.java:1062)
+	at com.ibm.ejs.container.ContainerTx.beforeCompletion(ContainerTx.java:542)
+	at com.ibm.ejs.util.tran.SyncDriver.beforeCompletion(SyncDriver.java:279)
+	at com.ibm.ws.Transaction.JTA.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:110)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalPrepare(TransactionImpl.java:1211)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.commit(TransactionImpl.java:960)
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.commit(TranManagerImpl.java:150)
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.commit(TranManagerSet.java:182)
+	at com.ibm.ejs.csi.TranStrategy.commit(TranStrategy.java:712)
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java:167)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:565)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:3038)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:2916)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.updatePeople(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:2049)
+	at com.nri.ejb._SecurityActionProcessorFacade_Stub.updatePeople(_SecurityActionProcessorFacade_Stub.java:384)
+	at com.nri.model.ejb.SecurityActionProcessorImpl.updatePeople(SecurityActionProcessorImpl.java:138)
+	at com.nri.security.actions.PeopleProcessAction.execute(PeopleProcessAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: java.sql.SQLException: ORA-01502: индекс 'INFORMIX.PEOPLE_ALL' или часть такого индекса находится в неиспользуемом состоянии
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:111)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:330)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:287)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:742)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:212)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:951)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1159)
+	at oracle.jdbc.driver.OracleStatement.doScrollExecuteCommon(OracleStatement.java:4034)
+	at oracle.jdbc.driver.OraclePreparedStatement.doScrollPstmtExecuteUpdate(OraclePreparedStatement.java:10762)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3282)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3367)
+	at com.nri.ejb.websphere_deploy.ORACLE_V9_1.PeopleEJBBeanFunctionSet_6bbce083.Store(PeopleEJBBeanFunctionSet_6bbce083.java:281)
+	... 52 more
+---- Begin backtrace for nested exception
+java.sql.SQLException: ORA-01502: индекс 'INFORMIX.PEOPLE_ALL' или часть такого индекса находится в неиспользуемом состоянии
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:111)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:330)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:287)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:742)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:212)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:951)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1159)
+	at oracle.jdbc.driver.OracleStatement.doScrollExecuteCommon(OracleStatement.java:4034)
+	at oracle.jdbc.driver.OraclePreparedStatement.doScrollPstmtExecuteUpdate(OraclePreparedStatement.java:10762)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3282)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3367)
+	at com.nri.ejb.websphere_deploy.ORACLE_V9_1.PeopleEJBBeanFunctionSet_6bbce083.Store(PeopleEJBBeanFunctionSet_6bbce083.java:281)
+	at com.nri.ejb.websphere_deploy.ORACLE_V9_1.PeopleEJBBeanFunctionSet_6bbce083.execute(PeopleEJBBeanFunctionSet_6bbce083.java:508)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.wsspi.ejbpersistence.WSEJBToRAAdapter.executeUpdate(WSEJBToRAAdapter.java:242)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeUpdate(WSRelationalRAAdapter.java:301)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbStore(Unknown Source)
+	at com.nri.ejb.ConcretePeopleEJB_6bbce083.ejbStore(ConcretePeopleEJB_6bbce083.java:58)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.store(ContainerManaged2_0BeanO.java:254)
+	at com.ibm.ejs.container.EntityBeanO.beforeCompletion(EntityBeanO.java:1062)
+	at com.ibm.ejs.container.ContainerTx.beforeCompletion(ContainerTx.java:542)
+	at com.ibm.ejs.util.tran.SyncDriver.beforeCompletion(SyncDriver.java:279)
+	at com.ibm.ws.Transaction.JTA.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:110)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalPrepare(TransactionImpl.java:1211)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.commit(TransactionImpl.java:960)
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.commit(TranManagerImpl.java:150)
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.commit(TranManagerSet.java:182)
+	at com.ibm.ejs.csi.TranStrategy.commit(TranStrategy.java:712)
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java:167)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:565)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:3038)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:2916)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.updatePeople(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:2049)
+	at com.nri.ejb._SecurityActionProcessorFacade_Stub.updatePeople(_SecurityActionProcessorFacade_Stub.java:384)
+	at com.nri.model.ejb.SecurityActionProcessorImpl.updatePeople(SecurityActionProcessorImpl.java:138)
+	at com.nri.security.actions.PeopleProcessAction.execute(PeopleProcessAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl@6633eb8
+
+Exception = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException
+Source = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute
+probeid = 89
+Dump of callerThis = 
+Object type = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+  class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@6aa23ea6
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@2f527e3f
+      class$java$lang$Class = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@32b23ebb
+      soleInstance = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@38397ebb
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 23
+      clock = 23
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4d5f3eba
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@3832febb
+      referent = [Ljava.lang.reflect.Field;@58d0be9a
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@54e87eab
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  mytc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ws.ejbpersistence.utilpm.ejbpersistence_NLS
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CRAMER_PIF_COMPANY" name="CRAMER_PIF_COMPANY">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CLOUDID" name="CLOUDID" allowNull="true" constraints="SQLConstraint_1211544520113 SQLConstraint_1211544520114">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520113" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CLOUD2CLOUDTYPE" name="CLOUD2CLOUDTYPE" allowNull="true" constraints="SQLConstraint_1211544520115">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520114" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520113" name="PK_CRAMER_PIF_COMP" type="UNIQUE" members="CLOUDID"/>
+  <constraints xmi:id="SQLConstraint_1211544520114" name="SYS_C003722" type="CHECK" body="&quot;CLOUDID&quot; IS NOT NULL" members="CLOUDID"/>
+  <constraints xmi:id="SQLConstraint_1211544520115" name="SYS_C003723" type="CHECK" body="&quot;CLOUD2CLOUDTYPE&quot; IS NOT NULL" members="CLOUD2CLOUDTYPE"/>
+</RDBSchema:RDBTable>

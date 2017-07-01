@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="V_PEOPLE_TABNUM" name="V_PEOPLE_TABNUM">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAN" name="MAN" allowNull="true" constraints="SQLConstraint_1211544525720">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525720" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FIRSTNAME" name="FIRSTNAME" allowNull="true" constraints="SQLConstraint_1211544525721">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525720" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LASTNAME" name="LASTNAME" allowNull="true" constraints="SQLConstraint_1211544525722">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525721" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MIDDLENAME" name="MIDDLENAME" allowNull="true" constraints="SQLConstraint_1211544525723">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525722" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TABNUM" name="TABNUM" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525721" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525720" name="SYS_C003413" type="CHECK" body="&quot;MAN&quot; IS NOT NULL" members="MAN"/>
+  <constraints xmi:id="SQLConstraint_1211544525721" name="SYS_C003414" type="CHECK" body="&quot;FIRSTNAME&quot; IS NOT NULL" members="FIRSTNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544525722" name="SYS_C003415" type="CHECK" body="&quot;LASTNAME&quot; IS NOT NULL" members="LASTNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544525723" name="SYS_C003416" type="CHECK" body="&quot;MIDDLENAME&quot; IS NOT NULL" members="MIDDLENAME"/>
+</RDBSchema:RDBTable>

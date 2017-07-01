@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbrdbmapping:EjbRdbDocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmlns:ejb="ejb.xmi" xmlns:ejbrdbmapping="ejbrdbmapping.xmi" xmlns:Mapping="Mapping.xmi" xmi:id="EjbRdbDocumentRoot_1211544533350" topToBottom="true" commandStack="">
+  <helper xmi:type="ejbrdbmapping:RdbSchemaProperies" xmi:id="RdbSchemaProperies_1211544533350" primitivesDocument="ORACLE_V9"/>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1211544688765">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1211544688765">
+      <table href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#PEOPLE"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544688765">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1184663151188"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#FIRSTNAME"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544688766">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1184663152701"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#LASTNAME"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544688767">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1184663154223"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#MIDDLENAME"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544688768">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1184663155485"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#PASSPORTSER"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544688769">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1184663157458"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#PASSPORTDATE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544688770">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1184663162406"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#PASSPORTWHOM"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544688771">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1184663168365"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#ISACTIVE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544688772">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1184663170288"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#TABNUM"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544725453">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1184663148594"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#MAN"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#PeopleEJB"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_PEOPLE.tblxmi#PEOPLE"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1211544808523">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1211544808523">
+      <table href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_ROLES.tblxmi#ROLES"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544808523">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1185261420027"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_ROLES.tblxmi#ROLENAME"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544808524">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1185261421779"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_ROLES.tblxmi#COMMENT_"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544808525">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1185261423632"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_ROLES.tblxmi#SORTORDER"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544808526">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1185261426116"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_ROLES.tblxmi#TASKCOMMENT"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544808527">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1185261417853"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_ROLES.tblxmi#ROLE"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#RoleEJB"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_ROLES.tblxmi#ROLES"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1211544888018">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1211544888018">
+      <table href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKPOSITIONS.tblxmi#WORKPOSITIONS"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544888018">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1185890482655"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKPOSITIONS.tblxmi#NAME"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544888019">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1185890484888"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKPOSITIONS.tblxmi#ISACTIVE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544888020">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1185890461452"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKPOSITIONS.tblxmi#WORKPOSITION"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#WorkPositionEJB"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKPOSITIONS.tblxmi#WORKPOSITIONS"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1211544940006">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1211544940006">
+      <table href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_MSUSERS.tblxmi#MSUSERS"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544940006">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1186066491663"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_MSUSERS.tblxmi#MSUSER"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544940007">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1186066494758"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_MSUSERS.tblxmi#MSPASSWORD"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211544940008">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1186066488418"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_MSUSERS.tblxmi#MSUCODE"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#MsUserEJB"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_MSUSERS.tblxmi#MSUSERS"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1211545007395">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1211545007395">
+      <table href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_COMPANIES.tblxmi#COMPANIES"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545007395">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1186490695420"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_COMPANIES.tblxmi#NAME"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545007396">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1186490699636"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_COMPANIES.tblxmi#SHORTNAME"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545024287">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1186490692616"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_COMPANIES.tblxmi#COMPANY"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CompanyEJB"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_COMPANIES.tblxmi#COMPANIES"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1211545097334">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1211545097334">
+      <table href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_DIVISIONS.tblxmi#DIVISIONS"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545097334">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1187763536609"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_DIVISIONS.tblxmi#TYPE_"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545097335">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1187763536618"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_DIVISIONS.tblxmi#ENCLOSER"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545097336">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1187763536619"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_DIVISIONS.tblxmi#NAME"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545097337">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1187763536620"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_DIVISIONS.tblxmi#SHORTNAME"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545097338">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1187763536621"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_DIVISIONS.tblxmi#BOSS"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545097339">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1187763536622"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_DIVISIONS.tblxmi#COMPANY"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545097340">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1187763536628"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_DIVISIONS.tblxmi#ISACTIVE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545102661">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1187763536608"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_DIVISIONS.tblxmi#DIVISION"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#DivisionEJB"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_DIVISIONS.tblxmi#DIVISIONS"/>
+  </nested>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1211545264244">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1211545264244">
+      <table href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#WORKERS"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264244">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454157532"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#COMPANY"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264245">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454160336"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#MAN"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264246">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454163070"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#WORKPOSITION"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264247">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454165674"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#DIVISION"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264248">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454168709"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#LOTUSADDRESS"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264249">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454170983"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#EMAIL"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264250">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454173527"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#PHONE1"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264251">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454175600"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#PHONE2"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264252">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454181269"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#LOCALPHONE"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264253">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454186036"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#FAX"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264254">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454188660"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#MOBILEPHONE"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264255">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454195471"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#ISACTIVE"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264256">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454197614"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#ISOUR"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264257">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454208221"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#ISSERVICESTUFF"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211545264258">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1188454203644"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#ORGANIZATION_"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#Integer-NUMBER"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#WorkerEJB"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_WORKERS.tblxmi#WORKERS"/>
+  </nested>
+  <inputs xmi:type="ejb:EJBJar" href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <outputs xmi:type="RDBSchema:RDBDatabase" href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <typeMapping xmi:type="Mapping:MappingRoot" href="JavatoORACLE_V9TypeMaps.xmi#Java_to_ORACLE_V9_TypeMaps"/>
+</ejbrdbmapping:EjbRdbDocumentRoot>

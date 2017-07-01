@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="loginlog" name="loginlog" primaryKey="pk_loginlog">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="logid" name="logid">
+    <type xmi:type="RDBSchema:InformixSerialExactNumeric" xmi:id="InformixSerialExactNumeric_1186066253683" start="0">
+      <originatingType xmi:type="RDBSchema:InformixSerialExactNumeric" href="INFORMIX_V92_Primitives.xmi#InformixSerialExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="operatorid" name="operatorid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1186066253683">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="activeoperatorid" name="activeoperatorid">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1186066253684">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="logintime" name="logintime">
+    <type xmi:type="RDBSchema:InformixDateTimeInterval" xmi:id="InformixDateTimeInterval_1186066253683" qualifier="INFORMIX_DATETIME_YEAR_FRACTION" fractionalSecondsPrecision="3">
+      <originatingType xmi:type="RDBSchema:InformixDateTimeInterval" href="INFORMIX_V92_Primitives.xmi#InformixDateTimeInterval_2"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_loginlog" name="pk_loginlog" members="logid" constraint="SQLConstraint_1186066253683"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_10944_1094430" name="fk_ref_10944_1094430" members="activeoperatorid" constraint="SQLConstraint_1186066253684">
+    <target href="META-INF/backends/INFORMIX_V92_1/july_informix_operators.tblxmi#pk_operators"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1186066253683" name="pk_loginlog" type="PRIMARYKEY" primaryKey="pk_loginlog"/>
+  <constraints xmi:id="SQLConstraint_1186066253684" name="fk_ref_10944_1094430" type="FOREIGNKEY" referenceByKey="fk_ref_10944_1094430"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="MSUSERS" name="MSUSERS" primaryKey="C1531685">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MSUCODE" name="MSUCODE" constraints="SQLConstraint_1211544522075">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522075" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MSUSER" name="MSUSER">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211871146502" characterSet="800" length="80" lengthSemantics="CHAR">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MSPASSWORD" name="MSPASSWORD">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211871015437" characterSet="800" length="320" lengthSemantics="BYTE">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="C1531685" name="C1531685" members="MSUCODE" constraint="SQLConstraint_1211544932516"/>
+  <constraints xmi:id="SQLConstraint_1211544522075" name="PK_MSUSERS" type="UNIQUE" members="MSUCODE"/>
+  <constraints xmi:id="SQLConstraint_1211544932516" name="C1531685" type="PRIMARYKEY" primaryKey="C1531685"/>
+</RDBSchema:RDBTable>

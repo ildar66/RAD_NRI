@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_USERPLATIN" name="PIE_USERPLATIN">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="USERPLATINUM" name="USERPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523557">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523557" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="P_STATUS" name="P_STATUS" allowNull="true" constraints="SQLConstraint_1211544523558 SQLConstraint_1211544523559">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523557" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544523560">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523558" characterSet="800" length="400">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523557" name="PK_PIE_USERPLATIN" type="UNIQUE" members="USERPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523558" name="CKC_P_STAT_USPL_O" type="CHECK" body="p_status IN ('A' ,'D' )" members="P_STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544523559" name="SYS_C004464" type="CHECK" body="&quot;P_STATUS&quot; IS NOT NULL" members="P_STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544523560" name="SYS_C004465" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+</RDBSchema:RDBTable>

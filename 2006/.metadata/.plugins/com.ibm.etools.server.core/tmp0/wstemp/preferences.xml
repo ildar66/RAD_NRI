@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+    <root type="system">
+        <map/>
+        <node name="100286354">
+            <map/>
+            <node name="System">
+                <map/>
+                <node name="scope">
+                    <map>
+                        <entry key="usedefaultscope" value="false"/>
+                    </map>
+                </node>
+                <node name="validation">
+                    <map/>
+                </node>
+                <node name="workspace">
+                    <map>
+                        <entry key="auto-refresh" value="true"/>
+                        <entry key="syncWithNodes" value="false"/>
+                        <entry key="bannerShow" value="true"/>
+                        <entry key="descriptionsShow" value="false"/>
+                        <entry key="noDiscardConfirm" value="false"/>
+                    </map>
+                </node>
+            </node>
+            <node name="UI">
+                <map/>
+                <node name="Collections">
+                    <map/>
+                    <node name="ApplicationServer">
+                        <map/>
+                        <node name="Preferences">
+                            <map/>
+                        </node>
+                    </node>
+                    <node name="Events">
+                        <map/>
+                        <node name="Preferences">
+                            <map/>
+                        </node>
+                    </node>
+                    <node name="JDBCProvider">
+                        <map/>
+                        <node name="Preferences">
+                            <map>
+                                <entry key="searchFilter" value="name"/>
+                                <entry key="searchPattern" value="*"/>
+                            </map>
+                        </node>
+                    </node>
+                </node>
+                <node name="currentscope">
+                    <map/>
+                    <node name="JDBCProvider.content.main">
+                        <map/>
+                    </node>
+                </node>
+                <node name="statusTray">
+                    <map>
+                        <entry key="refreshRate" value="60"/>
+                        <entry key="refreshEnabled" value="false"/>
+                        <entry key="cycle" value="true"/>
+                    </map>
+                </node>
+            </node>
+        </node>
+    </root>
+</preferences>

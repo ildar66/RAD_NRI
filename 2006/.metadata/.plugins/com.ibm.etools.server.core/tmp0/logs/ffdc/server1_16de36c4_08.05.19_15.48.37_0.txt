@@ -1,0 +1,94 @@
+------Start of DE processing------ = [08.05.19 15:48:37:629 MSD] , key = com.ibm.ws.security.core.AccessException com.ibm.ws.security.web.WebCollaborator.authorize 560
+Exception = com.ibm.ws.security.core.AccessException
+Source = com.ibm.ws.security.web.WebCollaborator.authorize
+probeid = 560
+Stack Dump = com.ibm.ws.security.core.AccessException: Authorization failed, Not granted any of the required roles: administrator operator configurator monitor 
+	at com.ibm.ws.security.web.WebCollaborator.checkAuthorization(WebCollaborator.java:823)
+	at com.ibm.ws.security.web.WebCollaborator.authorize(WebCollaborator.java:634)
+	at com.ibm.ws.security.web.EJSWebCollaborator.preInvoke(EJSWebCollaborator.java:230)
+	at com.ibm.ws.webcontainer.webapp.WebAppSecurityCollaborator.preInvoke(WebAppSecurityCollaborator.java:132)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:544)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.security.web.EJSWebCollaborator
+com.ibm.ws.security.web.EJSWebCollaborator@19a436d4
+
+==> Performing default dump from com.ibm.ws.security.core.SecurityDM  = Mon May 19 15:48:37 MSD 2008
+SecurityConfig property values:
+{${WAS_INSTALL_ROOT}=C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51, security.securityServerName=SecurityServer, security.authMechForwardCred=false, ${WAS_TEMP_DIR}=C:\ildar\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\tmp0/temp, security.activeUserRegistryType=CUSTOM, com.ibm.websphere.security.registry.maxUseridSize=256, security.enabled=true, security.useLocalSecurityServer=true, security.java2security=false, security.FullyQualifiedUserName=false, security.activeAuthMechanism.OID=No OID for this mechanism, ${WAS_ETC_DIR}=C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51/etc, security.authMechContextImpl=, security.ltpa.sso.ssl=false, webcontainer.transports=[com.ibm.websphere.models.config.applicationserver.webcontainer.impl.HTTPTransportImpl@4d6376d2 (external: <unset>, sslEnabled: false, sslConfig: null), com.ibm.websphere.models.config.applicationserver.webcontainer.impl.HTTPTransportImpl@4d78b6d2 (external: <unset>, sslEnabled: true, sslConfig: localhost/DefaultSSLSettings), com.ibm.websphere.models.config.applicationserver.webcontainer.impl.HTTPTransportImpl@4d4ff6d2 (external: false, sslEnabled: false, sslConfig: null), com.ibm.websphere.models.config.applicationserver.webcontainer.impl.HTTPTransportImpl@4d5236d2 (external: false, sslEnabled: true, sslConfig: localhost/DefaultSSLSettings)], security.activeUserRegistry.realm=July, security.issuePermissionWarning=true, security.ltpa.trustAssociationEnabled=false, security.CacheTimeout=600, security.toplevel.properties=[com.ibm.websphere.models.config.properties.impl.PropertyImpl@3f3b6c9 (name: security.enablePluggableAuthentication, value: true, description: null, required: false, validationExpression: null), com.ibm.websphere.models.config.properties.impl.PropertyImpl@3fc76c9 (name: com.ibm.security.useFIPS, value: false, description: null, required: <unset>, validationExpression: null)], security.ltpa.password=XXXXXX, ${USER_INSTALL_ROOT}=C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51, IBMJCE=IBMJCE, ${APP_INSTALL_ROOT}=C:\ildar\RAD_NRI, com.ibm.websphere.security.registry.maxPasswordSize=256, process.serverName=localhost:localhost:server1, security.authMechOID=No OID for this mechanism, com.ibm.websphere.security.registry.propagateExceptionsToClient=false, security.CacheCushionMin=3, security.callbackHandlerClass=com.ibm.ws.security.auth.callback.WSCallbackHandler, host.virtualhosts=[Lcom.ibm.ws.http.VirtualHost;@332e76d5, CustomerUserRegistryProps={CustUserRegImplClass=com.hps.july.util.JulyRegistry50}, security.loginconfig.application=com.ibm.websphere.models.config.jaaslogin.impl.JAASConfigurationImpl@1d7876c9, server.security.enabled=true, security.ltpa.sso.enabled=false, security.authMechAuthAlias=system.SWAM, security.callbackHandlerFactoryClass=com.ibm.ws.security.auth.callback.WSCallbackHandlerFactoryImpl, security.loginconfig.system=com.ibm.websphere.models.config.jaaslogin.impl.JAASConfigurationImpl@36b76c9, ${WAS_PROPS_DIR}=C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51/properties, security.serverPasswd=XXXXXX, com.ibm.security.useFIPS=false, cell.security.enabled=true, security.CacheCushionMax=10, security.registry.IgnoreCase=false, security.activeUserRegistry.props={CustUserRegImplClass=com.hps.july.util.JulyRegistry50}, security.activeAuthMechanism=SWAM, security.enableAuthorizationAttributes=false, security.enablePluggableAuthentication=true, security.serverId=root} = com.ibm.ws.security.core.AccessException: Authorization failed, Not granted any of the required roles: administrator operator configurator monitor 
++Data for directive [defaultsecurityconfig] obtained. = 
+The dynamic JAAS login configuration is:
+com.ibm.ws.security.auth.login.Configuration: Dumping JAAS Configuration
+JAAS file configuration data:
+WSLogin {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.common.auth.module.WSLoginModuleImpl"   ;
+};
+system.wssecurity.Signature {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.SignatureLoginModule"   ;
+};
+system.wssecurity.IDAssertion {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.IDAssertionLoginModule"   ;
+};
+system.LTPA {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.ltpaLoginModule"   ;
+};
+DefaultPrincipalMapping {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.auth.j2c.WSPrincipalMappingLoginModule"   ;
+};
+system.SWAM {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.swamLoginModule"   ;
+};
+
+JAAS WCCM configuration data:
+ClientContainer {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.common.auth.module.WSClientLoginModuleImpl"   ;
+};
+WSLogin {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.common.auth.module.WSLoginModuleImpl"   ;
+};
+system.wssecurity.Signature {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.SignatureLoginModule"   ;
+};
+system.wssecurity.IDAssertion {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.IDAssertionLoginModule"   ;
+};
+system.LTPA {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.ltpaLoginModule"   ;
+};
+DefaultPrincipalMapping {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.auth.j2c.WSPrincipalMappingLoginModule"   ;
+};
+system.LTPA_WEB {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.web.AuthenLoginModule"   ;
+};
+system.SWAM {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.swamLoginModule"   ;
+};
+
+ = com.ibm.ws.security.core.AccessException: Authorization failed, Not granted any of the required roles: administrator operator configurator monitor 
++Data for directive [defaultjaasconfig] obtained. = 
+==> Dump complete for com.ibm.ws.security.core.SecurityDM  = Mon May 19 15:48:37 MSD 2008

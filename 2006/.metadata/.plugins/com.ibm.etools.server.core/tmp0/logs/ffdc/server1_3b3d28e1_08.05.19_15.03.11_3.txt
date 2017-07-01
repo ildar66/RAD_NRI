@@ -1,0 +1,72 @@
+------Start of DE processing------ = [08.05.19 15:03:11:403 MSD] , key = com.ibm.websphere.security.auth.WSLoginFailedException com.ibm.ws.management.connector.soap.SOAPConnector.invoke 406
+Exception = com.ibm.websphere.security.auth.WSLoginFailedException
+Source = com.ibm.ws.management.connector.soap.SOAPConnector.invoke
+probeid = 406
+Stack Dump = 
+Dump of callerThis = 
+Object type = com.ibm.ws.management.connector.soap.SOAPConnector
+com.ibm.ws.management.connector.soap.SOAPConnector@2bcfe8fc
+
+==> Performing default dump from com.ibm.ws.management.dm.ConnectorDM  = Mon May 19 15:03:11 MSD 2008
+Dump of callerThis = 
+Object type = com.ibm.ws.management.connector.soap.SOAPConnector
+  class$com$ibm$ws$management$connector$soap$SOAPConnector = 
+    class$java$lang$Class = java.lang.Class@2dd32867
+    initted = true
+    reflectionFactory = sun.reflect.ReflectionFactory@3800a8e3
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = java.lang.ref.SoftReference@514968f3
+    useCaches = true
+    allPermDomain = java.security.ProtectionDomain@17b8e8ed
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  securityEnabled = true
+  smr = 
+    class$java$lang$Number = java.lang.Class@2e742867
+    class$java$lang$Character = java.lang.Class@2e36a867
+    class$java$lang$Boolean = java.lang.Class@2e3f2867
+    class$com$ibm$ws$management$connector$soap$AdminServiceSMR = java.lang.Class@3e90a8e1
+    singleton = this.smr
+    defaultSerializer = com.ibm.ws.management.connector.soap.GenericSerializer@734268fe
+    tc = com.ibm.ejs.ras.TraceComponent@605968fe
+    defaultEncodingStyle = null
+    java2XMLReg = java.util.Hashtable@7354a8fe
+    xml2JavaReg = java.util.Hashtable@734828fe
+    dsReg = java.util.Hashtable@734da8fe
+    sReg = java.util.Hashtable@734128fe
+  targetObject = 
+    class$com$ibm$ws$management$connector$AdminServiceDelegator = java.lang.Class@19468e1
+    _adminInstance = com.ibm.ws.management.AdminServiceImpl@71ae8eb
+    tc = com.ibm.ejs.ras.TraceComponent@2090e8ff
+  nls = 
+    class$com$ibm$ejs$ras$TraceNLS = java.lang.Class@6900e8e2
+    ivBundleName = com.ibm.ws.management.resources.connector
+    svMalformedMessage = No message text associated with key {0} in bundle {1}
+    svNullKeyMessage = Null key passed while using ResourceBundle {0}
+    svBundleNotLoaded = Unable to load ResourceBundle {0}
+    svNullBundleName = Resource Bundle name is null, key = {0}
+    nullKey = null Key
+    tc = com.ibm.ejs.ras.TraceComponent@4e1d68eb
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ws.management.resources.connector
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.management.connector.soap.SOAPConnector
+  bundleName = com.ibm.ws.management.resources.connector
+
++Data for directive [defaultconnector] obtained. = 
+==> Dump complete for com.ibm.ws.management.dm.ConnectorDM  = Mon May 19 15:03:11 MSD 2008

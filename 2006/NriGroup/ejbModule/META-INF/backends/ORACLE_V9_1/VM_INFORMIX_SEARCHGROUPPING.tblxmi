@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="SEARCHGROUPPING" name="SEARCHGROUPPING">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SEARCHGROUPPING_1" name="SEARCHGROUPPING" allowNull="true" constraints="SQLConstraint_1211544524368 SQLConstraint_1211544524369">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524368" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SEARCHGROUP" name="SEARCHGROUP" allowNull="true" constraints="SQLConstraint_1211544524370">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524369" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544524371">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524368" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524368" name="PK_SEARCHGROUPPING" type="UNIQUE" members="SEARCHGROUPPING_1"/>
+  <constraints xmi:id="SQLConstraint_1211544524369" name="SYS_C004390" type="CHECK" body="&quot;SEARCHGROUPPING&quot; IS NOT NULL" members="SEARCHGROUPPING_1"/>
+  <constraints xmi:id="SQLConstraint_1211544524370" name="SYS_C004391" type="CHECK" body="&quot;SEARCHGROUP&quot; IS NOT NULL" members="SEARCHGROUP"/>
+  <constraints xmi:id="SQLConstraint_1211544524371" name="SYS_C004392" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+</RDBSchema:RDBTable>

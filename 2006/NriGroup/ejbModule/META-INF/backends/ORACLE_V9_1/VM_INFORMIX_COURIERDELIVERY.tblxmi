@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="COURIERDELIVERY" name="COURIERDELIVERY">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDRECORD" name="IDRECORD" allowNull="true" constraints="SQLConstraint_1211544520103 SQLConstraint_1211544520104">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520103" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEDOCUMENT" name="LEASEDOCUMENT" allowNull="true" constraints="SQLConstraint_1211544520105">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520104" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAN" name="BAN" allowNull="true" constraints="SQLConstraint_1211544520106">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520105" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BEN" name="BEN" allowNull="true" constraints="SQLConstraint_1211544520107">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520106" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SYS_CREATION_DATE" name="SYS_CREATION_DATE" allowNull="true" constraints="SQLConstraint_1211544520108">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520103" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCUMENT_NO" name="DOCUMENT_NO" allowNull="true" constraints="SQLConstraint_1211544520109">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520103" characterSet="800" length="48">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCUMENT_TYPE" name="DOCUMENT_TYPE" allowNull="true" constraints="SQLConstraint_1211544520110">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520104" characterSet="800" length="8">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DELIVERY_DATE" name="DELIVERY_DATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520104" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DELIVERY_STATUS" name="DELIVERY_STATUS" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520105" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COURIER_CODE" name="COURIER_CODE" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520106" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MEMO" name="MEMO" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520107" characterSet="800" length="1200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECORD_STATUS" name="RECORD_STATUS" allowNull="true" constraints="SQLConstraint_1211544520111 SQLConstraint_1211544520112">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520108" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520103" name="PK_COURIERDELIVERY" type="UNIQUE" members="IDRECORD"/>
+  <constraints xmi:id="SQLConstraint_1211544520111" name="CKC_RECORD_S_COURI" type="CHECK" body="record_status IN ('A' ,'D' )" members="RECORD_STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544520104" name="SYS_C004983" type="CHECK" body="&quot;IDRECORD&quot; IS NOT NULL" members="IDRECORD"/>
+  <constraints xmi:id="SQLConstraint_1211544520105" name="SYS_C004984" type="CHECK" body="&quot;LEASEDOCUMENT&quot; IS NOT NULL" members="LEASEDOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544520106" name="SYS_C004985" type="CHECK" body="&quot;BAN&quot; IS NOT NULL" members="BAN"/>
+  <constraints xmi:id="SQLConstraint_1211544520107" name="SYS_C004986" type="CHECK" body="&quot;BEN&quot; IS NOT NULL" members="BEN"/>
+  <constraints xmi:id="SQLConstraint_1211544520108" name="SYS_C004987" type="CHECK" body="&quot;SYS_CREATION_DATE&quot; IS NOT NULL" members="SYS_CREATION_DATE"/>
+  <constraints xmi:id="SQLConstraint_1211544520109" name="SYS_C004988" type="CHECK" body="&quot;DOCUMENT_NO&quot; IS NOT NULL" members="DOCUMENT_NO"/>
+  <constraints xmi:id="SQLConstraint_1211544520110" name="SYS_C004989" type="CHECK" body="&quot;DOCUMENT_TYPE&quot; IS NOT NULL" members="DOCUMENT_TYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544520112" name="SYS_C004990" type="CHECK" body="&quot;RECORD_STATUS&quot; IS NOT NULL" members="RECORD_STATUS"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DPVARIABLEVALUES" name="DPVARIABLEVALUES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECHEADERID" name="SPECHEADERID" allowNull="true" constraints="SQLConstraint_1211544520453 SQLConstraint_1211544520454">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520453" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VARIABLEID" name="VARIABLEID" allowNull="true" constraints="SQLConstraint_1211544520453 SQLConstraint_1211544520455">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520453" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDBSBAND" name="IDBSBAND" allowNull="true" constraints="SQLConstraint_1211544520453 SQLConstraint_1211544520456">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520454" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VALUE" name="VALUE" allowNull="true" constraints="SQLConstraint_1211544520457">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520455" precision="15" scale="3">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520453" name="PK_DPVARIABLEVALUE" type="UNIQUE" members="SPECHEADERID VARIABLEID IDBSBAND"/>
+  <constraints xmi:id="SQLConstraint_1211544520454" name="SYS_C003599" type="CHECK" body="&quot;SPECHEADERID&quot; IS NOT NULL" members="SPECHEADERID"/>
+  <constraints xmi:id="SQLConstraint_1211544520455" name="SYS_C003600" type="CHECK" body="&quot;VARIABLEID&quot; IS NOT NULL" members="VARIABLEID"/>
+  <constraints xmi:id="SQLConstraint_1211544520456" name="SYS_C003601" type="CHECK" body="&quot;IDBSBAND&quot; IS NOT NULL" members="IDBSBAND"/>
+  <constraints xmi:id="SQLConstraint_1211544520457" name="SYS_C003602" type="CHECK" body="&quot;VALUE&quot; IS NOT NULL" members="VALUE"/>
+</RDBSchema:RDBTable>

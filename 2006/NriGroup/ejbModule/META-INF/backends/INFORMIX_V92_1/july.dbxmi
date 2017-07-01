@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBDatabase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="july" name="july">
+  <schemata href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_changeslog.tblxmi#changeslog"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_people.tblxmi#people"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_cidnes_d2p.tblxmi#cidnes_d2p"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_dpdevplans.tblxmi#dpdevplans"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_lawyearnoteonposition.tblxmi#lawyearnoteonposition"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_leasecontractproblem.tblxmi#leasecontractproblem"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_leaseregistrybuchdocshistory.tblxmi#leaseregistrybuchdocshistory"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_nfs_lnkuser.tblxmi#nfs_lnkuser"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_projectstates.tblxmi#projectstates"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_reglamentworks.tblxmi#reglamentworks"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_sitedocs.tblxmi#sitedocs"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_gkrchdocs.tblxmi#gkrchdocs"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_sitedocfiles.tblxmi#sitedocfiles"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_smss_permits.tblxmi#smss_permits"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_changeslogdetails.tblxmi#changeslogdetails"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_tb_permission.tblxmi#tb_permission"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_roles.tblxmi#roles"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_workpositions.tblxmi#workpositions"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_operators.tblxmi#operators"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_msusers.tblxmi#msusers"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_counters.tblxmi#counters"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_docactions.tblxmi#docactions"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_leasedocoperjornal.tblxmi#leasedocoperjornal"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_leasesaldo.tblxmi#leasesaldo"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_leasecalcratessld.tblxmi#leasecalcratessld"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_leasesaldodetail.tblxmi#leasesaldodetail"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_loginlog.tblxmi#loginlog"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_operators2roles.tblxmi#operators2roles"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_profile.tblxmi#profile"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_regionsaccess.tblxmi#regionsaccess"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_storageplaces.tblxmi#storageplaces"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_arenda_positions.tblxmi#arenda_positions"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_arenda_channels.tblxmi#arenda_channels"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_cardtracks.tblxmi#cardtracks"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_sitedocs2splace.tblxmi#sitedocs2splace"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_smss_actual_permits.tblxmi#smss_actual_permits"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_workresponsibility.tblxmi#workresponsibility"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_companies.tblxmi#companies"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_divisions.tblxmi#divisions"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_cars.tblxmi#cars"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_projectactioncomms.tblxmi#projectactioncomms"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_projectdivcolumns.tblxmi#projectdivcolumns"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_organizations.tblxmi#organizations"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_mainorganizations.tblxmi#mainorganizations"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_expedition.tblxmi#expedition"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_projects.tblxmi#projects"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_projectdivcolvals.tblxmi#projectdivcolvals"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_rrldocs.tblxmi#rrldocs"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_tn_discounts.tblxmi#tn_discounts"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_workers.tblxmi#workers"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_internaloutbill.tblxmi#internaloutbill"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_internalwaybills.tblxmi#internalwaybills"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_afsmountact.tblxmi#afsmountact"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_inventorynumbers.tblxmi#inventorynumbers"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_inwaybills.tblxmi#inwaybills"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_leasepayments.tblxmi#leasepayments"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_nfs_lnkpays.tblxmi#nfs_lnkpays"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_leasetasksstarts.tblxmi#leasetasksstarts"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_leasetaskjournal.tblxmi#leasetaskjournal"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V92_1/july_informix_payoffacts.tblxmi#payoffacts"/>
+  <connection href="META-INF/backends/INFORMIX_V92_1/ConToJuly.conxmi#ConToJuly"/>
+  <domain href="INFORMIX_V92_Domain.xmi#SQLVendor_1"/>
+</RDBSchema:RDBDatabase>

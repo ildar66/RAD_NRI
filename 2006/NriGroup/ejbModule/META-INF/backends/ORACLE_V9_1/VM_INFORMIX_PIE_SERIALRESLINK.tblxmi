@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_SERIALRESLINK" name="PIE_SERIALRESLINK">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STORAGECARD" name="STORAGECARD" allowNull="true" constraints="SQLConstraint_1211544523557 SQLConstraint_1211544523558">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523557" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER" allowNull="true" constraints="SQLConstraint_1211544523557 SQLConstraint_1211544523559">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523558" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SERIALPLATINUM" name="SERIALPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523560">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523557" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDRESPLATINUM" name="IDRESPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523561">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523558" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523557" name="PK_PIE_SERIALRESLI" type="UNIQUE" members="STORAGECARD OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523558" name="SYS_C004063" type="CHECK" body="&quot;STORAGECARD&quot; IS NOT NULL" members="STORAGECARD"/>
+  <constraints xmi:id="SQLConstraint_1211544523559" name="SYS_C004064" type="CHECK" body="&quot;OWNER&quot; IS NOT NULL" members="OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523560" name="SYS_C004065" type="CHECK" body="&quot;SERIALPLATINUM&quot; IS NOT NULL" members="SERIALPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523561" name="SYS_C004066" type="CHECK" body="&quot;IDRESPLATINUM&quot; IS NOT NULL" members="IDRESPLATINUM"/>
+</RDBSchema:RDBTable>

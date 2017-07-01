@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories-view>
+	<repository id=":pserver:IShaffigulin@172.21.9.181:/cvs/repository">
+		<module path="NRI-AppLogic">
+			<tag name="nriAppLogic_vers_21_07_2007" type="version"/>
+			<tag name="nriAppLogic_vers_26_07_2007_local" type="version"/>
+			<tag name="nriAppLogic_vers_26_07_2007" type="version"/>
+			<tag name="nriAppLogic_vers_26_07_2007_3" type="version"/>
+			<tag name="nriAppLogic_vers_26_07_2007_2" type="version"/>
+			<tag name="nriAppLogic_vers_26_07_2007_1" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_24_1" type="version"/>
+			<tag name="Root_ChangeOrgToVendor" type="version"/>
+			<tag name="nriAppLogic_v1" type="version"/>
+			<tag name="nriAppLogic_vers_24_07_2007" type="version"/>
+			<tag name="nriAppLogic_vers_28_07_2007_local" type="version"/>
+			<tag name="nriAppLogic_vers_17_07_2007" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_23_2" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_23_1" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_08" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_07" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_05" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_03" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_02" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_01" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_30" type="version"/>
+			<tag name="vers_09_06_2007" type="version"/>
+			<tag name="nriAppLogic_vers_20_07_2007" type="version"/>
+			<tag name="nriAppLogic_vers_01_08_2007_local" type="version"/>
+			<tag name="ChangeOrgToVendor" type="branch"/>
+			<tag name="nriAppLogic_vers_25_07_2007" type="version"/>
+			<tag name="nriAppLogic_vers_18_07_2007" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_27" type="version"/>
+			<tag name="nriAppLogic_vers_25_07_2007_1" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_26" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_25" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_24" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_23" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_22" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_21" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_2" type="version"/>
+			<tag name="Root_ChangeOrgToVendor_1" type="version"/>
+			<tag name="vers2" type="version"/>
+			<tag name="vers1" type="version"/>
+			<tag name="nriAppLogic_vers_2007_09_03" type="version"/>
+			<tag name="nriAppLogic_vers_2007_08_27_1" type="version"/>
+			<tag name="nriAppLogic_vers_16_07_2007" type="version"/>
+		</module>
+		<module path="nri">
+			<tag name="nri_vers_01_08_2007" type="version"/>
+			<tag name="nri_vers_2007_08_20" type="version"/>
+			<tag name="v1_16_07_2007" type="version"/>
+			<tag name="nri_vers_25_07_2007" type="version"/>
+			<tag name="nri_vers_20_07_2007" type="version"/>
+			<tag name="nri_vers_27_07_2007_local" type="version"/>
+			<tag name="nri_vers_2007_08_08" type="version"/>
+			<tag name="nri_vers_16_07_2007" type="version"/>
+			<tag name="nri_vers_2007_08_10" type="version"/>
+			<tag name="nri_vers_2007_08_07" type="version"/>
+			<tag name="nri_vers_26_07_2007" type="version"/>
+			<tag name="nri_vers_21_07_2007" type="version"/>
+			<tag name="nri_vers_28_07_2007_local" type="version"/>
+			<tag name="nri_vers_24_07_2007" type="version"/>
+			<tag name="nri_vers_26_07_2007_local" type="version"/>
+			<tag name="nri_vers_25_07_2007_1" type="version"/>
+		</module>
+		<module path="SecurityApp">
+			<tag name="SecurityApp_vers_24_07_2007" type="version"/>
+			<tag name="SecurityApp_vers_26_07_2007_2" type="version"/>
+			<tag name="SecurityApp_vers_26_07_2007_1" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_24_1" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_23_2" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_09" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_23_1" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_08" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_07" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_05" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_03" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_02" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_01" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_17_3" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_30" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_17_2" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_17_1" type="version"/>
+			<tag name="SecurityApp_vers_26_07_2007_local" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_16_3" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_16_2" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_16_1" type="version"/>
+			<tag name="SecurityApp_vers_25_07_2007" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_28" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_15_1" type="version"/>
+			<tag name="SecurityApp_vers_28_07_2007_local" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_27" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_26" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_25" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_24" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_28_2" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_23" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_28_1" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_22" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_21" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_20" type="version"/>
+			<tag name="SecurityApp_vers_25_07_2007_1" type="version"/>
+			<tag name="SecurityApp_vers_2007_09_03" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_14_1" type="version"/>
+			<tag name="SecurityApp_vers_2007_09_02" type="version"/>
+			<tag name="SecurityApp_vers_2007_09_01" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_19" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_18" type="version"/>
+			<tag name="SecurityApp_vers_2007_09_03_1" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_17" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_16" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_15" type="version"/>
+			<tag name="SecurityApp_vers_26_07_2007" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_07_1" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_14" type="version"/>
+			<tag name="SecurityApp_vers_27_07_2007_local" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_12" type="version"/>
+			<tag name="SecurityApp_vers_2007_08_10" type="version"/>
+		</module>
+		<module path="OIDGenerator">
+			<tag name="OIDgenerator_vers_07_08_2007" type="version"/>
+			<tag name="OIDgenerator_vers_28_07_2007" type="version"/>
+			<tag name="OIDgenerator_vers_27_07_2007" type="version"/>
+			<tag name="TimeSheet_v1" type="version"/>
+		</module>
+		<module path="NriGroup">
+			<tag name="NriCroup_vers_01_08_2007" type="version"/>
+			<tag name="NriCroup_vers_2007_08_24" type="version"/>
+			<tag name="NriCroup_vers_2007_08_23" type="version"/>
+			<tag name="NriCroup_vers_29_07_2007" type="version"/>
+			<tag name="NriCroup_vers_2007_08_22" type="version"/>
+			<tag name="NriCroup_vers_25_07_2007" type="version"/>
+			<tag name="NriCroup_vers_19_07_2007" type="version"/>
+			<tag name="NriCroup_vers_23_07_2007" type="version"/>
+			<tag name="NriCroup_vers_18_07_2007" type="version"/>
+			<tag name="NriCroup_vers_16_07_2007" type="version"/>
+			<tag name="NriCroup_vers_22_07_2007" type="version"/>
+			<tag name="NriCroup_vers_20_07_2007" type="version"/>
+			<tag name="NriCroup_vers_2007_08_23_2" type="version"/>
+			<tag name="NriCroup_vers_2007_08_23_1" type="version"/>
+			<tag name="NriCroup_vers_2007_08_07" type="version"/>
+			<tag name="NriCroup_vers_2007_08_04" type="version"/>
+			<tag name="NriCroup_vers_2007_08_03" type="version"/>
+			<tag name="NriCroup_vers_2007_08_02" type="version"/>
+			<tag name="NriCroup_vers_2007_08_27_2" type="version"/>
+			<tag name="NriCroup_vers_2007_08_30" type="version"/>
+			<tag name="NriCroup_vers_2007_08_27_1" type="version"/>
+			<tag name="NriCroup_vers_27_07_2007_local" type="version"/>
+			<tag name="NriCroup_vers_26_07_2007" type="version"/>
+			<tag name="NriCroup_vers_28_07_2007_local" type="version"/>
+			<tag name="NriCroup_vers_24_07_2007" type="version"/>
+			<tag name="NriCroup_vers_25_07_2007_1" type="version"/>
+			<tag name="NriCroup_vers_17_07_2007" type="version"/>
+			<tag name="NriCroup_vers_2007_08_22_1" type="version"/>
+			<tag name="NriCroup_vers_21_07_2007" type="version"/>
+			<tag name="NriCroup_vers_26_07_2007_2" type="version"/>
+			<tag name="NriCroup_vers_26_07_2007_1" type="version"/>
+			<tag name="NriCroup_vers_2007_08_27" type="version"/>
+			<tag name="NriCroup_vers_2007_08_26" type="version"/>
+			<tag name="NriCroup_vers_26_07_2007_local" type="version"/>
+		</module>
+		<module path="OrganizerApp">
+			<tag name="OrganizerApp_vers_28_07_2007_local" type="version"/>
+			<tag name="OrganizerApp_vers_26_07_2007_2" type="version"/>
+			<tag name="OrganizerApp_vers_26_07_2007_1" type="version"/>
+			<tag name="OrganizerApp_vers_2007_08_07" type="version"/>
+			<tag name="OrganizerApp_vers_26_07_2007" type="version"/>
+			<tag name="OrganizerApp_vers_2007_08_05" type="version"/>
+			<tag name="OrganizerApp_vers_25_07_2007" type="version"/>
+			<tag name="OrganizerApp_vers_26_07_2007_local" type="version"/>
+		</module>
+		<module path="NriTestClient">
+			<tag name="NriTestClient_vers_2007_08_22" type="version"/>
+			<tag name="NriTestClient_vers_29_07_2007" type="version"/>
+			<tag name="NriTestClient_vers_01_08_2007" type="version"/>
+			<tag name="NriTestClient_vers_2007_08_07" type="version"/>
+			<tag name="NriTestClient_vers_2007_08_03" type="version"/>
+			<tag name="NriTestClient_vers_2007_08_02" type="version"/>
+			<tag name="NriTestClient_vers_2007_08_30" type="version"/>
+			<tag name="NriTestClient_vers_28_07_2007_local" type="version"/>
+			<tag name="NriTestClient_vers_2007_08_23" type="version"/>
+		</module>
+	</repository>
+</repositories-view>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TB_OBJECTS2CATALOG" name="TB_OBJECTS2CATALOG">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CATALOGID" name="CATALOGID" allowNull="true" constraints="SQLConstraint_1211544525009 SQLConstraint_1211544525010">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525009" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTID" name="OBJECTID" allowNull="true" constraints="SQLConstraint_1211544525009 SQLConstraint_1211544525011">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525010" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTTYPEID" name="OBJECTTYPEID" allowNull="true" constraints="SQLConstraint_1211544525009 SQLConstraint_1211544525012">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525011" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525009" name="PK_TB_OBJECTS2CATA" type="UNIQUE" members="CATALOGID OBJECTID OBJECTTYPEID"/>
+  <constraints xmi:id="SQLConstraint_1211544525010" name="SYS_C005764" type="CHECK" body="&quot;CATALOGID&quot; IS NOT NULL" members="CATALOGID"/>
+  <constraints xmi:id="SQLConstraint_1211544525011" name="SYS_C005765" type="CHECK" body="&quot;OBJECTID&quot; IS NOT NULL" members="OBJECTID"/>
+  <constraints xmi:id="SQLConstraint_1211544525012" name="SYS_C005766" type="CHECK" body="&quot;OBJECTTYPEID&quot; IS NOT NULL" members="OBJECTTYPEID"/>
+</RDBSchema:RDBTable>

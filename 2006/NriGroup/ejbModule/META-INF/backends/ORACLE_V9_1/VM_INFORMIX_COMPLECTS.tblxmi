@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="COMPLECTS" name="COMPLECTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMPLECT" name="COMPLECT" allowNull="true" constraints="SQLConstraint_1211544519672 SQLConstraint_1211544519673">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519672" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMPLECTPART" name="COMPLECTPART" allowNull="true" constraints="SQLConstraint_1211544519672 SQLConstraint_1211544519674">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519673" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519672" name="PK_COMPLECTS" type="UNIQUE" members="COMPLECT COMPLECTPART"/>
+  <constraints xmi:id="SQLConstraint_1211544519673" name="SYS_C004442" type="CHECK" body="&quot;COMPLECT&quot; IS NOT NULL" members="COMPLECT"/>
+  <constraints xmi:id="SQLConstraint_1211544519674" name="SYS_C004443" type="CHECK" body="&quot;COMPLECTPART&quot; IS NOT NULL" members="COMPLECTPART"/>
+</RDBSchema:RDBTable>

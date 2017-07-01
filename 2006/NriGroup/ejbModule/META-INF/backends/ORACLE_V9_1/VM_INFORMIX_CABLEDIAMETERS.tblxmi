@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CABLEDIAMETERS" name="CABLEDIAMETERS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID" name="ID" allowNull="true" constraints="SQLConstraint_1211544519362 SQLConstraint_1211544519363">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519362" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DIAMNAME" name="DIAMNAME" allowNull="true" constraints="SQLConstraint_1211544519364">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519362" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CABLEDIAM" name="CABLEDIAM" allowNull="true" constraints="SQLConstraint_1211544519365">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519363" precision="6" scale="4">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519362" name="PK_CABLEDIAMETERS" type="UNIQUE" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544519363" name="SYS_C005740" type="CHECK" body="&quot;ID&quot; IS NOT NULL" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544519364" name="SYS_C005741" type="CHECK" body="&quot;DIAMNAME&quot; IS NOT NULL" members="DIAMNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544519365" name="SYS_C005742" type="CHECK" body="&quot;CABLEDIAM&quot; IS NOT NULL" members="CABLEDIAM"/>
+</RDBSchema:RDBTable>

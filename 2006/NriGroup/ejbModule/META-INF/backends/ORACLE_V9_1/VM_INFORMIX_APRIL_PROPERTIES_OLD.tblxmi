@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="APRIL_PROPERTIES_OLD" name="APRIL_PROPERTIES_OLD">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTTYPE" name="OBJECTTYPE" allowNull="true" constraints="SQLConstraint_1211544518951 SQLConstraint_1211544518952">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518951" characterSet="800" length="500">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTID" name="OBJECTID" allowNull="true" constraints="SQLConstraint_1211544518951 SQLConstraint_1211544518953">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518951" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="KEY" name="KEY" allowNull="true" constraints="SQLConstraint_1211544518951 SQLConstraint_1211544518954">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518952" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VALUE" name="VALUE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLBinaryLargeObject" xmi:id="SQLBinaryLargeObject_1211544518951" length="4000">
+      <originatingType xmi:type="RDBSchema:SQLBinaryLargeObject" href="ORACLE_V9_Primitives.xmi#SQLBinaryLargeObject_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544518951" name="PK_APRIL_PROPERTIES_KEY" type="UNIQUE" members="OBJECTTYPE OBJECTID KEY"/>
+  <constraints xmi:id="SQLConstraint_1211544518952" name="SYS_C006051" type="CHECK" body="&quot;OBJECTTYPE&quot; IS NOT NULL" members="OBJECTTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544518953" name="SYS_C006052" type="CHECK" body="&quot;OBJECTID&quot; IS NOT NULL" members="OBJECTID"/>
+  <constraints xmi:id="SQLConstraint_1211544518954" name="SYS_C006053" type="CHECK" body="&quot;KEY&quot; IS NOT NULL" members="KEY"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="NFS_QUERYLOG" name="NFS_QUERYLOG">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDQUERYLOG" name="IDQUERYLOG" allowNull="true" constraints="SQLConstraint_1211544522205 SQLConstraint_1211544522206">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522205" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDQUERY" name="IDQUERY" allowNull="true" constraints="SQLConstraint_1211544522207">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522206" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPEMSG" name="TYPEMSG" allowNull="true" constraints="SQLConstraint_1211544522208 SQLConstraint_1211544522209">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522205" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TXTMSG" name="TXTMSG" allowNull="true" constraints="SQLConstraint_1211544522210">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522206" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544522205" name="PK_NFS_QUERYLOG" type="UNIQUE" members="IDQUERYLOG"/>
+  <constraints xmi:id="SQLConstraint_1211544522208" name="CKC_TYPEMSG_NFS_Q" type="CHECK" body="typemsg IN ('I' ,'E' ,'W' )" members="TYPEMSG"/>
+  <constraints xmi:id="SQLConstraint_1211544522206" name="SYS_C004857" type="CHECK" body="&quot;IDQUERYLOG&quot; IS NOT NULL" members="IDQUERYLOG"/>
+  <constraints xmi:id="SQLConstraint_1211544522207" name="SYS_C004858" type="CHECK" body="&quot;IDQUERY&quot; IS NOT NULL" members="IDQUERY"/>
+  <constraints xmi:id="SQLConstraint_1211544522209" name="SYS_C004859" type="CHECK" body="&quot;TYPEMSG&quot; IS NOT NULL" members="TYPEMSG"/>
+  <constraints xmi:id="SQLConstraint_1211544522210" name="SYS_C004860" type="CHECK" body="&quot;TXTMSG&quot; IS NOT NULL" members="TXTMSG"/>
+</RDBSchema:RDBTable>

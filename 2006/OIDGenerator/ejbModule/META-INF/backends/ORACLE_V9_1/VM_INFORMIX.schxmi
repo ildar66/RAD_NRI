@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="INFORMIX" name="INFORMIX">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_SEQUENCES.tblxmi#SEQUENCES"/>
+</RDBSchema:RDBSchema>

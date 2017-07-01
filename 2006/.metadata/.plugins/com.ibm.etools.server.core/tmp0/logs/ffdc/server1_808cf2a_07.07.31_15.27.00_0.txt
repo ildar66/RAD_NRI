@@ -1,0 +1,130 @@
+------Start of DE processing------ = [07.07.31 15:27:00:569 MSD] , key = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute 139
+Exception = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException
+Source = com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute
+probeid = 139
+Stack Dump = com.ibm.ws.exception.WsException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: Unique constraint (informix.pk_people) violated..
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:244)
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:171)
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:124)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.PeopleEJBBeanFunctionSet_6bbce083.Create(PeopleEJBBeanFunctionSet_6bbce083.java:126)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.PeopleEJBBeanFunctionSet_6bbce083.execute(PeopleEJBBeanFunctionSet_6bbce083.java:502)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate(WSRelationalRAAdapter.java:130)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBNotExistState.ejbCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbPostCreate(Unknown Source)
+	at com.nri.ejb.ConcretePeopleEJB_6bbce083.ejbPostCreate(ConcretePeopleEJB_6bbce083.java:145)
+	at com.nri.ejb.EJSCMPPeopleEJBHomeBean_6bbce083.create_Local(EJSCMPPeopleEJBHomeBean_6bbce083.java:71)
+	at com.nri.ejb.EJSLocalCMPPeopleEJBHome_6bbce083.create(EJSLocalCMPPeopleEJBHome_6bbce083.java:55)
+	at com.nri.mapping.ejb.PeopleMapper.insert(PeopleMapper.java:113)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.addPeople(SecurityActionProcessorFacadeBean.java:112)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.addPeople(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:252)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.addPeople(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:205)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie._invoke(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:113)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatchInvokeHandler(ServerDelegate.java:602)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatch(ServerDelegate.java:455)
+	at com.ibm.rmi.iiop.ORB.process(ORB.java:402)
+	at com.ibm.CORBA.iiop.ORB.process(ORB.java:1685)
+	at com.ibm.rmi.iiop.Connection.doWork(Connection.java:2173)
+	at com.ibm.rmi.iiop.WorkUnitImpl.doWork(WorkUnitImpl.java:64)
+	at com.ibm.ejs.oa.pool.PooledThread.run(ThreadPool.java:95)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: java.sql.SQLException: Unique constraint (informix.pk_people) violated.
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java:2259)
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java:2179)
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.PeopleEJBBeanFunctionSet_6bbce083.Create(PeopleEJBBeanFunctionSet_6bbce083.java:121)
+	... 23 more
+---- Begin backtrace for nested exception
+java.sql.SQLException: Unique constraint (informix.pk_people) violated.
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java:2259)
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java:2179)
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.PeopleEJBBeanFunctionSet_6bbce083.Create(PeopleEJBBeanFunctionSet_6bbce083.java:121)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.PeopleEJBBeanFunctionSet_6bbce083.execute(PeopleEJBBeanFunctionSet_6bbce083.java:502)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate(WSRelationalRAAdapter.java:130)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBNotExistState.ejbCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbPostCreate(Unknown Source)
+	at com.nri.ejb.ConcretePeopleEJB_6bbce083.ejbPostCreate(ConcretePeopleEJB_6bbce083.java:145)
+	at com.nri.ejb.EJSCMPPeopleEJBHomeBean_6bbce083.create_Local(EJSCMPPeopleEJBHomeBean_6bbce083.java:71)
+	at com.nri.ejb.EJSLocalCMPPeopleEJBHome_6bbce083.create(EJSLocalCMPPeopleEJBHome_6bbce083.java:55)
+	at com.nri.mapping.ejb.PeopleMapper.insert(PeopleMapper.java:113)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.addPeople(SecurityActionProcessorFacadeBean.java:112)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.addPeople(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:252)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.addPeople(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:205)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie._invoke(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:113)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatchInvokeHandler(ServerDelegate.java:602)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatch(ServerDelegate.java:455)
+	at com.ibm.rmi.iiop.ORB.process(ORB.java:402)
+	at com.ibm.CORBA.iiop.ORB.process(ORB.java:1685)
+	at com.ibm.rmi.iiop.Connection.doWork(Connection.java:2173)
+	at com.ibm.rmi.iiop.WorkUnitImpl.doWork(WorkUnitImpl.java:64)
+	at com.ibm.ejs.oa.pool.PooledThread.run(ThreadPool.java:95)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.rsadapter.cci.WSInteractionImpl
+com.ibm.ws.rsadapter.cci.WSInteractionImpl@73d90f2e
+
+==> Performing default dump from com.ibm.ws.rsadapter.DiagnosticModuleForAdapter  = Tue Jul 31 15:27:00 MSD 2007
+This is a FFDC log generated for the Default Resource Adapter from source = com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute
+The exception caught = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: Unique constraint (informix.pk_people) violated..
+Operating System = Windows 2000 5.0 x86
+Classpath = C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/properties;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/properties;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/bootstrap.jar;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/j2ee.jar;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/lmproxy.jar;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/urlprotocols.jar;C:/Program Files/IBM/WebSphere Studio/wstools/eclipse/plugins/com.ibm.etools.websphere.tools.common_5.1.1.1/runtime/wteServers.jar;C:/Program Files/IBM/WebSphere Studio/wstools/eclipse/plugins/com.ibm.etools.websphere.tools.common_5.1.1.1/runtime/wasToolsCommon.jar
+Ext dirs = C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51\java\jre\lib\ext
+Other related data. If null, nothing was passed in = 
+null
+
+The Objects' instance variables are printed below recursively 2 levels deep = 
+Object type = com.ibm.ws.rsadapter.cci.WSInteractionImpl
+  class$javax$resource$cci$IndexedRecord = null
+  class$com$ibm$websphere$rsadapter$WSInteractionSpec = null
+  class$com$ibm$ws$rsadapter$cci$WSInteractionImpl = 
+    class$java$lang$Class = java.lang.Class@22968fab
+    initted = true
+    reflectionFactory = sun.reflect.ReflectionFactory@3f450f28
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = java.lang.ref.SoftReference@7fc4cf26
+    useCaches = true
+    allPermDomain = java.security.ProtectionDomain@69b90f2c
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  batchRead = false
+  isClosed = false
+  cciConn = com.ibm.ws.rsadapter.cci.WSRdbConnectionImpl@7c6b0f2e
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = IBMDataStoreAdapterNLS
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.rsadapter.cci.WSInteractionImpl
+
++Data for directive [defaultadapter] obtained. = 
+==> Dump complete for com.ibm.ws.rsadapter.DiagnosticModuleForAdapter  = Tue Jul 31 15:27:00 MSD 2007

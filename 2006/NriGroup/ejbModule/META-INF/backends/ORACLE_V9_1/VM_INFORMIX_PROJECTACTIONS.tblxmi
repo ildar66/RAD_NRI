@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PROJECTACTIONS" name="PROJECTACTIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROJECTACTION" name="PROJECTACTION" allowNull="true" constraints="SQLConstraint_1211544523657 SQLConstraint_1211544523658">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523657" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROJECT" name="PROJECT" allowNull="true" constraints="SQLConstraint_1211544523659">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523658" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PROJECTACTIONTYPE" name="PROJECTACTIONTYPE" allowNull="true" constraints="SQLConstraint_1211544523660">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523659" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ORDER_" name="ORDER_" allowNull="true" constraints="SQLConstraint_1211544523661">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523660" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PLANDATE" name="PLANDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523657" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FACTDATE" name="FACTDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523658" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AGREEMENT" name="AGREEMENT" allowNull="true" constraints="SQLConstraint_1211544523662">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523657" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NOTES" name="NOTES" allowNull="true">
+    <type xmi:type="RDBSchema:SQLBinaryLargeObject" xmi:id="SQLBinaryLargeObject_1211544523657" length="4000">
+      <originatingType xmi:type="RDBSchema:SQLBinaryLargeObject" href="ORACLE_V9_Primitives.xmi#SQLBinaryLargeObject_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HASPROBLEMS" name="HASPROBLEMS" allowNull="true" constraints="SQLConstraint_1211544523663 SQLConstraint_1211544523664">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523658" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EQUIPMENT" name="EQUIPMENT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523661" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMPLETED" name="COMPLETED" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523665 SQLConstraint_1211544523666">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523659" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUGGPLANDATE" name="SUGGPLANDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523659" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISNEWPLANDATE" name="ISNEWPLANDATE" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523667 SQLConstraint_1211544523668">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523660" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523657" name="PK_PROJECTACTIONS" type="UNIQUE" members="PROJECTACTION"/>
+  <constraints xmi:id="SQLConstraint_1211544523662" name="CKC_AGREEMEN_PROJE" type="CHECK" body="(agreement IS NULL ) OR (agreement IN ('Y' ,'N' )) " members="AGREEMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544523663" name="CKC_HASPROBL_PROJE" type="CHECK" body="hasproblems IN ('Y' ,'N' )" members="HASPROBLEMS"/>
+  <constraints xmi:id="SQLConstraint_1211544523665" name="CKC_COMPLETE_PROJE" type="CHECK" body="completed IN ('Y' ,'N' )" members="COMPLETED"/>
+  <constraints xmi:id="SQLConstraint_1211544523667" name="CKC_ISNEWPLA_PROJE" type="CHECK" body="isnewplandate IN ('Y' ,'N' )" members="ISNEWPLANDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544523658" name="SYS_C005088" type="CHECK" body="&quot;PROJECTACTION&quot; IS NOT NULL" members="PROJECTACTION"/>
+  <constraints xmi:id="SQLConstraint_1211544523659" name="SYS_C005089" type="CHECK" body="&quot;PROJECT&quot; IS NOT NULL" members="PROJECT"/>
+  <constraints xmi:id="SQLConstraint_1211544523660" name="SYS_C005090" type="CHECK" body="&quot;PROJECTACTIONTYPE&quot; IS NOT NULL" members="PROJECTACTIONTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523661" name="SYS_C005091" type="CHECK" body="&quot;ORDER_&quot; IS NOT NULL" members="ORDER_"/>
+  <constraints xmi:id="SQLConstraint_1211544523664" name="SYS_C005092" type="CHECK" body="&quot;HASPROBLEMS&quot; IS NOT NULL" members="HASPROBLEMS"/>
+  <constraints xmi:id="SQLConstraint_1211544523666" name="SYS_C005093" type="CHECK" body="&quot;COMPLETED&quot; IS NOT NULL" members="COMPLETED"/>
+  <constraints xmi:id="SQLConstraint_1211544523668" name="SYS_C005094" type="CHECK" body="&quot;ISNEWPLANDATE&quot; IS NOT NULL" members="ISNEWPLANDATE"/>
+</RDBSchema:RDBTable>

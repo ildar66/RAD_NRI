@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DOCUMENTERRORS" name="DOCUMENTERRORS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ERRORID" name="ERRORID" allowNull="true" constraints="SQLConstraint_1211544520233 SQLConstraint_1211544520234">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520233" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCUMENT" name="DOCUMENT" allowNull="true" constraints="SQLConstraint_1211544520235">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520234" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCPOSITION" name="DOCPOSITION" allowNull="true" constraints="SQLConstraint_1211544520236">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520235" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ERRORLEVEL" name="ERRORLEVEL" allowNull="true" defaultValue="1" constraints="SQLConstraint_1211544520237 SQLConstraint_1211544520238">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520236" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ERRORTEXT" name="ERRORTEXT" allowNull="true" constraints="SQLConstraint_1211544520239">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520233" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520233" name="PK_DOCUMENTERRORS" type="UNIQUE" members="ERRORID"/>
+  <constraints xmi:id="SQLConstraint_1211544520237" name="CKC_ERRORLEV_DOCUM" type="CHECK" body="errorlevel IN (1 ,2 )" members="ERRORLEVEL"/>
+  <constraints xmi:id="SQLConstraint_1211544520234" name="SYS_C004941" type="CHECK" body="&quot;ERRORID&quot; IS NOT NULL" members="ERRORID"/>
+  <constraints xmi:id="SQLConstraint_1211544520235" name="SYS_C004942" type="CHECK" body="&quot;DOCUMENT&quot; IS NOT NULL" members="DOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544520236" name="SYS_C004943" type="CHECK" body="&quot;DOCPOSITION&quot; IS NOT NULL" members="DOCPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544520238" name="SYS_C004944" type="CHECK" body="&quot;ERRORLEVEL&quot; IS NOT NULL" members="ERRORLEVEL"/>
+  <constraints xmi:id="SQLConstraint_1211544520239" name="SYS_C004945" type="CHECK" body="&quot;ERRORTEXT&quot; IS NOT NULL" members="ERRORTEXT"/>
+</RDBSchema:RDBTable>

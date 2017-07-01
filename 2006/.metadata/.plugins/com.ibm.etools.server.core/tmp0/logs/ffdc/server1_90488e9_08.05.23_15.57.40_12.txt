@@ -1,0 +1,87 @@
+------Start of DE processing------ = [08.05.23 15:57:40:954 MSD] , key = javax.transaction.xa.XAException com.ibm.ws.Transaction.JTA.RegisteredResources 651
+Exception = javax.transaction.xa.XAException
+Source = com.ibm.ws.Transaction.JTA.RegisteredResources
+probeid = 651
+Stack Dump = javax.transaction.xa.XAException: rollback() received an Exception: com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: Исключение ввода/вывода: Connection reset by peer: socket write error.
+	at com.ibm.ejs.j2c.LocalTransactionWrapper.rollback(LocalTransactionWrapper.java:336)
+	at com.ibm.ws.Transaction.JTA.OnePhaseResourceImpl.rollback(OnePhaseResourceImpl.java:160)
+	at com.ibm.ws.Transaction.JTA.RegisteredResources.distributeOutcome(RegisteredResources.java:1112)
+	at com.ibm.ws.Transaction.JTA.RegisteredResources.distributeRollback(RegisteredResources.java:1838)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalRollback(TransactionImpl.java:1461)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.rollback(TransactionImpl.java:1129)
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.rollback(TranManagerImpl.java:177)
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.rollback(TranManagerSet.java:228)
+	at com.ibm.ejs.csi.TranStrategy.rollback(TranStrategy.java:908)
+	at com.ibm.ejs.csi.TranStrategy.handleException(TranStrategy.java:220)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:567)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:3038)
+	at com.god.oidgen.EJSLocalStatelessOIDGeneratorSessionBean_56849065.getNextOID(EJSLocalStatelessOIDGeneratorSessionBean_56849065.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.etools.utc.model.ReflectionMethodModel.invoke(ReflectionMethodModel.java:68)
+	at com.ibm.etools.utc.servlet.InvokeServlet.invoke(InvokeServlet.java:110)
+	at com.ibm.etools.utc.servlet.InvokeServlet.doPost(InvokeServlet.java:366)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.Transaction.JTA.RegisteredResources
+com.ibm.ws.Transaction.JTA.RegisteredResources@2a4dc8f5
+
+==> Performing default dump from com.ibm.ws.Transaction.JTS.TransactionDiagnosticModule  = Fri May 23 15:57:40 MSD 2008
+TransactionService :: Dump of callerThis = 
+Object type = com.ibm.ws.Transaction.JTA.RegisteredResources
+  class$com$ibm$ws$Transaction$JTA$RegisteredResources = java.lang.Class@3d6048e8
+  retryIntervalCounts[3] = {16,8,999999}
+  retryIntervals[3] = {15000,30000,60000}
+  ONE_PHASE_OPT_ROLLBACK = 11
+  ONE_PHASE_OPT = 10
+  XA_RDONLY = 3
+  XA_OK = 0
+  _onePhaseResourceEnlisted = true
+  _errorCode = 0
+  _retryAlarm = null
+  _c1pRollbackOccured = false
+  _systemExceptionOccured = false
+  _heuristicOutcome = 0
+  _transaction = com.ibm.ws.Transaction.JTA.TransactionImpl@2891c8f5
+  _wscResourceSection = null
+  _xalogSection = null
+  _logSection = null
+  _logUnit = null
+  _resourceObjects = java.util.ArrayList@2a4d08f5
+  xaFlowCallbackEnabled = false
+  tc = com.ibm.ejs.ras.TraceComponent@445008c9
+
++Data for directive [defaultdefault] obtained. = 
+TransactionService :: System identity hash code for static tranManagerSet = 593643769
+TransactionService :: Current transaction name = null
+TransactionService :: Current transaction status = no transaction
+TransactionService :: Current transaction status (numeric value) = 6
+TransactionService :: Dump of the RegisteredResources object for the current transaction = 
+null
+
++Data for directive [defaultcurrenttransaction] obtained. = 
+==> Dump complete for com.ibm.ws.Transaction.JTS.TransactionDiagnosticModule  = Fri May 23 15:57:41 MSD 2008

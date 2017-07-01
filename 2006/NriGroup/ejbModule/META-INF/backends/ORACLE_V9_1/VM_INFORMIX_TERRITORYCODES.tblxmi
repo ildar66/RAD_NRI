@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TERRITORYCODES" name="TERRITORYCODES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDTCODE" name="IDTCODE" allowNull="true" constraints="SQLConstraint_1211544525059 SQLConstraint_1211544525060">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525059" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COUNTRY" name="COUNTRY" allowNull="true" constraints="SQLConstraint_1211544525061">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525060" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TCODE" name="TCODE" allowNull="true" constraints="SQLConstraint_1211544525062">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525061" precision="2" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544525063">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525059" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525059" name="PK_TERRITORYCODES" type="UNIQUE" members="IDTCODE"/>
+  <constraints xmi:id="SQLConstraint_1211544525060" name="SYS_C003817" type="CHECK" body="&quot;IDTCODE&quot; IS NOT NULL" members="IDTCODE"/>
+  <constraints xmi:id="SQLConstraint_1211544525061" name="SYS_C003818" type="CHECK" body="&quot;COUNTRY&quot; IS NOT NULL" members="COUNTRY"/>
+  <constraints xmi:id="SQLConstraint_1211544525062" name="SYS_C003819" type="CHECK" body="&quot;TCODE&quot; IS NOT NULL" members="TCODE"/>
+  <constraints xmi:id="SQLConstraint_1211544525063" name="SYS_C003820" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+</RDBSchema:RDBTable>

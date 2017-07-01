@@ -1,0 +1,57 @@
+------Start of DE processing------ = [07.07.26 12:41:00:293 MSD] , key = java.rmi.NoSuchObjectException com.ibm.ejs.container.EJSHome.activateBean_Common 1119
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.EJSHome.activateBean_Common
+probeid = 1119
+Stack Dump = java.rmi.NoSuchObjectException: javax.ejb.NoSuchEntityException: Single object finder returned 0 objects.
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.loadForEnlist(ContainerManaged2_0BeanO.java:360)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean_Local(EJSHome.java:1230)
+	at com.nri.ejb.EJSCMPRoleEJBHomeBean_a79cd5a9.findByPrimaryKey_Local(EJSCMPRoleEJBHomeBean_a79cd5a9.java:18)
+	at com.nri.ejb.EJSLocalCMPRoleEJBHome_a79cd5a9.findByPrimaryKey(EJSLocalCMPRoleEJBHome_a79cd5a9.java:87)
+	at com.nri.mapping.ejb.RoleMapper.update(RoleMapper.java:126)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.updateRole(SecurityActionProcessorFacadeBean.java:246)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_b5729557.updateRole(EJSRemoteStatelessSecurityActionProcessorFacade_b5729557.java:376)
+	at com.nri.ejb._SecurityActionProcessorFacade_Stub.updateRole(_SecurityActionProcessorFacade_Stub.java:783)
+	at com.nri.model.ejb.SecurityActionProcessorImpl.updateRole(SecurityActionProcessorImpl.java:294)
+	at com.nri.security.actions.RoleProcessAction.execute(RoleProcessAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.nri.ejb.EJSCMPRoleEJBHomeBean_a79cd5a9
+com.nri.ejb.EJSCMPRoleEJBHomeBean_a79cd5a9@dd2692e
+
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.EJSHome.activateBean_Common
+probeid = 1119
+Dump of callerThis = 
+Object type = com.nri.ejb.EJSCMPRoleEJBHomeBean_a79cd5a9
+com.nri.ejb.EJSCMPRoleEJBHomeBean_a79cd5a9@dd2692e
+

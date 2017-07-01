@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_QUERY_LIST" name="PIE_QUERY_LIST">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_QUERY_LIST" name="ID_QUERY_LIST" allowNull="true" constraints="SQLConstraint_1211544523537 SQLConstraint_1211544523538">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523537" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_QUERY" name="ID_QUERY" allowNull="true" constraints="SQLConstraint_1211544523539">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523538" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPEOBJNRI" name="TYPEOBJNRI" allowNull="true" constraints="SQLConstraint_1211544523540 SQLConstraint_1211544523541">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523537" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDOBJNRIINT" name="IDOBJNRIINT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523539" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDOBJNRISTR" name="IDOBJNRISTR" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523538" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523537" name="PK_PIE_QUERY_LIST" type="UNIQUE" members="ID_QUERY_LIST"/>
+  <constraints xmi:id="SQLConstraint_1211544523540" name="CKC_TYPEOBJN_PLIST" type="CHECK" body="typeobjnri IN ('DOC' ,'PART' ,'BIKBANK' ,'ACCOUNT' )" members="TYPEOBJNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523538" name="SYS_C004235" type="CHECK" body="&quot;ID_QUERY_LIST&quot; IS NOT NULL" members="ID_QUERY_LIST"/>
+  <constraints xmi:id="SQLConstraint_1211544523539" name="SYS_C004236" type="CHECK" body="&quot;ID_QUERY&quot; IS NOT NULL" members="ID_QUERY"/>
+  <constraints xmi:id="SQLConstraint_1211544523541" name="SYS_C004237" type="CHECK" body="&quot;TYPEOBJNRI&quot; IS NOT NULL" members="TYPEOBJNRI"/>
+</RDBSchema:RDBTable>

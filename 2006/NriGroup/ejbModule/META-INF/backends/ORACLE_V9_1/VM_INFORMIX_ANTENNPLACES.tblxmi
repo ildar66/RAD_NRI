@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ANTENNPLACES" name="ANTENNPLACES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ANTPLACEID" name="ANTPLACEID" allowNull="true" constraints="SQLConstraint_1211544518891 SQLConstraint_1211544518892">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518891" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544518893">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518891" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISVC" name="ISVC" allowNull="true" constraints="SQLConstraint_1211544518894 SQLConstraint_1211544518895">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518892" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544518891" name="PK_ANTENNPLACES" type="UNIQUE" members="ANTPLACEID"/>
+  <constraints xmi:id="SQLConstraint_1211544518894" name="CKC_ISVC_ANTEN" type="CHECK" body="isvc IN ('Y' ,'N' )" members="ISVC"/>
+  <constraints xmi:id="SQLConstraint_1211544518892" name="SYS_C004511" type="CHECK" body="&quot;ANTPLACEID&quot; IS NOT NULL" members="ANTPLACEID"/>
+  <constraints xmi:id="SQLConstraint_1211544518893" name="SYS_C004512" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+  <constraints xmi:id="SQLConstraint_1211544518895" name="SYS_C004513" type="CHECK" body="&quot;ISVC&quot; IS NOT NULL" members="ISVC"/>
+</RDBSchema:RDBTable>

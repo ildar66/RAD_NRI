@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="REGIONS" name="REGIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGIONID" name="REGIONID" allowNull="true" constraints="SQLConstraint_1211544523898 SQLConstraint_1211544523899">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523898" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUPREGID" name="SUPREGID" allowNull="true" constraints="SQLConstraint_1211544523900">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523899" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGNAME" name="REGNAME" allowNull="true" constraints="SQLConstraint_1211544523901">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523898" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SECTORPREFIX" name="SECTORPREFIX" allowNull="true" constraints="SQLConstraint_1211544523902">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523900" precision="4" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HASMAP" name="HASMAP" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523903 SQLConstraint_1211544523904">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523899" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FULLARENDAINFO" name="FULLARENDAINFO" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523905 SQLConstraint_1211544523906">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523900" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MODIFIED" name="MODIFIED" allowNull="true" defaultValue="SYSDATE">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523898" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CREATED" name="CREATED" allowNull="true" defaultValue="SYSDATE">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523899" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NEEDAPPROVE" name="NEEDAPPROVE" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523907 SQLConstraint_1211544523908">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523901" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ORGBEELINEBILLING" name="ORGBEELINEBILLING" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523901" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RATEDELTABILLING" name="RATEDELTABILLING" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523902" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NATIONALCURR" name="NATIONALCURR" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523903" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HASARENDAPURCHASER" name="HASARENDAPURCHASER" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523909">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523902" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DEFAULTMANUF" name="DEFAULTMANUF" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523904" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523898" name="PK_REGIONS" type="UNIQUE" members="REGIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544523903" name="CKC_HASMAP_REGIO" type="CHECK" body="hasmap IN ('Y' ,'N' )" members="HASMAP"/>
+  <constraints xmi:id="SQLConstraint_1211544523905" name="CKC_FULLAREN_REGIO" type="CHECK" body="fullarendainfo IN ('Y' ,'N' )" members="FULLARENDAINFO"/>
+  <constraints xmi:id="SQLConstraint_1211544523907" name="CKC_NEEDAPPR_REGIO" type="CHECK" body="needapprove IN ('Y' ,'N' )" members="NEEDAPPROVE"/>
+  <constraints xmi:id="SQLConstraint_1211544523909" name="CKC_HASARENDPURCH_REGIO" type="CHECK" body="(hasarendapurchaser IS NULL ) OR (hasarendapurchaser IN ('Y' ,'N' )) " members="HASARENDAPURCHASER"/>
+  <constraints xmi:id="SQLConstraint_1211544523899" name="SYS_C004410" type="CHECK" body="&quot;REGIONID&quot; IS NOT NULL" members="REGIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544523900" name="SYS_C004411" type="CHECK" body="&quot;SUPREGID&quot; IS NOT NULL" members="SUPREGID"/>
+  <constraints xmi:id="SQLConstraint_1211544523901" name="SYS_C004412" type="CHECK" body="&quot;REGNAME&quot; IS NOT NULL" members="REGNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544523902" name="SYS_C004413" type="CHECK" body="&quot;SECTORPREFIX&quot; IS NOT NULL" members="SECTORPREFIX"/>
+  <constraints xmi:id="SQLConstraint_1211544523904" name="SYS_C004414" type="CHECK" body="&quot;HASMAP&quot; IS NOT NULL" members="HASMAP"/>
+  <constraints xmi:id="SQLConstraint_1211544523906" name="SYS_C004415" type="CHECK" body="&quot;FULLARENDAINFO&quot; IS NOT NULL" members="FULLARENDAINFO"/>
+  <constraints xmi:id="SQLConstraint_1211544523908" name="SYS_C004416" type="CHECK" body="&quot;NEEDAPPROVE&quot; IS NOT NULL" members="NEEDAPPROVE"/>
+</RDBSchema:RDBTable>

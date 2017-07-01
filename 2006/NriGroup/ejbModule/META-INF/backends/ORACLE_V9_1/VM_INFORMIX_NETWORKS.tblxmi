@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="NETWORKS" name="NETWORKS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PLMN" name="PLMN" allowNull="true" constraints="SQLConstraint_1211544522085 SQLConstraint_1211544522086">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522085" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544522087">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522085" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NETTYPE" name="NETTYPE" allowNull="true" constraints="SQLConstraint_1211544522088 SQLConstraint_1211544522089">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522086" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUPREGID" name="SUPREGID" allowNull="true" constraints="SQLConstraint_1211544522090">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522087" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544522085" name="PK_NETWORKS" type="UNIQUE" members="PLMN"/>
+  <constraints xmi:id="SQLConstraint_1211544522088" name="CKC_NETTYPE_NETWO" type="CHECK" body="nettype IN (1 ,2 ,3 ,4 )" members="NETTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544522086" name="SYS_C005193" type="CHECK" body="&quot;PLMN&quot; IS NOT NULL" members="PLMN"/>
+  <constraints xmi:id="SQLConstraint_1211544522087" name="SYS_C005194" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+  <constraints xmi:id="SQLConstraint_1211544522089" name="SYS_C005195" type="CHECK" body="&quot;NETTYPE&quot; IS NOT NULL" members="NETTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544522090" name="SYS_C005196" type="CHECK" body="&quot;SUPREGID&quot; IS NOT NULL" members="SUPREGID"/>
+</RDBSchema:RDBTable>

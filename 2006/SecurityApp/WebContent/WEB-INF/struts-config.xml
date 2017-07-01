@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+                               "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+
+	<!-- Data Sources -->
+	<data-sources>
+	</data-sources>
+
+	<!-- Form Beans -->
+	<form-beans>
+		<form-bean name="PeopleListForm" type="com.nri.security.forms.PeopleListForm">
+		</form-bean>
+		<form-bean name="PeopleDialogForm" type="com.nri.security.forms.PeopleDialogForm">
+		</form-bean>		
+		<form-bean name="RoleListForm" type="com.nri.security.forms.RoleListForm">
+		</form-bean>
+		<form-bean name="RoleDialogForm" type="com.nri.security.forms.RoleDialogForm">
+		</form-bean>
+		<form-bean name="WorkPositionListForm" type="com.nri.security.forms.WorkPositionListForm">
+		</form-bean>
+		<form-bean name="WorkPositionDialogForm" type="com.nri.security.forms.WorkPositionDialogForm">
+		</form-bean>
+		<form-bean name="MsUserListForm" type="com.nri.security.forms.MsUserListForm">
+		</form-bean>
+		<form-bean name="MsUserDialogForm" type="com.nri.security.forms.MsUserDialogForm">
+		</form-bean>
+		<form-bean name="CompanyListForm" type="com.nri.security.forms.CompanyListForm">
+		</form-bean>
+		<form-bean name="CompanyDialogForm" type="com.nri.security.forms.CompanyDialogForm">
+		</form-bean>
+		<form-bean name="logonForm" type="com.nri.security.console.core.form.LogonForm">
+		</form-bean>
+		<form-bean name="errorForm" type="com.nri.security.console.core.form.ErrorForm">
+		</form-bean>
+		<form-bean name="PreferenceForm" type="com.nri.security.console.core.form.PreferencesForm" />								
+		<form-bean name="DivisionHierarchyListForm" type="com.nri.security.forms.DivisionHierarchyListForm">
+		</form-bean>
+		<form-bean name="DivisionListForm" type="com.nri.security.forms.DivisionListForm">
+		</form-bean>		
+		<form-bean name="DivisionDialogForm" type="com.nri.security.forms.DivisionDialogForm">
+		</form-bean>
+		<form-bean name="WorkerHierarchyListForm" type="com.nri.security.forms.WorkerHierarchyListForm">
+		</form-bean>
+		<form-bean name="WorkerListForm" type="com.nri.security.forms.WorkerListForm">
+		</form-bean>
+		<form-bean name="WorkerLookupListForm" type="com.nri.security.forms.WorkerLookupListForm">
+		</form-bean>		
+		<form-bean name="WorkerDialogForm" type="com.nri.security.forms.WorkerDialogForm">
+		</form-bean>
+		<form-bean name="PeopleLookupListForm" type="com.nri.security.forms.PeopleLookupListForm"/>
+		<form-bean name="WorkPositionLookupListForm" type="com.nri.security.forms.WorkPositionLookupListForm"/>
+		<form-bean name="DivisionLookupListForm" type="com.nri.security.forms.DivisionLookupListForm"/>
+		<form-bean name="DivisionHierarchyLookupListForm" type="com.nri.security.forms.DivisionHierarchyLookupListForm"/>		
+		<form-bean name="PeopleStaffListForm" type="com.nri.security.forms.PeopleStaffListForm"/>
+		<form-bean name="OperatorListForm" type="com.nri.security.forms.OperatorListForm"/>
+		<form-bean name="OperatorDialogForm" type="com.nri.security.forms.OperatorDialogForm"/>
+		<form-bean name="PeopleToNfsUserListForm" type="com.nri.security.forms.PeopleToNfsUserListForm"/>
+		<form-bean name="NfsUserLookupListForm" type="com.nri.security.forms.NfsUserLookupListForm"/>
+		<form-bean name="OperatorToRoleListForm" type="com.nri.security.forms.OperatorToRoleListForm"/>
+		<form-bean name="SuperRegionAccessListForm" type="com.nri.security.forms.SuperRegionAccessListForm"/>
+		<form-bean name="RegionAccessListForm" type="com.nri.security.forms.RegionAccessListForm"/>								
+	</form-beans>
+
+	<!-- Global Exceptions -->
+	<global-exceptions>
+	</global-exceptions>
+
+	<!-- Global Forwards -->
+	<global-forwards>
+		<forward name="error" path="/pages/error.jsp">
+		</forward>
+	</global-forwards>
+
+	<!-- Action Mappings -->
+	<action-mappings>
+		<action path="/peopleList" type="com.nri.security.actions.PeopleListAction" name="PeopleListForm" scope="session">
+			<forward name="success" path="/pages/peopleList.jsp">
+			</forward>
+		</action>
+		<action path="/peopleDialog" type="com.nri.security.actions.PeopleDialogAction" name="PeopleDialogForm"  scope="request" input="/peopleList.do">
+			<forward name="success" path="/pages/peopleForm.jsp">
+			</forward>
+		</action>
+		<action path="/peopleProcess" type="com.nri.security.actions.PeopleProcessAction" name="PeopleDialogForm" scope="request" input="/pages/peopleForm.jsp">
+			<forward name="success" path="/peopleList.do">
+			</forward>
+		</action>		
+		<action path="/roleList" type="com.nri.security.actions.RoleListAction" name="RoleListForm" scope="session">
+			<forward name="success" path="/pages/roleList.jsp">
+			</forward>
+		</action>
+		<action path="/roleDialog" type="com.nri.security.actions.RoleDialogAction" name="RoleDialogForm"  scope="request" input="/pages/error.jsp">
+			<forward name="success" path="/pages/roleDialog.jsp">
+			</forward>
+		</action>
+		<action path="/roleProcess" type="com.nri.security.actions.RoleProcessAction" name="RoleDialogForm" scope="request" input="/pages/roleDialog.jsp">
+			<forward name="success" path="/pages/roleDialog.jsp">
+			</forward>
+		</action>
+		<action path="/workPositionList" type="com.nri.security.actions.WorkPositionListAction" name="WorkPositionListForm" scope="session">
+			<forward name="success" path="/pages/workPositionList.jsp">
+			</forward>
+		</action>
+		<action path="/workPositionDialog" type="com.nri.security.actions.WorkPositionDialogAction" name="WorkPositionDialogForm"  scope="request" input="/workPositionList.do">
+			<forward name="success" path="/pages/workPositionDialog.jsp">
+			</forward>
+		</action>
+		<action path="/workPositionProcess" type="com.nri.security.actions.WorkPositionProcessAction" name="WorkPositionDialogForm" scope="request" input="/pages/workPositionDialog.jsp">
+			<forward name="success" path="/workPositionList.do">
+			</forward>
+		</action>
+		<action path="/msUserList" type="com.nri.security.actions.MsUserListAction" name="MsUserListForm" scope="session">
+			<forward name="success" path="/pages/msUserList.jsp">
+			</forward>
+		</action>
+		<action path="/msUserDialog" type="com.nri.security.actions.MsUserDialogAction" name="MsUserDialogForm"  scope="request" input="/msUserList.do">
+			<forward name="success" path="/pages/msUserForm.jsp">
+			</forward>
+		</action>
+		<action path="/msUserProcess" type="com.nri.security.actions.MsUserProcessAction" name="MsUserDialogForm" scope="request" input="/pages/msUserForm.jsp">
+			<forward name="success" path="/msUserList.do">
+			</forward>
+		</action>
+		<action path="/companyList" type="com.nri.security.actions.CompanyListAction" name="CompanyListForm" scope="session">
+			<forward name="success" path="/pages/companyList.jsp">
+			</forward>
+		</action>
+		<action path="/companyDialog" type="com.nri.security.actions.CompanyDialogAction" name="CompanyDialogForm"  scope="request" input="/companyList.do">
+			<forward name="success" path="/pages/companyForm.jsp">
+			</forward>
+		</action>
+		<action path="/companyProcess" type="com.nri.security.actions.CompanyProcessAction" name="CompanyDialogForm" scope="request" input="/pages/companyForm.jsp">
+			<forward name="success" path="/companyList.do">
+			</forward>
+		</action>
+		<action path="/logon" type="com.nri.security.console.core.action.LogonAction">
+			<forward name="success" path="secure/console.jsp" />
+			<!--forward name="userExists" path="secure/loginConflict.jsp" /-->
+			<!--forward name="changesFound" path="secure/changesFound.jsp" /-->
+			<!--forward name="wait" path="secure/logon.jsp" /-->
+			<!--forward name="continue" path="secure/logon.jsp" /-->
+			<forward name="logonError" path="secure/logon.jsp" />		
+		</action>
+		<action path="/statusTray" type="com.nri.security.console.core.action.StatusAction">
+			<!--forward name="forwardName" path="console.status.main" /-->
+			<forward name="success" path="secure/status.jsp"/>
+		</action>
+		<action name="errorForm" path="/error" type="com.nri.security.console.core.action.ErrorAction">
+			<forward name="success" path="/error.jsp" />
+			<forward name="failure" path="/error.jsp" />
+		</action>
+		<action path="/logoff" type="com.nri.security.console.core.action.LogoffAction">
+			<!--forward name="modsfound" path="/syncworkspace.do?syncaction=list&amp;logoff=true" /-->
+			<forward name="success" path="/secure/logon.jsp" />
+			<forward name="secure" path="ibm_security_logout?logoutExitPage=//SecurityApp/secure/logon.jsp" />
+		</action>
+		<action path="/menuBarCmd" type="com.nri.security.console.core.action.MenuBarAction">
+			<forward name="preferences" path="/secure/tiles/preferences.jsp" />
+			<forward name="toggleDescriptions" path="/secure/banner.jsp" />
+		</action>
+		<action name="PreferenceForm" path="/preferenceAction" type="com.nri.security.console.core.action.PreferenceAction">
+			<!--forward name="success" path="console.status.main" /-->
+			<forward name="success" path="secure/console.jsp" />
+		</action>
+		<action path="/divisionList" type="com.nri.security.actions.DivisionListAction" name="DivisionListForm" scope="session">
+			<forward name="success" path="/pages/divisionList.jsp">
+			</forward>
+		</action>
+		<action path="/divisionHierarchyList" type="com.nri.security.actions.DivisionHierarchyListAction" name="DivisionHierarchyListForm" scope="request">
+			<forward name="success" path="/pages/divisionHierarchyList.jsp">
+			</forward>
+		</action>		
+		<action path="/divisionDialog" type="com.nri.security.actions.DivisionDialogAction" name="DivisionDialogForm"  scope="request" input="/divisionList.do">
+			<forward name="success" path="/pages/divisionForm.jsp">
+			</forward>
+		</action>
+		<action path="/divisionProcess" type="com.nri.security.actions.DivisionProcessAction" name="DivisionDialogForm" scope="request" input="/pages/divisionForm.jsp">
+			<forward name="success" path="/divisionList.do"/>
+			<forward name="divisionList" path="/divisionList.do"/>
+			<forward name="divisionHierarchyList" path="/divisionHierarchyList.do"/>
+		</action>
+		<action path="/workerList" type="com.nri.security.actions.WorkerListAction" name="WorkerListForm" scope="session">
+			<forward name="success" path="/pages/workerList.jsp">
+			</forward>
+		</action>
+		<action path="/workerHierarchyList" type="com.nri.security.actions.WorkerHierarchyListAction" name="WorkerHierarchyListForm" scope="request">
+			<forward name="success" path="/pages/workerHierarchyList.jsp">
+			</forward>
+		</action>
+		<action path="/workerDialog" type="com.nri.security.actions.WorkerDialogAction" name="WorkerDialogForm"  scope="request" input="/workerList.do">
+			<forward name="success" path="/pages/workerForm.jsp">
+			</forward>
+		</action>
+		<action path="/workerProcess" type="com.nri.security.actions.WorkerProcessAction" name="WorkerDialogForm" scope="request" input="/pages/workerForm.jsp">
+			<forward name="peopleStaffList" path="/peopleStaffList.do"/>
+			<forward name="workerList" path="/workerList.do"/>
+			<forward name="workerHierarchyList" path="/workerHierarchyList.do"/>
+		</action>
+		<action path="/workerLookupList" type="com.nri.security.actions.WorkerLookupListAction" name="WorkerLookupListForm" scope="session">
+			<forward name="success" path="/pages/workerLookupList.jsp"/>
+		</action>
+		<action path="/peopleLookupList" type="com.nri.security.actions.PeopleLookupListAction" name="PeopleLookupListForm" scope="session">
+			<forward name="success" path="/pages/peopleLookupList.jsp"/>
+		</action>
+		<action path="/workPositionLookupList" type="com.nri.security.actions.WorkPositionLookupListAction" name="WorkPositionLookupListForm" scope="session">
+			<forward name="success" path="/pages/workPositionLookupList.jsp"/>
+		</action>
+		<action path="/divisionLookupList" type="com.nri.security.actions.DivisionLookupListAction" name="DivisionLookupListForm" scope="session">
+			<forward name="success" path="/pages/divisionLookupList.jsp"/>
+		</action>
+		<action path="/divisionHierarchyLookupList" type="com.nri.security.actions.DivisionHierarchyLookupListAction" name="DivisionHierarchyLookupListForm" scope="request">
+			<forward name="success" path="/pages/divisionHierarchyLookupList.jsp"/>
+		</action>
+		<action path="/peopleStaffList" type="com.nri.security.actions.PeopleStaffListAction" name="PeopleStaffListForm" scope="request">
+			<forward name="success" path="/pages/peopleStaffList.jsp"/>
+		</action>
+		<action path="/operatorList" type="com.nri.security.actions.OperatorListAction" name="OperatorListForm" scope="request">
+			<forward name="success" path="/pages/operatorList.jsp"/>
+		</action>
+		<action path="/operatorDialog" type="com.nri.security.actions.OperatorDialogAction" name="OperatorDialogForm"  scope="request" input="/operatorList.do">
+			<forward name="success" path="/pages/operatorForm.jsp">
+			</forward>
+		</action>
+		<action path="/operatorProcess" type="com.nri.security.actions.OperatorProcessAction" name="OperatorDialogForm" scope="request" input="/pages/operatorForm.jsp">
+			<forward name="operatorList" path="/operatorList.do"/>
+		</action>
+		<action path="/peopleToNfsUserList" type="com.nri.security.actions.PeopleToNfsUserListAction" name="PeopleToNfsUserListForm" scope="request">
+			<forward name="success" path="/pages/peopleToNfsUserList.jsp"/>
+		</action>
+		<action path="/nfsUserLookupList" type="com.nri.security.actions.NfsUserLookupListAction" name="NfsUserLookupListForm" scope="request">
+			<forward name="success" path="/pages/nfsUserLookupList.jsp"/>
+		</action>
+		<action path="/operatorToRoleList" type="com.nri.security.actions.OperatorToRoleListAction" name="OperatorToRoleListForm" scope="request">
+			<forward name="success" path="/pages/operatorToRoleList.jsp"/>
+		</action>
+		<action path="/superRegionAccessList" type="com.nri.security.actions.SuperRegionAccessListAction" name="SuperRegionAccessListForm" scope="request">
+			<forward name="success" path="/pages/superRegionAccessList.jsp"/>
+		</action>
+		<action path="/regionAccessList" type="com.nri.security.actions.RegionAccessListAction" name="RegionAccessListForm" scope="request">
+			<forward name="success" path="/pages/regionAccessList.jsp"/>
+		</action>		
+																																						
+	</action-mappings>
+
+	<!-- Message Resources -->
+	<message-resources parameter="com.nri.security.resources.ApplicationResources"/>
+
+</struts-config>

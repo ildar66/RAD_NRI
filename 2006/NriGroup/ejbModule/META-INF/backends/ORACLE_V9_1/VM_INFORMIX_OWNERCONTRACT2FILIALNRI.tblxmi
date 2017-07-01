@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="OWNERCONTRACT2FILIALNRI" name="OWNERCONTRACT2FILIALNRI">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGIONID" name="REGIONID" allowNull="true" constraints="SQLConstraint_1211544523347 SQLConstraint_1211544523348">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523347" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDOWNERCONTRACT" name="IDOWNERCONTRACT" allowNull="true" constraints="SQLConstraint_1211544523347 SQLConstraint_1211544523349">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523348" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISCONTRACTARENDA" name="ISCONTRACTARENDA" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523350 SQLConstraint_1211544523351">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523347" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISABONENTCONTRACT" name="ISABONENTCONTRACT" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523352 SQLConstraint_1211544523353">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523348" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RATEDELTABILLING" name="RATEDELTABILLING" allowNull="true" defaultValue="0.00" constraints="SQLConstraint_1211544523354">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523349" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523347" name="PK_OWNERCONTRACT2F" type="UNIQUE" members="REGIONID IDOWNERCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544523350" name="CKC_ISCONTRA_OWNER" type="CHECK" body="iscontractarenda IN ('Y' ,'N' )" members="ISCONTRACTARENDA"/>
+  <constraints xmi:id="SQLConstraint_1211544523352" name="CKC_ISABONEN_OWNER" type="CHECK" body="isabonentcontract IN ('Y' ,'N' )" members="ISABONENTCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544523348" name="SYS_C005994" type="CHECK" body="&quot;REGIONID&quot; IS NOT NULL" members="REGIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544523349" name="SYS_C005995" type="CHECK" body="&quot;IDOWNERCONTRACT&quot; IS NOT NULL" members="IDOWNERCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544523351" name="SYS_C005996" type="CHECK" body="&quot;ISCONTRACTARENDA&quot; IS NOT NULL" members="ISCONTRACTARENDA"/>
+  <constraints xmi:id="SQLConstraint_1211544523353" name="SYS_C005997" type="CHECK" body="&quot;ISABONENTCONTRACT&quot; IS NOT NULL" members="ISABONENTCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544523354" name="SYS_C005998" type="CHECK" body="&quot;RATEDELTABILLING&quot; IS NOT NULL" members="RATEDELTABILLING"/>
+</RDBSchema:RDBTable>

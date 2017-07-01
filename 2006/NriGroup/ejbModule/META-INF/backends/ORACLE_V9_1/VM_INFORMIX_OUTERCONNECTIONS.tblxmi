@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="OUTERCONNECTIONS" name="OUTERCONNECTIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ASSOCIATION" name="ASSOCIATION" allowNull="true" constraints="SQLConstraint_1211544523327 SQLConstraint_1211544523328">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523327" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OUTERSYSTEM" name="OUTERSYSTEM" allowNull="true" constraints="SQLConstraint_1211544523327 SQLConstraint_1211544523329">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523328" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="INNERCODE" name="INNERCODE" allowNull="true" constraints="SQLConstraint_1211544523327 SQLConstraint_1211544523330">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523327" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OUTERCODE" name="OUTERCODE" allowNull="true" constraints="SQLConstraint_1211544523327 SQLConstraint_1211544523331">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523328" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523327" name="PK_OUTERCONNECTION" type="UNIQUE" members="ASSOCIATION OUTERSYSTEM INNERCODE OUTERCODE"/>
+  <constraints xmi:id="SQLConstraint_1211544523328" name="SYS_C004050" type="CHECK" body="&quot;ASSOCIATION&quot; IS NOT NULL" members="ASSOCIATION"/>
+  <constraints xmi:id="SQLConstraint_1211544523329" name="SYS_C004051" type="CHECK" body="&quot;OUTERSYSTEM&quot; IS NOT NULL" members="OUTERSYSTEM"/>
+  <constraints xmi:id="SQLConstraint_1211544523330" name="SYS_C004052" type="CHECK" body="&quot;INNERCODE&quot; IS NOT NULL" members="INNERCODE"/>
+  <constraints xmi:id="SQLConstraint_1211544523331" name="SYS_C004053" type="CHECK" body="&quot;OUTERCODE&quot; IS NOT NULL" members="OUTERCODE"/>
+</RDBSchema:RDBTable>

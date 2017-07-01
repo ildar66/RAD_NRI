@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TB_PRJFILES" name="TB_PRJFILES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID" name="ID" allowNull="true" constraints="SQLConstraint_1211544525029 SQLConstraint_1211544525030">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525029" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ARCHIVED" name="ARCHIVED" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544525031 SQLConstraint_1211544525032">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525030" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="AGREED" name="AGREED" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544525033 SQLConstraint_1211544525034">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525031" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525029" name="PK_TB_PRJFILES" type="UNIQUE" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544525031" name="CKC_ARCHIVED_TB_PR" type="CHECK" body="archived IN (0 ,1 )" members="ARCHIVED"/>
+  <constraints xmi:id="SQLConstraint_1211544525033" name="CKC_AGREED_TB_PR" type="CHECK" body="agreed IN (0 ,1 )" members="AGREED"/>
+  <constraints xmi:id="SQLConstraint_1211544525030" name="SYS_C005384" type="CHECK" body="&quot;ID&quot; IS NOT NULL" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544525032" name="SYS_C005385" type="CHECK" body="&quot;ARCHIVED&quot; IS NOT NULL" members="ARCHIVED"/>
+  <constraints xmi:id="SQLConstraint_1211544525034" name="SYS_C005386" type="CHECK" body="&quot;AGREED&quot; IS NOT NULL" members="AGREED"/>
+</RDBSchema:RDBTable>

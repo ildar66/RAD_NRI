@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TYPERESPONSIBILITY" name="TYPERESPONSIBILITY">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDRESPONSIBILITY" name="IDRESPONSIBILITY" allowNull="true" constraints="SQLConstraint_1211544525630 SQLConstraint_1211544525631">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525630" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544525632">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525630" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGPRINT" name="FLAGPRINT" allowNull="true" defaultValue="'Y'" constraints="SQLConstraint_1211544525633 SQLConstraint_1211544525634">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525631" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525630" name="PK_TYPERESPONSIBIL" type="UNIQUE" members="IDRESPONSIBILITY"/>
+  <constraints xmi:id="SQLConstraint_1211544525633" name="CKC_FLAGPRIN_TYPER" type="CHECK" body="flagprint IN ('Y' ,'N' )" members="FLAGPRINT"/>
+  <constraints xmi:id="SQLConstraint_1211544525631" name="SYS_C004150" type="CHECK" body="&quot;IDRESPONSIBILITY&quot; IS NOT NULL" members="IDRESPONSIBILITY"/>
+  <constraints xmi:id="SQLConstraint_1211544525632" name="SYS_C004151" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+  <constraints xmi:id="SQLConstraint_1211544525634" name="SYS_C004152" type="CHECK" body="&quot;FLAGPRINT&quot; IS NOT NULL" members="FLAGPRINT"/>
+</RDBSchema:RDBTable>

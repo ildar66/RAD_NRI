@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="NFSRES2NRIRES" name="NFSRES2NRIRES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544522256 SQLConstraint_1211544522257">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522256" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ITEM_ID" name="ITEM_ID" allowNull="true" constraints="SQLConstraint_1211544522256 SQLConstraint_1211544522258">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522256" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATATYPE" name="DATATYPE" allowNull="true" defaultValue="'A'" constraints="SQLConstraint_1211544522259 SQLConstraint_1211544522260">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522257" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CREATED" name="CREATED" allowNull="true" defaultValue="SYSDATE" constraints="SQLConstraint_1211544522261">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544522256" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CREATEDBY" name="CREATEDBY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522257" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544522256" name="PK_NFSRES2NRIRES" type="UNIQUE" members="RESOURCE_ ITEM_ID"/>
+  <constraints xmi:id="SQLConstraint_1211544522259" name="CKC_DATATYPE_NFSRE" type="CHECK" body="datatype IN ('A' ,'U' ,'I' )" members="DATATYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544522257" name="SYS_C005405" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544522258" name="SYS_C005406" type="CHECK" body="&quot;ITEM_ID&quot; IS NOT NULL" members="ITEM_ID"/>
+  <constraints xmi:id="SQLConstraint_1211544522260" name="SYS_C005407" type="CHECK" body="&quot;DATATYPE&quot; IS NOT NULL" members="DATATYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544522261" name="SYS_C005408" type="CHECK" body="&quot;CREATED&quot; IS NOT NULL" members="CREATED"/>
+</RDBSchema:RDBTable>

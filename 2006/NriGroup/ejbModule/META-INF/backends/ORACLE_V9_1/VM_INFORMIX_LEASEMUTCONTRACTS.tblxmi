@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEMUTCONTRACTS" name="LEASEMUTCONTRACTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGLAMENT" name="REGLAMENT" allowNull="true" constraints="SQLConstraint_1211544521525 SQLConstraint_1211544521526">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521525" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTRACT" name="CONTRACT" allowNull="true" constraints="SQLConstraint_1211544521525 SQLConstraint_1211544521527">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521526" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544521525 SQLConstraint_1211544521528">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521527" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521525" name="PK_LEASEMUTCONTRAC" type="UNIQUE" members="REGLAMENT CONTRACT RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544521526" name="SYS_C004313" type="CHECK" body="&quot;REGLAMENT&quot; IS NOT NULL" members="REGLAMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521527" name="SYS_C004314" type="CHECK" body="&quot;CONTRACT&quot; IS NOT NULL" members="CONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521528" name="SYS_C004315" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+</RDBSchema:RDBTable>

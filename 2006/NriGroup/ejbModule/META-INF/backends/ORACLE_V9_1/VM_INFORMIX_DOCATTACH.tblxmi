@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DOCATTACH" name="DOCATTACH">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_ATT" name="ID_ATT" allowNull="true" constraints="SQLConstraint_1211544520213 SQLConstraint_1211544520214">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520213" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCBODY" name="DOCBODY" allowNull="true" constraints="SQLConstraint_1211544520215">
+    <type xmi:type="RDBSchema:SQLBinaryLargeObject" xmi:id="SQLBinaryLargeObject_1211544520213" length="4000">
+      <originatingType xmi:type="RDBSchema:SQLBinaryLargeObject" href="ORACLE_V9_Primitives.xmi#SQLBinaryLargeObject_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DESCR" name="DESCR" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520213" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAPDOCUMENT" name="PAPDOCUMENT" allowNull="true" constraints="SQLConstraint_1211544520216">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520214" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520213" name="PK_DOCATTACH" type="UNIQUE" members="ID_ATT"/>
+  <constraints xmi:id="SQLConstraint_1211544520214" name="SYS_C004576" type="CHECK" body="&quot;ID_ATT&quot; IS NOT NULL" members="ID_ATT"/>
+  <constraints xmi:id="SQLConstraint_1211544520215" name="SYS_C004577" type="CHECK" body="&quot;DOCBODY&quot; IS NOT NULL" members="DOCBODY"/>
+  <constraints xmi:id="SQLConstraint_1211544520216" name="SYS_C004578" type="CHECK" body="&quot;PAPDOCUMENT&quot; IS NOT NULL" members="PAPDOCUMENT"/>
+</RDBSchema:RDBTable>

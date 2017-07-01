@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEPAYMENTS" name="LEASEPAYMENTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEDOCPOSITION" name="LEASEDOCPOSITION" allowNull="true" constraints="SQLConstraint_1211544521555 SQLConstraint_1211544521556">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521555" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCNUMBER" name="DOCNUMBER" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521555" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUMMRUB" name="SUMMRUB" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521556" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NDS_RUB" name="NDS_RUB" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521557" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASERULE" name="LEASERULE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521558" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYMENTTYPE" name="PAYMENTTYPE" allowNull="true" constraints="SQLConstraint_1211544521557 SQLConstraint_1211544521558">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521556" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RURREMAINDER" name="RURREMAINDER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521559" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYRATE" name="PAYRATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521560" precision="15" scale="4">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYMENTSTATE" name="PAYMENTSTATE" allowNull="true" constraints="SQLConstraint_1211544521559 SQLConstraint_1211544521560">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521557" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BYAUTORUR" name="BYAUTORUR" allowNull="true" constraints="SQLConstraint_1211544521561 SQLConstraint_1211544521562">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521558" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISSCHETFAKT" name="ISSCHETFAKT" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521563 SQLConstraint_1211544521564">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521559" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OFFICEMEMONUMBER" name="OFFICEMEMONUMBER" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521560" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OTVWORKER" name="OTVWORKER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521561" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGOPLNDS" name="FLAGOPLNDS" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521565 SQLConstraint_1211544521566">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521561" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521555" name="PK_LEASEPAYMENTS" type="UNIQUE" members="LEASEDOCPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544521557" name="CKC_PAYMENTT_LEASE" type="CHECK" body="paymenttype IN ('O' ,'P' )" members="PAYMENTTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544521561" name="CKC_BYAUTORU_LEASE" type="CHECK" body="byautorur IN ('Y' ,'N' )" members="BYAUTORUR"/>
+  <constraints xmi:id="SQLConstraint_1211544521563" name="CKC_ISSCHETF_LEASE" type="CHECK" body="isschetfakt IN ('Y' ,'N' )" members="ISSCHETFAKT"/>
+  <constraints xmi:id="SQLConstraint_1211544521559" name="CKC_PAYMENTS_LEASE" type="CHECK" body="paymentstate IN ('G' ,'M' ,'P' ,'N' ,'K' ,'V' )" members="PAYMENTSTATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521565" name="CKC_FLAGOPLN_LEASE" type="CHECK" body="flagoplnds IN ('Y' ,'N' )" members="FLAGOPLNDS"/>
+  <constraints xmi:id="SQLConstraint_1211544521556" name="SYS_C003979" type="CHECK" body="&quot;LEASEDOCPOSITION&quot; IS NOT NULL" members="LEASEDOCPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544521558" name="SYS_C003980" type="CHECK" body="&quot;PAYMENTTYPE&quot; IS NOT NULL" members="PAYMENTTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544521560" name="SYS_C003981" type="CHECK" body="&quot;PAYMENTSTATE&quot; IS NOT NULL" members="PAYMENTSTATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521562" name="SYS_C003982" type="CHECK" body="&quot;BYAUTORUR&quot; IS NOT NULL" members="BYAUTORUR"/>
+  <constraints xmi:id="SQLConstraint_1211544521564" name="SYS_C003983" type="CHECK" body="&quot;ISSCHETFAKT&quot; IS NOT NULL" members="ISSCHETFAKT"/>
+  <constraints xmi:id="SQLConstraint_1211544521566" name="SYS_C003984" type="CHECK" body="&quot;FLAGOPLNDS&quot; IS NOT NULL" members="FLAGOPLNDS"/>
+</RDBSchema:RDBTable>

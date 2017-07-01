@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="IDBSANTEN2DETAIL" name="IDBSANTEN2DETAIL">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDDEPREC" name="IDDEPREC" allowNull="true" constraints="SQLConstraint_1211544521064 SQLConstraint_1211544521065">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521064" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DETAILID" name="DETAILID" allowNull="true" constraints="SQLConstraint_1211544521066">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521065" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ANTENID" name="ANTENID" allowNull="true" constraints="SQLConstraint_1211544521067">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521066" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521064" name="PK_IDBSANTEN2DETAI" type="UNIQUE" members="IDDEPREC"/>
+  <constraints xmi:id="SQLConstraint_1211544521065" name="SYS_C005433" type="CHECK" body="&quot;IDDEPREC&quot; IS NOT NULL" members="IDDEPREC"/>
+  <constraints xmi:id="SQLConstraint_1211544521066" name="SYS_C005434" type="CHECK" body="&quot;DETAILID&quot; IS NOT NULL" members="DETAILID"/>
+  <constraints xmi:id="SQLConstraint_1211544521067" name="SYS_C005435" type="CHECK" body="&quot;ANTENID&quot; IS NOT NULL" members="ANTENID"/>
+</RDBSchema:RDBTable>

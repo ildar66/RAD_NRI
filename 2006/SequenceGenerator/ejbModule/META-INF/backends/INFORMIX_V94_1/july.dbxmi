@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBDatabase xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="july" name="july">
+  <schemata href="META-INF/backends/INFORMIX_V94_1/july_informix.schxmi#informix"/>
+  <tableGroup xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V94_1/july_informix_sequences.tblxmi#sequences"/>
+  <connection href="META-INF/backends/INFORMIX_V94_1/ConToNRI.conxmi#ConToNRI"/>
+  <domain href="INFORMIX_V94_Domain.xmi#SQLVendor_1"/>
+</RDBSchema:RDBDatabase>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="EQCLASSIFICATION2ALGORITHM" name="EQCLASSIFICATION2ALGORITHM">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CLASSIFICATIONID" name="CLASSIFICATIONID" allowNull="true" constraints="SQLConstraint_1211544520543 SQLConstraint_1211544520544">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520543" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ALGORITHMID" name="ALGORITHMID" allowNull="true" constraints="SQLConstraint_1211544520543 SQLConstraint_1211544520545">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520544" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATASOURCE" name="DATASOURCE" allowNull="true" constraints="SQLConstraint_1211544520546">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520545" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520543" name="PK_EQCLASS2ALG" type="UNIQUE" members="CLASSIFICATIONID ALGORITHMID"/>
+  <constraints xmi:id="SQLConstraint_1211544520546" name="CKC_DATASOUR_EQCLA" type="CHECK" body="(datasource IS NULL ) OR (datasource IN (1 ,2 ,3 )) " members="DATASOURCE"/>
+  <constraints xmi:id="SQLConstraint_1211544520544" name="SYS_C003434" type="CHECK" body="&quot;CLASSIFICATIONID&quot; IS NOT NULL" members="CLASSIFICATIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544520545" name="SYS_C003435" type="CHECK" body="&quot;ALGORITHMID&quot; IS NOT NULL" members="ALGORITHMID"/>
+</RDBSchema:RDBTable>

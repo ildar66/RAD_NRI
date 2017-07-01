@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TN_CHAN2REQUEST" name="TN_CHAN2REQUEST">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHANID" name="CHANID" allowNull="true" constraints="SQLConstraint_1211544525500 SQLConstraint_1211544525501">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525500" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ELEMREQID" name="ELEMREQID" allowNull="true" constraints="SQLConstraint_1211544525500 SQLConstraint_1211544525502">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525501" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LINKDATE" name="LINKDATE" allowNull="true" defaultValue="SYSDATE" constraints="SQLConstraint_1211544525503">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544525500" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECORDSTATUS" name="RECORDSTATUS" allowNull="true" constraints="SQLConstraint_1211544525504">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525500" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525500" name="PK_TN_CHAN2REQUEST" type="UNIQUE" members="CHANID ELEMREQID"/>
+  <constraints xmi:id="SQLConstraint_1211544525501" name="SYS_C005601" type="CHECK" body="&quot;CHANID&quot; IS NOT NULL" members="CHANID"/>
+  <constraints xmi:id="SQLConstraint_1211544525502" name="SYS_C005602" type="CHECK" body="&quot;ELEMREQID&quot; IS NOT NULL" members="ELEMREQID"/>
+  <constraints xmi:id="SQLConstraint_1211544525503" name="SYS_C005603" type="CHECK" body="&quot;LINKDATE&quot; IS NOT NULL" members="LINKDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544525504" name="SYS_C005604" type="CHECK" body="&quot;RECORDSTATUS&quot; IS NOT NULL" members="RECORDSTATUS"/>
+</RDBSchema:RDBTable>

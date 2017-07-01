@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbrdbmapping:EjbRdbDocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbrdbmapping="ejbrdbmapping.xmi" xmlns:RDBSchema="RDBSchema.xmi" xmlns:ejb="ejb.xmi" xmlns:Mapping="Mapping.xmi" xmi:id="EjbRdbDocumentRoot_1050159625043" outputReadOnly="false" topToBottom="true">
+  <helper xmi:type="ejbrdbmapping:RdbSchemaProperies" xmi:id="RdbSchemaProperies_1050159625043" primitivesDocument="DB2UDBNT_V72"/>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1050159675836">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1050159675836">
+      <table href="META-INF/backends/DB2UDBNT_V72_1/Con1_SAMPLE_OID_OIDVALUE.tblxmi#RDBTable_1050159624872"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1050159675836">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1050159450101"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/DB2UDBNT_V72_1/Con1_SAMPLE_OID_OIDVALUE.tblxmi#RDBColumn_1050159624882"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1050159675837" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1050159450091"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/DB2UDBNT_V72_1/Con1_SAMPLE_OID_OIDVALUE.tblxmi#RDBColumn_1050159624883"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OIDvalue"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/DB2UDBNT_V72_1/Con1_SAMPLE_OID_OIDVALUE.tblxmi#RDBTable_1050159624872"/>
+  </nested>
+  <inputs xmi:type="ejb:EJBJar" href="META-INF/ejb-jar.xml#EJBJar_1050158862576"/>
+  <outputs xmi:type="RDBSchema:RDBDatabase" href="META-INF/backends/DB2UDBNT_V72_1/SAMPLE.dbxmi#RDBDatabase_1050159624692"/>
+  <typeMapping xmi:type="Mapping:MappingRoot" href="JavatoDB2UDBNT_V72TypeMaps.xmi#Java_to_DB2UDBNT_V72_TypeMaps"/>
+</ejbrdbmapping:EjbRdbDocumentRoot>

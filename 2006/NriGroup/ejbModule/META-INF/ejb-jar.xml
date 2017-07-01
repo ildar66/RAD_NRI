@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<ejb-jar id="ejb-jar_ID">
+	<display-name>NriGroup</display-name>
+	<enterprise-beans>
+		<entity id="PeopleEJB">
+			<ejb-name>PeopleEJB</ejb-name>
+			<local-home>com.nri.ejb.PeopleEJBLocalHome</local-home>
+			<local>com.nri.ejb.PeopleEJBLocal</local>
+			<ejb-class>com.nri.ejb.PeopleEJBBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>PeopleEJB</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1184663148594">
+				<field-name>man</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1184663151188">
+				<field-name>firstName</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1184663152701">
+				<field-name>lastName</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1184663154223">
+				<field-name>middleName</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1184663155485">
+				<field-name>passportSer</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1184663157458">
+				<field-name>passportDate</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1184663162406">
+				<field-name>passportWhom</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1184663168365">
+				<field-name>isActive</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1184663170288">
+				<field-name>tabNum</field-name>
+			</cmp-field>
+			<primkey-field>man</primkey-field>
+		</entity>
+		<session id="SecurityActionProcessorFacade">
+			<ejb-name>SecurityActionProcessorFacade</ejb-name>
+			<home>com.nri.ejb.SecurityActionProcessorFacadeHome</home>
+			<remote>com.nri.ejb.SecurityActionProcessorFacade</remote>
+			<local-home>com.nri.ejb.SecurityActionProcessorFacadeLocalHome</local-home>
+			<local>com.nri.ejb.SecurityActionProcessorFacadeLocal</local>
+			<ejb-class>com.nri.ejb.SecurityActionProcessorFacadeBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-local-ref id="EJBLocalRef_1184749986694">
+				<ejb-ref-name>ejb/PeopleEJB</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.nri.ejb.PeopleEJBLocalHome</local-home>
+				<local>com.nri.ejb.PeopleEJBLocal</local>
+				<ejb-link>PeopleEJB</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1185275852492">
+				<ejb-ref-name>ejb/RoleEJB</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.nri.ejb.RoleEJBLocalHome</local-home>
+				<local>com.nri.ejb.RoleEJBLocal</local>
+				<ejb-link>RoleEJB</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1185953392524">
+				<ejb-ref-name>ejb/WorkPositionEJB</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.nri.ejb.WorkPositionEJBLocalHome</local-home>
+				<local>com.nri.ejb.WorkPositionEJBLocal</local>
+				<ejb-link>WorkPositionEJB</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1186068175606">
+				<ejb-ref-name>ejb/MsUserEJB</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.nri.ejb.MsUserEJBLocalHome</local-home>
+				<local>com.nri.ejb.MsUserEJBLocal</local>
+				<ejb-link>MsUserEJB</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1186491131800">
+				<ejb-ref-name>ejb/CompanyEJB</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.nri.ejb.CompanyEJBLocalHome</local-home>
+				<local>com.nri.ejb.CompanyEJBLocal</local>
+				<ejb-link>CompanyEJB</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1187778309644">
+				<ejb-ref-name>ejb/DivisionEJB</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.nri.ejb.DivisionEJBLocalHome</local-home>
+				<local>com.nri.ejb.DivisionEJBLocal</local>
+				<ejb-link>DivisionEJB</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1188463531262">
+				<ejb-ref-name>ejb/WorkerEJB</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.nri.ejb.WorkerEJBLocalHome</local-home>
+				<local>com.nri.ejb.WorkerEJBLocal</local>
+				<ejb-link>WorkerEJB</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1189671160414">
+				<ejb-ref-name>ejb/OperatorEJB</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.nri.ejb.OperatorEJBLocalHome</local-home>
+				<local>com.nri.ejb.OperatorEJBLocal</local>
+				<ejb-link>OperatorEJB</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1192189719037">
+				<ejb-ref-name>ejb/ProfileEJB</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.nri.ejb.ProfileEJBLocalHome</local-home>
+				<local>com.nri.ejb.ProfileEJBLocal</local>
+				<ejb-link>ProfileEJB</ejb-link>
+			</ejb-local-ref>
+			<resource-ref id="ResourceRef_1185197132235">
+				<description></description>
+				<res-ref-name>jdbc/july</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Application</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+			<resource-ref id="ResourceRef_1211891414937">
+				<description></description>
+				<res-ref-name>jdbc/oracle</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Application</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<entity id="RoleEJB">
+			<ejb-name>RoleEJB</ejb-name>
+			<local-home>com.nri.ejb.RoleEJBLocalHome</local-home>
+			<local>com.nri.ejb.RoleEJBLocal</local>
+			<ejb-class>com.nri.ejb.RoleEJBBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.String</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>RoleEJB</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1185261417853">
+				<field-name>role</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1185261420027">
+				<field-name>roleName</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1185261421779">
+				<field-name>comment</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1185261423632">
+				<field-name>sortOrder</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1185261426116">
+				<field-name>taskComment</field-name>
+			</cmp-field>
+			<primkey-field>role</primkey-field>
+			<query>
+				<description></description>
+				<query-method>
+					<method-name>findAll</method-name>
+					<method-params>
+					</method-params>
+				</query-method>
+				<ejb-ql>select object(o) from RoleEJB o</ejb-ql>
+			</query>
+			<query>
+				<description></description>
+				<query-method>
+					<method-name>findByRoleName</method-name>
+					<method-params>
+						<method-param>java.lang.String</method-param>
+					</method-params>
+				</query-method>
+				<ejb-ql>select object(o) from RoleEJB o where  o.roleName like ?1</ejb-ql>
+			</query>
+		</entity>
+		<entity id="WorkPositionEJB">
+			<ejb-name>WorkPositionEJB</ejb-name>
+			<local-home>com.nri.ejb.WorkPositionEJBLocalHome</local-home>
+			<local>com.nri.ejb.WorkPositionEJBLocal</local>
+			<ejb-class>com.nri.ejb.WorkPositionEJBBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>WorkPositionEJB</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1185890461452">
+				<field-name>workPosition</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1185890482655">
+				<field-name>name</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1185890484888">
+				<field-name>isActive</field-name>
+			</cmp-field>
+			<primkey-field>workPosition</primkey-field>
+		</entity>
+		<entity id="MsUserEJB">
+			<ejb-name>MsUserEJB</ejb-name>
+			<local-home>com.nri.ejb.MsUserEJBLocalHome</local-home>
+			<local>com.nri.ejb.MsUserEJBLocal</local>
+			<ejb-class>com.nri.ejb.MsUserEJBBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>MsUserEJB</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1186066488418">
+				<field-name>msuCode</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1186066491663">
+				<field-name>msUser</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1186066494758">
+				<field-name>msPassword</field-name>
+			</cmp-field>
+			<primkey-field>msuCode</primkey-field>
+		</entity>
+		<entity id="CompanyEJB">
+			<ejb-name>CompanyEJB</ejb-name>
+			<local-home>com.nri.ejb.CompanyEJBLocalHome</local-home>
+			<local>com.nri.ejb.CompanyEJBLocal</local>
+			<ejb-class>com.nri.ejb.CompanyEJBBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>CompanyEJB</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1186490692616">
+				<field-name>company</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1186490695420">
+				<field-name>name</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1186490699636">
+				<field-name>shortName</field-name>
+			</cmp-field>
+			<primkey-field>company</primkey-field>
+			<query>
+				<description></description>
+				<query-method>
+					<method-name>findAll</method-name>
+					<method-params>
+					</method-params>
+				</query-method>
+				<ejb-ql>select object(o) from CompanyEJB o</ejb-ql>
+			</query>
+		</entity>
+		<entity id="DivisionEJB">
+			<ejb-name>DivisionEJB</ejb-name>
+			<local-home>com.nri.ejb.DivisionEJBLocalHome</local-home>
+			<local>com.nri.ejb.DivisionEJBLocal</local>
+			<ejb-class>com.nri.ejb.DivisionEJBBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>DivisionEJB</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1187763536608">
+				<field-name>division</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1187763536609">
+				<field-name>type</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1187763536618">
+				<field-name>encloser</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1187763536619">
+				<field-name>name</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1187763536620">
+				<field-name>shortName</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1187763536621">
+				<field-name>boss</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1187763536622">
+				<field-name>company</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1187763536628">
+				<field-name>isActive</field-name>
+			</cmp-field>
+			<primkey-field>division</primkey-field>
+		</entity>
+		<entity id="WorkerEJB">
+			<ejb-name>WorkerEJB</ejb-name>
+			<local-home>com.nri.ejb.WorkerEJBLocalHome</local-home>
+			<local>com.nri.ejb.WorkerEJBLocal</local>
+			<ejb-class>com.nri.ejb.WorkerEJBBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>WorkerEJB</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1188454155789">
+				<field-name>worker</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454157532">
+				<field-name>company</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454160336">
+				<field-name>man</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454163070">
+				<field-name>workPosition</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454165674">
+				<field-name>division</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454168709">
+				<field-name>lotusAddress</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454170983">
+				<field-name>email</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454173527">
+				<field-name>phone1</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454175600">
+				<field-name>phone2</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454181269">
+				<field-name>localPhone</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454186036">
+				<field-name>fax</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454188660">
+				<field-name>mobilePhone</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454195471">
+				<field-name>isActive</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454197614">
+				<field-name>isOur</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454203644">
+				<field-name>organization</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1188454208221">
+				<field-name>isServiceStuff</field-name>
+			</cmp-field>
+			<primkey-field>worker</primkey-field>
+		</entity>
+		<entity id="OperatorEJB">
+			<ejb-name>OperatorEJB</ejb-name>
+			<local-home>com.nri.ejb.OperatorEJBLocalHome</local-home>
+			<local>com.nri.ejb.OperatorEJBLocal</local>
+			<ejb-class>com.nri.ejb.OperatorEJBBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>OperatorEJB</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1189670078019">
+				<field-name>operator</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1189670082225">
+				<field-name>man</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1189670085010">
+				<field-name>loginID</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1189670088705">
+				<field-name>password</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1189670093463">
+				<field-name>isEnabled</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1189670098050">
+				<field-name>msuCode</field-name>
+			</cmp-field>
+			<primkey-field>operator</primkey-field>
+		</entity>
+		<entity id="ProfileEJB">
+			<ejb-name>ProfileEJB</ejb-name>
+			<local-home>com.nri.ejb.ProfileEJBLocalHome</local-home>
+			<local>com.nri.ejb.ProfileEJBLocal</local>
+			<ejb-class>com.nri.ejb.ProfileEJBBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>com.nri.ejb.ProfileEJBKey</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>ProfileEJB</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1192186733016">
+				<field-name>operatorID</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1192186737193">
+				<field-name>key</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1192186739707">
+				<field-name>name</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1192186743292">
+				<field-name>type</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1192186747789">
+				<field-name>num_value</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1192186751645">
+				<field-name>str_value</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1192186756743">
+				<field-name>date_value</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1192186762753">
+				<field-name>key_type</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1192195146932">
+				<field-name>modified</field-name>
+			</cmp-field>
+		</entity>
+	</enterprise-beans>
+</ejb-jar>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="INVENTORYNUMBERS" name="INVENTORYNUMBERS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SERID" name="SERID" allowNull="true" constraints="SQLConstraint_1211544521204 SQLConstraint_1211544521205">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521204" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SERPREFIX" name="SERPREFIX" allowNull="true" constraints="SQLConstraint_1211544521206">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521204" characterSet="800" length="12">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SERSTART" name="SERSTART" allowNull="true" constraints="SQLConstraint_1211544521207">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521205" characterSet="800" length="32">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SEREND" name="SEREND" allowNull="true" constraints="SQLConstraint_1211544521208">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521206" characterSet="800" length="32">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SERDATE" name="SERDATE" allowNull="true" constraints="SQLConstraint_1211544521209">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521204" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SERWORKER" name="SERWORKER" allowNull="true" constraints="SQLConstraint_1211544521210">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521205" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521204" name="PK_INVENTORYNUMBER" type="UNIQUE" members="SERID"/>
+  <constraints xmi:id="SQLConstraint_1211544521205" name="SYS_C004216" type="CHECK" body="&quot;SERID&quot; IS NOT NULL" members="SERID"/>
+  <constraints xmi:id="SQLConstraint_1211544521206" name="SYS_C004217" type="CHECK" body="&quot;SERPREFIX&quot; IS NOT NULL" members="SERPREFIX"/>
+  <constraints xmi:id="SQLConstraint_1211544521207" name="SYS_C004218" type="CHECK" body="&quot;SERSTART&quot; IS NOT NULL" members="SERSTART"/>
+  <constraints xmi:id="SQLConstraint_1211544521208" name="SYS_C004219" type="CHECK" body="&quot;SEREND&quot; IS NOT NULL" members="SEREND"/>
+  <constraints xmi:id="SQLConstraint_1211544521209" name="SYS_C004220" type="CHECK" body="&quot;SERDATE&quot; IS NOT NULL" members="SERDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521210" name="SYS_C004221" type="CHECK" body="&quot;SERWORKER&quot; IS NOT NULL" members="SERWORKER"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="APRIL_PERM_ACTION_JULY_ROLE" name="APRIL_PERM_ACTION_JULY_ROLE">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTIONID" name="ACTIONID" allowNull="true" constraints="SQLConstraint_1211544518931 SQLConstraint_1211544518932">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518931" precision="19" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ROLE" name="ROLE" allowNull="true" constraints="SQLConstraint_1211544518931 SQLConstraint_1211544518933">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518931" characterSet="800" length="80">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544518931" name="PK_PERM_ACTION_ROLE" type="UNIQUE" members="ACTIONID ROLE"/>
+  <constraints xmi:id="SQLConstraint_1211544518932" name="SYS_C003670" type="CHECK" body="&quot;ACTIONID&quot; IS NOT NULL" members="ACTIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544518933" name="SYS_C003671" type="CHECK" body="&quot;ROLE&quot; IS NOT NULL" members="ROLE"/>
+</RDBSchema:RDBTable>

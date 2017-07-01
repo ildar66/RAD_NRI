@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PAPDOCUMENTS" name="PAPDOCUMENTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAPDOCUMENT" name="PAPDOCUMENT" allowNull="true" constraints="SQLConstraint_1211544523357 SQLConstraint_1211544523358">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523357" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOC_TYPE" name="DOC_TYPE" allowNull="true" constraints="SQLConstraint_1211544523359">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523358" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BLANKDATE" name="BLANKDATE" allowNull="true" constraints="SQLConstraint_1211544523360">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523357" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BLANKNUMBER" name="BLANKNUMBER" allowNull="true" constraints="SQLConstraint_1211544523361">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523357" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATE_END" name="DATE_END" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523358" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMMENT_" name="COMMENT_" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523358" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523357" name="PK_PAPDOCUMENTS" type="UNIQUE" members="PAPDOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544523358" name="SYS_C004417" type="CHECK" body="&quot;PAPDOCUMENT&quot; IS NOT NULL" members="PAPDOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544523359" name="SYS_C004418" type="CHECK" body="&quot;DOC_TYPE&quot; IS NOT NULL" members="DOC_TYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523360" name="SYS_C004419" type="CHECK" body="&quot;BLANKDATE&quot; IS NOT NULL" members="BLANKDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544523361" name="SYS_C004420" type="CHECK" body="&quot;BLANKNUMBER&quot; IS NOT NULL" members="BLANKNUMBER"/>
+</RDBSchema:RDBTable>

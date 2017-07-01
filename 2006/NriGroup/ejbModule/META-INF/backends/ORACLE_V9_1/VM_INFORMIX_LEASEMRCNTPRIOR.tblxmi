@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEMRCNTPRIOR" name="LEASEMRCNTPRIOR">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGLAMENT" name="REGLAMENT" allowNull="true" constraints="SQLConstraint_1211544521525 SQLConstraint_1211544521526">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521525" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTRACT1" name="CONTRACT1" allowNull="true" constraints="SQLConstraint_1211544521525 SQLConstraint_1211544521527">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521526" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTRACT2" name="CONTRACT2" allowNull="true" constraints="SQLConstraint_1211544521525 SQLConstraint_1211544521528">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521527" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PRIORITY" name="PRIORITY" allowNull="true" constraints="SQLConstraint_1211544521529">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521528" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521525" name="PK_LEASEMRCNTPRIOR" type="UNIQUE" members="REGLAMENT CONTRACT1 CONTRACT2"/>
+  <constraints xmi:id="SQLConstraint_1211544521526" name="SYS_C004222" type="CHECK" body="&quot;REGLAMENT&quot; IS NOT NULL" members="REGLAMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521527" name="SYS_C004223" type="CHECK" body="&quot;CONTRACT1&quot; IS NOT NULL" members="CONTRACT1"/>
+  <constraints xmi:id="SQLConstraint_1211544521528" name="SYS_C004224" type="CHECK" body="&quot;CONTRACT2&quot; IS NOT NULL" members="CONTRACT2"/>
+  <constraints xmi:id="SQLConstraint_1211544521529" name="SYS_C004225" type="CHECK" body="&quot;PRIORITY&quot; IS NOT NULL" members="PRIORITY"/>
+</RDBSchema:RDBTable>

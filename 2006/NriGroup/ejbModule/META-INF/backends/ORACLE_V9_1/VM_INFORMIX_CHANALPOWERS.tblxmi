@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CHANALPOWERS" name="CHANALPOWERS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EQUIPMENT" name="EQUIPMENT" allowNull="true" constraints="SQLConstraint_1211544519532 SQLConstraint_1211544519533">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519532" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHANAL" name="CHANAL" allowNull="true" constraints="SQLConstraint_1211544519532 SQLConstraint_1211544519534">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519533" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POLARIZATION" name="POLARIZATION" allowNull="true" constraints="SQLConstraint_1211544519532 SQLConstraint_1211544519535 SQLConstraint_1211544519536">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519532" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="POWER" name="POWER" allowNull="true" constraints="SQLConstraint_1211544519537">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519534" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BAND" name="BAND" allowNull="true" defaultValue="900" constraints="SQLConstraint_1211544519532 SQLConstraint_1211544519538 SQLConstraint_1211544519539">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519535" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519532" name="PK_CHANALPOWERS" type="UNIQUE" members="EQUIPMENT CHANAL POLARIZATION BAND"/>
+  <constraints xmi:id="SQLConstraint_1211544519535" name="CKC_POLARIZA_CHANA" type="CHECK" body="polarization IN ('V' ,'C' )" members="POLARIZATION"/>
+  <constraints xmi:id="SQLConstraint_1211544519538" name="CKC_BAND_CHANA" type="CHECK" body="band IN (1800 ,900 )" members="BAND"/>
+  <constraints xmi:id="SQLConstraint_1211544519533" name="SYS_C004596" type="CHECK" body="&quot;EQUIPMENT&quot; IS NOT NULL" members="EQUIPMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544519534" name="SYS_C004597" type="CHECK" body="&quot;CHANAL&quot; IS NOT NULL" members="CHANAL"/>
+  <constraints xmi:id="SQLConstraint_1211544519536" name="SYS_C004598" type="CHECK" body="&quot;POLARIZATION&quot; IS NOT NULL" members="POLARIZATION"/>
+  <constraints xmi:id="SQLConstraint_1211544519537" name="SYS_C004599" type="CHECK" body="&quot;POWER&quot; IS NOT NULL" members="POWER"/>
+  <constraints xmi:id="SQLConstraint_1211544519539" name="SYS_C004600" type="CHECK" body="&quot;BAND&quot; IS NOT NULL" members="BAND"/>
+</RDBSchema:RDBTable>

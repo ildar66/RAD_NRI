@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_PAYSLINK" name="PIE_PAYSLINK">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDPAYPLATINUM" name="IDPAYPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523497 SQLConstraint_1211544523498">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523497" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCPOSITION" name="DOCPOSITION" allowNull="true" constraints="SQLConstraint_1211544523499">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523497" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER" allowNull="true" constraints="SQLConstraint_1211544523497 SQLConstraint_1211544523500 SQLConstraint_1211544523501">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523498" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523497" name="PK_PIE_PAYSLINK" type="UNIQUE" members="IDPAYPLATINUM OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523500" name="CKC_OWN_PLINK" type="CHECK" body="owner IN (1 ,2 ,3 )" members="OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523498" name="SYS_C004558" type="CHECK" body="&quot;IDPAYPLATINUM&quot; IS NOT NULL" members="IDPAYPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523499" name="SYS_C004559" type="CHECK" body="&quot;DOCPOSITION&quot; IS NOT NULL" members="DOCPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544523501" name="SYS_C004560" type="CHECK" body="&quot;OWNER&quot; IS NOT NULL" members="OWNER"/>
+</RDBSchema:RDBTable>

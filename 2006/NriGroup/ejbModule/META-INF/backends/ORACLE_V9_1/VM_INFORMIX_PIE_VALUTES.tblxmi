@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_VALUTES" name="PIE_VALUTES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDVALUTEPLATINUM" name="IDVALUTEPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523567 SQLConstraint_1211544523568">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523567" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="P_STATUS" name="P_STATUS" allowNull="true" constraints="SQLConstraint_1211544523569 SQLConstraint_1211544523570">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523568" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544523571">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523569" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDVAUTENRI" name="IDVAUTENRI" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523567" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGMAIN" name="FLAGMAIN" allowNull="true" constraints="SQLConstraint_1211544523572">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523568" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523567" name="PK_PIE_VALUTES" type="UNIQUE" members="IDVALUTEPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523569" name="CKC_P_STATUS_PIE_V" type="CHECK" body="p_status IN ('A' ,'D' )" members="P_STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544523572" name="CKC_PIE_VALUT_FLAG" type="CHECK" body="flagmain IN (1 ,0 )" members="FLAGMAIN"/>
+  <constraints xmi:id="SQLConstraint_1211544523568" name="SYS_C004073" type="CHECK" body="&quot;IDVALUTEPLATINUM&quot; IS NOT NULL" members="IDVALUTEPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523570" name="SYS_C004074" type="CHECK" body="&quot;P_STATUS&quot; IS NOT NULL" members="P_STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544523571" name="SYS_C004075" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="informix" name="informix">
+  <database href="META-INF/backends/INFORMIX_V94_1/july.dbxmi#july"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/backends/INFORMIX_V94_1/july_informix_sequences.tblxmi#sequences"/>
+</RDBSchema:RDBSchema>

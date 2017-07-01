@@ -1,0 +1,218 @@
+------Start of DE processing------ = [07.08.01 16:26:39:950 MSD] , key = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute 89
+Exception = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException
+Source = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute
+probeid = 89
+Stack Dump = com.ibm.ws.exception.WsException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: Cannot insert a null into column (workpositions.isactive)..
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:244)
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:171)
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.<init>(DataStoreAdapterException.java:124)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.WorkPositionEJBBeanFunctionSet_7199c149.Store(WorkPositionEJBBeanFunctionSet_7199c149.java:154)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.WorkPositionEJBBeanFunctionSet_7199c149.execute(WorkPositionEJBBeanFunctionSet_7199c149.java:310)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.wsspi.ejbpersistence.WSEJBToRAAdapter.executeUpdate(WSEJBToRAAdapter.java:242)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeUpdate(WSRelationalRAAdapter.java:301)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbStore(Unknown Source)
+	at com.nri.ejb.ConcreteWorkPositionEJB_7199c149.ejbStore(ConcreteWorkPositionEJB_7199c149.java:58)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.store(ContainerManaged2_0BeanO.java:254)
+	at com.ibm.ejs.container.EntityBeanO.beforeCompletion(EntityBeanO.java:1062)
+	at com.ibm.ejs.container.ContainerTx.beforeCompletion(ContainerTx.java:542)
+	at com.ibm.ejs.util.tran.SyncDriver.beforeCompletion(SyncDriver.java:279)
+	at com.ibm.ws.Transaction.JTA.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:110)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalPrepare(TransactionImpl.java:1211)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.commit(TransactionImpl.java:960)
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.commit(TranManagerImpl.java:150)
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.commit(TranManagerSet.java:182)
+	at com.ibm.ejs.csi.TranStrategy.commit(TranStrategy.java:712)
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java:167)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:565)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:3038)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:2916)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.updateWorkPosition(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:578)
+	at com.nri.ejb._SecurityActionProcessorFacade_Stub.updateWorkPosition(_SecurityActionProcessorFacade_Stub.java:1026)
+	at com.nri.model.ejb.SecurityActionProcessorImpl.updateWorkPosition(SecurityActionProcessorImpl.java:404)
+	at com.nri.security.actions.WorkPositionProcessAction.execute(WorkPositionProcessAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: java.sql.SQLException: Cannot insert a null into column (workpositions.isactive).
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java:2259)
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java:2179)
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.WorkPositionEJBBeanFunctionSet_7199c149.Store(WorkPositionEJBBeanFunctionSet_7199c149.java:149)
+	... 53 more
+---- Begin backtrace for nested exception
+java.sql.SQLException: Cannot insert a null into column (workpositions.isactive).
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java:2259)
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java:2179)
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.WorkPositionEJBBeanFunctionSet_7199c149.Store(WorkPositionEJBBeanFunctionSet_7199c149.java:149)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.WorkPositionEJBBeanFunctionSet_7199c149.execute(WorkPositionEJBBeanFunctionSet_7199c149.java:310)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.wsspi.ejbpersistence.WSEJBToRAAdapter.executeUpdate(WSEJBToRAAdapter.java:242)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeUpdate(WSRelationalRAAdapter.java:301)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbStore(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbStore(Unknown Source)
+	at com.nri.ejb.ConcreteWorkPositionEJB_7199c149.ejbStore(ConcreteWorkPositionEJB_7199c149.java:58)
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.store(ContainerManaged2_0BeanO.java:254)
+	at com.ibm.ejs.container.EntityBeanO.beforeCompletion(EntityBeanO.java:1062)
+	at com.ibm.ejs.container.ContainerTx.beforeCompletion(ContainerTx.java:542)
+	at com.ibm.ejs.util.tran.SyncDriver.beforeCompletion(SyncDriver.java:279)
+	at com.ibm.ws.Transaction.JTA.RegisteredSyncs.distributeBefore(RegisteredSyncs.java:110)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.internalPrepare(TransactionImpl.java:1211)
+	at com.ibm.ws.Transaction.JTA.TransactionImpl.commit(TransactionImpl.java:960)
+	at com.ibm.ws.Transaction.JTA.TranManagerImpl.commit(TranManagerImpl.java:150)
+	at com.ibm.ws.Transaction.JTA.TranManagerSet.commit(TranManagerSet.java:182)
+	at com.ibm.ejs.csi.TranStrategy.commit(TranStrategy.java:712)
+	at com.ibm.ejs.csi.TranStrategy.postInvoke(TranStrategy.java:167)
+	at com.ibm.ejs.csi.TransactionControlImpl.postInvoke(TransactionControlImpl.java:565)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:3038)
+	at com.ibm.ejs.container.EJSContainer.postInvoke(EJSContainer.java:2916)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.updateWorkPosition(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:578)
+	at com.nri.ejb._SecurityActionProcessorFacade_Stub.updateWorkPosition(_SecurityActionProcessorFacade_Stub.java:1026)
+	at com.nri.model.ejb.SecurityActionProcessorImpl.updateWorkPosition(SecurityActionProcessorImpl.java:404)
+	at com.nri.security.actions.WorkPositionProcessAction.execute(WorkPositionProcessAction.java:38)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl@749a3830
+
+Exception = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException
+Source = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute
+probeid = 89
+Dump of callerThis = 
+Object type = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+  class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl = 
+    class$java$lang$Class = 
+      class$java$lang$Class = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.class$java$lang$Class
+      initted = true
+      reflectionFactory = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.reflectionFactory
+      serialPersistentFields = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.serialPersistentFields
+      serialVersionUID = 3206093459760846163
+      declaredPublicMethods = null
+      declaredPublicFields = null
+      publicConstructors = null
+      declaredConstructors = null
+      publicMethods = null
+      declaredMethods = null
+      publicFields = null
+      declaredFields = java.lang.ref.SoftReference@5296b822
+      useCaches = true
+      allPermDomain = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.allPermDomain
+      getPDperm = null
+      newInstanceCallerCache = null
+      cachedConstructor = null
+      have_extensions = true
+    initted = true
+    reflectionFactory = 
+      class$sun$reflect$ConstructorAccessorImpl = java.lang.Class@202a38b7
+      class$java$lang$Class = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.class$java$lang$Class
+      inflationThreshold = 5
+      noInflation = false
+      langReflectAccess = java.lang.reflect.ReflectAccess@3781f834
+      soleInstance = this.class$com$ibm$ws$ejbpersistence$dataaccess$DataAccessRequestImpl.reflectionFactory
+      reflectionFactoryAccessPerm = java.lang.RuntimePermission@250af834
+      useUnsafeFieldAccessors = true
+      initted = true
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = 
+      timestamp = 23
+      clock = 23
+      pending = null
+      lock = java.lang.ref.Reference$Lock@4a277835
+      processing = null
+      next = null
+      queue = java.lang.ref.ReferenceQueue$Null@250ef834
+      referent = [Ljava.lang.reflect.Field;@5848b823
+    useCaches = true
+    allPermDomain = 
+      staticPermissions = true
+      permissions = java.security.Permissions@5ddb830
+      principals = {}
+      classloader = null
+      codesource = null
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  mytc = 
+    ivLogger = null
+    ivResourceBundleName = com.ibm.ws.ejbpersistence.utilpm.ejbpersistence_NLS
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl
+

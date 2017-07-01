@@ -1,0 +1,153 @@
+----->----- Web Browser plugin startup ----->-----
+com.ibm.etools.webbrowser - 5.1.1
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+b
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 true
+->- Loading .urlMap extension point ->-
+  Loaded url map: com.ibm.etools.webbrowser.standard.urlMap
+-<- Done loading .urlMap extension point -<-
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809
+getLocationURL: 
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+b
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809
+getLocationURL: 
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+b
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809
+getLocationURL: 
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+b
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809
+getLocationURL: 
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+b
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809
+getLocationURL: 
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/MsUserEJBLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/WorkerEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+b
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/WorkerEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/WorkerEJBLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/WorkerEJBLocalHome&port=2809
+getLocationURL: 
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/WorkerEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/WorkerEJBLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+canReplaceInput WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc] WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/WorkerEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/WorkerEJBLocalHome&port=2809
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809 false
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+canReplaceInput WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc] WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/PeopleEJBLocalHome&port=2809
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 false
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+canReplaceInput WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc] WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809 false
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/ProfileEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+canReplaceInput WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/ProfileEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc] WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/ProfileEJBLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/ProfileEJBLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/ProfileEJBLocalHome&port=2809
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/OperatorEJBLocalHome&port=2809
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/ProfileEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/ProfileEJBLocalHome&port=2809 false
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/ProfileEJBLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/ejb/ProfileEJBLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+b
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+getLocationURL: 
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/sequence/ejb/SequenceSessionHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+canReplaceInput WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/sequence/ejb/SequenceSessionHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc] WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/sequence/ejb/SequenceSessionHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/sequence/ejb/SequenceSessionHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/sequence/ejb/SequenceSessionHome&port=2809
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/sequence/ejb/SequenceSessionHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/sequence/ejb/SequenceSessionHome&port=2809 false
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/sequence/ejb/SequenceSessionHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/nri/sequence/ejb/SequenceSessionHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+b
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+getLocationURL: 
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+a
+b
+Opening browser: WebBrowserEditorInput[http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 64 com.ibm.etools.websphere.tools.common.utc]
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 true
+Navigate: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+getLocationURL: 
+getLocationURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809
+setURL: http://localhost:9080/UTC/jndiLookup?initialize=true&name=local:/ejb/ejb/com/god/oidgen/OIDGeneratorSessionBeanLocalHome&port=2809 false
+openURL() WebBrowserEditorInput[http://localhost:9080/SecurityApp/secure/logon.jsp 38 null]
+a
+b
+Opening browser: WebBrowserEditorInput[http://localhost:9080/SecurityApp/secure/logon.jsp 38 null]
+setURL: http://localhost:9080/SecurityApp/secure/logon.jsp true
+Navigate: http://localhost:9080/SecurityApp/secure/logon.jsp
+getLocationURL: 
+getLocationURL: http://localhost:9080/SecurityApp/logon.jsp
+setURL: http://localhost:9080/SecurityApp/logon.jsp false
+getLocationURL: http://localhost:9080/SecurityApp/logon.do?action=secure
+setURL: http://localhost:9080/SecurityApp/logon.do?action=secure false
+----->----- Web Browser plugin shutdown ----->-----

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASERESOURCES" name="LEASERESOURCES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544521645 SQLConstraint_1211544521646">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521645" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NEEDCWACT" name="NEEDCWACT" allowNull="true" defaultValue="'Y'" constraints="SQLConstraint_1211544521647 SQLConstraint_1211544521648">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521645" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="USEINARENDACONTRACT" name="USEINARENDACONTRACT" allowNull="true" defaultValue="'Y'" constraints="SQLConstraint_1211544521649 SQLConstraint_1211544521650">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521646" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="USEINABONENTCONTRACT" name="USEINABONENTCONTRACT" allowNull="true" defaultValue="'Y'" constraints="SQLConstraint_1211544521651 SQLConstraint_1211544521652">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521647" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521645" name="PK_LEASERESOURCES" type="UNIQUE" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544521647" name="CKC_NEEDCWAC_LEAS2" type="CHECK" body="needcwact IN ('Y' ,'N' )" members="NEEDCWACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521649" name="CKC_USEINARE_LEASE" type="CHECK" body="useinarendacontract IN ('Y' ,'N' )" members="USEINARENDACONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521651" name="CKC_USEINABO_LEASE" type="CHECK" body="useinabonentcontract IN ('Y' ,'N' )" members="USEINABONENTCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521646" name="SYS_C005760" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544521648" name="SYS_C005761" type="CHECK" body="&quot;NEEDCWACT&quot; IS NOT NULL" members="NEEDCWACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521650" name="SYS_C005762" type="CHECK" body="&quot;USEINARENDACONTRACT&quot; IS NOT NULL" members="USEINARENDACONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521652" name="SYS_C005763" type="CHECK" body="&quot;USEINABONENTCONTRACT&quot; IS NOT NULL" members="USEINABONENTCONTRACT"/>
+</RDBSchema:RDBTable>

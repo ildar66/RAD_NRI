@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_QUERY_DIR" name="PIE_QUERY_DIR">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_NRI_QUERY_DIR" name="ID_NRI_QUERY_DIR" allowNull="true" constraints="SQLConstraint_1211544523527 SQLConstraint_1211544523528">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523527" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_QUERY" name="ID_QUERY" allowNull="true" constraints="SQLConstraint_1211544523529">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523528" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SOST_BEG" name="SOST_BEG" allowNull="true" constraints="SQLConstraint_1211544523530">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523527" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SOST_END" name="SOST_END" allowNull="true" constraints="SQLConstraint_1211544523531">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523528" characterSet="800" length="8">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VDAT" name="VDAT" allowNull="true" constraints="SQLConstraint_1211544523532">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523527" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523527" name="PK_PIE_QUERY_DIR" type="UNIQUE" members="ID_NRI_QUERY_DIR"/>
+  <constraints xmi:id="SQLConstraint_1211544523528" name="SYS_C004245" type="CHECK" body="&quot;ID_NRI_QUERY_DIR&quot; IS NOT NULL" members="ID_NRI_QUERY_DIR"/>
+  <constraints xmi:id="SQLConstraint_1211544523529" name="SYS_C004246" type="CHECK" body="&quot;ID_QUERY&quot; IS NOT NULL" members="ID_QUERY"/>
+  <constraints xmi:id="SQLConstraint_1211544523530" name="SYS_C004247" type="CHECK" body="&quot;SOST_BEG&quot; IS NOT NULL" members="SOST_BEG"/>
+  <constraints xmi:id="SQLConstraint_1211544523531" name="SYS_C004248" type="CHECK" body="&quot;SOST_END&quot; IS NOT NULL" members="SOST_END"/>
+  <constraints xmi:id="SQLConstraint_1211544523532" name="SYS_C004249" type="CHECK" body="&quot;VDAT&quot; IS NOT NULL" members="VDAT"/>
+</RDBSchema:RDBTable>

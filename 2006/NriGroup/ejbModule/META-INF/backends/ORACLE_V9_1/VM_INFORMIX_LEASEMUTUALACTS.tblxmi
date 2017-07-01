@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEMUTUALACTS" name="LEASEMUTUALACTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEDOCUMENT" name="LEASEDOCUMENT" allowNull="true" constraints="SQLConstraint_1211544521535 SQLConstraint_1211544521536">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521535" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MUTUALREGLAMENT" name="MUTUALREGLAMENT" allowNull="true" constraints="SQLConstraint_1211544521537">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521536" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTSTATE" name="ACTSTATE" allowNull="true" constraints="SQLConstraint_1211544521538 SQLConstraint_1211544521539">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521535" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTSTARTDATE" name="ACTSTARTDATE" allowNull="true" constraints="SQLConstraint_1211544521540">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521535" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTENDDATE" name="ACTENDDATE" allowNull="true" constraints="SQLConstraint_1211544521541">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521536" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HEADER" name="HEADER" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521536" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FOOTER" name="FOOTER" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521537" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISTEMP" name="ISTEMP" allowNull="true" constraints="SQLConstraint_1211544521542 SQLConstraint_1211544521543">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521538" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISSCHETFAKT" name="ISSCHETFAKT" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521544 SQLConstraint_1211544521545">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521539" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTTEXT" name="ACTTEXT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLBinaryLargeObject" xmi:id="SQLBinaryLargeObject_1211544521535" length="4000">
+      <originatingType xmi:type="RDBSchema:SQLBinaryLargeObject" href="ORACLE_V9_Primitives.xmi#SQLBinaryLargeObject_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTFILENAME" name="ACTFILENAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521540" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MUTUALNDS" name="MUTUALNDS" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521546 SQLConstraint_1211544521547">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521541" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521535" name="PK_LEASEMUTUALACTS" type="UNIQUE" members="LEASEDOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521542" name="CKC_ISTEMP_LEASE" type="CHECK" body="istemp IN ('Y' ,'N' )" members="ISTEMP"/>
+  <constraints xmi:id="SQLConstraint_1211544521544" name="CKC_ISSCHETF_LMA" type="CHECK" body="isschetfakt IN ('Y' ,'N' )" members="ISSCHETFAKT"/>
+  <constraints xmi:id="SQLConstraint_1211544521546" name="CKC_MUTUALND_LEASE" type="CHECK" body="mutualnds IN ('Y' ,'N' )" members="MUTUALNDS"/>
+  <constraints xmi:id="SQLConstraint_1211544521538" name="CKC_ACTSTATE_LEASE" type="CHECK" body="actstate IN ('O' ,'R' ,'C' ,'V' ,'1' ,'2' ,'3' ,'4' ,'5' )" members="ACTSTATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521536" name="SYS_C005051" type="CHECK" body="&quot;LEASEDOCUMENT&quot; IS NOT NULL" members="LEASEDOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521537" name="SYS_C005052" type="CHECK" body="&quot;MUTUALREGLAMENT&quot; IS NOT NULL" members="MUTUALREGLAMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521539" name="SYS_C005053" type="CHECK" body="&quot;ACTSTATE&quot; IS NOT NULL" members="ACTSTATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521540" name="SYS_C005054" type="CHECK" body="&quot;ACTSTARTDATE&quot; IS NOT NULL" members="ACTSTARTDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521541" name="SYS_C005055" type="CHECK" body="&quot;ACTENDDATE&quot; IS NOT NULL" members="ACTENDDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521543" name="SYS_C005056" type="CHECK" body="&quot;ISTEMP&quot; IS NOT NULL" members="ISTEMP"/>
+  <constraints xmi:id="SQLConstraint_1211544521545" name="SYS_C005057" type="CHECK" body="&quot;ISSCHETFAKT&quot; IS NOT NULL" members="ISSCHETFAKT"/>
+  <constraints xmi:id="SQLConstraint_1211544521547" name="SYS_C005058" type="CHECK" body="&quot;MUTUALNDS&quot; IS NOT NULL" members="MUTUALNDS"/>
+</RDBSchema:RDBTable>

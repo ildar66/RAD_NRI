@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="COMPLETWORKACT2CHARGE" name="COMPLETWORKACT2CHARGE">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDCWACODE" name="IDCWACODE" allowNull="true" constraints="SQLConstraint_1211544519692 SQLConstraint_1211544519693">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519692" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDCHARGE" name="IDCHARGE" allowNull="true" constraints="SQLConstraint_1211544519692 SQLConstraint_1211544519694">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519693" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LINKSUMCHARGE" name="LINKSUMCHARGE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519694" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519692" name="PK_COMPLETWORKACT2" type="UNIQUE" members="IDCWACODE IDCHARGE"/>
+  <constraints xmi:id="SQLConstraint_1211544519693" name="SYS_C005744" type="CHECK" body="&quot;IDCWACODE&quot; IS NOT NULL" members="IDCWACODE"/>
+  <constraints xmi:id="SQLConstraint_1211544519694" name="SYS_C005745" type="CHECK" body="&quot;IDCHARGE&quot; IS NOT NULL" members="IDCHARGE"/>
+</RDBSchema:RDBTable>

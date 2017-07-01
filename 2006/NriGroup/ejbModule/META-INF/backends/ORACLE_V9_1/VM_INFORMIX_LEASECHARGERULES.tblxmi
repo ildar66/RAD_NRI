@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASECHARGERULES" name="LEASECHARGERULES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASERULE" name="LEASERULE" allowNull="true" constraints="SQLConstraint_1211544521444 SQLConstraint_1211544521445">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521444" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544521446">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521445" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CURRENCY" name="CURRENCY" allowNull="true" constraints="SQLConstraint_1211544521447">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521446" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUMM" name="SUMM" allowNull="true" constraints="SQLConstraint_1211544521448">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521447" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHARGEPERIOD" name="CHARGEPERIOD" allowNull="true" constraints="SQLConstraint_1211544521449 SQLConstraint_1211544521450">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521444" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CHARGEDATERULE" name="CHARGEDATERULE" allowNull="true" constraints="SQLConstraint_1211544521451 SQLConstraint_1211544521452">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521445" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521444" name="PK_LEASECHARGERULE" type="UNIQUE" members="LEASERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521449" name="CKC_CHARGEPE_LEASE" type="CHECK" body="chargeperiod IN ('M' ,'Q' ,'Y' )" members="CHARGEPERIOD"/>
+  <constraints xmi:id="SQLConstraint_1211544521451" name="CKC_CHARGEDA_LEASE" type="CHECK" body="chargedaterule IN ('S' ,'E' )" members="CHARGEDATERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521445" name="SYS_C003941" type="CHECK" body="&quot;LEASERULE&quot; IS NOT NULL" members="LEASERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521446" name="SYS_C003942" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544521447" name="SYS_C003943" type="CHECK" body="&quot;CURRENCY&quot; IS NOT NULL" members="CURRENCY"/>
+  <constraints xmi:id="SQLConstraint_1211544521448" name="SYS_C003944" type="CHECK" body="&quot;SUMM&quot; IS NOT NULL" members="SUMM"/>
+  <constraints xmi:id="SQLConstraint_1211544521450" name="SYS_C003945" type="CHECK" body="&quot;CHARGEPERIOD&quot; IS NOT NULL" members="CHARGEPERIOD"/>
+  <constraints xmi:id="SQLConstraint_1211544521452" name="SYS_C003946" type="CHECK" body="&quot;CHARGEDATERULE&quot; IS NOT NULL" members="CHARGEDATERULE"/>
+</RDBSchema:RDBTable>

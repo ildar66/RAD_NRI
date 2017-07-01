@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="GSMID2NETWORKS" name="GSMID2NETWORKS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="GSMID" name="GSMID" allowNull="true" constraints="SQLConstraint_1211544520994 SQLConstraint_1211544520995">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520994" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PLMN" name="PLMN" allowNull="true" constraints="SQLConstraint_1211544520996">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520995" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CELLID" name="CELLID" allowNull="true" constraints="SQLConstraint_1211544520997">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520996" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520994" name="PK_GSMID2NETWORKS" type="UNIQUE" members="GSMID"/>
+  <constraints xmi:id="SQLConstraint_1211544520995" name="SYS_C005212" type="CHECK" body="&quot;GSMID&quot; IS NOT NULL" members="GSMID"/>
+  <constraints xmi:id="SQLConstraint_1211544520996" name="SYS_C005213" type="CHECK" body="&quot;PLMN&quot; IS NOT NULL" members="PLMN"/>
+  <constraints xmi:id="SQLConstraint_1211544520997" name="SYS_C005214" type="CHECK" body="&quot;CELLID&quot; IS NOT NULL" members="CELLID"/>
+</RDBSchema:RDBTable>

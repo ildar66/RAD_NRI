@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_QUERY" name="PIE_QUERY">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_QUERY" name="ID_QUERY" allowNull="true" constraints="SQLConstraint_1211544523517 SQLConstraint_1211544523518">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523517" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPE_QUERY" name="TYPE_QUERY" allowNull="true" constraints="SQLConstraint_1211544523519 SQLConstraint_1211544523520">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523517" characterSet="800" length="60">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OPERATION" name="OPERATION" allowNull="true" constraints="SQLConstraint_1211544523521 SQLConstraint_1211544523522">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523518" characterSet="800" length="32">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STATUS" name="STATUS" allowNull="true" constraints="SQLConstraint_1211544523523 SQLConstraint_1211544523524">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523519" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STATUS_OP" name="STATUS_OP" allowNull="true" constraints="SQLConstraint_1211544523525">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523520" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_PLATINUM_QRY" name="ID_PLATINUM_QRY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523518" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPEOBJNRI" name="TYPEOBJNRI" allowNull="true" constraints="SQLConstraint_1211544523526">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523521" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDOBJNRIINT" name="IDOBJNRIINT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523519" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDOBJNRISTR" name="IDOBJNRISTR" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523522" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523520" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DAT_BEG" name="DAT_BEG" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523517" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DAT_END" name="DAT_END" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523518" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDOBJPLAT" name="IDOBJPLAT" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523523" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VDAT" name="VDAT" allowNull="true" constraints="SQLConstraint_1211544523527">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523519" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VOPER" name="VOPER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523521" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523517" name="PK_PIE_QUERY" type="UNIQUE" members="ID_QUERY"/>
+  <constraints xmi:id="SQLConstraint_1211544523521" name="CKC_OPERATIO_PIE_Q" type="CHECK" body="operation IN ('INSERT' ,'UPDATE' ,'DELETE' ,'INF' )" members="OPERATION"/>
+  <constraints xmi:id="SQLConstraint_1211544523523" name="CKC_STATUS_PIE_Q" type="CHECK" body="status IN ('A' ,'Y' ,'E' ,'P' ,'D' ,'G' ,'B' ,'K' )" members="STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544523526" name="CKC_TYPEOBJN_PIE_Q" type="CHECK" body="(typeobjnri IS NULL ) OR (typeobjnri IN ('DOC' ,'PART' ,'BIKBANK' ,'ACCOUNT' ,'LEASEDOG' ,'PAYMENT' )) " members="TYPEOBJNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523519" name="CKC_TYPE_QUE_PIE_Q" type="CHECK" body="type_query IN ('A_PARTNER' ,'A_SCHET' ,'O_VPRIX2' ,'O_VPRIH1' ,'O_VRASX1' ,'O_ZAMEN1' ,'O_ZAMEN2' ,'O_SPIS1' ,'O_INVEN1' ,'IRES' ,'IOTV' ,'IMXRAN' ,'IBANK1' ,'IBANK2' ,'IVAL ' ,'A_PAY' ,'A_DOGOV' ,'IPAY' ,'IBUD' ,'IZATR' ,'IZPOD' ,'IPROJ' ,'ITDIR' ,'UNKNSTRGDOC' ,'IPAY1' ,'IPAY2' ,'IPAY3' ,'GETPAYS' ,'MOVEBANKS' ,'IUSER' )" members="TYPE_QUERY"/>
+  <constraints xmi:id="SQLConstraint_1211544523518" name="SYS_C004160" type="CHECK" body="&quot;ID_QUERY&quot; IS NOT NULL" members="ID_QUERY"/>
+  <constraints xmi:id="SQLConstraint_1211544523520" name="SYS_C004161" type="CHECK" body="&quot;TYPE_QUERY&quot; IS NOT NULL" members="TYPE_QUERY"/>
+  <constraints xmi:id="SQLConstraint_1211544523522" name="SYS_C004162" type="CHECK" body="&quot;OPERATION&quot; IS NOT NULL" members="OPERATION"/>
+  <constraints xmi:id="SQLConstraint_1211544523524" name="SYS_C004163" type="CHECK" body="&quot;STATUS&quot; IS NOT NULL" members="STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544523525" name="SYS_C004164" type="CHECK" body="&quot;STATUS_OP&quot; IS NOT NULL" members="STATUS_OP"/>
+  <constraints xmi:id="SQLConstraint_1211544523527" name="SYS_C004165" type="CHECK" body="&quot;VDAT&quot; IS NOT NULL" members="VDAT"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="nfs_lnkpays" name="nfs_lnkpays" primaryKey="pk_nfs_lnkpays">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="idpaynfs" name="idpaynfs">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1188453352868">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="idpaynri" name="idpaynri">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1188453352869">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="operator" name="operator" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1188453352870">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_nfs_lnkpays" name="pk_nfs_lnkpays" members="idpaynfs" constraint="SQLConstraint_1188453352868"/>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_7121_1460" name="fk_ref_7121_1460" members="idpaynri" constraint="SQLConstraint_1188453352869">
+    <target href="META-INF/backends/INFORMIX_V92_1/july_informix_leasepayments.tblxmi#pk_leasepayments"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1188453352868" name="pk_nfs_lnkpays" type="PRIMARYKEY" primaryKey="pk_nfs_lnkpays"/>
+  <constraints xmi:id="SQLConstraint_1188453352869" name="fk_ref_7121_1460" type="FOREIGNKEY" referenceByKey="fk_ref_7121_1460"/>
+</RDBSchema:RDBTable>

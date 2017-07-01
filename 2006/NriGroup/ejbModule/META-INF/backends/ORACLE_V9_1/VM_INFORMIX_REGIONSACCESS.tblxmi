@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="REGIONSACCESS" name="REGIONSACCESS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACCESSID" name="ACCESSID" allowNull="true" constraints="SQLConstraint_1211544523918 SQLConstraint_1211544523919">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523918" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OPERATORID" name="OPERATORID" allowNull="true" constraints="SQLConstraint_1211544523920">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523919" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACCESSTYPE" name="ACCESSTYPE" allowNull="true" constraints="SQLConstraint_1211544523921 SQLConstraint_1211544523922">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523918" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUPREGIONID" name="SUPREGIONID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523920" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGIONID" name="REGIONID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523921" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VIEWPLAN" name="VIEWPLAN" allowNull="true" constraints="SQLConstraint_1211544523923 SQLConstraint_1211544523924">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523919" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VIEWFACT" name="VIEWFACT" allowNull="true" constraints="SQLConstraint_1211544523925 SQLConstraint_1211544523926">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523920" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EDITPLAN" name="EDITPLAN" allowNull="true" constraints="SQLConstraint_1211544523927 SQLConstraint_1211544523928">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523921" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EDITFACT" name="EDITFACT" allowNull="true" constraints="SQLConstraint_1211544523929 SQLConstraint_1211544523930">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523922" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VIEWARENDA" name="VIEWARENDA" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523931">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523923" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EDITARENDA" name="EDITARENDA" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523932">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523924" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523918" name="PK_REGIONSACCESS" type="UNIQUE" members="ACCESSID"/>
+  <constraints xmi:id="SQLConstraint_1211544523921" name="CKC_ACCESSTY_REGIO" type="CHECK" body="accesstype IN ('S' ,'R' )" members="ACCESSTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523923" name="CKC_VIEWPLAN_REGIO" type="CHECK" body="viewplan IN ('Y' ,'N' )" members="VIEWPLAN"/>
+  <constraints xmi:id="SQLConstraint_1211544523925" name="CKC_VIEWFACT_REGIO" type="CHECK" body="viewfact IN ('Y' ,'N' )" members="VIEWFACT"/>
+  <constraints xmi:id="SQLConstraint_1211544523927" name="CKC_EDITPLAN_REGIO" type="CHECK" body="editplan IN ('Y' ,'N' )" members="EDITPLAN"/>
+  <constraints xmi:id="SQLConstraint_1211544523929" name="CKC_EDITFACT_REGIO" type="CHECK" body="editfact IN ('Y' ,'N' )" members="EDITFACT"/>
+  <constraints xmi:id="SQLConstraint_1211544523931" name="CKC_VIEWAREN_REGIO" type="CHECK" body="(viewarenda IS NULL ) OR (viewarenda IN ('Y' ,'N' )) " members="VIEWARENDA"/>
+  <constraints xmi:id="SQLConstraint_1211544523932" name="CKC_EDITAREN_REGIO" type="CHECK" body="(editarenda IS NULL ) OR (editarenda IN ('Y' ,'N' )) " members="EDITARENDA"/>
+  <constraints xmi:id="SQLConstraint_1211544523919" name="SYS_C004581" type="CHECK" body="&quot;ACCESSID&quot; IS NOT NULL" members="ACCESSID"/>
+  <constraints xmi:id="SQLConstraint_1211544523920" name="SYS_C004582" type="CHECK" body="&quot;OPERATORID&quot; IS NOT NULL" members="OPERATORID"/>
+  <constraints xmi:id="SQLConstraint_1211544523922" name="SYS_C004583" type="CHECK" body="&quot;ACCESSTYPE&quot; IS NOT NULL" members="ACCESSTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544523924" name="SYS_C004584" type="CHECK" body="&quot;VIEWPLAN&quot; IS NOT NULL" members="VIEWPLAN"/>
+  <constraints xmi:id="SQLConstraint_1211544523926" name="SYS_C004585" type="CHECK" body="&quot;VIEWFACT&quot; IS NOT NULL" members="VIEWFACT"/>
+  <constraints xmi:id="SQLConstraint_1211544523928" name="SYS_C004586" type="CHECK" body="&quot;EDITPLAN&quot; IS NOT NULL" members="EDITPLAN"/>
+  <constraints xmi:id="SQLConstraint_1211544523930" name="SYS_C004587" type="CHECK" body="&quot;EDITFACT&quot; IS NOT NULL" members="EDITFACT"/>
+</RDBSchema:RDBTable>

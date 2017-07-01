@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="APPARATTYPES" name="APPARATTYPES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="APTYPEID" name="APTYPEID" allowNull="true" constraints="SQLConstraint_1211544518921 SQLConstraint_1211544518922">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518921" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true" constraints="SQLConstraint_1211544518923">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518921" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="APTYPE" name="APTYPE" allowNull="true" constraints="SQLConstraint_1211544518924 SQLConstraint_1211544518925">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518922" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544518921" name="PK_APPARATTYPES" type="UNIQUE" members="APTYPEID"/>
+  <constraints xmi:id="SQLConstraint_1211544518924" name="CKC_APTYPE_APPAR" type="CHECK" body="aptype IN ('K' ,'P' ,'O' )" members="APTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544518922" name="SYS_C004518" type="CHECK" body="&quot;APTYPEID&quot; IS NOT NULL" members="APTYPEID"/>
+  <constraints xmi:id="SQLConstraint_1211544518923" name="SYS_C004519" type="CHECK" body="&quot;NAME&quot; IS NOT NULL" members="NAME"/>
+  <constraints xmi:id="SQLConstraint_1211544518925" name="SYS_C004520" type="CHECK" body="&quot;APTYPE&quot; IS NOT NULL" members="APTYPE"/>
+</RDBSchema:RDBTable>

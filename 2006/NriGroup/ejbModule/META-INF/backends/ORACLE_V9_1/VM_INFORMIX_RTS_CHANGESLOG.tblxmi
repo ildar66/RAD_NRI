@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RTS_CHANGESLOG" name="RTS_CHANGESLOG">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LOGID" name="LOGID" allowNull="true" constraints="SQLConstraint_1211544524238 SQLConstraint_1211544524239">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524238" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECDATE" name="RECDATE" allowNull="true" constraints="SQLConstraint_1211544524240">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544524238" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJTYPE" name="OBJTYPE" allowNull="true" constraints="SQLConstraint_1211544524248">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524248" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJID" name="OBJID" allowNull="true" constraints="SQLConstraint_1211544524249">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524249" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EVENTTYPE" name="EVENTTYPE" allowNull="true" constraints="SQLConstraint_1211544524250">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524248" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAN" name="MAN" allowNull="true" constraints="SQLConstraint_1211544524251">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524250" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524238" name="PK_RTS_CHANGESLOG" type="UNIQUE" members="LOGID"/>
+  <constraints xmi:id="SQLConstraint_1211544524239" name="SYS_C005518" type="CHECK" body="&quot;LOGID&quot; IS NOT NULL" members="LOGID"/>
+  <constraints xmi:id="SQLConstraint_1211544524240" name="SYS_C005519" type="CHECK" body="&quot;RECDATE&quot; IS NOT NULL" members="RECDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544524248" name="SYS_C005520" type="CHECK" body="&quot;OBJTYPE&quot; IS NOT NULL" members="OBJTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544524249" name="SYS_C005521" type="CHECK" body="&quot;OBJID&quot; IS NOT NULL" members="OBJID"/>
+  <constraints xmi:id="SQLConstraint_1211544524250" name="SYS_C005522" type="CHECK" body="&quot;EVENTTYPE&quot; IS NOT NULL" members="EVENTTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544524251" name="SYS_C005523" type="CHECK" body="&quot;MAN&quot; IS NOT NULL" members="MAN"/>
+</RDBSchema:RDBTable>

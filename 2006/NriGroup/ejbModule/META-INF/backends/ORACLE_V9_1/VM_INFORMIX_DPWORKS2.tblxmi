@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DPWORKS2" name="DPWORKS2">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDWORK" name="IDWORK" allowNull="true" constraints="SQLConstraint_1211544520493 SQLConstraint_1211544520494">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520493" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DEVPLAN" name="DEVPLAN" allowNull="true" constraints="SQLConstraint_1211544520495">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520494" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="WORKTYPE" name="WORKTYPE" allowNull="true" constraints="SQLConstraint_1211544520496">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520495" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NETZONE" name="NETZONE" allowNull="true" constraints="SQLConstraint_1211544520497">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520496" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MANUFACTURER" name="MANUFACTURER" allowNull="true" constraints="SQLConstraint_1211544520498">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520497" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="WORKSTATUS" name="WORKSTATUS" allowNull="true" constraints="SQLConstraint_1211544520499">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520498" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="WORKVERSIONSOURCE" name="WORKVERSIONSOURCE" allowNull="true" constraints="SQLConstraint_1211544520500">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520499" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VERSIONSTATUS" name="VERSIONSTATUS" allowNull="true" constraints="SQLConstraint_1211544520501">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520500" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTIVESTATUS" name="ACTIVESTATUS" allowNull="true" constraints="SQLConstraint_1211544520502">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520501" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VERSION" name="VERSION" allowNull="true" constraints="SQLConstraint_1211544520503">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520502" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PREVIOUSIDWORK" name="PREVIOUSIDWORK" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520503" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CREATED" name="CREATED" allowNull="true" constraints="SQLConstraint_1211544520504">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520493" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CREATEDBY" name="CREATEDBY" allowNull="true" constraints="SQLConstraint_1211544520505">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520504" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MODIFIED" name="MODIFIED" allowNull="true" constraints="SQLConstraint_1211544520506">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520494" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MODIFIEDBY" name="MODIFIEDBY" allowNull="true" constraints="SQLConstraint_1211544520507">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520505" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="WORKVERSIONSETID" name="WORKVERSIONSETID" allowNull="true" constraints="SQLConstraint_1211544520508">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520506" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520493" name="PK_DPWORKS2" type="UNIQUE" members="IDWORK"/>
+  <constraints xmi:id="SQLConstraint_1211544520494" name="SYS_C003436" type="CHECK" body="&quot;IDWORK&quot; IS NOT NULL" members="IDWORK"/>
+  <constraints xmi:id="SQLConstraint_1211544520495" name="SYS_C003437" type="CHECK" body="&quot;DEVPLAN&quot; IS NOT NULL" members="DEVPLAN"/>
+  <constraints xmi:id="SQLConstraint_1211544520496" name="SYS_C003438" type="CHECK" body="&quot;WORKTYPE&quot; IS NOT NULL" members="WORKTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544520497" name="SYS_C003439" type="CHECK" body="&quot;NETZONE&quot; IS NOT NULL" members="NETZONE"/>
+  <constraints xmi:id="SQLConstraint_1211544520498" name="SYS_C003440" type="CHECK" body="&quot;MANUFACTURER&quot; IS NOT NULL" members="MANUFACTURER"/>
+  <constraints xmi:id="SQLConstraint_1211544520499" name="SYS_C003441" type="CHECK" body="&quot;WORKSTATUS&quot; IS NOT NULL" members="WORKSTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544520500" name="SYS_C003442" type="CHECK" body="&quot;WORKVERSIONSOURCE&quot; IS NOT NULL" members="WORKVERSIONSOURCE"/>
+  <constraints xmi:id="SQLConstraint_1211544520501" name="SYS_C003443" type="CHECK" body="&quot;VERSIONSTATUS&quot; IS NOT NULL" members="VERSIONSTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544520502" name="SYS_C003444" type="CHECK" body="&quot;ACTIVESTATUS&quot; IS NOT NULL" members="ACTIVESTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544520503" name="SYS_C003445" type="CHECK" body="&quot;VERSION&quot; IS NOT NULL" members="VERSION"/>
+  <constraints xmi:id="SQLConstraint_1211544520504" name="SYS_C003446" type="CHECK" body="&quot;CREATED&quot; IS NOT NULL" members="CREATED"/>
+  <constraints xmi:id="SQLConstraint_1211544520505" name="SYS_C003447" type="CHECK" body="&quot;CREATEDBY&quot; IS NOT NULL" members="CREATEDBY"/>
+  <constraints xmi:id="SQLConstraint_1211544520506" name="SYS_C003448" type="CHECK" body="&quot;MODIFIED&quot; IS NOT NULL" members="MODIFIED"/>
+  <constraints xmi:id="SQLConstraint_1211544520507" name="SYS_C003449" type="CHECK" body="&quot;MODIFIEDBY&quot; IS NOT NULL" members="MODIFIEDBY"/>
+  <constraints xmi:id="SQLConstraint_1211544520508" name="SYS_C003450" type="CHECK" body="&quot;WORKVERSIONSETID&quot; IS NOT NULL" members="WORKVERSIONSETID"/>
+</RDBSchema:RDBTable>

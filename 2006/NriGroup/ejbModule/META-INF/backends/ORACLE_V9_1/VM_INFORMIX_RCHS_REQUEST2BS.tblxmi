@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RCHS_REQUEST2BS" name="RCHS_REQUEST2BS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REQUESTID" name="REQUESTID" allowNull="true" constraints="SQLConstraint_1211544523888 SQLConstraint_1211544523889">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523888" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDBSRCHS" name="IDBSRCHS" allowNull="true" constraints="SQLConstraint_1211544523888 SQLConstraint_1211544523890">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523889" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523888" name="PK_RCHS_REQUEST2BS" type="UNIQUE" members="REQUESTID IDBSRCHS"/>
+  <constraints xmi:id="SQLConstraint_1211544523889" name="SYS_C003580" type="CHECK" body="&quot;REQUESTID&quot; IS NOT NULL" members="REQUESTID"/>
+  <constraints xmi:id="SQLConstraint_1211544523890" name="SYS_C003581" type="CHECK" body="&quot;IDBSRCHS&quot; IS NOT NULL" members="IDBSRCHS"/>
+</RDBSchema:RDBTable>

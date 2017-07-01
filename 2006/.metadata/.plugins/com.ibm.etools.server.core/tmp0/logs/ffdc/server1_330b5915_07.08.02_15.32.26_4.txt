@@ -1,0 +1,209 @@
+------Start of DE processing------ = [07.08.02 15:32:26:577 MSD] , key = javax.ejb.EJBException com.ibm.ejs.container.LocalExceptionMappingStrategy.setUncheckedException 178
+Exception = javax.ejb.EJBException
+Source = com.ibm.ejs.container.LocalExceptionMappingStrategy.setUncheckedException
+probeid = 178
+Stack Dump = javax.ejb.EJBException: nested exception is: com.ibm.ws.ejbpersistence.utilpm.PersistenceManagerException: PMGR6022E: Error using adapter to create or execute an Interaction. com.ibm.ws.rsadapter.cci.WSInteractionImpl@72659900
+com.ibm.ws.ejbpersistence.utilpm.PersistenceManagerException: PMGR6022E: Error using adapter to create or execute an Interaction. com.ibm.ws.rsadapter.cci.WSInteractionImpl@72659900
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeRemove(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbRemove(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbRemove(Unknown Source)
+	at com.nri.ejb.ConcreteWorkPositionEJB_7199c149.ejbRemove(ConcreteWorkPositionEJB_7199c149.java:51)
+	at com.ibm.ejs.container.EntityBeanO.remove(EntityBeanO.java:1400)
+	at com.ibm.ejs.container.EJSContainer.removeBean(EJSContainer.java:2137)
+	at com.ibm.ejs.container.EJSLocalWrapper.remove(EJSLocalWrapper.java:155)
+	at com.nri.mapping.ejb.DomainEJBMapper.remove(DomainEJBMapper.java:104)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.removeWorkPosition(SecurityActionProcessorFacadeBean.java:349)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.removeWorkPosition(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:496)
+	at com.nri.ejb._SecurityActionProcessorFacade_Stub.removeWorkPosition(_SecurityActionProcessorFacade_Stub.java:928)
+	at com.nri.model.ejb.SecurityActionProcessorImpl.removeWorkPosition(SecurityActionProcessorImpl.java:387)
+	at com.nri.security.actions.WorkPositionProcessAction.execute(WorkPositionProcessAction.java:41)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: java.sql.SQLException: Key value for constraint (informix.pk_workpositions) is still being referenced.
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.WorkPositionEJBBeanFunctionSet_7199c149.Remove(WorkPositionEJBBeanFunctionSet_7199c149.java:91)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.WorkPositionEJBBeanFunctionSet_7199c149.execute(WorkPositionEJBBeanFunctionSet_7199c149.java:307)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeRemove(WSRelationalRAAdapter.java:262)
+	... 40 more
+---- Begin backtrace for nested exception
+java.sql.SQLException: Key value for constraint (informix.pk_workpositions) is still being referenced.
+	at com.informix.jdbc.IfxSqli.addException(IfxSqli.java:3082)
+	at com.informix.jdbc.IfxSqli.receiveError(IfxSqli.java:3396)
+	at com.informix.jdbc.IfxSqli.dispatchMsg(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.receiveMessage(IfxSqli.java(Compiled Code))
+	at com.informix.jdbc.IfxSqli.executeCommand(IfxSqli.java:721)
+	at com.informix.jdbc.IfxResultSet.executeUpdate(IfxResultSet.java:305)
+	at com.informix.jdbc.IfxStatement.executeUpdateImpl(IfxStatement.java:882)
+	at com.informix.jdbc.IfxPreparedStatement.executeUpdate(IfxPreparedStatement.java:281)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.WorkPositionEJBBeanFunctionSet_7199c149.Remove(WorkPositionEJBBeanFunctionSet_7199c149.java:91)
+	at com.nri.ejb.websphere_deploy.INFORMIX_V92_1.WorkPositionEJBBeanFunctionSet_7199c149.execute(WorkPositionEJBBeanFunctionSet_7199c149.java:307)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:417)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeRemove(WSRelationalRAAdapter.java:262)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeRemove(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbRemove(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbRemove(Unknown Source)
+	at com.nri.ejb.ConcreteWorkPositionEJB_7199c149.ejbRemove(ConcreteWorkPositionEJB_7199c149.java:51)
+	at com.ibm.ejs.container.EntityBeanO.remove(EntityBeanO.java:1400)
+	at com.ibm.ejs.container.EJSContainer.removeBean(EJSContainer.java:2137)
+	at com.ibm.ejs.container.EJSLocalWrapper.remove(EJSLocalWrapper.java:155)
+	at com.nri.mapping.ejb.DomainEJBMapper.remove(DomainEJBMapper.java:104)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.removeWorkPosition(SecurityActionProcessorFacadeBean.java:349)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.removeWorkPosition(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:496)
+	at com.nri.ejb._SecurityActionProcessorFacade_Stub.removeWorkPosition(_SecurityActionProcessorFacade_Stub.java:928)
+	at com.nri.model.ejb.SecurityActionProcessorImpl.removeWorkPosition(SecurityActionProcessorImpl.java:387)
+	at com.nri.security.actions.WorkPositionProcessAction.execute(WorkPositionProcessAction.java:41)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+javax.ejb.EJBException: nested exception is: com.ibm.ws.ejbpersistence.utilpm.PersistenceManagerException: PMGR6022E: Error using adapter to create or execute an Interaction. com.ibm.ws.rsadapter.cci.WSInteractionImpl@72659900
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeRemove(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBReadyState.ejbRemove(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbRemove(Unknown Source)
+	at com.nri.ejb.ConcreteWorkPositionEJB_7199c149.ejbRemove(ConcreteWorkPositionEJB_7199c149.java:51)
+	at com.ibm.ejs.container.EntityBeanO.remove(EntityBeanO.java:1400)
+	at com.ibm.ejs.container.EJSContainer.removeBean(EJSContainer.java:2137)
+	at com.ibm.ejs.container.EJSLocalWrapper.remove(EJSLocalWrapper.java:155)
+	at com.nri.mapping.ejb.DomainEJBMapper.remove(DomainEJBMapper.java:104)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.removeWorkPosition(SecurityActionProcessorFacadeBean.java:349)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.removeWorkPosition(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:496)
+	at com.nri.ejb._SecurityActionProcessorFacade_Stub.removeWorkPosition(_SecurityActionProcessorFacade_Stub.java:928)
+	at com.nri.model.ejb.SecurityActionProcessorImpl.removeWorkPosition(SecurityActionProcessorImpl.java:387)
+	at com.nri.security.actions.WorkPositionProcessAction.execute(WorkPositionProcessAction.java:41)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:443)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ejs.container.LocalExceptionMappingStrategy
+com.ibm.ejs.container.LocalExceptionMappingStrategy@4794d91c
+
+==> Performing default dump from com.ibm.ejs.container.EJBContainerDiagnosticModule  = Thu Aug 02 15:32:26 MSD 2007
+Dump of EJBContainer Internals = 
+Object type = com.ibm.ejs.container.EJSContainer
+com.ibm.ejs.container.EJSContainer@58359916
+
++Data for directive [default] obtained. = 
+Dump of ComponentMetaData = 
+                                 *** START ComponentMetaData fields ***
+                                 J2EEName       = nri#NriGroup.jar#WorkPositionEJB
+                                 EJB Type       = CONTAINER_MANAGED_ENTITY
+                                 TX Type        = CONTAINER_MANAGED_TX
+                                 Module Version = EJB 2.0
+                                 CMP Version    = 2.x
+                                     ******* ResRefList ******* 
+                                 ResRefList size=1
+                                     ******* Resource-Ref ******* 
+                                 Description=WebSphere CMP Resource Ref Connection Factory
+                                 Name=WebSphereCMPConnectionFactory
+                                 JNDIName=jdbc/july
+                                 Type=javax.resource.cci.ConnectionFactory
+                                 ResAuth=APPLICATION
+                                 ResSharingScope=SHAREABLE
+                                 IsolationLevel=TRANSACTION_NONE
+                                       ****** LOCAL-TRANSACTION *******
+                                 Boundary=BEAN_METHOD
+                                 Resolver=CONTAINER_AT_BOUNDARY
+                                 UnResolvedAction=ROLLBACK
+                                 *** END ComponentMetaData fields  ***
++Data for directive [defaultcomponentmetadata] obtained. = 
+Dump of ContainerTx = 
+
+*** Start ContainerTx Dump    ---> com.ibm.ejs.container.ContainerTx@41fc591c
+
+  Tx Key                  = com.ibm.ws.Transaction.JTA.TransactionImpl@41ea591c#tid=55
+  State                   = Active
+  Entered beforCompletion = false
+  Marked Rollback Only    = false
+  Method Began            = false
+  Isolation Level         = TRANSACTION_NONE
+
+  --- Dump of Enlisted Beans : 1 ---------------------- 
+
+    ContainerManaged2_0BeanO(BeanId(nri#NriGroup.jar#WorkPositionEJB, 4678), state = IN_METHOD)
+
+  --- Dump of Access Intents : 0 ---------------------- 
+
+*** ContainerTx Dump Complete ---> com.ibm.ejs.container.ContainerTx@41fc591c
+
++Data for directive [defaultcontainertx] obtained. = 
+==> Dump complete for com.ibm.ejs.container.EJBContainerDiagnosticModule  = Thu Aug 02 15:32:26 MSD 2007

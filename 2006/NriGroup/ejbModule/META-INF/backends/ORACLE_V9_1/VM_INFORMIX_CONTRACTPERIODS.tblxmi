@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CONTRACTPERIODS" name="CONTRACTPERIODS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PERIOD" name="PERIOD" allowNull="true" constraints="SQLConstraint_1211544520053 SQLConstraint_1211544520054">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520053" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OPERATOR_" name="OPERATOR_" allowNull="true" constraints="SQLConstraint_1211544520055">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520054" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CONTRACT" name="CONTRACT" allowNull="true" constraints="SQLConstraint_1211544520056">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520055" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544520057">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520056" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATESTART" name="DATESTART" allowNull="true" constraints="SQLConstraint_1211544520058">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520053" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATEFINISH" name="DATEFINISH" allowNull="true" constraints="SQLConstraint_1211544520059">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520054" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAMEPERIOD" name="NAMEPERIOD" allowNull="true" constraints="SQLConstraint_1211544520060">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520053" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CURRENCY" name="CURRENCY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520057" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520053" name="PK_CONTRACTPERIODS" type="UNIQUE" members="PERIOD"/>
+  <constraints xmi:id="SQLConstraint_1211544520054" name="SYS_C004468" type="CHECK" body="&quot;PERIOD&quot; IS NOT NULL" members="PERIOD"/>
+  <constraints xmi:id="SQLConstraint_1211544520055" name="SYS_C004469" type="CHECK" body="&quot;OPERATOR_&quot; IS NOT NULL" members="OPERATOR_"/>
+  <constraints xmi:id="SQLConstraint_1211544520056" name="SYS_C004470" type="CHECK" body="&quot;CONTRACT&quot; IS NOT NULL" members="CONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544520057" name="SYS_C004471" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544520058" name="SYS_C004472" type="CHECK" body="&quot;DATESTART&quot; IS NOT NULL" members="DATESTART"/>
+  <constraints xmi:id="SQLConstraint_1211544520059" name="SYS_C004473" type="CHECK" body="&quot;DATEFINISH&quot; IS NOT NULL" members="DATEFINISH"/>
+  <constraints xmi:id="SQLConstraint_1211544520060" name="SYS_C004474" type="CHECK" body="&quot;NAMEPERIOD&quot; IS NOT NULL" members="NAMEPERIOD"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="NFS_LNKBANK" name="NFS_LNKBANK">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDBANKNFS" name="IDBANKNFS" allowNull="true" constraints="SQLConstraint_1211544522155 SQLConstraint_1211544522156">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522155" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDBANKNRI" name="IDBANKNRI" allowNull="true" constraints="SQLConstraint_1211544522157">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522156" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGMAIN" name="FLAGMAIN" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544522158 SQLConstraint_1211544522159">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544522155" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544522155" name="PK_NFS_LNKBANK" type="UNIQUE" members="IDBANKNFS"/>
+  <constraints xmi:id="SQLConstraint_1211544522158" name="CKC_FLAGMAIN_NFS_L" type="CHECK" body="flagmain IN ('Y' ,'N' )" members="FLAGMAIN"/>
+  <constraints xmi:id="SQLConstraint_1211544522156" name="SYS_C004869" type="CHECK" body="&quot;IDBANKNFS&quot; IS NOT NULL" members="IDBANKNFS"/>
+  <constraints xmi:id="SQLConstraint_1211544522157" name="SYS_C004870" type="CHECK" body="&quot;IDBANKNRI&quot; IS NOT NULL" members="IDBANKNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544522159" name="SYS_C004871" type="CHECK" body="&quot;FLAGMAIN&quot; IS NOT NULL" members="FLAGMAIN"/>
+</RDBSchema:RDBTable>

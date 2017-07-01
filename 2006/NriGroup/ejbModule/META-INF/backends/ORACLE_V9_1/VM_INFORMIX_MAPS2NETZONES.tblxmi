@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="MAPS2NETZONES" name="MAPS2NETZONES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NETZONEID" name="NETZONEID" allowNull="true" constraints="SQLConstraint_1211544522035 SQLConstraint_1211544522036">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522035" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAPID" name="MAPID" allowNull="true" constraints="SQLConstraint_1211544522035 SQLConstraint_1211544522037">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522036" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544522035" name="PK_M2NZ_420325" type="UNIQUE" members="NETZONEID MAPID"/>
+  <constraints xmi:id="SQLConstraint_1211544522036" name="SYS_C005389" type="CHECK" body="&quot;NETZONEID&quot; IS NOT NULL" members="NETZONEID"/>
+  <constraints xmi:id="SQLConstraint_1211544522037" name="SYS_C005390" type="CHECK" body="&quot;MAPID&quot; IS NOT NULL" members="MAPID"/>
+</RDBSchema:RDBTable>

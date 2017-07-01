@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbrdbmapping:EjbRdbDocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmlns:ejb="ejb.xmi" xmlns:ejbrdbmapping="ejbrdbmapping.xmi" xmlns:Mapping="Mapping.xmi" xmi:id="EjbRdbDocumentRoot_1211360087504" topToBottom="true" commandStack="">
+  <helper xmi:type="ejbrdbmapping:RdbSchemaProperies" xmi:id="RdbSchemaProperies_1211360087504" primitivesDocument="ORACLE_V9"/>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1211881000048">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1211881000048">
+      <table href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_SEQUENCES.tblxmi#SEQUENCES"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211881000048" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1050159450091"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_SEQUENCES.tblxmi#VALUE"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#int-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1211881000049">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1050159450101"/>
+      <outputs xmi:type="RDBSchema:RDBColumn" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_SEQUENCES.tblxmi#ID"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.xmi#String-CHAR(1)"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OIDvalue"/>
+    <outputs xmi:type="RDBSchema:RDBTable" href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX_SEQUENCES.tblxmi#SEQUENCES"/>
+  </nested>
+  <inputs xmi:type="ejb:EJBJar" href="META-INF/ejb-jar.xml#EJBJar_1050158862576"/>
+  <outputs xmi:type="RDBSchema:RDBDatabase" href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <typeMapping xmi:type="Mapping:MappingRoot" href="JavatoORACLE_V9TypeMaps.xmi#Java_to_ORACLE_V9_TypeMaps"/>
+</ejbrdbmapping:EjbRdbDocumentRoot>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="USERREPORTS" name="USERREPORTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="USERREPID" name="USERREPID" allowNull="true" constraints="SQLConstraint_1211544525660 SQLConstraint_1211544525661">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525660" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="USERGRPID" name="USERGRPID" allowNull="true" constraints="SQLConstraint_1211544525662">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525661" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REPNAME" name="REPNAME" allowNull="true" constraints="SQLConstraint_1211544525663">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525660" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="JSPNAME" name="JSPNAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525661" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="JSPCLASS" name="JSPCLASS" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525662" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CLASSNAME" name="CLASSNAME" allowNull="true" constraints="SQLConstraint_1211544525664">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525663" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RPTNAME" name="RPTNAME" allowNull="true" constraints="SQLConstraint_1211544525665">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525664" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RPTPARAMS" name="RPTPARAMS" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525665" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525660" name="PK_USERREPORTS" type="UNIQUE" members="USERREPID"/>
+  <constraints xmi:id="SQLConstraint_1211544525661" name="SYS_C004665" type="CHECK" body="&quot;USERREPID&quot; IS NOT NULL" members="USERREPID"/>
+  <constraints xmi:id="SQLConstraint_1211544525662" name="SYS_C004666" type="CHECK" body="&quot;USERGRPID&quot; IS NOT NULL" members="USERGRPID"/>
+  <constraints xmi:id="SQLConstraint_1211544525663" name="SYS_C004667" type="CHECK" body="&quot;REPNAME&quot; IS NOT NULL" members="REPNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544525664" name="SYS_C004668" type="CHECK" body="&quot;CLASSNAME&quot; IS NOT NULL" members="CLASSNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544525665" name="SYS_C004669" type="CHECK" body="&quot;RPTNAME&quot; IS NOT NULL" members="RPTNAME"/>
+</RDBSchema:RDBTable>

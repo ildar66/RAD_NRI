@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="WORKPOSITIONS" name="WORKPOSITIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="WORKPOSITION" name="WORKPOSITION" allowNull="true" constraints="SQLConstraint_1211544525730 SQLConstraint_1211544525731">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525730" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME" name="NAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525730" characterSet="800" length="800">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISACTIVE" name="ISACTIVE" allowNull="true" defaultValue="'Y'" constraints="SQLConstraint_1211544525732 SQLConstraint_1211544525733">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525731" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525730" name="PK_WORKPOSITIONS" type="UNIQUE" members="WORKPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544525732" name="CKC_ISACTIVE_WORKP" type="CHECK" body="isactive IN ('Y' ,'N' )" members="ISACTIVE"/>
+  <constraints xmi:id="SQLConstraint_1211544525731" name="SYS_C004129" type="CHECK" body="&quot;WORKPOSITION&quot; IS NOT NULL" members="WORKPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544525733" name="SYS_C004130" type="CHECK" body="&quot;ISACTIVE&quot; IS NOT NULL" members="ISACTIVE"/>
+</RDBSchema:RDBTable>

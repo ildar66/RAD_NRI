@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_DOGOVORSLINK" name="PIE_DOGOVORSLINK">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDDOGOVORNRI" name="IDDOGOVORNRI" allowNull="true" constraints="SQLConstraint_1211544523427 SQLConstraint_1211544523428">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523427" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPEDOGOVORNRI" name="TYPEDOGOVORNRI" allowNull="true" constraints="SQLConstraint_1211544523427 SQLConstraint_1211544523429 SQLConstraint_1211544523430">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523427" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER" allowNull="true" constraints="SQLConstraint_1211544523431 SQLConstraint_1211544523432">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523428" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDDOGOVORPLATINUM" name="IDDOGOVORPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523433">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523428" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGUNLOAD" name="FLAGUNLOAD" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523429" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523427" name="PK_PIE_DOGOVORSLIN" type="UNIQUE" members="IDDOGOVORNRI TYPEDOGOVORNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523429" name="CKC_TYPEDOGO_PIE_L" type="CHECK" body="typedogovornri IN ('O' ,'A' )" members="TYPEDOGOVORNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523431" name="CKC_OWNER_PIE_D" type="CHECK" body="owner IN (1 ,2 ,3 )" members="OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523428" name="SYS_C004089" type="CHECK" body="&quot;IDDOGOVORNRI&quot; IS NOT NULL" members="IDDOGOVORNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523430" name="SYS_C004090" type="CHECK" body="&quot;TYPEDOGOVORNRI&quot; IS NOT NULL" members="TYPEDOGOVORNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523432" name="SYS_C004091" type="CHECK" body="&quot;OWNER&quot; IS NOT NULL" members="OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523433" name="SYS_C004092" type="CHECK" body="&quot;IDDOGOVORPLATINUM&quot; IS NOT NULL" members="IDDOGOVORPLATINUM"/>
+</RDBSchema:RDBTable>

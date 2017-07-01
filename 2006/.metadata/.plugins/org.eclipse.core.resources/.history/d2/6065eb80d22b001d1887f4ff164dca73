@@ -1,0 +1,10 @@
+#Tue May 27 13:01:07 MSD 2008
+WorkPositionEJB=com.nri.ejb.websphere_deploy.ORACLE_V9_1.WorkPositionEJBBeanAdaptorBinding_7199c149
+RoleEJB=com.nri.ejb.websphere_deploy.ORACLE_V9_1.RoleEJBBeanAdaptorBinding_a79cd5a9
+DivisionEJB=com.nri.ejb.websphere_deploy.ORACLE_V9_1.DivisionEJBBeanAdaptorBinding_7c74fa89
+WorkerEJB=com.nri.ejb.websphere_deploy.ORACLE_V9_1.WorkerEJBBeanAdaptorBinding_7ee08407
+ProfileEJB=com.nri.ejb.websphere_deploy.ORACLE_V9_1.ProfileEJBBeanAdaptorBinding_565669dc
+OperatorEJB=com.nri.ejb.websphere_deploy.ORACLE_V9_1.OperatorEJBBeanAdaptorBinding_f75441b3
+CompanyEJB=com.nri.ejb.websphere_deploy.ORACLE_V9_1.CompanyEJBBeanAdaptorBinding_8d2adc68
+PeopleEJB=com.nri.ejb.websphere_deploy.ORACLE_V9_1.PeopleEJBBeanAdaptorBinding_6bbce083
+MsUserEJB=com.nri.ejb.websphere_deploy.ORACLE_V9_1.MsUserEJBBeanAdaptorBinding_da8ec80c

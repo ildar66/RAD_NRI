@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PEOPLE" name="PEOPLE" primaryKey="C1151855">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAN" name="MAN" constraints="SQLConstraint_1211544523377">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523377" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FIRSTNAME" name="FIRSTNAME" allowNull="true" constraints="SQLConstraint_1211544523379">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523377" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LASTNAME" name="LASTNAME" allowNull="true" constraints="SQLConstraint_1211544523380">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523378" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MIDDLENAME" name="MIDDLENAME" allowNull="true" constraints="SQLConstraint_1211544523381">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523379" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PASSPORTSER" name="PASSPORTSER" allowNull="true" constraints="SQLConstraint_1211544523382">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523380" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PASSPORTDATE" name="PASSPORTDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523377" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PASSPORTWHOM" name="PASSPORTWHOM" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523381" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISACTIVE" name="ISACTIVE" allowNull="true" defaultValue="'Y'" constraints="SQLConstraint_1211544523383 SQLConstraint_1211544523384">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523382" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TABNUM" name="TABNUM" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523378" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="C1151855" name="C1151855" members="MAN" constraint="SQLConstraint_1211544714098"/>
+  <constraints xmi:id="SQLConstraint_1211544523377" name="PK_PEOPLE" type="UNIQUE" members="MAN"/>
+  <constraints xmi:id="SQLConstraint_1211544523383" name="CKC_ISACTIVE_PEOPL" type="CHECK" body="isactive IN ('Y' ,'N' )" members="ISACTIVE"/>
+  <constraints xmi:id="SQLConstraint_1211544523379" name="SYS_C004124" type="CHECK" body="&quot;FIRSTNAME&quot; IS NOT NULL" members="FIRSTNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544523380" name="SYS_C004125" type="CHECK" body="&quot;LASTNAME&quot; IS NOT NULL" members="LASTNAME"/>
+  <constraints xmi:id="SQLConstraint_1211544523381" name="SYS_C004126" type="CHECK" body="&quot;MIDDLENAME&quot; IS NOT NULL" members="MIDDLENAME"/>
+  <constraints xmi:id="SQLConstraint_1211544523382" name="SYS_C004127" type="CHECK" body="&quot;PASSPORTSER&quot; IS NOT NULL" members="PASSPORTSER"/>
+  <constraints xmi:id="SQLConstraint_1211544523384" name="SYS_C004128" type="CHECK" body="&quot;ISACTIVE&quot; IS NOT NULL" members="ISACTIVE"/>
+  <constraints xmi:id="SQLConstraint_1211544714098" name="C1151855" type="PRIMARYKEY" primaryKey="C1151855"/>
+</RDBSchema:RDBTable>

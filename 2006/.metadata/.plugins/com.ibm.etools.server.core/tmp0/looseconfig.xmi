@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.etools.commonarchive.looseconfig:LooseConfiguration xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.etools.commonarchive.looseconfig="commonarchive.looseconfig.xmi">
+  <applications uri="C:\ildar\RAD_NRI\nri" binariesPath="C:\ildar\RAD_NRI\nri" resourcesPath="C:\ildar\RAD_NRI\nri">
+    <looseArchives xsi:type="com.ibm.etools.commonarchive.looseconfig:LooseModule" uri="SequenceGenerator.jar" binariesPath="C:\ildar\RAD_NRI\SequenceGenerator\ejbModule" resourcesPath="C:\ildar\RAD_NRI\SequenceGenerator\ejbModule"/>
+    <looseArchives xsi:type="com.ibm.etools.commonarchive.looseconfig:LooseModule" uri="OIDGenerator.jar" binariesPath="C:\ildar\RAD_NRI\OIDGenerator\ejbModule" resourcesPath="C:\ildar\RAD_NRI\OIDGenerator\ejbModule"/>
+    <looseArchives xsi:type="com.ibm.etools.commonarchive.looseconfig:LooseModule" uri="NriGroup.jar" binariesPath="C:\ildar\RAD_NRI\NriGroup\ejbModule" resourcesPath="C:\ildar\RAD_NRI\NriGroup\ejbModule"/>
+    <looseArchives xsi:type="com.ibm.etools.commonarchive.looseconfig:LooseModule" uri="NriTestClient.jar" binariesPath="C:\ildar\RAD_NRI\NriTestClient\appClientModule" resourcesPath="C:\ildar\RAD_NRI\NriTestClient\appClientModule"/>
+    <looseArchives xsi:type="com.ibm.etools.commonarchive.looseconfig:LooseWARFile" uri="SecurityApp.war" binariesPath="C:\ildar\RAD_NRI\SecurityApp\WebContent" resourcesPath="C:\ildar\RAD_NRI\SecurityApp\WebContent"/>
+    <looseArchives xsi:type="com.ibm.etools.commonarchive.looseconfig:LooseLibrary" uri="NRI-AppLogic.jar" binariesPath="C:\ildar\RAD_NRI\NRI-AppLogic\classes" resourcesPath="C:\ildar\RAD_NRI\NRI-AppLogic\classes"/>
+  </applications>
+</com.ibm.etools.commonarchive.looseconfig:LooseConfiguration>

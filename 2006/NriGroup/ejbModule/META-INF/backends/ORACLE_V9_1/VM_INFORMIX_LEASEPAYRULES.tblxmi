@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEPAYRULES" name="LEASEPAYRULES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASERULE" name="LEASERULE" allowNull="true" constraints="SQLConstraint_1211544521595 SQLConstraint_1211544521596">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521595" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521596" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CURRENCY" name="CURRENCY" allowNull="true" constraints="SQLConstraint_1211544521597">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521597" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUMM" name="SUMM" allowNull="true" constraints="SQLConstraint_1211544521598">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521598" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYPERIOD" name="PAYPERIOD" allowNull="true" constraints="SQLConstraint_1211544521599">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521595" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYTYPE" name="PAYTYPE" allowNull="true" constraints="SQLConstraint_1211544521600 SQLConstraint_1211544521601">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521596" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PPTYPE" name="PPTYPE" allowNull="true" constraints="SQLConstraint_1211544521602">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521597" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ORGTOPAY" name="ORGTOPAY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521599" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ORGACC" name="ORGACC" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521600" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYBEFOREDATE" name="PAYBEFOREDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521601" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYPURPOSE" name="PAYPURPOSE" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521598" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYTERMS" name="PAYTERMS" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521599" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SEPARATENDSPAY" name="SEPARATENDSPAY" allowNull="true" constraints="SQLConstraint_1211544521603">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521600" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VALIDDATEPAY" name="VALIDDATEPAY" allowNull="true" constraints="SQLConstraint_1211544521604">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521601" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521595" name="PK_LEASEPAYRULES" type="UNIQUE" members="LEASERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521599" name="CKC_PAYPERIO_LEASE" type="CHECK" body="(payperiod IS NULL ) OR (payperiod IN ('M' ,'Q' ,'Y' )) " members="PAYPERIOD"/>
+  <constraints xmi:id="SQLConstraint_1211544521603" name="CKC_SEPARATE_LEASE" type="CHECK" body="(separatendspay IS NULL ) OR (separatendspay IN ('Y' ,'N' )) " members="SEPARATENDSPAY"/>
+  <constraints xmi:id="SQLConstraint_1211544521604" name="CKC_VALIDDAT_LEASE" type="CHECK" body="(validdatepay IS NULL ) OR (validdatepay IN ('A' ,'B' ,'C' ,'D' ,'E' )) " members="VALIDDATEPAY"/>
+  <constraints xmi:id="SQLConstraint_1211544521600" name="CKC_PAYTYPE_LEASE" type="CHECK" body="paytype IN ('P' ,'M' ,'B' )" members="PAYTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544521602" name="CKC_PPTYPE_LEASE" type="CHECK" body="(pptype IS NULL ) OR (pptype IN ('A' ,'B' ,'C' )) " members="PPTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544521596" name="SYS_C003937" type="CHECK" body="&quot;LEASERULE&quot; IS NOT NULL" members="LEASERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521597" name="SYS_C003938" type="CHECK" body="&quot;CURRENCY&quot; IS NOT NULL" members="CURRENCY"/>
+  <constraints xmi:id="SQLConstraint_1211544521598" name="SYS_C003939" type="CHECK" body="&quot;SUMM&quot; IS NOT NULL" members="SUMM"/>
+  <constraints xmi:id="SQLConstraint_1211544521601" name="SYS_C003940" type="CHECK" body="&quot;PAYTYPE&quot; IS NOT NULL" members="PAYTYPE"/>
+</RDBSchema:RDBTable>

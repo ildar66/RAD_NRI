@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="operators" name="operators" primaryKey="pk_operators">
+  <database href="META-INF/backends/INFORMIX_V92_1/july.dbxmi#july"/>
+  <schema href="META-INF/backends/INFORMIX_V92_1/july_informix.schxmi#informix"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="operator" name="operator">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1186066253743">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="man" name="man">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1186066253744">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="loiginid" name="loiginid">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1186066253743" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="password" name="password">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1186066253744" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="isenabled" name="isenabled">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1186066253745" characterSet="800" length="1">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="msucode" name="msucode" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1186066253745">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="idregion" name="idregion" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1186066253746">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="lastlogintime" name="lastlogintime" allowNull="true">
+    <type xmi:type="RDBSchema:InformixDateTimeInterval" xmi:id="InformixDateTimeInterval_1186066253743" qualifier="INFORMIX_DATETIME_YEAR_FRACTION" fractionalSecondsPrecision="3">
+      <originatingType xmi:type="RDBSchema:InformixDateTimeInterval" href="INFORMIX_V92_Primitives.xmi#InformixDateTimeInterval_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="oldpwd" name="oldpwd" allowNull="true">
+    <type xmi:type="RDBSchema:SQLCharacterStringType" xmi:id="SQLCharacterStringType_1186066253746" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:SQLCharacterStringType" href="INFORMIX_V92_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="lastregionid" name="lastregionid" allowNull="true">
+    <type xmi:type="RDBSchema:SQLExactNumeric" xmi:id="SQLExactNumeric_1186066253747">
+      <originatingType xmi:type="RDBSchema:SQLExactNumeric" href="INFORMIX_V92_Primitives.xmi#SQLExactNumeric_1"/>
+    </type>
+  </columns>
+  <namedGroup xmi:type="RDBSchema:SQLReference" xmi:id="pk_operators" name="pk_operators" members="operator" constraint="SQLConstraint_1186066253743">
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_counters.tblxmi#fk_ref_193657_1936"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_docactions.tblxmi#fk_ref_7507_7507"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_leasedocoperjornal.tblxmi#fk_ref_21897_21897"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_leasesaldo.tblxmi#fk_ref_145956_1459"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_loginlog.tblxmi#fk_ref_10944_1094430"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_operators2roles.tblxmi#fk_relation__36"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_profile.tblxmi#fk_ref_267822_2678"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_regionsaccess.tblxmi#fk_ref_65766_65766"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_storageplaces.tblxmi#fk_ref_10189_10189"/>
+    <referenceByKey href="META-INF/backends/INFORMIX_V92_1/july_informix_workresponsibility.tblxmi#fk_ref_167571_1675"/>
+  </namedGroup>
+  <namedGroup xmi:type="RDBSchema:RDBReferenceByKey" xmi:id="fk_ref_215342_2153" name="fk_ref_215342_2153" members="msucode" constraint="SQLConstraint_1186066253744">
+    <target href="META-INF/backends/INFORMIX_V92_1/july_informix_msusers.tblxmi#pk_msusers"/>
+  </namedGroup>
+  <constraints xmi:id="SQLConstraint_1186066253743" name="pk_operators" type="PRIMARYKEY" primaryKey="pk_operators"/>
+  <constraints xmi:id="SQLConstraint_1186066253744" name="fk_ref_215342_2153" type="FOREIGNKEY" referenceByKey="fk_ref_215342_2153"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DPSPECHEADER" name="DPSPECHEADER">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECHEADERID" name="SPECHEADERID" allowNull="true" constraints="SQLConstraint_1211544520403 SQLConstraint_1211544520404">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520403" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUPREGID" name="SUPREGID" allowNull="true" constraints="SQLConstraint_1211544520405">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520404" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATESTART" name="DATESTART" allowNull="true" constraints="SQLConstraint_1211544520406">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520403" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATEEND" name="DATEEND" allowNull="true" constraints="SQLConstraint_1211544520407">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520404" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STATUS" name="STATUS" allowNull="true" constraints="SQLConstraint_1211544520408 SQLConstraint_1211544520409">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520405" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CALCDATE" name="CALCDATE" allowNull="true" constraints="SQLConstraint_1211544520410">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520405" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAN" name="MAN" allowNull="true" constraints="SQLConstraint_1211544520411">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520406" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520403" name="PK_DPSPECHEADER" type="UNIQUE" members="SPECHEADERID"/>
+  <constraints xmi:id="SQLConstraint_1211544520410" name="SYS_C003549" type="CHECK" body="&quot;CALCDATE&quot; IS NOT NULL" members="CALCDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544520411" name="SYS_C003550" type="CHECK" body="&quot;MAN&quot; IS NOT NULL" members="MAN"/>
+  <constraints xmi:id="SQLConstraint_1211544520408" name="CKC_STATUS_DPSPE" type="CHECK" body="status IN (1 ,2 ,3 )" members="STATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544520404" name="SYS_C003544" type="CHECK" body="&quot;SPECHEADERID&quot; IS NOT NULL" members="SPECHEADERID"/>
+  <constraints xmi:id="SQLConstraint_1211544520405" name="SYS_C003545" type="CHECK" body="&quot;SUPREGID&quot; IS NOT NULL" members="SUPREGID"/>
+  <constraints xmi:id="SQLConstraint_1211544520406" name="SYS_C003546" type="CHECK" body="&quot;DATESTART&quot; IS NOT NULL" members="DATESTART"/>
+  <constraints xmi:id="SQLConstraint_1211544520407" name="SYS_C003547" type="CHECK" body="&quot;DATEEND&quot; IS NOT NULL" members="DATEEND"/>
+  <constraints xmi:id="SQLConstraint_1211544520409" name="SYS_C003548" type="CHECK" body="&quot;STATUS&quot; IS NOT NULL" members="STATUS"/>
+</RDBSchema:RDBTable>

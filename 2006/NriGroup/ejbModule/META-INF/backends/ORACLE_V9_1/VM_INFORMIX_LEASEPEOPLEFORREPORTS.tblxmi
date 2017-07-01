@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEPEOPLEFORREPORTS" name="LEASEPEOPLEFORREPORTS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDRECORD" name="IDRECORD" allowNull="true" constraints="SQLConstraint_1211544521605 SQLConstraint_1211544521606">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521605" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDMAN" name="IDMAN" allowNull="true" constraints="SQLConstraint_1211544521607">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521606" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDREGION" name="IDREGION" allowNull="true" constraints="SQLConstraint_1211544521608">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521607" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPE_" name="TYPE_" allowNull="true" constraints="SQLConstraint_1211544521609 SQLConstraint_1211544521610">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521608" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521605" name="PK_LEASEPEOPLEFORR" type="UNIQUE" members="IDRECORD"/>
+  <constraints xmi:id="SQLConstraint_1211544521609" name="CKC_TYPE_LEASE" type="CHECK" body="TYPE_ = 1 " members="TYPE_"/>
+  <constraints xmi:id="SQLConstraint_1211544521606" name="SYS_C005647" type="CHECK" body="&quot;IDRECORD&quot; IS NOT NULL" members="IDRECORD"/>
+  <constraints xmi:id="SQLConstraint_1211544521607" name="SYS_C005648" type="CHECK" body="&quot;IDMAN&quot; IS NOT NULL" members="IDMAN"/>
+  <constraints xmi:id="SQLConstraint_1211544521608" name="SYS_C005649" type="CHECK" body="&quot;IDREGION&quot; IS NOT NULL" members="IDREGION"/>
+  <constraints xmi:id="SQLConstraint_1211544521610" name="SYS_C005650" type="CHECK" body="&quot;TYPE_&quot; IS NOT NULL" members="TYPE_"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RDBSchema_1050159624832" name="NULLID">
+  <database href="META-INF/backends/DB2UDBNT_V72_1/SAMPLE.dbxmi#RDBDatabase_1050159624692"/>
+  <tables xmi:type="RDBSchema:RDBTable" href="META-INF/backends/DB2UDBNT_V72_1/Con1_SAMPLE_OID_OIDVALUE.tblxmi#RDBTable_1050159624872"/>
+</RDBSchema:RDBSchema>

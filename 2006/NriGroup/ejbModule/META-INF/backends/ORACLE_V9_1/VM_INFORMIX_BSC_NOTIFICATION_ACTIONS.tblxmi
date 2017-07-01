@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="BSC_NOTIFICATION_ACTIONS" name="BSC_NOTIFICATION_ACTIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID" name="ID" allowNull="true" constraints="SQLConstraint_1211544519211 SQLConstraint_1211544519212">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519211" precision="19" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTIONKEY" name="ACTIONKEY" allowNull="true" constraints="SQLConstraint_1211544519213">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519211" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TEMPLATENAME" name="TEMPLATENAME" allowNull="true" constraints="SQLConstraint_1211544519214">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519212" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519211" name="PK_BSC_NOTIF_ACTIONS" type="UNIQUE" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544519212" name="SYS_C006036" type="CHECK" body="&quot;ID&quot; IS NOT NULL" members="ID"/>
+  <constraints xmi:id="SQLConstraint_1211544519213" name="SYS_C006037" type="CHECK" body="&quot;ACTIONKEY&quot; IS NOT NULL" members="ACTIONKEY"/>
+  <constraints xmi:id="SQLConstraint_1211544519214" name="SYS_C006038" type="CHECK" body="&quot;TEMPLATENAME&quot; IS NOT NULL" members="TEMPLATENAME"/>
+</RDBSchema:RDBTable>

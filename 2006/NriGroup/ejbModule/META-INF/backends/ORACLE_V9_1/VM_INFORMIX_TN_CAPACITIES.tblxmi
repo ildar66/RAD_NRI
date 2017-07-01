@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TN_CAPACITIES" name="TN_CAPACITIES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CAPACITYID" name="CAPACITYID" allowNull="true" constraints="SQLConstraint_1211544525470 SQLConstraint_1211544525471">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544525470" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CAPACITYVAL" name="CAPACITYVAL" allowNull="true" constraints="SQLConstraint_1211544525472">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525470" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="INDEX_CAP" name="INDEX_CAP" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544525471" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544525470" name="PK_TN_CAPACITIES" type="UNIQUE" members="CAPACITYID"/>
+  <constraints xmi:id="SQLConstraint_1211544525471" name="SYS_C005354" type="CHECK" body="&quot;CAPACITYID&quot; IS NOT NULL" members="CAPACITYID"/>
+  <constraints xmi:id="SQLConstraint_1211544525472" name="SYS_C005355" type="CHECK" body="&quot;CAPACITYVAL&quot; IS NOT NULL" members="CAPACITYVAL"/>
+</RDBSchema:RDBTable>

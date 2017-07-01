@@ -1,0 +1,27 @@
+------Start of DE processing------ = [08.05.19 15:03:11:463 MSD] , key = javax.management.JMRuntimeException com.ibm.ws.management.AdminServiceImpl.invoke 693
+Exception = javax.management.JMRuntimeException
+Source = com.ibm.ws.management.AdminServiceImpl.invoke
+probeid = 693
+Stack Dump = javax.management.JMRuntimeException: ADMN0022E: Access denied for the stop operation on Server MBean due to insufficient or empty credentials.
+	at com.ibm.ws.management.AdminServiceImpl.preInvoke(AdminServiceImpl.java:1354)
+	at com.ibm.ws.management.AdminServiceImpl.invoke(AdminServiceImpl.java:657)
+	at com.ibm.ws.management.connector.AdminServiceDelegator.invoke(AdminServiceDelegator.java:130)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Method.invoke(Method.java(Compiled Code))
+	at com.ibm.ws.management.connector.soap.SOAPConnector.invoke(SOAPConnector.java:306)
+	at com.ibm.ws.management.connector.soap.SOAPConnector.service(SOAPConnector.java:176)
+	at com.ibm.ws.management.connector.soap.SOAPConnection.handleRequest(SOAPConnection.java:55)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.management.AdminServiceImpl
+com.ibm.ws.management.AdminServiceImpl@71ae8eb
+
+==> Performing default dump from com.ibm.ws.management.dm.JmxDM  = Mon May 19 15:03:11 MSD 2008
+Target MBean = WebSphere:name=server1,process=server1,platform=common,node=localhost,version=5.0,type=Server,mbeanIdentifier=cells/localhost/nodes/localhost/servers/server1/server.xml#Server_1,cell=localhost,processType=UnManagedProcess
++Data for directive [defaultjmx] obtained. = 
+==> Dump complete for com.ibm.ws.management.dm.JmxDM  = Mon May 19 15:03:11 MSD 2008

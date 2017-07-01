@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ADDRESS_INFO2" name="ADDRESS_INFO2">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ADDRESSPORTID" name="ADDRESSPORTID" allowNull="true" constraints="SQLConstraint_1211544518751 SQLConstraint_1211544518752">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518751" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESOURCE_" name="RESOURCE_" allowNull="true" constraints="SQLConstraint_1211544518753">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518752" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPEPORT" name="TYPEPORT" allowNull="true" constraints="SQLConstraint_1211544518754 SQLConstraint_1211544518755">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544518753" precision="5" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ADDRESSNAME" name="ADDRESSNAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544518751" characterSet="800" length="40">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544518751" name="PK_ADDRESS_INFO2" type="UNIQUE" members="ADDRESSPORTID"/>
+  <constraints xmi:id="SQLConstraint_1211544518754" name="CKC_TYPEPORT_ADDR2" type="CHECK" body="typeport IN (0 ,1 ,2 )" members="TYPEPORT"/>
+  <constraints xmi:id="SQLConstraint_1211544518752" name="SYS_C004562" type="CHECK" body="&quot;ADDRESSPORTID&quot; IS NOT NULL" members="ADDRESSPORTID"/>
+  <constraints xmi:id="SQLConstraint_1211544518753" name="SYS_C004563" type="CHECK" body="&quot;RESOURCE_&quot; IS NOT NULL" members="RESOURCE_"/>
+  <constraints xmi:id="SQLConstraint_1211544518755" name="SYS_C004564" type="CHECK" body="&quot;TYPEPORT&quot; IS NOT NULL" members="TYPEPORT"/>
+</RDBSchema:RDBTable>

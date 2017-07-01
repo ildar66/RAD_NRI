@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASECHARGES" name="LEASECHARGES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEDOCPOSITION" name="LEASEDOCPOSITION" allowNull="true" constraints="SQLConstraint_1211544521454 SQLConstraint_1211544521455">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521454" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASERULE" name="LEASERULE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521455" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REMAINDERSUM" name="REMAINDERSUM" allowNull="true" constraints="SQLConstraint_1211544521456">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521456" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REMAINDERRATE2RUR" name="REMAINDERRATE2RUR" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521457" precision="15" scale="4">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BYHANDRATERUR" name="BYHANDRATERUR" allowNull="true" constraints="SQLConstraint_1211544521457 SQLConstraint_1211544521458">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521454" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BILLNUMBER" name="BILLNUMBER" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521455" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BILLDATE" name="BILLDATE" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521454" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISSCHETFAKT1" name="ISSCHETFAKT1" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521459 SQLConstraint_1211544521460">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521456" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISSCHETFAKT2" name="ISSCHETFAKT2" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521461 SQLConstraint_1211544521462">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521457" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISSCHETFAKT3" name="ISSCHETFAKT3" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521463 SQLConstraint_1211544521464">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521458" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="USEDINCWACT" name="USEDINCWACT" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521458" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISWORKACT1" name="ISWORKACT1" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521465 SQLConstraint_1211544521466">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521459" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISWORKACT2" name="ISWORKACT2" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521467 SQLConstraint_1211544521468">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521460" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ISWORKACT3" name="ISWORKACT3" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544521469 SQLConstraint_1211544521470">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521461" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OSTSUMFORSF" name="OSTSUMFORSF" allowNull="true" defaultValue="0.00" constraints="SQLConstraint_1211544521471">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521459" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGSF" name="FLAGSF" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544521472 SQLConstraint_1211544521473">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521460" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OSTSUMFORCWACT" name="OSTSUMFORCWACT" allowNull="true" defaultValue="0.00" constraints="SQLConstraint_1211544521474">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521461" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGCWACT" name="FLAGCWACT" allowNull="true" defaultValue="0" constraints="SQLConstraint_1211544521475 SQLConstraint_1211544521476">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521462" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NEEDCWACT" name="NEEDCWACT" allowNull="true" defaultValue="'Y'" constraints="SQLConstraint_1211544521477 SQLConstraint_1211544521478">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521462" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NEEDSF" name="NEEDSF" allowNull="true" defaultValue="'Y'" constraints="SQLConstraint_1211544521479 SQLConstraint_1211544521480">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521463" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521454" name="PK_LEASECHARGES" type="UNIQUE" members="LEASEDOCPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544521457" name="CKC_BYHANDRA_LEASE" type="CHECK" body="byhandraterur IN ('Y' ,'N' )" members="BYHANDRATERUR"/>
+  <constraints xmi:id="SQLConstraint_1211544521459" name="CKC_ISSCHET1_LEASE" type="CHECK" body="isschetfakt1 IN ('Y' ,'N' )" members="ISSCHETFAKT1"/>
+  <constraints xmi:id="SQLConstraint_1211544521461" name="CKC_ISSCHET2_LEASE" type="CHECK" body="isschetfakt2 IN ('Y' ,'N' )" members="ISSCHETFAKT2"/>
+  <constraints xmi:id="SQLConstraint_1211544521463" name="CKC_ISSCHET3_LEASE" type="CHECK" body="isschetfakt3 IN ('Y' ,'N' )" members="ISSCHETFAKT3"/>
+  <constraints xmi:id="SQLConstraint_1211544521465" name="CKC_LCH_ACTWORK1" type="CHECK" body="isworkact1 IN ('Y' ,'N' )" members="ISWORKACT1"/>
+  <constraints xmi:id="SQLConstraint_1211544521467" name="CKC_LCH_ACTWORK2" type="CHECK" body="isworkact2 IN ('Y' ,'N' )" members="ISWORKACT2"/>
+  <constraints xmi:id="SQLConstraint_1211544521469" name="CKC_LCH_ACTWORK3" type="CHECK" body="isworkact3 IN ('Y' ,'N' )" members="ISWORKACT3"/>
+  <constraints xmi:id="SQLConstraint_1211544521472" name="CKC_FLAGSF_LEASE" type="CHECK" body="flagsf IN (0 ,1 ,2 ,10 ,4 ,3 )" members="FLAGSF"/>
+  <constraints xmi:id="SQLConstraint_1211544521475" name="CKC_FLAGCWAC_LEASE" type="CHECK" body="flagcwact IN (0 ,1 ,2 ,10 ,4 ,3 )" members="FLAGCWACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521477" name="CKC_NEEDCWAC_LEASE" type="CHECK" body="needcwact IN ('Y' ,'N' )" members="NEEDCWACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521479" name="CKC_NEEDSF_LEASE" type="CHECK" body="needsf IN ('Y' ,'N' )" members="NEEDSF"/>
+  <constraints xmi:id="SQLConstraint_1211544521455" name="SYS_C003985" type="CHECK" body="&quot;LEASEDOCPOSITION&quot; IS NOT NULL" members="LEASEDOCPOSITION"/>
+  <constraints xmi:id="SQLConstraint_1211544521456" name="SYS_C003986" type="CHECK" body="&quot;REMAINDERSUM&quot; IS NOT NULL" members="REMAINDERSUM"/>
+  <constraints xmi:id="SQLConstraint_1211544521458" name="SYS_C003987" type="CHECK" body="&quot;BYHANDRATERUR&quot; IS NOT NULL" members="BYHANDRATERUR"/>
+  <constraints xmi:id="SQLConstraint_1211544521460" name="SYS_C003988" type="CHECK" body="&quot;ISSCHETFAKT1&quot; IS NOT NULL" members="ISSCHETFAKT1"/>
+  <constraints xmi:id="SQLConstraint_1211544521462" name="SYS_C003989" type="CHECK" body="&quot;ISSCHETFAKT2&quot; IS NOT NULL" members="ISSCHETFAKT2"/>
+  <constraints xmi:id="SQLConstraint_1211544521464" name="SYS_C003990" type="CHECK" body="&quot;ISSCHETFAKT3&quot; IS NOT NULL" members="ISSCHETFAKT3"/>
+  <constraints xmi:id="SQLConstraint_1211544521466" name="SYS_C003991" type="CHECK" body="&quot;ISWORKACT1&quot; IS NOT NULL" members="ISWORKACT1"/>
+  <constraints xmi:id="SQLConstraint_1211544521468" name="SYS_C003992" type="CHECK" body="&quot;ISWORKACT2&quot; IS NOT NULL" members="ISWORKACT2"/>
+  <constraints xmi:id="SQLConstraint_1211544521470" name="SYS_C003993" type="CHECK" body="&quot;ISWORKACT3&quot; IS NOT NULL" members="ISWORKACT3"/>
+  <constraints xmi:id="SQLConstraint_1211544521471" name="SYS_C003994" type="CHECK" body="&quot;OSTSUMFORSF&quot; IS NOT NULL" members="OSTSUMFORSF"/>
+  <constraints xmi:id="SQLConstraint_1211544521473" name="SYS_C003995" type="CHECK" body="&quot;FLAGSF&quot; IS NOT NULL" members="FLAGSF"/>
+  <constraints xmi:id="SQLConstraint_1211544521474" name="SYS_C003996" type="CHECK" body="&quot;OSTSUMFORCWACT&quot; IS NOT NULL" members="OSTSUMFORCWACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521476" name="SYS_C003997" type="CHECK" body="&quot;FLAGCWACT&quot; IS NOT NULL" members="FLAGCWACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521478" name="SYS_C003998" type="CHECK" body="&quot;NEEDCWACT&quot; IS NOT NULL" members="NEEDCWACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521480" name="SYS_C003999" type="CHECK" body="&quot;NEEDSF&quot; IS NOT NULL" members="NEEDSF"/>
+</RDBSchema:RDBTable>

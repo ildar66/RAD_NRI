@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="REPORTREGIONS" name="REPORTREGIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDREGION" name="IDREGION" allowNull="true" constraints="SQLConstraint_1211544523978 SQLConstraint_1211544523979">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523978" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAMEREGION" name="NAMEREGION" allowNull="true" constraints="SQLConstraint_1211544523980">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523978" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDCLASS" name="IDCLASS" allowNull="true" constraints="SQLConstraint_1211544523988">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523988" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDSORT" name="IDSORT" allowNull="true" constraints="SQLConstraint_1211544523989">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523989" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CODENAME" name="CODENAME" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523988" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523978" name="PK_REPORTREGIONS" type="UNIQUE" members="IDREGION"/>
+  <constraints xmi:id="SQLConstraint_1211544523979" name="SYS_C005931" type="CHECK" body="&quot;IDREGION&quot; IS NOT NULL" members="IDREGION"/>
+  <constraints xmi:id="SQLConstraint_1211544523980" name="SYS_C005932" type="CHECK" body="&quot;NAMEREGION&quot; IS NOT NULL" members="NAMEREGION"/>
+  <constraints xmi:id="SQLConstraint_1211544523988" name="SYS_C005933" type="CHECK" body="&quot;IDCLASS&quot; IS NOT NULL" members="IDCLASS"/>
+  <constraints xmi:id="SQLConstraint_1211544523989" name="SYS_C005934" type="CHECK" body="&quot;IDSORT&quot; IS NOT NULL" members="IDSORT"/>
+</RDBSchema:RDBTable>

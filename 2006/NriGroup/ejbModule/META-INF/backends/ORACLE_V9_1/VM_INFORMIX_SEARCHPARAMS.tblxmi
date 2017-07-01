@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="SEARCHPARAMS" name="SEARCHPARAMS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARAMID" name="PARAMID" allowNull="true" constraints="SQLConstraint_1211544524378 SQLConstraint_1211544524379">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524378" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OPERATOR_" name="OPERATOR_" allowNull="true" constraints="SQLConstraint_1211544524380">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524379" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="APPLICATION" name="APPLICATION" allowNull="true" constraints="SQLConstraint_1211544524381">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524380" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MODE_" name="MODE_" allowNull="true" constraints="SQLConstraint_1211544524382">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524381" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARAMCODE" name="PARAMCODE" allowNull="true" constraints="SQLConstraint_1211544524383">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524378" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARAMVALUE" name="PARAMVALUE" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524379" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524378" name="PK_SEARCHPARAMS" type="UNIQUE" members="PARAMID"/>
+  <constraints xmi:id="SQLConstraint_1211544524379" name="SYS_C004946" type="CHECK" body="&quot;PARAMID&quot; IS NOT NULL" members="PARAMID"/>
+  <constraints xmi:id="SQLConstraint_1211544524380" name="SYS_C004947" type="CHECK" body="&quot;OPERATOR_&quot; IS NOT NULL" members="OPERATOR_"/>
+  <constraints xmi:id="SQLConstraint_1211544524381" name="SYS_C004948" type="CHECK" body="&quot;APPLICATION&quot; IS NOT NULL" members="APPLICATION"/>
+  <constraints xmi:id="SQLConstraint_1211544524382" name="SYS_C004949" type="CHECK" body="&quot;MODE_&quot; IS NOT NULL" members="MODE_"/>
+  <constraints xmi:id="SQLConstraint_1211544524383" name="SYS_C004950" type="CHECK" body="&quot;PARAMCODE&quot; IS NOT NULL" members="PARAMCODE"/>
+</RDBSchema:RDBTable>

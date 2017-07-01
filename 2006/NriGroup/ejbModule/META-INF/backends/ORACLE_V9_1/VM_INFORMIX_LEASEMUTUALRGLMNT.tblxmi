@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEMUTUALRGLMNT" name="LEASEMUTUALRGLMNT">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEDOCUMENT" name="LEASEDOCUMENT" allowNull="true" constraints="SQLConstraint_1211544521545 SQLConstraint_1211544521546">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521545" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MUTUALPERIOD" name="MUTUALPERIOD" allowNull="true" constraints="SQLConstraint_1211544521547 SQLConstraint_1211544521548">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521545" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MAINCURRENCY" name="MAINCURRENCY" allowNull="true" constraints="SQLConstraint_1211544521549">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521546" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ADDITIONALCURRENCY" name="ADDITIONALCURRENCY" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521547" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="COMMONRATE" name="COMMONRATE" allowNull="true" constraints="SQLConstraint_1211544521550 SQLConstraint_1211544521551">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521546" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CALCRATETYPE" name="CALCRATETYPE" allowNull="true" constraints="SQLConstraint_1211544521552">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521547" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTTYPE" name="ACTTYPE" allowNull="true" constraints="SQLConstraint_1211544521553 SQLConstraint_1211544521554">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521548" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="MUTSTATE" name="MUTSTATE" allowNull="true" constraints="SQLConstraint_1211544521555 SQLConstraint_1211544521556">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521549" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DUTYRATERULE" name="DUTYRATERULE" allowNull="true" constraints="SQLConstraint_1211544521557 SQLConstraint_1211544521558">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521550" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="STARTDATE" name="STARTDATE" allowNull="true" constraints="SQLConstraint_1211544521559">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521545" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ENDDATE" name="ENDDATE" allowNull="true" constraints="SQLConstraint_1211544521560">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521546" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521545" name="PK_LEASEMUTUALRGLM" type="UNIQUE" members="LEASEDOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521550" name="CKC_COMMONRA_LEASE" type="CHECK" body="commonrate IN ('Y' ,'N' )" members="COMMONRATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521552" name="CKC_CALCRATE_LEASE" type="CHECK" body="(calcratetype IS NULL ) OR (calcratetype IN ('B' ,'E' )) " members="CALCRATETYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544521553" name="CKC_ACTTYPE_LEASE" type="CHECK" body="acttype IN ('A' ,'M' ,'S' )" members="ACTTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544521555" name="CKC_MUTSTATE_LEASE" type="CHECK" body="mutstate IN ('A' ,'B' ,'C' )" members="MUTSTATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521557" name="CKC_DUTYRATE_LEASE" type="CHECK" body="dutyraterule IN ('A' ,'B' )" members="DUTYRATERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521547" name="CKC_MUTUALPE_LEASE" type="CHECK" body="mutualperiod IN ('M' ,'Q' ,'Y' )" members="MUTUALPERIOD"/>
+  <constraints xmi:id="SQLConstraint_1211544521546" name="SYS_C004393" type="CHECK" body="&quot;LEASEDOCUMENT&quot; IS NOT NULL" members="LEASEDOCUMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544521548" name="SYS_C004394" type="CHECK" body="&quot;MUTUALPERIOD&quot; IS NOT NULL" members="MUTUALPERIOD"/>
+  <constraints xmi:id="SQLConstraint_1211544521549" name="SYS_C004395" type="CHECK" body="&quot;MAINCURRENCY&quot; IS NOT NULL" members="MAINCURRENCY"/>
+  <constraints xmi:id="SQLConstraint_1211544521551" name="SYS_C004396" type="CHECK" body="&quot;COMMONRATE&quot; IS NOT NULL" members="COMMONRATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521554" name="SYS_C004397" type="CHECK" body="&quot;ACTTYPE&quot; IS NOT NULL" members="ACTTYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544521556" name="SYS_C004398" type="CHECK" body="&quot;MUTSTATE&quot; IS NOT NULL" members="MUTSTATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521558" name="SYS_C004399" type="CHECK" body="&quot;DUTYRATERULE&quot; IS NOT NULL" members="DUTYRATERULE"/>
+  <constraints xmi:id="SQLConstraint_1211544521559" name="SYS_C004400" type="CHECK" body="&quot;STARTDATE&quot; IS NOT NULL" members="STARTDATE"/>
+  <constraints xmi:id="SQLConstraint_1211544521560" name="SYS_C004401" type="CHECK" body="&quot;ENDDATE&quot; IS NOT NULL" members="ENDDATE"/>
+</RDBSchema:RDBTable>

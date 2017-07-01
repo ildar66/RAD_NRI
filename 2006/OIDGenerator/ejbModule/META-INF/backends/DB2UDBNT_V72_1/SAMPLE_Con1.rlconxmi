@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RLogic:RLDBConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RLogic="RLogic.xmi" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="RLDBConnection_1050159624722" dbProductName="DB2/NT" dbProductVersion="08.01.0000" offline="false" defaultUserId="true">
+  <rdbDb href="META-INF/backends/DB2UDBNT_V72_1/SAMPLE.dbxmi#RDBDatabase_1050159624692"/>
+</RLogic:RLDBConnection>

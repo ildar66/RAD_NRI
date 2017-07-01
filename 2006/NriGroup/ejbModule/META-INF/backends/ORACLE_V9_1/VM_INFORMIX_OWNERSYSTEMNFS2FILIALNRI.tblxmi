@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="OWNERSYSTEMNFS2FILIALNRI" name="OWNERSYSTEMNFS2FILIALNRI">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDOWNERNFS" name="IDOWNERNFS" allowNull="true" constraints="SQLConstraint_1211544523347 SQLConstraint_1211544523348">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523347" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="REGIONID" name="REGIONID" allowNull="true" constraints="SQLConstraint_1211544523347 SQLConstraint_1211544523349">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523348" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523347" name="PK_OWNERSYSTEMNFS2" type="UNIQUE" members="IDOWNERNFS REGIONID"/>
+  <constraints xmi:id="SQLConstraint_1211544523348" name="SYS_C005592" type="CHECK" body="&quot;IDOWNERNFS&quot; IS NOT NULL" members="IDOWNERNFS"/>
+  <constraints xmi:id="SQLConstraint_1211544523349" name="SYS_C005593" type="CHECK" body="&quot;REGIONID&quot; IS NOT NULL" members="REGIONID"/>
+</RDBSchema:RDBTable>

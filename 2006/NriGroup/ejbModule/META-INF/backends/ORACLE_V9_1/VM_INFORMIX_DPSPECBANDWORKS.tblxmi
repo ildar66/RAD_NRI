@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DPSPECBANDWORKS" name="DPSPECBANDWORKS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECBANDWORKID" name="SPECBANDWORKID" allowNull="true" constraints="SQLConstraint_1211544520403 SQLConstraint_1211544520404">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520403" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SPECWORKID" name="SPECWORKID" allowNull="true" constraints="SQLConstraint_1211544520405">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520404" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDBSBAND" name="IDBSBAND" allowNull="true" constraints="SQLConstraint_1211544520406">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520405" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520403" name="PK_DPSPECBANDWORKS" type="UNIQUE" members="SPECBANDWORKID"/>
+  <constraints xmi:id="SQLConstraint_1211544520404" name="SYS_C003746" type="CHECK" body="&quot;SPECBANDWORKID&quot; IS NOT NULL" members="SPECBANDWORKID"/>
+  <constraints xmi:id="SQLConstraint_1211544520405" name="SYS_C003747" type="CHECK" body="&quot;SPECWORKID&quot; IS NOT NULL" members="SPECWORKID"/>
+  <constraints xmi:id="SQLConstraint_1211544520406" name="SYS_C003748" type="CHECK" body="&quot;IDBSBAND&quot; IS NOT NULL" members="IDBSBAND"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<ejb-jar id="EJBJar_1050158862576">
+	<description>OIDGenerator</description>
+	<enterprise-beans>
+		<entity id="OIDvalue">
+			<ejb-name>OIDvalue</ejb-name>
+			<local-home>com.god.oidgen.OIDvalueLocalHome</local-home>
+			<local>com.god.oidgen.OIDvalueLocal</local>
+			<ejb-class>com.god.oidgen.OIDvalueBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.String</prim-key-class>
+			<reentrant>False</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>OIDvalue</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1050159450091">
+				<field-name>nextOID</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1050159450101">
+				<field-name>type</field-name>
+			</cmp-field>
+			<primkey-field>type</primkey-field>
+		</entity>
+		<session id="OIDGeneratorSessionBean">
+			<ejb-name>OIDGeneratorSessionBean</ejb-name>
+			<local-home>com.god.oidgen.OIDGeneratorSessionLocalHome</local-home>
+			<local>com.god.oidgen.OIDGeneratorSessionLocal</local>
+			<ejb-class>com.god.oidgen.OIDGeneratorSessionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-local-ref id="EJBLocalRef_1050159080640">
+				<description></description>
+				<ejb-ref-name>ejb/oidValues</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.god.oidgen.OIDvalueLocalHome</local-home>
+				<local>com.god.oidgen.OIDvalueLocal</local>
+				<ejb-link>OIDvalue</ejb-link>
+			</ejb-local-ref>
+		</session>
+	</enterprise-beans>
+	<assembly-descriptor>
+		<container-transaction>
+			<method>
+				<ejb-name>OIDvalue</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Mandatory</trans-attribute>
+		</container-transaction>
+		<container-transaction>
+			<method>
+				<ejb-name>OIDGeneratorSessionBean</ejb-name>
+				<method-intf>Local</method-intf>
+				<method-name>getNextOID</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<trans-attribute>RequiresNew</trans-attribute>
+		</container-transaction>
+	</assembly-descriptor>
+</ejb-jar>

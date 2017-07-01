@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEVPAYMENT" name="LEASEVPAYMENT">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACT" name="ACT" allowNull="true" constraints="SQLConstraint_1211544521715 SQLConstraint_1211544521716">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521715" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DEBETCONTRACT" name="DEBETCONTRACT" allowNull="true" constraints="SQLConstraint_1211544521715 SQLConstraint_1211544521717">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521716" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CREDITCONTRACT" name="CREDITCONTRACT" allowNull="true" constraints="SQLConstraint_1211544521715 SQLConstraint_1211544521718">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521717" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUMM" name="SUMM" allowNull="true" constraints="SQLConstraint_1211544521719">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521718" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521715" name="PK_LEASEVPAYMENT" type="UNIQUE" members="ACT DEBETCONTRACT CREDITCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521716" name="SYS_C004226" type="CHECK" body="&quot;ACT&quot; IS NOT NULL" members="ACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521717" name="SYS_C004227" type="CHECK" body="&quot;DEBETCONTRACT&quot; IS NOT NULL" members="DEBETCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521718" name="SYS_C004228" type="CHECK" body="&quot;CREDITCONTRACT&quot; IS NOT NULL" members="CREDITCONTRACT"/>
+  <constraints xmi:id="SQLConstraint_1211544521719" name="SYS_C004229" type="CHECK" body="&quot;SUMM&quot; IS NOT NULL" members="SUMM"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="IMPORTSESSIONS" name="IMPORTSESSIONS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IMPSESID" name="IMPSESID" allowNull="true" constraints="SQLConstraint_1211544521154 SQLConstraint_1211544521155">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521154" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IMPTASKID" name="IMPTASKID" allowNull="true" constraints="SQLConstraint_1211544521156">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521155" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IMPORTSTART" name="IMPORTSTART" allowNull="true" constraints="SQLConstraint_1211544521157">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521154" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IMPORTEND" name="IMPORTEND" allowNull="true" constraints="SQLConstraint_1211544521158">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521155" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OPERATOR_" name="OPERATOR_" allowNull="true" constraints="SQLConstraint_1211544521159">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521156" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILENAME" name="FILENAME" allowNull="true" constraints="SQLConstraint_1211544521160">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521154" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILESIZE" name="FILESIZE" allowNull="true" constraints="SQLConstraint_1211544521161">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521157" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILETIME" name="FILETIME" allowNull="true">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521156" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECCOUNT" name="RECCOUNT" allowNull="true" constraints="SQLConstraint_1211544521162">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521158" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ERRCOUNT" name="ERRCOUNT" allowNull="true" constraints="SQLConstraint_1211544521163">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521159" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521154" name="PK_IMPORTSESSIONS" type="UNIQUE" members="IMPSESID"/>
+  <constraints xmi:id="SQLConstraint_1211544521155" name="SYS_C004421" type="CHECK" body="&quot;IMPSESID&quot; IS NOT NULL" members="IMPSESID"/>
+  <constraints xmi:id="SQLConstraint_1211544521156" name="SYS_C004422" type="CHECK" body="&quot;IMPTASKID&quot; IS NOT NULL" members="IMPTASKID"/>
+  <constraints xmi:id="SQLConstraint_1211544521157" name="SYS_C004423" type="CHECK" body="&quot;IMPORTSTART&quot; IS NOT NULL" members="IMPORTSTART"/>
+  <constraints xmi:id="SQLConstraint_1211544521158" name="SYS_C004424" type="CHECK" body="&quot;IMPORTEND&quot; IS NOT NULL" members="IMPORTEND"/>
+  <constraints xmi:id="SQLConstraint_1211544521159" name="SYS_C004425" type="CHECK" body="&quot;OPERATOR_&quot; IS NOT NULL" members="OPERATOR_"/>
+  <constraints xmi:id="SQLConstraint_1211544521160" name="SYS_C004426" type="CHECK" body="&quot;FILENAME&quot; IS NOT NULL" members="FILENAME"/>
+  <constraints xmi:id="SQLConstraint_1211544521161" name="SYS_C004427" type="CHECK" body="&quot;FILESIZE&quot; IS NOT NULL" members="FILESIZE"/>
+  <constraints xmi:id="SQLConstraint_1211544521162" name="SYS_C004428" type="CHECK" body="&quot;RECCOUNT&quot; IS NOT NULL" members="RECCOUNT"/>
+  <constraints xmi:id="SQLConstraint_1211544521163" name="SYS_C004429" type="CHECK" body="&quot;ERRCOUNT&quot; IS NOT NULL" members="ERRCOUNT"/>
+</RDBSchema:RDBTable>

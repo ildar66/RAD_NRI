@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="LEASEABONENTDNOP" name="LEASEABONENTDNOP">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDABONENTDNOP" name="IDABONENTDNOP" allowNull="true" constraints="SQLConstraint_1211544521414 SQLConstraint_1211544521415">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521414" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="LEASEBILL" name="LEASEBILL" allowNull="true" constraints="SQLConstraint_1211544521416">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521415" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PAYPOS" name="PAYPOS" allowNull="true" constraints="SQLConstraint_1211544521417">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521416" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SUMLINKUSD" name="SUMLINKUSD" allowNull="true" constraints="SQLConstraint_1211544521418">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521417" precision="15" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGWORKNRI" name="FLAGWORKNRI" allowNull="true" constraints="SQLConstraint_1211544521419 SQLConstraint_1211544521420">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521414" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECORDSTATUS" name="RECORDSTATUS" allowNull="true" constraints="SQLConstraint_1211544521421 SQLConstraint_1211544521422">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521415" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521414" name="PK_LEASEABONENTDNO" type="UNIQUE" members="IDABONENTDNOP"/>
+  <constraints xmi:id="SQLConstraint_1211544521419" name="CKC_FLAGWORK_LDNP" type="CHECK" body="flagworknri IN ('Y' ,'N' )" members="FLAGWORKNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544521421" name="CKC_RECORDST_LEASE" type="CHECK" body="recordstatus IN ('A' ,'D' )" members="RECORDSTATUS"/>
+  <constraints xmi:id="SQLConstraint_1211544521415" name="SYS_C004538" type="CHECK" body="&quot;IDABONENTDNOP&quot; IS NOT NULL" members="IDABONENTDNOP"/>
+  <constraints xmi:id="SQLConstraint_1211544521416" name="SYS_C004539" type="CHECK" body="&quot;LEASEBILL&quot; IS NOT NULL" members="LEASEBILL"/>
+  <constraints xmi:id="SQLConstraint_1211544521417" name="SYS_C004540" type="CHECK" body="&quot;PAYPOS&quot; IS NOT NULL" members="PAYPOS"/>
+  <constraints xmi:id="SQLConstraint_1211544521418" name="SYS_C004541" type="CHECK" body="&quot;SUMLINKUSD&quot; IS NOT NULL" members="SUMLINKUSD"/>
+  <constraints xmi:id="SQLConstraint_1211544521420" name="SYS_C004542" type="CHECK" body="&quot;FLAGWORKNRI&quot; IS NOT NULL" members="FLAGWORKNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544521422" name="SYS_C004543" type="CHECK" body="&quot;RECORDSTATUS&quot; IS NOT NULL" members="RECORDSTATUS"/>
+</RDBSchema:RDBTable>

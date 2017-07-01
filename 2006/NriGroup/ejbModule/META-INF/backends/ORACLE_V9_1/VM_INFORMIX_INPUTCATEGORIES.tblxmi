@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="INPUTCATEGORIES" name="INPUTCATEGORIES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CATEGID" name="CATEGID" allowNull="true" constraints="SQLConstraint_1211544521174 SQLConstraint_1211544521175">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521174" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="CATEGNAME" name="CATEGNAME" allowNull="true" constraints="SQLConstraint_1211544521176">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521174" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521174" name="PK_INPUTCATEGORIES" type="UNIQUE" members="CATEGID"/>
+  <constraints xmi:id="SQLConstraint_1211544521175" name="SYS_C004951" type="CHECK" body="&quot;CATEGID&quot; IS NOT NULL" members="CATEGID"/>
+  <constraints xmi:id="SQLConstraint_1211544521176" name="SYS_C004952" type="CHECK" body="&quot;CATEGNAME&quot; IS NOT NULL" members="CATEGNAME"/>
+</RDBSchema:RDBTable>

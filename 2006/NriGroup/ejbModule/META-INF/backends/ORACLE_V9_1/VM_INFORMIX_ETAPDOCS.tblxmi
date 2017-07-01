@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ETAPDOCS" name="ETAPDOCS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SITEDOC" name="SITEDOC" allowNull="true" constraints="SQLConstraint_1211544520693 SQLConstraint_1211544520694">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520693" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ETAPTYPEID" name="ETAPTYPEID" allowNull="true" constraints="SQLConstraint_1211544520695">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520694" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FREQPERMID" name="FREQPERMID" allowNull="true" constraints="SQLConstraint_1211544520696">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520695" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HAVEPAY" name="HAVEPAY" allowNull="true" constraints="SQLConstraint_1211544520697">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520693" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EQUIPLINK" name="EQUIPLINK" allowNull="true" constraints="SQLConstraint_1211544520698">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520694" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520693" name="PK_ETAPDOCS" type="UNIQUE" members="SITEDOC"/>
+  <constraints xmi:id="SQLConstraint_1211544520697" name="CKC_HAVEPAY_ETAPD" type="CHECK" body="(havepay IS NULL ) OR (havepay IN ('Y' ,'N' )) " members="HAVEPAY"/>
+  <constraints xmi:id="SQLConstraint_1211544520698" name="CKC_EQUIPLIN_ETAPD" type="CHECK" body="(equiplink IS NULL ) OR (equiplink IN ('A' ,'B' )) " members="EQUIPLINK"/>
+  <constraints xmi:id="SQLConstraint_1211544520694" name="SYS_C004726" type="CHECK" body="&quot;SITEDOC&quot; IS NOT NULL" members="SITEDOC"/>
+  <constraints xmi:id="SQLConstraint_1211544520695" name="SYS_C004727" type="CHECK" body="&quot;ETAPTYPEID&quot; IS NOT NULL" members="ETAPTYPEID"/>
+  <constraints xmi:id="SQLConstraint_1211544520696" name="SYS_C004728" type="CHECK" body="&quot;FREQPERMID&quot; IS NOT NULL" members="FREQPERMID"/>
+</RDBSchema:RDBTable>

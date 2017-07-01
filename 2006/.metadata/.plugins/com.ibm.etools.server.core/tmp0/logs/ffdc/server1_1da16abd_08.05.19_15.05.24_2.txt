@@ -1,0 +1,78 @@
+------Start of DE processing------ = [08.05.19 15:05:24:949 MSD] , key = com.ibm.websphere.security.PasswordCheckFailedException com.ibm.ws.security.server.lm.swamLoginModule.login 275
+Exception = com.ibm.websphere.security.PasswordCheckFailedException
+Source = com.ibm.ws.security.server.lm.swamLoginModule.login
+probeid = 275
+Stack Dump = 
+Dump of callerThis = 
+Object type = com.ibm.ws.security.server.lm.swamLoginModule
+com.ibm.ws.security.server.lm.swamLoginModule@2d816aad
+
+==> Performing default dump from com.ibm.ws.security.core.SecurityDM  = Mon May 19 15:05:24 MSD 2008
+SecurityConfig property values:
+{${WAS_INSTALL_ROOT}=C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51, security.securityServerName=SecurityServer, security.authMechForwardCred=false, ${WAS_TEMP_DIR}=C:\ildar\RAD_NRI\.metadata\.plugins\com.ibm.etools.server.core\tmp0/temp, security.activeUserRegistryType=CUSTOM, com.ibm.websphere.security.registry.maxUseridSize=256, security.enabled=true, security.useLocalSecurityServer=true, security.java2security=false, security.FullyQualifiedUserName=false, security.activeAuthMechanism.OID=No OID for this mechanism, ${WAS_ETC_DIR}=C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51/etc, security.authMechContextImpl=, security.ltpa.sso.ssl=false, webcontainer.transports=[com.ibm.websphere.models.config.applicationserver.webcontainer.impl.HTTPTransportImpl@4d61eaab (external: <unset>, sslEnabled: false, sslConfig: null), com.ibm.websphere.models.config.applicationserver.webcontainer.impl.HTTPTransportImpl@4d7a2aab (external: <unset>, sslEnabled: true, sslConfig: localhost/DefaultSSLSettings), com.ibm.websphere.models.config.applicationserver.webcontainer.impl.HTTPTransportImpl@4d4d6aab (external: false, sslEnabled: false, sslConfig: null), com.ibm.websphere.models.config.applicationserver.webcontainer.impl.HTTPTransportImpl@4d50aaab (external: false, sslEnabled: true, sslConfig: localhost/DefaultSSLSettings)], security.activeUserRegistry.realm=July, security.issuePermissionWarning=true, security.ltpa.trustAssociationEnabled=false, security.CacheTimeout=600, security.toplevel.properties=[com.ibm.websphere.models.config.properties.impl.PropertyImpl@3f12ab0 (name: security.enablePluggableAuthentication, value: true, description: null, required: false, validationExpression: null), com.ibm.websphere.models.config.properties.impl.PropertyImpl@3feeab0 (name: com.ibm.security.useFIPS, value: false, description: null, required: <unset>, validationExpression: null)], security.ltpa.password=XXXXXX, ${USER_INSTALL_ROOT}=C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51, IBMJCE=IBMJCE, ${APP_INSTALL_ROOT}=C:\ildar\RAD_NRI, com.ibm.websphere.security.registry.maxPasswordSize=256, process.serverName=localhost:localhost:server1, security.authMechOID=No OID for this mechanism, com.ibm.websphere.security.registry.propagateExceptionsToClient=false, security.CacheCushionMin=3, security.callbackHandlerClass=com.ibm.ws.security.auth.callback.WSCallbackHandler, host.virtualhosts=[Lcom.ibm.ws.http.VirtualHost;@332ceaac, CustomerUserRegistryProps={CustUserRegImplClass=com.hps.july.util.JulyRegistry50}, security.loginconfig.application=com.ibm.websphere.models.config.jaaslogin.impl.JAASConfigurationImpl@1d7aeab0, server.security.enabled=true, security.ltpa.sso.enabled=false, security.authMechAuthAlias=system.SWAM, security.callbackHandlerFactoryClass=com.ibm.ws.security.auth.callback.WSCallbackHandlerFactoryImpl, security.loginconfig.system=com.ibm.websphere.models.config.jaaslogin.impl.JAASConfigurationImpl@369eab0, ${WAS_PROPS_DIR}=C:\Program Files\IBM\WebSphere Studio\Application Developer\v5.1.2\runtimes\base_v51/properties, security.serverPasswd=XXXXXX, com.ibm.security.useFIPS=false, cell.security.enabled=true, security.CacheCushionMax=10, security.registry.IgnoreCase=false, security.activeUserRegistry.props={CustUserRegImplClass=com.hps.july.util.JulyRegistry50}, security.activeAuthMechanism=SWAM, security.enableAuthorizationAttributes=false, security.enablePluggableAuthentication=true, security.serverId=root} = com.ibm.websphere.security.PasswordCheckFailedException: ildar
++Data for directive [defaultsecurityconfig] obtained. = 
+The dynamic JAAS login configuration is:
+com.ibm.ws.security.auth.login.Configuration: Dumping JAAS Configuration
+JAAS file configuration data:
+WSLogin {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.common.auth.module.WSLoginModuleImpl"   ;
+};
+system.wssecurity.Signature {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.SignatureLoginModule"   ;
+};
+system.wssecurity.IDAssertion {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.IDAssertionLoginModule"   ;
+};
+system.LTPA {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.ltpaLoginModule"   ;
+};
+DefaultPrincipalMapping {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.auth.j2c.WSPrincipalMappingLoginModule"   ;
+};
+system.SWAM {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.swamLoginModule"   ;
+};
+
+JAAS WCCM configuration data:
+ClientContainer {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.common.auth.module.WSClientLoginModuleImpl"   ;
+};
+WSLogin {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.common.auth.module.WSLoginModuleImpl"   ;
+};
+system.wssecurity.Signature {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.SignatureLoginModule"   ;
+};
+system.wssecurity.IDAssertion {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.wsspi.wssecurity.auth.module.IDAssertionLoginModule"   ;
+};
+system.LTPA {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.ltpaLoginModule"   ;
+};
+DefaultPrincipalMapping {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.auth.j2c.WSPrincipalMappingLoginModule"   ;
+};
+system.LTPA_WEB {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.web.AuthenLoginModule"   ;
+};
+system.SWAM {
+    com.ibm.ws.security.common.auth.module.proxy.WSLoginModuleProxy  required
+       delegate="com.ibm.ws.security.server.lm.swamLoginModule"   ;
+};
+
+ = com.ibm.websphere.security.PasswordCheckFailedException: ildar
++Data for directive [defaultjaasconfig] obtained. = 
+==> Dump complete for com.ibm.ws.security.core.SecurityDM  = Mon May 19 15:05:25 MSD 2008

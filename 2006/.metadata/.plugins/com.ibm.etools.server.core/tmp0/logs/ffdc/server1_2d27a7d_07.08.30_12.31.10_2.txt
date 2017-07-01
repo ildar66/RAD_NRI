@@ -1,0 +1,70 @@
+------Start of DE processing------ = [07.08.30 12:31:10:322 MSD] , key = java.rmi.NoSuchObjectException com.ibm.ejs.container.EJSHome.activateBean_Common 1119
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.EJSHome.activateBean_Common
+probeid = 1119
+Stack Dump = java.rmi.NoSuchObjectException: javax.ejb.NoSuchEntityException: Single object finder returned 0 objects.
+	at com.ibm.ejs.container.ContainerManaged2_0BeanO.loadForEnlist(ContainerManaged2_0BeanO.java:360)
+	at com.ibm.ejs.container.EntityBeanO.enlist(EntityBeanO.java:727)
+	at com.ibm.ejs.container.activator.OptCEntityActivationStrategy.atActivate(OptCEntityActivationStrategy.java:139)
+	at com.ibm.ejs.container.activator.Activator.activateBean(Activator.java:516)
+	at com.ibm.ejs.container.EJSHome.activateBean_Common(EJSHome.java:1316)
+	at com.ibm.ejs.container.EJSHome.activateBean_Local(EJSHome.java:1230)
+	at com.nri.ejb.EJSCMPDivisionEJBHomeBean_7c74fa89.findByPrimaryKey_Local(EJSCMPDivisionEJBHomeBean_7c74fa89.java:18)
+	at com.nri.ejb.EJSLocalCMPDivisionEJBHome_7c74fa89.findByPrimaryKey(EJSLocalCMPDivisionEJBHome_7c74fa89.java:87)
+	at com.nri.mapping.ejb.DivisionMapper.findEJBObjectMatching(DivisionMapper.java:61)
+	at com.nri.mapping.ejb.DomainEJBMapper.findByPrimaryKey(DomainEJBMapper.java:76)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.findDivisionByKey(SecurityActionProcessorFacadeBean.java:667)
+	at com.nri.ejb.EJSLocalStatelessSecurityActionProcessorFacade_091e7b3f.findDivisionByKey(EJSLocalStatelessSecurityActionProcessorFacade_091e7b3f.java:55)
+	at com.nri.model.web.SecurityActionProcessorImpl.findDivisionByKey(SecurityActionProcessorImpl.java:702)
+	at com.nri.security.model.test.SecurityActionProcessorTests.testAddFindDeleteDivision(SecurityActionProcessorTests.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:79)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:41)
+	at java.lang.reflect.Method.invoke(Method.java:386)
+	at junit.framework.TestCase.runTest(TestCase.java:154)
+	at junit.framework.TestCase.runBare(TestCase.java:127)
+	at junit.framework.TestResult$1.protect(TestResult.java:106)
+	at junit.framework.TestResult.runProtected(TestResult.java:124)
+	at junit.framework.TestResult.run(TestResult.java:109)
+	at junit.framework.TestCase.run(TestCase.java:118)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at junit.framework.TestSuite.runTest(TestSuite.java:208)
+	at junit.framework.TestSuite.run(TestSuite.java:203)
+	at junit.htmlui.TestRunner.runTest(TestRunner.java:482)
+	at junit.htmlui.TestRunner.runTests(TestRunner.java:432)
+	at junit.htmlui.TestRunner.start(TestRunner.java:100)
+	at junit.htmlui.TestServletBase.doGet(TestServletBase.java:84)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:740)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:182)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.nri.ejb.EJSCMPDivisionEJBHomeBean_7c74fa89
+com.nri.ejb.EJSCMPDivisionEJBHomeBean_7c74fa89@2939ba70
+
+Exception = java.rmi.NoSuchObjectException
+Source = com.ibm.ejs.container.EJSHome.activateBean_Common
+probeid = 1119
+Dump of callerThis = 
+Object type = com.nri.ejb.EJSCMPDivisionEJBHomeBean_7c74fa89
+com.nri.ejb.EJSCMPDivisionEJBHomeBean_7c74fa89@2939ba70
+

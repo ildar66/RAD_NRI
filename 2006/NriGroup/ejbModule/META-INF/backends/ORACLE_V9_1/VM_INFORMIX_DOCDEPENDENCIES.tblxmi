@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="DOCDEPENDENCIES" name="DOCDEPENDENCIES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCUMENTFROM" name="DOCUMENTFROM" allowNull="true" constraints="SQLConstraint_1211544520223 SQLConstraint_1211544520224">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520223" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DOCUMENTTO" name="DOCUMENTTO" allowNull="true" constraints="SQLConstraint_1211544520223 SQLConstraint_1211544520225">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520224" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPE_" name="TYPE_" allowNull="true" constraints="SQLConstraint_1211544520223 SQLConstraint_1211544520226 SQLConstraint_1211544520227">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544520223" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520223" name="PK_DOCDEPENDENCIES" type="UNIQUE" members="DOCUMENTFROM DOCUMENTTO TYPE_"/>
+  <constraints xmi:id="SQLConstraint_1211544520226" name="CKC_TYPE_DOCDE" type="CHECK" body="TYPE_ IN ('O' ,'I' ,'P' ,'S' ,'D' ,'M' )" members="TYPE_"/>
+  <constraints xmi:id="SQLConstraint_1211544520224" name="SYS_C004264" type="CHECK" body="&quot;DOCUMENTFROM&quot; IS NOT NULL" members="DOCUMENTFROM"/>
+  <constraints xmi:id="SQLConstraint_1211544520225" name="SYS_C004265" type="CHECK" body="&quot;DOCUMENTTO&quot; IS NOT NULL" members="DOCUMENTTO"/>
+  <constraints xmi:id="SQLConstraint_1211544520227" name="SYS_C004266" type="CHECK" body="&quot;TYPE_&quot; IS NOT NULL" members="TYPE_"/>
+</RDBSchema:RDBTable>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="NOKIABCF" name="NOKIABCF">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="DATALOADID" name="DATALOADID" allowNull="true" constraints="SQLConstraint_1211544522316 SQLConstraint_1211544522317">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522316" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECT_ID" name="OBJECT_ID" allowNull="true" constraints="SQLConstraint_1211544522316 SQLConstraint_1211544522318">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522317" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BSC_ID" name="BSC_ID" allowNull="true" constraints="SQLConstraint_1211544522319">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544522318" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544522316" name="PK_NOKIABCF" type="UNIQUE" members="DATALOADID OBJECT_ID"/>
+  <constraints xmi:id="SQLConstraint_1211544522317" name="SYS_C005201" type="CHECK" body="&quot;DATALOADID&quot; IS NOT NULL" members="DATALOADID"/>
+  <constraints xmi:id="SQLConstraint_1211544522318" name="SYS_C005202" type="CHECK" body="&quot;OBJECT_ID&quot; IS NOT NULL" members="OBJECT_ID"/>
+  <constraints xmi:id="SQLConstraint_1211544522319" name="SYS_C005203" type="CHECK" body="&quot;BSC_ID&quot; IS NOT NULL" members="BSC_ID"/>
+</RDBSchema:RDBTable>

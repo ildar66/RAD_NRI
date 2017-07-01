@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Class-Path: NRI-AppLogic.jar 
+ NriGroup.jar 
+ OIDGenerator.jar 
+ jakarta-regexp-1.2.jar 
+ SequenceGenerator.jar
+

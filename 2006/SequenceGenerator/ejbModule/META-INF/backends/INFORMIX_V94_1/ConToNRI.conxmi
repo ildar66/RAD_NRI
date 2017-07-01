@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="ConToNRI" name="ConToNRI" userid="ildar" password="encoded:AQEDAwUFBgcKCwoJDA0MDRAREhcUFRIXGBESExwVHh8gITIzJCU2JwgpCisMLS4vMHEyc3R1dnc4OTo7PD0+Pw==" url="jdbc:informix-sqli://172.21.9.137:1541/july:INFORMIXSERVER=infdata;" host="172.21.9.137" driver="com.informix.jdbc.IfxDriver" otherDriver="com.informix.jdbc.IfxDriver" classLocation="C:\DraversJDBC\informix\ifxjdbc.jar" dbName="july">
+  <database href="META-INF/backends/INFORMIX_V94_1/july.dbxmi#july"/>
+  <filter xmi:id="RDBConnectionFilter_1191224457375" languageType="15">
+    <filterElement xmi:id="FilterElement_1191224457375" text="sequences"/>
+  </filter>
+  <jdbcDriver href="INFORMIX_V94_Domain.xmi#JDBCDriver_2"/>
+</RDBSchema:RDBConnection>

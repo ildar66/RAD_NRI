@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="IMPORTRECORDS" name="IMPORTRECORDS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IMPRECID" name="IMPRECID" allowNull="true" constraints="SQLConstraint_1211544521144 SQLConstraint_1211544521145">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521144" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IMPSESID" name="IMPSESID" allowNull="true" constraints="SQLConstraint_1211544521146">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521145" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RECENDTIME" name="RECENDTIME" allowNull="true" constraints="SQLConstraint_1211544521147">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544521144" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACTION" name="ACTION" allowNull="true" constraints="SQLConstraint_1211544521148 SQLConstraint_1211544521149">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521144" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="RESULT" name="RESULT" allowNull="true" constraints="SQLConstraint_1211544521150 SQLConstraint_1211544521151">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521145" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ERRLABEL" name="ERRLABEL" allowNull="true" constraints="SQLConstraint_1211544521152">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521146" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARAM1" name="PARAM1" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521147" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARAM2" name="PARAM2" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521148" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARAM3" name="PARAM3" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521149" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="KEYFIELDS" name="KEYFIELDS" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521150" characterSet="800" length="1020">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521144" name="PK_IMPORTRECORDS" type="UNIQUE" members="IMPRECID"/>
+  <constraints xmi:id="SQLConstraint_1211544521148" name="CKC_ACTION_IMPOR" type="CHECK" body="action IN ('I' ,'U' ,'D' )" members="ACTION"/>
+  <constraints xmi:id="SQLConstraint_1211544521150" name="CKC_RESULT_IMPOR" type="CHECK" body="result IN ('S' ,'E' )" members="RESULT"/>
+  <constraints xmi:id="SQLConstraint_1211544521145" name="SYS_C004603" type="CHECK" body="&quot;IMPRECID&quot; IS NOT NULL" members="IMPRECID"/>
+  <constraints xmi:id="SQLConstraint_1211544521146" name="SYS_C004604" type="CHECK" body="&quot;IMPSESID&quot; IS NOT NULL" members="IMPSESID"/>
+  <constraints xmi:id="SQLConstraint_1211544521147" name="SYS_C004605" type="CHECK" body="&quot;RECENDTIME&quot; IS NOT NULL" members="RECENDTIME"/>
+  <constraints xmi:id="SQLConstraint_1211544521149" name="SYS_C004606" type="CHECK" body="&quot;ACTION&quot; IS NOT NULL" members="ACTION"/>
+  <constraints xmi:id="SQLConstraint_1211544521151" name="SYS_C004607" type="CHECK" body="&quot;RESULT&quot; IS NOT NULL" members="RESULT"/>
+  <constraints xmi:id="SQLConstraint_1211544521152" name="SYS_C004608" type="CHECK" body="&quot;ERRLABEL&quot; IS NOT NULL" members="ERRLABEL"/>
+</RDBSchema:RDBTable>

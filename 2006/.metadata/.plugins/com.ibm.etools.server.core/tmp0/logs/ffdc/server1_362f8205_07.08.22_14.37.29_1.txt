@@ -1,0 +1,166 @@
+------Start of DE processing------ = [07.08.22 14:37:29:667 MSD] , key = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate 185
+Exception = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException
+Source = com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate
+probeid = 185
+Stack Dump = com.ibm.ws.exception.WsException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: Unique constraint (informix.pk_divisions) violated..
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.setLinkedException(DataStoreAdapterException.java:387)
+	at com.ibm.ws.rsadapter.spi.InternalGenericDataStoreHelper.mapException(InternalGenericDataStoreHelper.java:342)
+	at com.ibm.ws.rsadapter.cci.WSRdbUtil.mapException(WSRdbUtil.java:53)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:430)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate(WSRelationalRAAdapter.java:130)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBNotExistState.ejbCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbPostCreate(Unknown Source)
+	at com.nri.ejb.ConcreteDivisionEJB_7c74fa89.ejbPostCreate(ConcreteDivisionEJB_7c74fa89.java:145)
+	at com.nri.ejb.EJSCMPDivisionEJBHomeBean_7c74fa89.create_Local(EJSCMPDivisionEJBHomeBean_7c74fa89.java:71)
+	at com.nri.ejb.EJSLocalCMPDivisionEJBHome_7c74fa89.create(EJSLocalCMPDivisionEJBHome_7c74fa89.java:55)
+	at com.nri.mapping.ejb.DivisionMapper.insert(DivisionMapper.java:115)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.addDivision(SecurityActionProcessorFacadeBean.java:709)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.addDivision(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:562)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.addDivision(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:891)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie._invoke(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:167)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatchInvokeHandler(ServerDelegate.java:602)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatch(ServerDelegate.java:455)
+	at com.ibm.rmi.iiop.ORB.process(ORB.java:402)
+	at com.ibm.CORBA.iiop.ORB.process(ORB.java:1685)
+	at com.ibm.rmi.iiop.Connection.doWork(Connection.java:2173)
+	at com.ibm.rmi.iiop.WorkUnitImpl.doWork(WorkUnitImpl.java:64)
+	at com.ibm.ejs.oa.pool.PooledThread.run(ThreadPool.java:95)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: com.ibm.websphere.ce.cm.DuplicateKeyException: Unique constraint (informix.pk_divisions) violated.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:79)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Constructor.newInstance(Constructor.java(Compiled Code))
+	at com.ibm.websphere.rsadapter.GenericDataStoreHelper.mapExceptionHelper(GenericDataStoreHelper.java:473)
+	at com.ibm.websphere.rsadapter.GenericDataStoreHelper.mapException(GenericDataStoreHelper.java:516)
+	at com.ibm.ws.rsadapter.spi.InternalGenericDataStoreHelper.mapException(InternalGenericDataStoreHelper.java:329)
+	... 23 more
+---- Begin backtrace for nested exception
+com.ibm.websphere.ce.cm.DuplicateKeyException: Unique constraint (informix.pk_divisions) violated.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:79)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Constructor.newInstance(Constructor.java(Compiled Code))
+	at com.ibm.websphere.rsadapter.GenericDataStoreHelper.mapExceptionHelper(GenericDataStoreHelper.java:473)
+	at com.ibm.websphere.rsadapter.GenericDataStoreHelper.mapException(GenericDataStoreHelper.java:516)
+	at com.ibm.ws.rsadapter.spi.InternalGenericDataStoreHelper.mapException(InternalGenericDataStoreHelper.java:329)
+	at com.ibm.ws.rsadapter.cci.WSRdbUtil.mapException(WSRdbUtil.java:53)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:430)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate(WSRelationalRAAdapter.java:130)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBNotExistState.ejbCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbPostCreate(Unknown Source)
+	at com.nri.ejb.ConcreteDivisionEJB_7c74fa89.ejbPostCreate(ConcreteDivisionEJB_7c74fa89.java:145)
+	at com.nri.ejb.EJSCMPDivisionEJBHomeBean_7c74fa89.create_Local(EJSCMPDivisionEJBHomeBean_7c74fa89.java:71)
+	at com.nri.ejb.EJSLocalCMPDivisionEJBHome_7c74fa89.create(EJSLocalCMPDivisionEJBHome_7c74fa89.java:55)
+	at com.nri.mapping.ejb.DivisionMapper.insert(DivisionMapper.java:115)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.addDivision(SecurityActionProcessorFacadeBean.java:709)
+	at com.nri.ejb.EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.addDivision(EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f.java:562)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.addDivision(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:891)
+	at com.nri.ejb._EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie._invoke(_EJSRemoteStatelessSecurityActionProcessorFacade_091e7b3f_Tie.java:167)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatchInvokeHandler(ServerDelegate.java:602)
+	at com.ibm.CORBA.iiop.ServerDelegate.dispatch(ServerDelegate.java:455)
+	at com.ibm.rmi.iiop.ORB.process(ORB.java:402)
+	at com.ibm.CORBA.iiop.ORB.process(ORB.java:1685)
+	at com.ibm.rmi.iiop.Connection.doWork(Connection.java:2173)
+	at com.ibm.rmi.iiop.WorkUnitImpl.doWork(WorkUnitImpl.java:64)
+	at com.ibm.ejs.oa.pool.PooledThread.run(ThreadPool.java:95)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter
+com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter@4b7d0211
+
+==> Performing default dump from com.ibm.ws.rsadapter.DiagnosticModuleForAdapter  = Wed Aug 22 14:37:29 MSD 2007
+This is a FFDC log generated for the Default Resource Adapter from source = com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate
+The exception caught = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: Unique constraint (informix.pk_divisions) violated..
+Operating System = Windows 2000 5.0 x86
+Classpath = C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/properties;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/properties;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/bootstrap.jar;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/j2ee.jar;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/lmproxy.jar;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/urlprotocols.jar;C:/Program Files/IBM/WebSphere Studio/wstools/eclipse/plugins/com.ibm.etools.websphere.tools.common_5.1.1.1/runtime/wteServers.jar;C:/Program Files/IBM/WebSphere Studio/wstools/eclipse/plugins/com.ibm.etools.websphere.tools.common_5.1.1.1/runtime/wasToolsCommon.jar
+Ext dirs = C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51\java\jre\lib\ext
+Other related data. If null, nothing was passed in = 
+null
+
+The Objects' instance variables are printed below recursively 2 levels deep = 
+Object type = com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter
+  class$com$ibm$ws$rsadapter$cci$WSRelationalRAAdapter = 
+    class$java$lang$Class = java.lang.Class@22a40287
+    initted = true
+    reflectionFactory = sun.reflect.ReflectionFactory@3f778204
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = java.lang.ref.SoftReference@33280218
+    useCaches = true
+    allPermDomain = java.security.ProtectionDomain@71ef0216
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  hasConnectionBeenCalled = false
+  recFactory = 
+    ivRecords = [Ljavax.resource.cci.IndexedRecord;@1efac210
+    numRecords = 0
+    maxRecord = 1000
+    ivRecordFactory = this.recFactory
+  singleton = null
+  objectCache = 
+    class$com$ibm$ws$rsadapter$ObjectCache = java.lang.Class@771c206
+    rdbRecords = [Lcom.ibm.ws.rsadapter.cci.WSRdbRecordImpl;@ad78210
+    numRdbRecords = 0
+    maxRdbRecords = 50
+    cciCStmts = [Lcom.ibm.ws.rsadapter.cci.WSRdbCallableStatement;@7df10210
+    numCCICStmts = 0
+    maxCCICStmts = 50
+    cciRSets = [Lcom.ibm.ws.rsadapter.cci.WSRdbResultSetImpl;@7f900210
+    numCCIRSets = 1
+    maxCCIRSets = 120
+    cciConnSpecs = [Lcom.ibm.ws.rsadapter.cci.WSRdbConnectionSpecImpl;@660b4210
+    numCCIConnSpecs = 0
+    maxCCIConnSpecs = 50
+    cciHandles = [Lcom.ibm.ws.rsadapter.cci.WSRdbConnectionImpl;@549b8210
+    numCCIHandles = 0
+    maxCCIHandles = 75
+    cache = this.objectCache
+    tc = com.ibm.ejs.ras.TraceComponent@58bb8210
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = IBMDataStoreAdapterNLS
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter
+  class$com$ibm$websphere$ejbpersistence$EJBToRAAdapter = null
+  class$com$ibm$wsspi$ejbpersistence$WSEJBToRAAdapter = 
+    class$java$lang$Class = this.class$com$ibm$ws$rsadapter$cci$WSRelationalRAAdapter.class$java$lang$Class
+    initted = true
+    reflectionFactory = this.class$com$ibm$ws$rsadapter$cci$WSRelationalRAAdapter.reflectionFactory
+    serialPersistentFields = this.class$com$ibm$ws$rsadapter$cci$WSRelationalRAAdapter.serialPersistentFields
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = java.lang.ref.SoftReference@33c80218
+    useCaches = true
+    allPermDomain = this.class$com$ibm$ws$rsadapter$cci$WSRelationalRAAdapter.allPermDomain
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+
++Data for directive [defaultadapter] obtained. = 
+==> Dump complete for com.ibm.ws.rsadapter.DiagnosticModuleForAdapter  = Wed Aug 22 14:37:29 MSD 2007

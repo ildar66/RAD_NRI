@@ -1,0 +1,202 @@
+------Start of DE processing------ = [07.09.01 19:49:59:339 MSD] , key = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate 185
+Exception = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException
+Source = com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate
+probeid = 185
+Stack Dump = com.ibm.ws.exception.WsException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: Unique constraint (informix.pk_workers) violated..
+	at com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException.setLinkedException(DataStoreAdapterException.java:387)
+	at com.ibm.ws.rsadapter.spi.InternalGenericDataStoreHelper.mapException(InternalGenericDataStoreHelper.java:342)
+	at com.ibm.ws.rsadapter.cci.WSRdbUtil.mapException(WSRdbUtil.java:53)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:430)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate(WSRelationalRAAdapter.java:130)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBNotExistState.ejbCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbPostCreate(Unknown Source)
+	at com.nri.ejb.ConcreteWorkerEJB_7ee08407.ejbPostCreate(ConcreteWorkerEJB_7ee08407.java:145)
+	at com.nri.ejb.EJSCMPWorkerEJBHomeBean_7ee08407.create_Local(EJSCMPWorkerEJBHomeBean_7ee08407.java:71)
+	at com.nri.ejb.EJSLocalCMPWorkerEJBHome_7ee08407.create(EJSLocalCMPWorkerEJBHome_7ee08407.java:55)
+	at com.nri.mapping.ejb.WorkerMapper.insert(WorkerMapper.java:134)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.addWorker(SecurityActionProcessorFacadeBean.java:917)
+	at com.nri.ejb.EJSLocalStatelessSecurityActionProcessorFacade_091e7b3f.addWorker(EJSLocalStatelessSecurityActionProcessorFacade_091e7b3f.java:919)
+	at com.nri.model.web.SecurityActionProcessorImpl.addWorker(SecurityActionProcessorImpl.java:882)
+	at com.nri.security.actions.WorkerProcessAction.execute(WorkerProcessAction.java:35)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+Caused by: com.ibm.websphere.ce.cm.DuplicateKeyException: Unique constraint (informix.pk_workers) violated.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:79)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Constructor.newInstance(Constructor.java(Compiled Code))
+	at com.ibm.websphere.rsadapter.GenericDataStoreHelper.mapExceptionHelper(GenericDataStoreHelper.java:473)
+	at com.ibm.websphere.rsadapter.GenericDataStoreHelper.mapException(GenericDataStoreHelper.java:516)
+	at com.ibm.ws.rsadapter.spi.InternalGenericDataStoreHelper.mapException(InternalGenericDataStoreHelper.java:329)
+	... 41 more
+---- Begin backtrace for nested exception
+com.ibm.websphere.ce.cm.DuplicateKeyException: Unique constraint (informix.pk_workers) violated.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:79)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java(Compiled Code))
+	at java.lang.reflect.Constructor.newInstance(Constructor.java(Compiled Code))
+	at com.ibm.websphere.rsadapter.GenericDataStoreHelper.mapExceptionHelper(GenericDataStoreHelper.java:473)
+	at com.ibm.websphere.rsadapter.GenericDataStoreHelper.mapException(GenericDataStoreHelper.java:516)
+	at com.ibm.ws.rsadapter.spi.InternalGenericDataStoreHelper.mapException(InternalGenericDataStoreHelper.java:329)
+	at com.ibm.ws.rsadapter.cci.WSRdbUtil.mapException(WSRdbUtil.java:53)
+	at com.ibm.ws.rsadapter.cci.WSInteractionImpl.execute(WSInteractionImpl.java:430)
+	at com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate(WSRelationalRAAdapter.java:130)
+	at com.ibm.ws.ejbpersistence.dataaccess.DataAccessRequestImpl.execute(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.executeCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.CBNotExistState.ejbCreate(Unknown Source)
+	at com.ibm.ws.ejbpersistence.beanextensions.ConcreteBeanStatefulInstanceExtensionImpl.ejbPostCreate(Unknown Source)
+	at com.nri.ejb.ConcreteWorkerEJB_7ee08407.ejbPostCreate(ConcreteWorkerEJB_7ee08407.java:145)
+	at com.nri.ejb.EJSCMPWorkerEJBHomeBean_7ee08407.create_Local(EJSCMPWorkerEJBHomeBean_7ee08407.java:71)
+	at com.nri.ejb.EJSLocalCMPWorkerEJBHome_7ee08407.create(EJSLocalCMPWorkerEJBHome_7ee08407.java:55)
+	at com.nri.mapping.ejb.WorkerMapper.insert(WorkerMapper.java:134)
+	at com.nri.ejb.SecurityActionProcessorFacadeBean.addWorker(SecurityActionProcessorFacadeBean.java:917)
+	at com.nri.ejb.EJSLocalStatelessSecurityActionProcessorFacade_091e7b3f.addWorker(EJSLocalStatelessSecurityActionProcessorFacade_091e7b3f.java:919)
+	at com.nri.model.web.SecurityActionProcessorImpl.addWorker(SecurityActionProcessorImpl.java:882)
+	at com.nri.security.actions.WorkerProcessAction.execute(WorkerProcessAction.java:35)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doPost(ActionServlet.java:525)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at com.ibm.ws.webcontainer.servlet.StrictServletInstance.doService(StrictServletInstance.java:110)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet._service(StrictLifecycleServlet.java:174)
+	at com.ibm.ws.webcontainer.servlet.IdleServletState.service(StrictLifecycleServlet.java:313)
+	at com.ibm.ws.webcontainer.servlet.StrictLifecycleServlet.service(StrictLifecycleServlet.java:116)
+	at com.ibm.ws.webcontainer.servlet.ServletInstance.service(ServletInstance.java:283)
+	at com.ibm.ws.webcontainer.servlet.ValidServletReferenceState.dispatch(ValidServletReferenceState.java:42)
+	at com.ibm.ws.webcontainer.servlet.ServletInstanceReference.dispatch(ServletInstanceReference.java:40)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.handleWebAppDispatch(WebAppRequestDispatcher.java:983)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.dispatch(WebAppRequestDispatcher.java:564)
+	at com.ibm.ws.webcontainer.webapp.WebAppRequestDispatcher.forward(WebAppRequestDispatcher.java:200)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.doForward(WebAppInvoker.java:119)
+	at com.ibm.ws.webcontainer.srt.WebAppInvoker.handleInvocationHook(WebAppInvoker.java:276)
+	at com.ibm.ws.webcontainer.cache.invocation.CachedInvocation.handleInvocation(CachedInvocation.java:71)
+	at com.ibm.ws.webcontainer.cache.invocation.CacheableInvocationContext.invoke(CacheableInvocationContext.java:116)
+	at com.ibm.ws.webcontainer.srp.ServletRequestProcessor.dispatchByURI(ServletRequestProcessor.java:186)
+	at com.ibm.ws.webcontainer.oselistener.OSEListenerDispatcher.service(OSEListener.java:334)
+	at com.ibm.ws.webcontainer.http.HttpConnection.handleRequest(HttpConnection.java:56)
+	at com.ibm.ws.http.HttpConnection.readAndHandleRequest(HttpConnection.java:618)
+	at com.ibm.ws.http.HttpConnection.run(HttpConnection.java:439)
+	at com.ibm.ws.util.ThreadPool$Worker.run(ThreadPool.java:672)
+
+Dump of callerThis = 
+Object type = com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter
+com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter@50ac5a5
+
+==> Performing default dump from com.ibm.ws.rsadapter.DiagnosticModuleForAdapter  = Sat Sep 01 19:49:59 MSD 2007
+This is a FFDC log generated for the Default Resource Adapter from source = com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter.executeCreate
+The exception caught = com.ibm.ws.rsadapter.exceptions.DataStoreAdapterException: DSRA0080E: An exception was received by the Data Store Adapter. See original exception message: Unique constraint (informix.pk_workers) violated..
+Operating System = Windows 2000 5.0 x86
+Classpath = C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/properties;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/properties;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/bootstrap.jar;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/j2ee.jar;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/lmproxy.jar;C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51/lib/urlprotocols.jar;C:/Program Files/IBM/WebSphere Studio/wstools/eclipse/plugins/com.ibm.etools.websphere.tools.common_5.1.1.1/runtime/wteServers.jar;C:/Program Files/IBM/WebSphere Studio/wstools/eclipse/plugins/com.ibm.etools.websphere.tools.common_5.1.1.1/runtime/wasToolsCommon.jar
+Ext dirs = C:\Program Files\IBM\WebSphere Studio\runtimes\base_v51\java\jre\lib\ext
+Other related data. If null, nothing was passed in = 
+null
+
+The Objects' instance variables are printed below recursively 2 levels deep = 
+Object type = com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter
+  class$com$ibm$ws$rsadapter$cci$WSRelationalRAAdapter = 
+    class$java$lang$Class = java.lang.Class@22b04535
+    initted = true
+    reflectionFactory = sun.reflect.ReflectionFactory@3f63c5b6
+    serialPersistentFields = {}
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = java.lang.ref.SoftReference@fd205a4
+    useCaches = true
+    allPermDomain = java.security.ProtectionDomain@57b85a2
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+  hasConnectionBeenCalled = false
+  recFactory = 
+    ivRecords = [Ljavax.resource.cci.IndexedRecord;@342445b3
+    numRecords = 7
+    maxRecord = 1000
+    ivRecordFactory = this.recFactory
+  singleton = null
+  objectCache = 
+    class$com$ibm$ws$rsadapter$ObjectCache = java.lang.Class@7e2a45b4
+    rdbRecords = [Lcom.ibm.ws.rsadapter.cci.WSRdbRecordImpl;@20ee85b3
+    numRdbRecords = 0
+    maxRdbRecords = 50
+    cciCStmts = [Lcom.ibm.ws.rsadapter.cci.WSRdbCallableStatement;@2ba005b3
+    numCCICStmts = 0
+    maxCCICStmts = 50
+    cciRSets = [Lcom.ibm.ws.rsadapter.cci.WSRdbResultSetImpl;@16d9c5b3
+    numCCIRSets = 1
+    maxCCIRSets = 120
+    cciConnSpecs = [Lcom.ibm.ws.rsadapter.cci.WSRdbConnectionSpecImpl;@1b89c5b3
+    numCCIConnSpecs = 0
+    maxCCIConnSpecs = 50
+    cciHandles = [Lcom.ibm.ws.rsadapter.cci.WSRdbConnectionImpl;@7f52c5b3
+    numCCIHandles = 0
+    maxCCIHandles = 75
+    cache = this.objectCache
+    tc = com.ibm.ejs.ras.TraceComponent@636b85b3
+  tc = 
+    ivLogger = null
+    ivResourceBundleName = IBMDataStoreAdapterNLS
+    ivDumpEnabled = false
+    defaultMessageFile = com.ibm.ejs.resources.seriousMessages
+    ivEntryEnabled = false
+    ivEventEnabled = false
+    ivDebugEnabled = false
+    ivName = com.ibm.ws.rsadapter.cci.WSRelationalRAAdapter
+  class$com$ibm$websphere$ejbpersistence$EJBToRAAdapter = null
+  class$com$ibm$wsspi$ejbpersistence$WSEJBToRAAdapter = 
+    class$java$lang$Class = this.class$com$ibm$ws$rsadapter$cci$WSRelationalRAAdapter.class$java$lang$Class
+    initted = true
+    reflectionFactory = this.class$com$ibm$ws$rsadapter$cci$WSRelationalRAAdapter.reflectionFactory
+    serialPersistentFields = this.class$com$ibm$ws$rsadapter$cci$WSRelationalRAAdapter.serialPersistentFields
+    serialVersionUID = 3206093459760846163
+    declaredPublicMethods = null
+    declaredPublicFields = null
+    publicConstructors = null
+    declaredConstructors = null
+    publicMethods = null
+    declaredMethods = null
+    publicFields = null
+    declaredFields = java.lang.ref.SoftReference@ff205a4
+    useCaches = true
+    allPermDomain = this.class$com$ibm$ws$rsadapter$cci$WSRelationalRAAdapter.allPermDomain
+    getPDperm = null
+    newInstanceCallerCache = null
+    cachedConstructor = null
+    have_extensions = true
+
++Data for directive [defaultadapter] obtained. = 
+==> Dump complete for com.ibm.ws.rsadapter.DiagnosticModuleForAdapter  = Sat Sep 01 19:49:59 MSD 2007

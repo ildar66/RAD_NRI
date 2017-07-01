@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="PIE_RESLINK" name="PIE_RESLINK">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDRESNRI" name="IDRESNRI" allowNull="true" constraints="SQLConstraint_1211544523547 SQLConstraint_1211544523548">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523547" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OWNER" name="OWNER" allowNull="true" constraints="SQLConstraint_1211544523547 SQLConstraint_1211544523549">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523548" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="IDRESPLATINUM" name="IDRESPLATINUM" allowNull="true" constraints="SQLConstraint_1211544523547 SQLConstraint_1211544523550">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523547" characterSet="800" length="120">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VDAT" name="VDAT" allowNull="true" constraints="SQLConstraint_1211544523551">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544523547" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="VOPER" name="VOPER" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544523549" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FLAGMAINLINK" name="FLAGMAINLINK" allowNull="true" defaultValue="'N'" constraints="SQLConstraint_1211544523552 SQLConstraint_1211544523553">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544523548" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544523547" name="PK_PIE_RESLINK" type="UNIQUE" members="IDRESNRI OWNER IDRESPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523552" name="CKC_FLAGMAIN_PIE_R" type="CHECK" body="flagmainlink IN ('Y' ,'N' )" members="FLAGMAINLINK"/>
+  <constraints xmi:id="SQLConstraint_1211544523548" name="SYS_C004255" type="CHECK" body="&quot;IDRESNRI&quot; IS NOT NULL" members="IDRESNRI"/>
+  <constraints xmi:id="SQLConstraint_1211544523549" name="SYS_C004256" type="CHECK" body="&quot;OWNER&quot; IS NOT NULL" members="OWNER"/>
+  <constraints xmi:id="SQLConstraint_1211544523550" name="SYS_C004257" type="CHECK" body="&quot;IDRESPLATINUM&quot; IS NOT NULL" members="IDRESPLATINUM"/>
+  <constraints xmi:id="SQLConstraint_1211544523551" name="SYS_C004258" type="CHECK" body="&quot;VDAT&quot; IS NOT NULL" members="VDAT"/>
+  <constraints xmi:id="SQLConstraint_1211544523553" name="SYS_C004259" type="CHECK" body="&quot;FLAGMAINLINK&quot; IS NOT NULL" members="FLAGMAINLINK"/>
+</RDBSchema:RDBTable>

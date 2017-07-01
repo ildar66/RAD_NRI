@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="SUPPD_INFO" name="SUPPD_INFO">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAME_INFO" name="NAME_INFO" allowNull="true" constraints="SQLConstraint_1211544524709 SQLConstraint_1211544524710">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524709" characterSet="800" length="160">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="BIN_INFO" name="BIN_INFO" allowNull="true">
+    <type xmi:type="RDBSchema:SQLBinaryLargeObject" xmi:id="SQLBinaryLargeObject_1211544524709" length="4000">
+      <originatingType xmi:type="RDBSchema:SQLBinaryLargeObject" href="ORACLE_V9_Primitives.xmi#SQLBinaryLargeObject_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524709" name="PK_SUPPD_INFO" type="UNIQUE" members="NAME_INFO"/>
+  <constraints xmi:id="SQLConstraint_1211544524710" name="SYS_C004890" type="CHECK" body="&quot;NAME_INFO&quot; IS NOT NULL" members="NAME_INFO"/>
+</RDBSchema:RDBTable>

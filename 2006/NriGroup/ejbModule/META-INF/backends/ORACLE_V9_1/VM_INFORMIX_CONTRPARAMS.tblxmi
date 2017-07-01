@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="CONTRPARAMS" name="CONTRPARAMS">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARAMID" name="PARAMID" allowNull="true" constraints="SQLConstraint_1211544520083 SQLConstraint_1211544520084">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520083" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="EQUIPMENT" name="EQUIPMENT" allowNull="true" constraints="SQLConstraint_1211544520085">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520084" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ACT_DATE" name="ACT_DATE" allowNull="true" constraints="SQLConstraint_1211544520086">
+    <type xmi:type="RDBSchema:SQLTimestamp" xmi:id="SQLTimestamp_1211544520083" precision="7">
+      <originatingType xmi:type="RDBSchema:SQLTimestamp" href="ORACLE_V9_Primitives.xmi#SQLTimestamp_3"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARAM_TYPE" name="PARAM_TYPE" allowNull="true" constraints="SQLConstraint_1211544520087 SQLConstraint_1211544520088">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520085" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARAM_LEVEL" name="PARAM_LEVEL" allowNull="true" constraints="SQLConstraint_1211544520089">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520086" precision="10" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="PARAM_VALUE" name="PARAM_VALUE" allowNull="true" constraints="SQLConstraint_1211544520090">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544520087" precision="10" scale="2">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544520083" name="PK_CONTRPARAMS" type="UNIQUE" members="PARAMID"/>
+  <constraints xmi:id="SQLConstraint_1211544520087" name="CKC_PARAMTYPEC" type="CHECK" body="param_type IN (1 ,2 ,3 )" members="PARAM_TYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544520084" name="SYS_C004446" type="CHECK" body="&quot;PARAMID&quot; IS NOT NULL" members="PARAMID"/>
+  <constraints xmi:id="SQLConstraint_1211544520085" name="SYS_C004447" type="CHECK" body="&quot;EQUIPMENT&quot; IS NOT NULL" members="EQUIPMENT"/>
+  <constraints xmi:id="SQLConstraint_1211544520086" name="SYS_C004448" type="CHECK" body="&quot;ACT_DATE&quot; IS NOT NULL" members="ACT_DATE"/>
+  <constraints xmi:id="SQLConstraint_1211544520088" name="SYS_C004449" type="CHECK" body="&quot;PARAM_TYPE&quot; IS NOT NULL" members="PARAM_TYPE"/>
+  <constraints xmi:id="SQLConstraint_1211544520089" name="SYS_C004450" type="CHECK" body="&quot;PARAM_LEVEL&quot; IS NOT NULL" members="PARAM_LEVEL"/>
+  <constraints xmi:id="SQLConstraint_1211544520090" name="SYS_C004451" type="CHECK" body="&quot;PARAM_VALUE&quot; IS NOT NULL" members="PARAM_VALUE"/>
+</RDBSchema:RDBTable>

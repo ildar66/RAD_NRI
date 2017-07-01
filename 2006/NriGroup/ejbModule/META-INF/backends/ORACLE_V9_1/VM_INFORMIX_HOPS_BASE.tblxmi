@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="HOPS_BASE" name="HOPS_BASE">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HOPSID" name="HOPSID" allowNull="true" constraints="SQLConstraint_1211544521024 SQLConstraint_1211544521025">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544521024" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="HOPSVAR" name="HOPSVAR" allowNull="true" constraints="SQLConstraint_1211544521026 SQLConstraint_1211544521027">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544521024" characterSet="800" length="4">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544521024" name="PK_HOPS_BASE" type="UNIQUE" members="HOPSID"/>
+  <constraints xmi:id="SQLConstraint_1211544521026" name="CKC_HOPSVAR_HOPS_" type="CHECK" body="hopsvar IN ('R' ,'M' )" members="HOPSVAR"/>
+  <constraints xmi:id="SQLConstraint_1211544521025" name="SYS_C003698" type="CHECK" body="&quot;HOPSID&quot; IS NOT NULL" members="HOPSID"/>
+  <constraints xmi:id="SQLConstraint_1211544521027" name="SYS_C003699" type="CHECK" body="&quot;HOPSVAR&quot; IS NOT NULL" members="HOPSVAR"/>
+</RDBSchema:RDBTable>

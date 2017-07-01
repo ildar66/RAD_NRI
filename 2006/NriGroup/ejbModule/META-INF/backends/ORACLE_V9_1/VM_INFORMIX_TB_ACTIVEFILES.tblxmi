@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="TB_ACTIVEFILES" name="TB_ACTIVEFILES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTTYPEID" name="OBJECTTYPEID" allowNull="true" constraints="SQLConstraint_1211544524909 SQLConstraint_1211544524910">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524909" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="OBJECTID" name="OBJECTID" allowNull="true" constraints="SQLConstraint_1211544524909 SQLConstraint_1211544524911">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524910" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPEID" name="TYPEID" allowNull="true" constraints="SQLConstraint_1211544524909 SQLConstraint_1211544524912">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524911" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILEID" name="FILEID" allowNull="true">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544524912" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="TYPE_" name="TYPE_" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544524909" characterSet="800" length="256">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544524909" name="PK_TB_ACTIVEFILES" type="UNIQUE" members="OBJECTTYPEID OBJECTID TYPEID"/>
+  <constraints xmi:id="SQLConstraint_1211544524910" name="SYS_C005127" type="CHECK" body="&quot;OBJECTTYPEID&quot; IS NOT NULL" members="OBJECTTYPEID"/>
+  <constraints xmi:id="SQLConstraint_1211544524911" name="SYS_C005128" type="CHECK" body="&quot;OBJECTID&quot; IS NOT NULL" members="OBJECTID"/>
+  <constraints xmi:id="SQLConstraint_1211544524912" name="SYS_C005129" type="CHECK" body="&quot;TYPEID&quot; IS NOT NULL" members="TYPEID"/>
+</RDBSchema:RDBTable>

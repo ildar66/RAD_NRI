@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDBSchema:RDBTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:RDBSchema="RDBSchema.xmi" xmi:id="BALANCESTOREFILES" name="BALANCESTOREFILES">
+  <database href="META-INF/backends/ORACLE_V9_1/VM.dbxmi#VM"/>
+  <schema href="META-INF/backends/ORACLE_V9_1/VM_INFORMIX.schxmi#INFORMIX"/>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="ID_FILE" name="ID_FILE" allowNull="true" constraints="SQLConstraint_1211544519031 SQLConstraint_1211544519032">
+    <type xmi:type="RDBSchema:SQLNumeric" xmi:id="SQLNumeric_1211544519031" precision="10" scale="0">
+      <originatingType xmi:type="RDBSchema:SQLNumeric" href="ORACLE_V9_Primitives.xmi#SQLNumeric_6"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="FILE_NAME" name="FILE_NAME" allowNull="true" constraints="SQLConstraint_1211544519033">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519031" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="SHEET_NAME" name="SHEET_NAME" allowNull="true" constraints="SQLConstraint_1211544519034">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519032" characterSet="800" length="200">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_1"/>
+    </type>
+  </columns>
+  <columns xmi:type="RDBSchema:RDBColumn" xmi:id="NAMESKLAD" name="NAMESKLAD" allowNull="true">
+    <type xmi:type="RDBSchema:OracleCharacterStringType" xmi:id="OracleCharacterStringType_1211544519033" characterSet="800" length="320">
+      <originatingType xmi:type="RDBSchema:OracleCharacterStringType" href="ORACLE_V9_Primitives.xmi#SQLCharacterStringType_2"/>
+    </type>
+  </columns>
+  <constraints xmi:id="SQLConstraint_1211544519031" name="PK_BALANCESTOREFIL" type="UNIQUE" members="ID_FILE"/>
+  <constraints xmi:id="SQLConstraint_1211544519032" name="SYS_C004973" type="CHECK" body="&quot;ID_FILE&quot; IS NOT NULL" members="ID_FILE"/>
+  <constraints xmi:id="SQLConstraint_1211544519033" name="SYS_C004974" type="CHECK" body="&quot;FILE_NAME&quot; IS NOT NULL" members="FILE_NAME"/>
+  <constraints xmi:id="SQLConstraint_1211544519034" name="SYS_C004975" type="CHECK" body="&quot;SHEET_NAME&quot; IS NOT NULL" members="SHEET_NAME"/>
+</RDBSchema:RDBTable>

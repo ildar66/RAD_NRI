@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejbbnd="ejbbnd.xmi" xmlns:ejb="ejb.xmi" xmlns:common="common.xmi" xmi:id="EJBJarBinding_1191223953350" currentBackendId="INFORMIX_V94_1">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1191223953350" jndiName="ejb/com/nri/sequence/ejb/SequenceLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#Sequence"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1191224740412" jndiName="ejb/com/nri/sequence/ejb/SequenceSessionHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#SequenceSession"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1191226267229" jndiName="ejb/com/nri/sequence/ejb/SequenceLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1191226267229"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <defaultCMPConnectionFactory xmi:id="CMPConnectionFactoryBinding_1191223953350" jndiName="jdbc/july" resAuth="Per_Connection_Factory"/>
+</ejbbnd:EJBJarBinding>
